@@ -61,11 +61,11 @@ Knowing what you know now, check out the main tutorial: [How do I set up Autosca
 
 Here's a screenshot showing RightScale automatically launching web servers to cope with increased demand.
 
-[![RightScale Auto-scaling](/media/img/2010/08/RightScale-Auto-scaling-1024x575.png)](/media/img/2010/08/RightScale-Auto-scaling.png)
+[![RightScale Auto-scaling](/assets/images/2010/08/RightScale-Auto-scaling-1024x575.png)](/assets/images/2010/08/RightScale-Auto-scaling.png)
 
 Here's a screenshot showing one of my HAProxy load balancers backed by auto-scaled web servers.
 
-[![Auto-scaling load balancing](/media/img/2010/08/Auto-scaling-load-balancing-1024x575.png)](/media/img/2010/08/Auto-scaling-load-balancing.png)
+[![Auto-scaling load balancing](/assets/images/2010/08/Auto-scaling-load-balancing-1024x575.png)](/assets/images/2010/08/Auto-scaling-load-balancing.png)
 
 Now, go have some responsible, careful, constrained fun of your own!
 

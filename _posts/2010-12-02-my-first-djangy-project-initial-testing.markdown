@@ -126,7 +126,7 @@ Now to commit everything, push it to Djangy, and test:
 
 Now I can test the project by visiting [http://rightscalefeed.djangy.com](http://rightscalefeed.djangy.com) in my browser:
 
-[![Testing rightscalefeed.djangy.com](/media/img/2010/11/rightscalefeed.djangy.com-testing-300x174.png)](/media/img/2010/11/rightscalefeed.djangy.com-testing.png)
+[![Testing rightscalefeed.djangy.com](/assets/images/2010/11/rightscalefeed.djangy.com-testing-300x174.png)](/assets/images/2010/11/rightscalefeed.djangy.com-testing.png)
 
 Awesome! It worked.
 

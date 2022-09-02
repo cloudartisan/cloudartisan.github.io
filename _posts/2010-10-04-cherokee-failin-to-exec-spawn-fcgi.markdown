@@ -39,6 +39,6 @@ In my case, I had no idea _why_ it was failing, but I found that when I enabled 
 
 This should do it...
 
-[caption id="attachment_244" align="aligncenter" width="654" caption="Cherokee Error Logging"][![Cherokee Error Logging](/media/img/2010/10/Cherokee-Error-Logging.png)](/media/img/2010/10/Cherokee-Error-Logging.png)[/caption]
+[caption id="attachment_244" align="aligncenter" width="654" caption="Cherokee Error Logging"][![Cherokee Error Logging](/assets/images/2010/10/Cherokee-Error-Logging.png)](/assets/images/2010/10/Cherokee-Error-Logging.png)[/caption]
 
 You should [follow me on twitter](http://twitter.com/davidltaylor).
