@@ -47,19 +47,19 @@ Using your browser, go to your installation of Hudson (`http://<your server>:808
 
 Click on Manage Hudson:
 
-[caption id="attachment_254" align="aligncenter" width="660" caption="Hudson Main Page"][![Hudson Main Page](/media/img/2010/10/Hudson-Main-Page.png)](/media/img/2010/10/Hudson-Main-Page.png)[/caption]
+[caption id="attachment_254" align="aligncenter" width="660" caption="Hudson Main Page"][![Hudson Main Page](/assets/images/2010/10/Hudson-Main-Page.png)](/assets/images/2010/10/Hudson-Main-Page.png)[/caption]
 
 Click on Configure System:
 
-[caption id="attachment_255" align="aligncenter" width="851" caption="Manage Hudson"][![Manage Hudson](/media/img/2010/10/Manage-Hudson.png)](/media/img/2010/10/Manage-Hudson.png)[/caption]
+[caption id="attachment_255" align="aligncenter" width="851" caption="Manage Hudson"][![Manage Hudson](/assets/images/2010/10/Manage-Hudson.png)](/assets/images/2010/10/Manage-Hudson.png)[/caption]
 
 In your Hudson configuration look for the _Enable security_ setting:
 
-[caption id="attachment_256" align="aligncenter" width="919" caption="Hudson Settings"][![Hudson Settings](/media/img/2010/10/Hudson-Settings.png)](/media/img/2010/10/Hudson-Settings.png)[/caption]
+[caption id="attachment_256" align="aligncenter" width="919" caption="Hudson Settings"][![Hudson Settings](/assets/images/2010/10/Hudson-Settings.png)](/assets/images/2010/10/Hudson-Settings.png)[/caption]
 
 If you trust your system users the the simplest approach is to select _Enable security_, select _Unix user/group database_, and select _Logged-in users can do anything_:
 
-[caption id="attachment_260" align="aligncenter" width="653" caption="Hudson Enable Security"][![Hudson Enable Security](/media/img/2010/10/Hudson-Enable-Security.png)](/media/img/2010/10/Hudson-Enable-Security.png)[/caption]
+[caption id="attachment_260" align="aligncenter" width="653" caption="Hudson Enable Security"][![Hudson Enable Security](/assets/images/2010/10/Hudson-Enable-Security.png)](/assets/images/2010/10/Hudson-Enable-Security.png)[/caption]
 
 Lastly, click _Save_.
 
