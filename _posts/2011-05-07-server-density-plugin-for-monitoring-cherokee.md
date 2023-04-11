@@ -1,12 +1,10 @@
-public: yes
-status: publish
-kind: post
-chronological: yes
-author: David Taylor
-tags: ['monitoring', 'plugins', 'server density', 'system administration']
-published: 2011-05-07
-title: Server Density Plugin for Monitoring Cherokee
-slug: server-density-plugin-for-monitoring-cherokee
+---
+title: "Server Density Plugin for Monitoring Cherokee"
+excerpt: "Announcing my Cherokee Server Density plugin."
+tags:
+  - monitoring
+  - server density
+---
 
 I've created a Server Density plugin that can be used to monitor the Cherokee web server. The plugin is currently [available on github](http://github.com/cloudartisan/sd-cherokee). The installation instructions are over there. If you have any changes or improvements you'd like to see, please fork and create pull requests.
 
