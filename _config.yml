@@ -6,13 +6,15 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve'. If you change this file, please restart the
+# server process.
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+---
 title: Cloud Artisan
 email:
 description: >-
@@ -20,18 +22,22 @@ description: >-
   retro/vintage computing. Technology for yesterday, today, and tomorrow.
 twitter_username: davidltaylor
 github_username: cloudartisan
-minimal_mistakes_skin: default
+# "default" or one of: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: dark  
 search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+# amount of posts to show
+paginate: 5
 paginate_path: /page:num/
-timezone: Australia/Sydney # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Australia/Sydney
 
 include:
   - _pages
