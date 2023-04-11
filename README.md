@@ -1,6 +1,16 @@
 # cloudartisan.github.io
 My blog - the site, the content and the code
 
+## Installation
+
+The following will install and initialise Ruby on MacOS based on the `.ruby-version` local file:
+
+```
+brew install rbenv ruby-build
+rbenv init
+rbenv install
+```
+
 ---
 
 ## Licence
