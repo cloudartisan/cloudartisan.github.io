@@ -1,14 +1,29 @@
 # cloudartisan.github.io
+
 My blog - the site, the content and the code
 
 ## Installation
 
-The following will install and initialise Ruby on MacOS based on the `.ruby-version` local file:
+```
+brew install hugo
+```
+
+## Development
+
+To serve locally, including drafts:
 
 ```
-brew install rbenv ruby-build
-rbenv init
-rbenv install
+hugo server -D
+```
+
+Visit http://localhost:1313/ to see the site.
+
+## Static Site
+
+### Build
+
+```
+hugo
 ```
 
 ---

@@ -1,0 +1,38 @@
+---
+title: Cloud Artisan
+baseURL: https://cloudartisan.com/
+languageCode: en-us
+theme: github.com/yihui/hugo-ivy
+
+enableRobotsTXT: true
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
+    - name: "Categories"
+      url: "/categories/"
+      weight: 3
+    - name: "Tags"
+      url: "/tags/"
+      weight: 4
+    - name: "Subscribe"
+      url: "/index.xml"
+
+params:
+  description: "Cloud Computing, Retro Computing, Software Development, Martial Arts"
+  footer: "&copy; [David Taylor](https://github.com/cloudartisan) 2010-{Year} [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)"
+  ananke_socials:
+    - name: "twitter"
+      url: "https://twitter.com/davidltaylor"
+    - name: "mastodon"
+      url: "https://fosstodon.org/@cloudartisan"
+      rel: "me noopener"
+    - name: "github"
+      url: "https://github.com/cloudartisan"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/davidleslietaylor/"
