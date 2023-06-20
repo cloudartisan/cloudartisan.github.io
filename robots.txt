@@ -1,8 +1,2 @@
 User-agent: *
 Disallow: /README.md
-Disallow: /Gemfile
-Disallow: /.ruby-version
-Disallow: /_config.yml
-Disallow: /_data/
-Disallow: /_pages/
-Disallow: /_posts/
