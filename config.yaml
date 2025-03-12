@@ -1,38 +1,85 @@
----
-title: Cloud Artisan
 baseURL: https://cloudartisan.com/
 languageCode: en-us
-theme: github.com/yihui/hugo-ivy
+title: Cloud Artisan
+theme: congo
 
 enableRobotsTXT: true
 
-menu:
-  main:
-    - name: "Home"
-      url: "/"
-      weight: 1
-    - name: "About"
-      url: "/about/"
-      weight: 2
-    - name: "Categories"
-      url: "/categories/"
-      weight: 3
-    - name: "Tags"
-      url: "/tags/"
-      weight: 4
-    - name: "Subscribe"
-      url: "/index.xml"
+# Congo theme configuration
+# Following "Getting Started" guide from https://jpanther.github.io/congo/docs/installation/
+module:
+  imports:
+    - path: github.com/jpanther/congo/v2
 
+# Theme-specific configuration
 params:
   description: "Cloud Computing, Retro Computing, Software Development, Martial Arts"
-  footer: "&copy; [David Taylor](https://github.com/cloudartisan) 2010-{Year} [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)"
-  ananke_socials:
-    - name: "twitter"
-      url: "https://twitter.com/davidltaylor"
-    - name: "mastodon"
-      url: "https://fosstodon.org/@cloudartisan"
-      rel: "me noopener"
-    - name: "github"
-      url: "https://github.com/cloudartisan"
-    - name: "linkedin"
-      url: "https://www.linkedin.com/in/davidleslietaylor/"
+  copyright: "&copy; David Taylor 2010-{year}"
+  
+  colorScheme: auto
+  defaultAppearance: light
+  autoSwitchAppearance: true
+  
+  homepage:
+    layout: profile
+    showRecent: true
+  
+  article:
+    showDate: true
+    showAuthor: true
+    showBreadcrumbs: true
+    showDraftLabel: true
+    showEdit: false
+    showTableOfContents: true
+    showReadingTime: true
+    sharingLinks: 
+      - twitter
+      - linkedin
+      - reddit
+
+  # Configure the profile mode
+  profileMode:
+    enabled: true
+    title: David Taylor
+    subtitle: Software Engineer, Cloud Architect & Martial Artist
+    imageUrl: "/images/profile.jpg"
+    imageTitle: David Taylor
+
+  footer:
+    showCopyright: true
+    showThemeAttribution: true
+    showAppearanceSwitcher: true
+    showScrollToTop: true
+
+  social:
+    - name: Twitter
+      url: https://twitter.com/davidltaylor
+      icon: brand-twitter
+    - name: Mastodon
+      url: https://fosstodon.org/@cloudartisan
+      rel: me noopener
+      icon: brand-mastodon
+    - name: GitHub
+      url: https://github.com/cloudartisan
+      icon: brand-github
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/davidleslietaylor/
+      icon: brand-linkedin
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 10
+    - name: Posts
+      url: /posts/
+      weight: 20
+    - name: Projects
+      url: /projects/
+      weight: 30
+    - name: About
+      url: /about/
+      weight: 40
+    - name: Tags
+      url: /tags/
+      weight: 50
