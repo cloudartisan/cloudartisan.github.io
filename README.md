@@ -1,39 +1,63 @@
-# cloudartisan.github.io
+# Cloud Artisan Blog
 
-My blog - the site, the content and the code
+Personal blog and project showcase for David Taylor (Cloud Artisan).
 
-## Installation
+## Technology
 
+This site is built with:
+- [Hugo](https://gohugo.io/) - A fast and modern static site generator
+- [Congo Theme](https://github.com/jpanther/congo) - A powerful, lightweight theme for Hugo
+
+## Local Development
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/cloudartisan/cloudartisan.github.io.git
+   cd cloudartisan.github.io
+   ```
+
+2. Install Hugo:
+   ```
+   brew install hugo
+   ```
+
+3. Run the local development server:
+   ```
+   hugo server -D
+   ```
+
+4. View the site at http://localhost:1313/
+
+## Creating Content
+
+### New Posts
 ```
-brew install hugo
+hugo new content posts/my-new-post.md
 ```
 
-## Development
-
-To serve locally, including drafts:
-
+### New Projects
 ```
-hugo server -D
+hugo new content projects/project-name.md
 ```
 
-Visit http://localhost:1313/ to see the site.
-
-## Static Site
-
-### Build
+## Building for Production
 
 ```
 hugo
 ```
 
----
+This will generate the static site in the `public` directory.
 
-## Licence
+## Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+
+## License
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-My blog content, posts, etc are licenced under a
-[Creative Commons Attribution-ShareAlike 4.0 International Licence][cc-by-sa].
+My blog content, posts, etc are licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 

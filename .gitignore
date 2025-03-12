@@ -3,4 +3,14 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 Gemfile.lock
+
+# Hugo
 .hugo_build.lock
+/public/
+/resources/
+/jsconfig.json
+hugo_stats.json
+
+# OS
+.DS_Store
+Thumbs.db
