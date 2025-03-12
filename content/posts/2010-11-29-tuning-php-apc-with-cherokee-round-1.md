@@ -4,6 +4,8 @@ date: 2010-11-29
 draft: false
 slug: tuning-php-apc-with-cherokee-round-1
 tags: ["cherokee", "general", "php-apc", "system administration", "ubuntu"]
+description: "Tweaking PHP APC configuration to improve cache performance with Cherokee web server"
+summary: "Optimizing PHP APC configuration settings to improve cache hit rates and reduce cache misses when using the Cherokee web server"
 ---
 
 Since writing [Using PHP APC with Cherokee](http://www.cloudartisan.com/2010/11/using-php-apc-with-cherokee/) I noticed that my cache hits were dropping and my cache misses were growing.  This is my first attempt at tweaking the configuration of `php-apc` to try to eke out more performance.
