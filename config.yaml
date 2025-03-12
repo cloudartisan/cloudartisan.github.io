@@ -29,6 +29,10 @@ params:
   defaultAppearance: light
   autoSwitchAppearance: true
   
+  # Custom CSS
+  customCSS:
+    - assets/css/custom.css
+  
   homepage:
     layout: profile
     showRecent: true

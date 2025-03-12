@@ -1,11 +1,10 @@
 ---
-title: Tuning PHP APC with Cherokee - Round 1
+title: "Tuning PHP APC with Cherokee - Round 1"
 date: 2010-11-29
 draft: false
 slug: tuning-php-apc-with-cherokee-round-1
 tags: ["cherokee", "general", "php-apc", "system administration", "ubuntu"]
-description: "Tweaking PHP APC configuration to improve cache performance with Cherokee web server"
-summary: "Optimizing PHP APC configuration settings to improve cache hit rates and reduce cache misses when using the Cherokee web server"
+description: "A short guide on performance tuning PHP APC with the Cherokee web server"
 ---
 
 Since writing [Using PHP APC with Cherokee](http://www.cloudartisan.com/2010/11/using-php-apc-with-cherokee/) I noticed that my cache hits were dropping and my cache misses were growing.  This is my first attempt at tweaking the configuration of `php-apc` to try to eke out more performance.
@@ -32,27 +31,23 @@ At this stage I didn't think it was a good idea to increase the memory used by `
 
 So I added the following to `/etc/php5/cgi/conf.d/apc.ini`:
 
-
-    ```ini
-    # Does exactly what you think it does...
-    apc.enabled=1
-    # Number of seconds (7200 == 2h) before cache
-    # entries are expired. Otherwise, the default (0)
-    # means that the entire cache will be expunged
-    # if/when the cache fills.
-    apc.ttl = 7200
-    apc.user_ttl = 7200
+```ini
+# Does exactly what you think it does...
+apc.enabled=1
+# Number of seconds (7200 == 2h) before cache
+# entries are expired. Otherwise, the default (0)
+# means that the entire cache will be expunged
+# if/when the cache fills.
+apc.ttl = 7200
+apc.user_ttl = 7200
 ```
 
+Of course, after making the changes there's still more to be done. I'm using Cherokee and FastCGI, so I need to restart the `php-cgi` processes for the change to take effect. I've found that `/etc/init.d/cherokee restart` doesn't take care of restarting the `php-cgi` processes. Nor does using the `Graceful restart` or `Hard restart` options in `cherokee-admin`. Instead, I _believe_ (again, please correct me if I'm wrong) that sending the `SIGTERM` to `php-cgi` means that the `php-cgi` processes will terminate when they have finished handling their current requests.
 
-Of course, after making the changes there's still more to be done. I'm using Cherokee and FastCGI, so I need to restart the `php-cgi` processes for the change to take effect. I've found that `/etc/init.d/cherokee restart` doesn't take care of restarting the `php-cgi` processes. Nor does using the `Graceful restart` or `Hard restart` options in `cherokee-admin`. Instead, I _believe_ (again, please correct me if I'm wrong) that sending the `SIGTERM` to `php- cgi` means that the `php-cgi` processes will terminate when they have finished handling their current requests.
-
-
-    ```bash
-    killall -TERM php-cgi
-    service cherokee start
+```bash
+killall -TERM php-cgi
+service cherokee start
 ```
-
   
 After these changes:
 

@@ -1,0 +1,23 @@
+/* Custom CSS to fix the backtick issue in inline code */
+code::before, code::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Ensure code has proper styling */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875em;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: #e01e5a;
+}
+
+/* Dark mode styling */
+@media (prefers-color-scheme: dark) {
+  code {
+    background-color: #2d2d2d;
+    color: #f47067;
+  }
+}
