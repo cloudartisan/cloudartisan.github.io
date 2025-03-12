@@ -9,12 +9,12 @@ I've created a Server Density plugin that can be used to monitor the Cherokee we
 
 Here are some screenshots...
 
-![Cherokee Uptime](/assets/images/2011/05/cherokee_uptime.jpg)
+![Cherokee Uptime](/images/2011/05/cherokee_uptime.jpg)
 
-![Cherokee Configured Threads](/assets/images/2011/05/cherokee_config_threads.jpg)
+![Cherokee Configured Threads](/images/2011/05/cherokee_config_threads.jpg)
 
-![Cherokee Connections](/assets/images/2011/05/cherokee_connections.jpg)
+![Cherokee Connections](/images/2011/05/cherokee_connections.jpg)
 
-![Cherokee Traffic](/assets/images/2011/05/cherokee_traffic.jpg)
+![Cherokee Traffic](/images/2011/05/cherokee_traffic.jpg)
 
 [Follow me on Twitter](http://twitter.com/davidltaylor). It's free.

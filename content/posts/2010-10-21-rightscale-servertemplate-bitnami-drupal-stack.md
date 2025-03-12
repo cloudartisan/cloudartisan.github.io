@@ -27,15 +27,15 @@ I've used it for the latter.
 
 To try it out, simply [grab a free RightScale account](http://www.rightscale.com/products/free_edition.php), then [import my ServerTemplate](http://www.rightscale.com/library/server_templates/Bitnami-Drupal-Stack/14481).
 
-![Bitnami Drupal Stack](/assets/images/2010/10/Bitnami-Drupal-Stack-ServerTemplate.png)
+![Bitnami Drupal Stack](/images/2010/10/Bitnami-Drupal-Stack-ServerTemplate.png)
 
 Then add it to a deployment and fire it up. Once it's running you'll see something like:
 
-![Bitnami Drupal Welcome Page](/assets/images/2010/10/Bitnami-Drupal-Welcome-Page.png)
+![Bitnami Drupal Welcome Page](/images/2010/10/Bitnami-Drupal-Welcome-Page.png)
 
 and:
 
-![Bitnami Drupal Login Page](/assets/images/2010/10/Bitnami-Drupal-Login-Page.png)
+![Bitnami Drupal Login Page](/images/2010/10/Bitnami-Drupal-Login-Page.png)
 
 I've published this as part of RightScale's ServerTemplate Showdown. It's nothing spectacular, but I found it useful and hopefully it will be of some use to someone else. I have a draft version that has some basic support for preparing and installing on an EBS volume, which would add persistence, although I haven't released that version yet.
 

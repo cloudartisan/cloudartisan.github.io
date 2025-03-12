@@ -52,39 +52,39 @@ _Note: the administration interface is now available, unencrypted, to the world 
 
 Point your browser at your server on port 9090 and log in.
 
-![Cherokee Admin Login](/assets/images/2010/11/Cherokee-Admin-Login.png)
+![Cherokee Admin Login](/images/2010/11/Cherokee-Admin-Login.png)
 
 Next, click on the `vServers` tab up the top and then the plus sign in the top-left corner:
 
-![Add vServer](/assets/images/2010/11/Add-vServer.png)
+![Add vServer](/images/2010/11/Add-vServer.png)
 
 Select `Languages` then `PHP` and click on `Add`:
 
-![Select Language PHP](/assets/images/2010/11/Select-Language-PHP.png)
+![Select Language PHP](/images/2010/11/Select-Language-PHP.png)
 
 Then click `Next`:
 
-![Welcome to the PHP Wizard](/assets/images/2010/11/Welcome-to-the-PHP-Wizard.png)
+![Welcome to the PHP Wizard](/images/2010/11/Welcome-to-the-PHP-Wizard.png)
 
 Enter the document root (probably `/var/www/ispconfig` unless you strayed from the recommended default when installing ISPConfig) and click `Next`:
 
-![Document Root](/assets/images/2010/11/Document-Root.png)
+![Document Root](/images/2010/11/Document-Root.png)
 
 Enter your hostname, choose whether you want to use the same logging configuration as an existing site, then click `Create`:
 
-![Create New Virtual Server](/assets/images/2010/11/Create-New-Virtual-Server.png)
+![Create New Virtual Server](/images/2010/11/Create-New-Virtual-Server.png)
 
 Unless you have a simple Cherokee configuration and plan to keep it that way, (which, if you need ISPConfig, is unlikely), you'll want to reconfigure the `Host Match` tab so that your new site matches on wildcards, regular expressions or server IP. For example:
 
-![Host Match Wildcards](/assets/images/2010/11/Host-Match-Wildcards.png)
+![Host Match Wildcards](/images/2010/11/Host-Match-Wildcards.png)
 
 and:
 
-![Add New Wildcard](/assets/images/2010/11/Add-New-Wildcard.png)
+![Add New Wildcard](/images/2010/11/Add-New-Wildcard.png)
 
 Once you're done, click on `SAVE` in the top-right corner, followed by `Graceful restart`:
 
-![Save Configuration Graceful Restart](/assets/images/2010/11/Save-Configuration-Graceful-Restart.png)
+![Save Configuration Graceful Restart](/images/2010/11/Save-Configuration-Graceful-Restart.png)
 
 Ordinarily, you'd expect that you might be finished at this point... but you're not. If you try to visit the site now you will either get `404` (Page Not Found) or `504` (Gateway Timeout) errors.
 
