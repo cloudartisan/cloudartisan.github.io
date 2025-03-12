@@ -115,7 +115,7 @@ To git@api.djangy.com:rightscalefeed.git
 
 Now I can test the project by visiting [http://rightscalefeed.djangy.com](http://rightscalefeed.djangy.com) in my browser:
 
-![Testing rightscalefeed.djangy.com](/assets/images/2010/11/rightscalefeed.djangy.com-testing.png)
+![Testing rightscalefeed.djangy.com](/images/2010/11/rightscalefeed.djangy.com-testing.png)
 
 Awesome! It worked.
 

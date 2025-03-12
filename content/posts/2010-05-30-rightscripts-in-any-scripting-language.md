@@ -65,7 +65,7 @@ Here's an example in Python that has two input parameters, LOG_IDENT and LOG_MES
 
 In RightScale this looks like:
 
-![Screenshot of a Python RightScript](/assets/images/2010/05/Screenshot.png)
+![Screenshot of a Python RightScript](/images/2010/05/Screenshot.png)
 
 ## Simple
 
