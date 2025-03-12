@@ -40,6 +40,22 @@ hugo new content posts/my-new-post.md
 hugo new content projects/project-name.md
 ```
 
+## Maintenance Scripts
+
+The repository includes several maintenance scripts in the `scripts/` directory:
+
+- `fix_backticks.py` - Fixes inline code formatting issues in markdown files
+- `fix_twitter_links.py` - Updates Twitter links from HTTP to HTTPS
+- `fix_links.py` - Template for fixing various broken links
+
+To run a script:
+```
+python3 -m venv venv          # Create virtual environment (first time only)
+source venv/bin/activate      # Activate virtual environment
+pip install pyyaml            # Install dependencies (first time only)
+python3 scripts/script_name.py   # Run the script
+```
+
 ## Building for Production
 
 ```

@@ -11,6 +11,13 @@ Gemfile.lock
 /jsconfig.json
 hugo_stats.json
 
+# Python
+/venv/
+/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 # OS
 .DS_Store
 Thumbs.db
