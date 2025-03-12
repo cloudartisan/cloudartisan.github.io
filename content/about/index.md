@@ -3,6 +3,7 @@ title: "About Me"
 date: 2023-09-09
 draft: false
 description: "About David Taylor"
+showDate: false
 ---
 
 ## Cloud Artisan
