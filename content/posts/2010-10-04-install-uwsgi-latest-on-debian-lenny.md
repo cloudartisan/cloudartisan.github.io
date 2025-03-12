@@ -23,4 +23,4 @@ Do not bother doing a hands-on install from source. It's messy. Just use `pip`:
 
 Simple as that.
 
-You should [follow me on twitter](http://twitter.com/davidltaylor).
+You should [follow me on twitter](https://twitter.com/davidltaylor).

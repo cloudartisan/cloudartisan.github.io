@@ -29,6 +29,6 @@ It's as simple as that. When I visit the address I can see my site is working.  
 
 In this installment I've shown how easy it is to test your Djangy site locally before pushing it out the door. Stay tuned, next time I'll tackle something more meaty: user registration.
 
-[Follow me on Twitter](http://twitter.com/davidltaylor). It's free.
+[Follow me on Twitter](https://twitter.com/davidltaylor). It's free.
 
 Cheers!

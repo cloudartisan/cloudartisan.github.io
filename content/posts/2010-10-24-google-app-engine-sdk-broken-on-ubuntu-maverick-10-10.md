@@ -85,4 +85,4 @@ to:
 
 Simple. Done. Restart your `dev_appserver.py` and everything should work A-OK.
 
-[Follow me on twitter](http://twitter.com/davidltaylor).
+[Follow me on twitter](https://twitter.com/davidltaylor).

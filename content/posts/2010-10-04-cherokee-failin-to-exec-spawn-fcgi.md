@@ -39,4 +39,4 @@ This should do it...
 
 [caption id="attachment_244" align="aligncenter" width="654" caption="Cherokee Error Logging"]![Cherokee Error Logging](/images/2010/10/Cherokee-Error-Logging.png)[/caption]
 
-You should [follow me on twitter](http://twitter.com/davidltaylor).
+You should [follow me on twitter](https://twitter.com/davidltaylor).

@@ -64,4 +64,4 @@ After which, you'll need to stop then start Hudson (note: Hudson doesn't seem to
 
 You should now be able to log in. That's it.
 
-You should [follow me on twitter](http://twitter.com/davidltaylor).
+You should [follow me on twitter](https://twitter.com/davidltaylor).

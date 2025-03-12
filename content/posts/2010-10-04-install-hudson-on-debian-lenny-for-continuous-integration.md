@@ -65,4 +65,4 @@ Lastly, click _Save_.
 
 There you have it, Hudson installed on Debian Lenny with some basic security.
 
-You should [follow me on twitter](http://twitter.com/davidltaylor).
+You should [follow me on twitter](https://twitter.com/davidltaylor).

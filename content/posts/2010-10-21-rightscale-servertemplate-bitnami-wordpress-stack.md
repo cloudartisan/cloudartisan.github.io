@@ -34,4 +34,4 @@ Next, add it to a deployment and fire it up. Once it's running you'll see someth
 
 I've published this as part of RightScale's ServerTemplate Showdown. It's nothing spectacular, but I found it useful and hopefully it will be of some use to someone else. I have a draft version that has some basic support for preparing and installing on an EBS volume, which would add persistence. I haven't released that version yet.
 
-[Follow me on twitter](http://twitter.com/davidltaylor) and if you use it, please let me know, if you have any questions or suggestions, fire away.
+[Follow me on twitter](https://twitter.com/davidltaylor) and if you use it, please let me know, if you have any questions or suggestions, fire away.

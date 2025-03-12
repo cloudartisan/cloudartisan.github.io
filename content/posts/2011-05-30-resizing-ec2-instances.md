@@ -20,4 +20,4 @@ INSTANCE        i-3e15ff51      stopped pending
 
 By the way, these short posts are essentially notes to myself while working (I keep forgetting the syntax!). I've got some Cherokee-related posts in the pipeline, I just need to find some extra spare time at night.
 
-In the meantime, [follow me on Twitter](http://twitter.com/davidltaylor), it's free.
+In the meantime, [follow me on Twitter](https://twitter.com/davidltaylor), it's free.

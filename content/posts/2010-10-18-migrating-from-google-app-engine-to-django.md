@@ -93,4 +93,4 @@ For some, Google App Engine can be considered Django without the irritating serv
 
 If you've got some helpful tidbits for people moving from Google App Engine to Django, let me know, I'll add them to the post.
 
-In the meantime, [follow me on twitter...](http://twitter.com/davidltaylor)
+In the meantime, [follow me on twitter...](https://twitter.com/davidltaylor)

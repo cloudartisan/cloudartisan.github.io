@@ -99,6 +99,6 @@ Rails 3.0.3
 
 _Note: of course, this only applies to your user account. These changes do not apply system-wide and do not affect other users._
 
-[Follow me on twitter](http://twitter.com/davidltaylor). It's free!
+[Follow me on twitter](https://twitter.com/davidltaylor). It's free!
 
 Cheers.

@@ -29,4 +29,4 @@ Once you're done, you should see this:
 
 ![GoogleAppEngineLauncher](/images/2011/08/googleappenginelauncher.png)
 
-[Follow me on Twitter](http://twitter.com/davidltaylor)... it's slimming.
+[Follow me on Twitter](https://twitter.com/davidltaylor)... it's slimming.
