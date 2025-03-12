@@ -19,4 +19,4 @@ easy_install mr.awsome
 
 Simple as that.
 
-[Follow me](http://twitter.com/davidltaylor) on Twitter. If you don't, kittens and fairies will die.
+[Follow me](https://twitter.com/davidltaylor) on Twitter. If you don't, kittens and fairies will die.

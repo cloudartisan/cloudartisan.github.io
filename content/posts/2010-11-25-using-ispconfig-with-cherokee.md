@@ -104,6 +104,6 @@ Try loading the site again. As long as the usual culprits are OK (eg, DNS) ISPCo
 
 _Caveat: these permissions might pose a problem for future upgrades to ISPConfig. Also, it's the easy way out... I became bored and gave up before figuring out exactly what was experiencing permissions problems. If you know, let me know, I'll update the post._
 
-You should [subscribe to my feed](http://www.cloudartisan.com/feed/) and [follow me on twitter](http://twitter.com/davidltaylor).
+You should [subscribe to my feed](http://www.cloudartisan.com/feed/) and [follow me on twitter](https://twitter.com/davidltaylor).
 
 Cheers!

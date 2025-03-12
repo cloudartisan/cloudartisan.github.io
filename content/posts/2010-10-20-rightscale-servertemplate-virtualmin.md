@@ -23,4 +23,4 @@ Once it's running you'll see something like:
 
 I dusted this ServerTemplate off and published it as part of RightScale's ServerTemplate Showdown. There's still a lot more work I could do on it, such as adding support for persistence between boots, support for reboot, backups to S3, etc.
 
-You should [follow me on twitter](http://twitter.com/davidltaylor). If you use it, please let me know. If you have any questions or suggestions, fire away.
+You should [follow me on twitter](https://twitter.com/davidltaylor). If you use it, please let me know. If you have any questions or suggestions, fire away.

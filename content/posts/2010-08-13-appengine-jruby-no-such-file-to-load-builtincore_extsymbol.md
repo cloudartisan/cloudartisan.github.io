@@ -33,4 +33,4 @@ For some more detail, have a look at [this bug report](http://jira.codehaus.org/
 
 My advice to people using `jruby-complete.jar`: you will get an indecipherable exception if you try to run your application under a directory with a space in it... so don't do that.
 
-You should follow me on twitter [here](http://twitter.com/davidltaylor).
+You should follow me on twitter [here](https://twitter.com/davidltaylor).

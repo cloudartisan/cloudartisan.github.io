@@ -57,4 +57,4 @@ After these changes:
   
 We'll find out in round 2...
 
-In the meantime, [follow me on Twitter](http://twitter.com/davidltaylor). It's free. Cheers!
+In the meantime, [follow me on Twitter](https://twitter.com/davidltaylor). It's free. Cheers!

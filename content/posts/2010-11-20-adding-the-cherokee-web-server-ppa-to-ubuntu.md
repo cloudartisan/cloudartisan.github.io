@@ -27,4 +27,4 @@ If you don't already have Cherokee installed and you want to install it I find t
 ```
 
  
-That's it. If you want more simple posts on building lean servers, cloud computing, software development and more, [subscribe to my RSS feed](http://www.cloudartisan.com/feed) and/or [follow me on Twitter](http://twitter.com/davidltaylor). Cheers!
+That's it. If you want more simple posts on building lean servers, cloud computing, software development and more, [subscribe to my RSS feed](http://www.cloudartisan.com/feed) and/or [follow me on Twitter](https://twitter.com/davidltaylor). Cheers!

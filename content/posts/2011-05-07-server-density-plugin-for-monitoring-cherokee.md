@@ -17,4 +17,4 @@ Here are some screenshots...
 
 ![Cherokee Traffic](/images/2011/05/cherokee_traffic.jpg)
 
-[Follow me on Twitter](http://twitter.com/davidltaylor). It's free.
+[Follow me on Twitter](https://twitter.com/davidltaylor). It's free.

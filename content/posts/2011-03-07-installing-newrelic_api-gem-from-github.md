@@ -38,4 +38,4 @@ wintermute:~/Git/newrelic/newrelic_api (master)$
 
 It's as simple as that.
 
-Follow me on [twitter](http://twitter.com/davidltaylor).
+Follow me on [twitter](https://twitter.com/davidltaylor).

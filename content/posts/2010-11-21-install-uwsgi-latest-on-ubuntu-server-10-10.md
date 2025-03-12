@@ -20,4 +20,4 @@ To install the latest uWSGI use `pip` and the URL for the latest version of uWSG
 
 Simple as that.
 
-You should [follow me on Twitter](http://twitter.com/davidltaylor).
+You should [follow me on Twitter](https://twitter.com/davidltaylor).

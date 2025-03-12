@@ -121,6 +121,6 @@ Awesome! It worked.
 
 I haven't done anything interesting with RightScale feeds yet, but I've shown how easy it can be to deploy a simple Django project to Djangy.
 
-Stay tuned to see if I've bitten off more than I can chew. [Follow me on Twitter](http://twitter.com/davidltaylor). It's free!
+Stay tuned to see if I've bitten off more than I can chew. [Follow me on Twitter](https://twitter.com/davidltaylor). It's free!
 
 Cheers!
