@@ -49,6 +49,14 @@ params:
       - twitter
       - linkedin
       - reddit
+      
+  # Hide dates on specific page types
+  pages:
+    showDate: false
+    
+  # Specific settings for projects section
+  list:
+    showDate: false
 
   # Configure the profile mode
   profileMode:
