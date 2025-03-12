@@ -2,6 +2,7 @@
 title: "David Taylor"
 description: "Software Engineer, Cloud Architect & Martial Artist"
 showDate: false
+showReadingTime: false
 ---
 
 ## Cloud Artisan
