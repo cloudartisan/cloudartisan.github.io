@@ -5,6 +5,15 @@ theme: congo
 
 enableRobotsTXT: true
 
+# Allow raw HTML in content
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Suppress warnings
+ignoreLogs: ['warning-goldmark-raw-html']
+
 # Congo theme configuration
 # Following "Getting Started" guide from https://jpanther.github.io/congo/docs/installation/
 module:
