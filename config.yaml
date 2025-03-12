@@ -50,13 +50,15 @@ params:
       - linkedin
       - reddit
       
-  # Hide dates on specific page types
+  # Hide dates and reading time on specific page types
   pages:
     showDate: false
+    showReadingTime: false
     
   # Specific settings for projects section
   list:
     showDate: false
+    showReadingTime: false
 
   # Configure the profile mode
   profileMode:

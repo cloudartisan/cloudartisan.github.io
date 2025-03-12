@@ -4,6 +4,7 @@ date: 2023-09-09
 draft: false
 description: "About David Taylor"
 showDate: false
+showReadingTime: false
 ---
 
 ## Cloud Artisan
