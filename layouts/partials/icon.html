@@ -1,0 +1,15 @@
+{{- if eq . "brand-twitter" -}}
+  {{- $icon := resources.Get (print "icons/x-twitter.svg") -}}
+  {{- if $icon -}}
+    <span class="icon relative inline-block px-1 align-text-bottom">
+      {{- $icon.Content | safeHTML -}}
+    </span>
+  {{- end -}}
+{{- else -}}
+  {{- $icon := resources.Get (print "icons/" . ".svg") -}}
+  {{- if $icon -}}
+    <span class="icon relative inline-block px-1 align-text-bottom">
+      {{- $icon.Content | safeHTML -}}
+    </span>
+  {{- end -}}
+{{- end -}}

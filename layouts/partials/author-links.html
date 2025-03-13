@@ -1,0 +1,23 @@
+{{ with site.Language.Params.Author.links }}
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    {{ range $links := . }}
+      {{ range $name, $url := $links }}
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="{{ $url | safeURL }}"
+          target="_blank"
+          aria-label="{{ $name | title }}"
+          rel="me noopener noreferrer"
+          >
+          {{/* Special case for Twitter -> X */}}
+          {{ if eq $name "twitter" }}
+            {{ partial "icon.html" "x-twitter" }}
+          {{ else }}
+            {{ partial "icon.html" $name }}
+          {{ end }}
+          </a>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

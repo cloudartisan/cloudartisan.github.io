@@ -1,0 +1,20 @@
+{{ $name := .name }}
+{{ $url := .url }}
+{{ $icon := default (printf "brand-%s" .name) .icon }}
+
+<!-- Special case for Twitter -> X -->
+{{ if eq $icon "brand-twitter" }}
+  {{ $icon = "x-twitter" }}
+{{ end }}
+
+<a
+  class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+  style="will-change:transform;"
+  href="{{ $url }}"
+  target="_blank"
+  aria-label="{{ $name | title }}"
+  title="{{ $name | title }}"
+  rel="me noopener noreferrer"
+>
+  {{ partial "icon.html" $icon }}
+</a>

@@ -102,7 +102,7 @@ languages:
         image: images/profile.png
         headline: Cloud Artisan
         links:
-          - twitter: https://x.com/davidltaylor
+          - x-twitter: https://x.com/davidltaylor
           - mastodon: https://fosstodon.org/@cloudartisan
           - github: https://github.com/cloudartisan
           - linkedin: https://www.linkedin.com/in/davidleslietaylor/
