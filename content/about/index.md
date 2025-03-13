@@ -9,8 +9,6 @@ showReadingTime: false
 
 ## Cloud Artisan
 
-![David Taylor](/images/profile.png)
-
 I'm David Taylor, a software engineer and cloud architect with a passion for technology, martial arts, and retro computing.
 
 With over 20 years of experience in the tech industry, I've worked on various projects ranging from cloud infrastructure to software development. This blog serves as a platform to share my knowledge, experiences, and insights.
