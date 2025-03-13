@@ -5,6 +5,7 @@ draft: false
 tags: ["project", "martial arts", "taekwondo", "teaching"]
 showDate: false
 showReadingTime: false
+showBreadcrumbs: false
 ---
 
 {{< title-with-logo 
