@@ -1,0 +1,8 @@
+- id: tweet
+  translation: "Share on X"
+
+- id: linkedin_share
+  translation: "Share on LinkedIn"  
+  
+- id: reddit
+  translation: "Share on Reddit"
