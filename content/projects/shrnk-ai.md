@@ -5,6 +5,7 @@ draft: false
 tags: ["project", "AI", "URL shortener"]
 showDate: false
 showReadingTime: false
+showBreadcrumbs: false
 ---
 
 # Shrnk.ai
