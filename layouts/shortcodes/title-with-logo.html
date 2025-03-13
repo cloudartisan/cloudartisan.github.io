@@ -1,0 +1,52 @@
+<div class="title-with-logo">
+  <div class="logo-container">
+    <img src="{{ .Get "logo" }}" alt="{{ .Get "alt" | default "Logo" }}" class="logo-image" />
+  </div>
+  <div class="title-container">
+    <h1 class="title">{{ .Get "title" }}</h1>
+  </div>
+</div>
+
+<style>
+  .title-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo-container {
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-image {
+    max-height: 80px;
+    width: auto;
+    vertical-align: middle;
+  }
+  
+  .title-container {
+    flex-grow: 1;
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  @media (max-width: 640px) {
+    .title-with-logo {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .logo-image {
+      max-height: 80px;
+    }
+  }
+</style>

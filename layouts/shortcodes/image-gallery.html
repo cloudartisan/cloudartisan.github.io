@@ -1,0 +1,42 @@
+<div class="image-gallery">
+  {{ range .Params }}
+    <div class="gallery-item">
+      <img src="{{ . }}" alt="Gallery Image" />
+    </div>
+  {{ end }}
+</div>
+
+<style>
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .gallery-item {
+    flex: 1 0 300px;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-item {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  }
+</style>
