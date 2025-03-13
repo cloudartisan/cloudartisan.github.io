@@ -7,15 +7,23 @@ showDate: false
 showReadingTime: false
 ---
 
-# Blue Mountains Taekwondo
-
-![Blue Mountains Taekwondo](https://bluemountainstaekwondo.com)
+{{< title-with-logo 
+    logo="/images/projects/blue-mountains-taekwondo/logo_small.png" 
+    title="Blue Mountains Taekwondo"
+    alt="Blue Mountains Taekwondo Logo" 
+>}}
 
 A martial arts school based in Blaxland, NSW, Australia, dedicated to teaching traditional Taekwondo while incorporating modern training methods.
 
+{{< image-gallery 
+    "/images/projects/blue-mountains-taekwondo/training.svg"
+    "/images/projects/blue-mountains-taekwondo/students.svg" 
+    "/images/projects/blue-mountains-taekwondo/competition.svg" 
+>}}
+
 ## About
 
-Founded in 2013 on the principles of discipline, perseverance, and self-improvement, Blue Mountains Taekwondo provides high-quality instruction for all ages and experience levels.
+Founded in 2013 on the principles of discipline, perseverance, and self-improvement, Blue Mountains Taekwondo provides high-quality martial arts instruction for all ages and experience levels.
 
 ## Programs
 
