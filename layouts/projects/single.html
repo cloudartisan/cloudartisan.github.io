@@ -1,6 +1,9 @@
 {{ define "main" }}
   <article>
-    <div class="prose mt-0 max-w-full dark:prose-invert">
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default true) }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <div class="prose mt-4 max-w-full dark:prose-invert">
       {{ .Content | emojify }}
     </div>
   </article>
