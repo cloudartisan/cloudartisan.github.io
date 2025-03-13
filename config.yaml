@@ -98,7 +98,7 @@ languages:
     params:
       author:
         name: David Taylor
-        image: images/profile_cropped.png
+        image: images/profile.png
         headline: Software Engineer, Cloud Architect & Martial Artist
 
 menu:
