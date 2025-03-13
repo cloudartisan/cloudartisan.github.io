@@ -5,10 +5,10 @@ showDate: false
 showReadingTime: false
 ---
 
+{{< figure src="/images/profile.png" alt="David Taylor" class="rounded-full mx-auto" width="200px" height="200px" >}}
+
+# Cloud Artisan
+
 {{<lead>}}
 Software Engineer, Cloud Architect & Martial Artist
 {{</lead>}}
-
-Welcome to my personal website. I'm a software engineer and cloud architect with a passion for technology, martial arts, and retro computing.
-
-I write about my experiences, share knowledge, and showcase my projects here. Feel free to browse around and connect with me on social media.
