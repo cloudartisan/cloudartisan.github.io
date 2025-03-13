@@ -100,6 +100,11 @@ languages:
         name: David Taylor
         image: images/profile.png
         headline: Cloud Artisan
+        links:
+          - twitter: https://twitter.com/davidltaylor
+          - mastodon: https://fosstodon.org/@cloudartisan
+          - github: https://github.com/cloudartisan
+          - linkedin: https://www.linkedin.com/in/davidleslietaylor/
 
 menu:
   main:
