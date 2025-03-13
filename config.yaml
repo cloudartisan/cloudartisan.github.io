@@ -61,10 +61,6 @@ params:
   list:
     showDate: false
     showReadingTime: false
-    
-  # Settings for single project pages
-  projects:
-    showBreadcrumbs: false
 
   # Configure the profile mode
   profileMode:
