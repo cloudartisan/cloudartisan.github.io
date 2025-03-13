@@ -1,0 +1,150 @@
+{{ define "main" }}
+  <article>
+    <header>
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title | emojify }}
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
+      </div>
+      {{ with .Params.description }}
+        <div class="mb-6 text-lg italic text-neutral-500 dark:text-neutral-400">
+          {{ . | markdownify | emojify }}
+        </div>
+      {{ end }}
+      {{ if .Params.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false) }}
+        <div class="flex flex-row flex-wrap items-center">
+          {{ range $taxonomy, $terms := .Site.Taxonomies }}
+            {{ if (gt (len ($terms.ByCount)) 0) }}
+              {{ range $key, $value := $.Params }}
+                {{ if eq $key $taxonomy }}
+                  {{ $taxonomy := $taxonomy | urlize }}
+                  {{ $value := $value | urlize }}
+                  <div class="mb-4 mr-4 flex flex-row text-sm">
+                    <span
+                      class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-400 mr-[5px] rounded px-1 py-[1px] font-bold"
+                    >
+                      {{ $taxonomy | i18n (printf "term_%s" $taxonomy) }}
+                    </span>
+                    <div class="flex flex-row flex-wrap">
+                      {{ range $i, $value := $.Params.tags }}
+                        <a
+                          class="hover:text-primary-700 dark:hover:text-primary-400 capitalize mr-[5px] text-neutral-500 dark:text-neutral-400"
+                          href="{{ "/" | absLangURL }}{{ $taxonomy }}/{{ $value | urlize }}/"
+                        >
+                          {{ . }}
+                          {{ if and $i (eq $key $taxonomy) }}
+                            {{ if gt (len $.Params.tags) (add $i 2) }}
+                              , 
+                            {{ end }}
+                          {{ end }}
+                          {{ if and (eq $i (sub (len $.Params.tags) 2)) (eq $key $taxonomy) }}
+                            {{ i18n "and" }}
+                          {{ end }}
+                        </a>
+                      {{ end }}
+                    </div>
+                  </div>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ if and (.Params.showHero | default (.Site.Params.article.showHero | default false)) (not (eq .Params.heroStyle "basic")) }}
+        {{ $heroStyle := .Params.heroStyle | default .Site.Params.article.heroStyle }}
+        {{ $context := . }}
+        {{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
+        {{ with .Params.heroImage }}
+          <div
+            class="max-w-full mx-auto overflow-hidden lg:min-w-[850px] {{ if eq $heroStyle "big" }}min-h-[35vh] h-auto {{ end }}{{ if or (eq $heroStyle "background") (eq $heroStyle "thumb") }}max-h-[45vh] {{ end }} mb-4 rounded-md"
+          >
+            {{- $imageResource := "" -}}
+            {{ if reflect.IsMap . }}
+              {{- with .src -}}
+                {{- $imageResource = (partial "functions/get-image.html" (dict "context" $context "src" . "disableImageOptimization" $disableImageOptimization)) -}}
+                {{ with $imageResource }}
+                  {{ with . }}
+                    <img
+                      class="{{ if eq $heroStyle "thumb" }} rounded-lg object-cover sm:h-36 md:h-60 {{ else }} object-cover w-full {{ end }}{{ if eq $heroStyle "feature" }}h-auto {{ end }}"
+                      {{ if eq $heroStyle "basic" }}
+                        width="{{ .Width }}"
+                        height="{{ .Height }}"
+                      {{ end }}
+                      {{ if eq $heroStyle "big" }}
+                        width="{{ .Width }}"
+                        height="{{ .Height }}"
+                      {{ end }}
+                      src="{{ .Permalink }}"
+                      {{- with $.Params.heroImage.alt -}}alt="{{ . }}" {{- else -}}alt="Featured image" {{- end -}}
+                    />
+                  {{ end }}
+                {{ end }}
+              {{- end -}}
+            {{ else }}
+              {{- $imageResource = (partial "functions/get-image.html" (dict "context" $context "src" . "disableImageOptimization" $disableImageOptimization)) -}}
+              {{ with $imageResource }}
+                {{ with . }}
+                  <img
+                    class="{{ if eq $heroStyle "thumb" }} rounded-lg object-cover sm:h-36 md:h-60 {{ else }} object-cover w-full {{ end }}{{ if eq $heroStyle "feature" }}h-auto {{ end }}"
+                    {{ if eq $heroStyle "basic" }}
+                      width="{{ .Width }}"
+                      height="{{ .Height }}"
+                    {{ end }}
+                    {{ if eq $heroStyle "big" }}
+                      width="{{ .Width }}"
+                      height="{{ .Height }}"
+                    {{ end }}
+                    src="{{ .Permalink }}"
+                    alt="Featured image"
+                  />
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+      {{ end }}
+    </header>
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      {{ if or (or .Params.enableToc (and .Site.Params.article.enableToc (ne .Params.enableToc false))) (and .IsTranslated .Site.Params.article.showLanguageSelector) }}
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc me-auto lg:sticky lg:top-10">
+            {{ if and .IsTranslated .Site.Params.article.showLanguageSelector }}
+              {{ partial "translations.html" . }}
+            {{ end }}
+            {{ if or .Params.enableToc (and .Site.Params.article.enableToc (ne .Params.enableToc false)) }}
+              {{ partial "toc.html" . }}
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+      <div class="min-w-0 min-h-0 max-w-prose">
+        {{ partial "translations.html" . }}
+        <div class="prose">
+          {{ .Content | emojify }}
+        </div>
+        {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+          {{ if templates.Exists "partials/comments.html" }}
+            <div class="pt-3">
+              {{ partial "comments.html" . }}
+            </div>
+          {{ else }}
+            {{ warnf "[CONGO] Comments are enabled for %s but no comments partial exists." .File.Path }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </section>
+    <footer class="pt-8 max-w-prose print:hidden">
+      {{ partial "article-pagination.html" . }}
+      {{ if .Site.Params.article.showEdit }}
+        {{ partial "article-edit.html" . }}
+      {{ end }}
+    </footer>
+    <div class="pt-8">
+      {{ partial "sharing-links.html" . }}
+    </div>
+  </article>
+{{ end }}
