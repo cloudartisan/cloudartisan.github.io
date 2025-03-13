@@ -5,8 +5,6 @@ draft: false
 tags: ["project", "AI", "URL shortener"]
 ---
 
-# Shrnk.ai
-
 A modern URL shortening service with AI-powered features.
 
 ## Features
