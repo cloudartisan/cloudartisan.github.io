@@ -1,10 +1,10 @@
 ---
-title: "David Taylor"
-description: "Personal Website of David Taylor"
+title: "Personal Website of David Taylor"
+description: "Software Engineer, Cloud Architect & Martial Artist"
 showDate: false
 showReadingTime: false
 ---
 
 {{<lead>}}
-Cloud Artisan
+Software Engineer, Cloud Architect & Martial Artist
 {{</lead>}}
