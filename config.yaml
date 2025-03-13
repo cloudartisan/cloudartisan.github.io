@@ -61,6 +61,7 @@ params:
   list:
     showDate: false
     showReadingTime: false
+    groupByYear: false
 
   # Configure the profile mode
   profileMode:

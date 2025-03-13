@@ -1,10 +1,16 @@
 ---
 title: "Projects"
-description: "My professional and personal projects"
+description: "Things I've released into the world"
 cascade:
   showDate: false
   showReadingTime: false
   showBreadcrumbs: false
+  showDateInList: false
+  groupByYear: false
 ---
 
-A collection of professional and personal projects I've worked on or am currently developing.
+{{< lead >}}
+Things I've released into the world
+{{< /lead >}}
+
+{{< projects-footer >}}

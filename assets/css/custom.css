@@ -9,3 +9,14 @@ code {
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
+
+/* Projects page footer link styling */
+.project-section .github-link {
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(160, 174, 192, 0.2);
+  color: var(--neutral-600);
+  font-size: 0.9rem;
+}
