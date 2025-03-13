@@ -1,11 +1,13 @@
 ---
 title: "David Taylor"
-description: "Software Engineer, Cloud Architect & Martial Artist"
+description: "Personal Website of David Taylor"
 showDate: false
 showReadingTime: false
 ---
 
-## Cloud Artisan
+{{<lead>}}
+Software Engineer, Cloud Architect & Martial Artist
+{{</lead>}}
 
 Welcome to my personal website. I'm a software engineer and cloud architect with a passion for technology, martial arts, and retro computing.
 

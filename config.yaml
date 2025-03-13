@@ -10,6 +10,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    noClasses: false
 
 # Suppress warnings
 ignoreLogs: ['warning-goldmark-raw-html']
@@ -25,7 +27,7 @@ params:
   description: "Cloud Computing, Retro Computing, Software Development, Martial Arts"
   copyright: "&copy; David Taylor 2010-{year}"
   
-  colorScheme: auto
+  colorScheme: ocean
   defaultAppearance: light
   autoSwitchAppearance: true
   
@@ -64,8 +66,8 @@ params:
   profileMode:
     enabled: true
     title: David Taylor
-    subtitle: Software Engineer, Cloud Architect & Martial Artist
-    imageUrl: "/images/profile.jpg"
+    subtitle: "Cloud Artisan"
+    imageUrl: "/images/profile.png"
     imageTitle: David Taylor
 
   footer:
