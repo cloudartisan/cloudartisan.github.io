@@ -7,6 +7,7 @@ cascade:
   showBreadcrumbs: false
   showDateInList: false
   groupByYear: false
+  showTitle: false
 ---
 
 {{< lead >}}
