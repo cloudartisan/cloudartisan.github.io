@@ -4,7 +4,7 @@ description: "Things I've released into the world"
 cascade:
   showDate: false
   showReadingTime: false
-  showBreadcrumbs: false
+  showBreadcrumbs: true
   showDateInList: false
   groupByYear: false
   showTitle: false
