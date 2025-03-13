@@ -103,18 +103,12 @@ languages:
 
 menu:
   main:
-    - name: Home
-      url: /
-      weight: 10
     - name: Posts
       url: /posts/
-      weight: 20
+      weight: 10
     - name: Projects
       url: /projects/
-      weight: 30
+      weight: 20
     - name: About
       url: /about/
-      weight: 40
-    - name: Tags
-      url: /tags/
-      weight: 50
+      weight: 30
