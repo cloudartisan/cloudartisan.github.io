@@ -31,11 +31,6 @@ params:
   defaultAppearance: light
   autoSwitchAppearance: true
   
-  author:
-    name: David Taylor
-    image: images/profile.png
-    headline: Software Engineer, Cloud Architect & Martial Artist
-  
   # Custom CSS
   customCSS:
     - assets/css/custom.css
@@ -95,6 +90,16 @@ params:
     - name: LinkedIn
       url: https://www.linkedin.com/in/davidleslietaylor/
       icon: brand-linkedin
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+    params:
+      author:
+        name: David Taylor
+        image: images/profile.png
+        headline: Software Engineer, Cloud Architect & Martial Artist
 
 menu:
   main:
