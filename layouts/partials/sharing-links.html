@@ -1,0 +1,137 @@
+{{ $config := site.Params.sharing }}
+{{ if .Params.showSharingLinks | default site.Params.article.showSharingLinks | default false }}
+<div class="flex flex-row flex-wrap items-center">
+  {{ range $key, $value := site.Params.article.sharingLinks }}
+    {{ if eq $value "twitter" }}
+      <div class="my-2 mr-2">
+        <a
+          href="https://x.com/intent/tweet?text={{ .Title | plainify }}&url={{ .Permalink }}"
+          target="_blank"
+          title="{{ i18n "tweet" }}"
+          aria-label="{{ i18n "tweet" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ with site.Params.sharing.mastodonLink }}
+            <a rel="me" href="{{ . }}"></a>
+          {{ end }}
+          {{ partial "icon.html" "x-twitter" }}
+          <span class="ml-1.5">{{ i18n "tweet" }}</span>
+        </a>
+      </div>
+    {{ else if eq $value "linkedin" }}
+      <div class="my-2 mr-2">
+        <a
+          href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"
+          target="_blank"
+          title="{{ i18n "linkedin_share" }}"
+          aria-label="{{ i18n "linkedin_share" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ partial "icon.html" "linkedin" }}
+          <span class="ml-1.5">{{ i18n "linkedin_share" }}</span>
+        </a>
+      </div>
+    {{ else if eq $value "email" }}
+      <div class="my-2 mr-2">
+        <a
+          href="mailto:?subject={{ .Title | plainify }}&body={{ .Permalink }}"
+          target="_blank"
+          title="{{ i18n "email" }}"
+          aria-label="{{ i18n "email" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ partial "icon.html" "email" }}
+          <span class="ml-1.5">{{ i18n "email" }}</span>
+        </a>
+      </div>
+    {{ else if eq $value "facebook" }}
+      <div class="my-2 mr-2">
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+          target="_blank"
+          title="{{ i18n "facebook" }}"
+          aria-label="{{ i18n "facebook" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ partial "icon.html" "facebook" }}
+          <span class="ml-1.5">{{ i18n "facebook" }}</span>
+        </a>
+      </div>
+    {{ else if eq $value "mastodon" }}
+      <div class="my-2 mr-2">
+        <a
+          href="https://toot?text={{ .Title | plainify }}%0A{{ .Permalink }}"
+          target="_blank"
+          title="{{ i18n "mastodon" }}"
+          aria-label="{{ i18n "mastodon" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ partial "icon.html" "mastodon" }}
+          <span class="ml-1.5">{{ i18n "mastodon" }}</span>
+        </a>
+      </div>
+    {{ else if eq $value "threads" }}
+      <div class="my-2 mr-2">
+        <a
+          href="https://threads.net/intent/post?text={{ .Title | plainify }}%20{{ .Permalink | plainify }}"
+          target="_blank"
+          title="{{ i18n "threads" }}"
+          aria-label="{{ i18n "threads" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ partial "icon.html" "threads" }}
+          <span class="ml-1.5">{{ i18n "threads" }}</span>
+        </a>
+      </div>
+    {{ else if eq $value "whatsapp" }}
+      <div class="my-2 mr-2">
+        <a
+          href="https://wa.me/?text={{ .Title | plainify }}%20{{ .Permalink | plainify }}"
+          target="_blank"
+          title="{{ i18n "whatsapp" }}"
+          aria-label="{{ i18n "whatsapp" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ partial "icon.html" "whatsapp" }}
+          <span class="ml-1.5">{{ i18n "whatsapp" }}</span>
+        </a>
+      </div>
+    {{ else if eq $value "pinterest" }}
+      <div class="my-2 mr-2">
+        <a
+          href="https://pinterest.com/pin/create/button?url={{ .Permalink }}&description={{ .Title | plainify }}"
+          target="_blank"
+          title="{{ i18n "pinterest" }}"
+          aria-label="{{ i18n "pinterest" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ partial "icon.html" "pinterest" }}
+          <span class="ml-1.5">{{ i18n "pinterest" }}</span>
+        </a>
+      </div>
+    {{ else if eq $value "reddit" }}
+      <div class="my-2 mr-2">
+        <a
+          href="https://reddit.com/submit?url={{ .Permalink }}&title={{ .Title | plainify }}"
+          target="_blank"
+          title="{{ i18n "reddit" }}"
+          aria-label="{{ i18n "reddit" }}"
+          class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium leading-4 text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-600"
+          rel="noopener"
+        >
+          {{ partial "icon.html" "reddit" }}
+          <span class="ml-1.5">{{ i18n "reddit" }}</span>
+        </a>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

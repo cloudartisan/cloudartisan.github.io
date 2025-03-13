@@ -80,7 +80,7 @@ params:
   social:
     - name: X (Twitter)
       url: https://x.com/davidltaylor
-      icon: brand-twitter
+      icon: x-twitter
     - name: Mastodon
       url: https://fosstodon.org/@cloudartisan
       rel: me noopener
