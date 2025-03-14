@@ -3,6 +3,8 @@ title: "Shrnk.ai"
 date: 2025-03-12
 draft: false
 tags: ["project", "AI", "URL shortener"]
+thumbnail: "thumbnail.svg"
+summary: "A modern URL shortening service with AI-powered features for link management."
 ---
 
 A modern URL shortening service with AI-powered features.

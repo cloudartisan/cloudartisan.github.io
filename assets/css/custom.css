@@ -10,13 +10,9 @@ code {
   border-radius: 3px;
 }
 
-/* Projects page footer link styling */
-.project-section .github-link {
-  display: block;
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(160, 174, 192, 0.2);
-  color: var(--neutral-600);
-  font-size: 0.9rem;
+/* Smaller project thumbnails */
+.list article img {
+  max-width: 60px !important;
+  max-height: 60px !important;
+  width: 60px !important;
 }

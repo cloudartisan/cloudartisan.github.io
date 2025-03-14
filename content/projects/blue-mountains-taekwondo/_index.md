@@ -3,9 +3,9 @@ title: "Blue Mountains Taekwondo"
 date: 2025-03-13
 draft: false
 tags: ["project", "martial arts", "taekwondo", "teaching"]
+thumbnail: "thumbnail.png"
+summary: "A martial arts school teaching traditional Taekwondo in the Blue Mountains, NSW."
 ---
-
-![Blue Mountains Taekwondo](/images/projects/blue-mountains-taekwondo/logo_small.png)
 
 A martial arts school based in Blaxland, NSW, Australia, dedicated to teaching traditional Taekwondo while incorporating modern training methods.
 

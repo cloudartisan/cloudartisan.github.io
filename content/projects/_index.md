@@ -5,13 +5,13 @@ cascade:
   showDate: false
   showReadingTime: false
   showBreadcrumbs: true
+  showSummary: true
   showDateInList: false
   groupByYear: false
-  showTitle: false
 ---
 
 {{< lead >}}
 Things I've released into the world
 {{< /lead >}}
 
-{{< projects-footer >}}
+See more projects I'm working on at [GitHub →](https://github.com/cloudartisan)
