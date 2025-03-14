@@ -1,7 +1,6 @@
 baseURL: https://cloudartisan.com/
 languageCode: en-us
 title: Cloud Artisan
-theme: congo
 
 enableRobotsTXT: true
 
@@ -39,6 +38,7 @@ ignoreLogs: ['warning-goldmark-raw-html']
 module:
   imports:
     - path: github.com/jpanther/congo/v2
+      disable: false
 
 # Theme-specific configuration
 params:
