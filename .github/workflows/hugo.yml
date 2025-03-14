@@ -52,4 +52,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages  # deploying to gh-pages branch
-          cname: cloudartisan.com   # if you have a custom domain
+          # Remove the CNAME setting until custom domain is properly configured
+          # cname: cloudartisan.com
