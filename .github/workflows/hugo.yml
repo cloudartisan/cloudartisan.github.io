@@ -26,8 +26,21 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Debug Environment
+        run: |
+          echo "Current directory structure:"
+          ls -la
+          echo "Hugo configuration:"
+          cat config.yaml
+          echo "Hugo module configuration:"
+          hugo mod graph || echo "Hugo mod graph failed"
+          echo "Go mod configuration:"
+          cat go.mod || echo "No go.mod file found"
+
       - name: Setup Hugo Modules
-        run: hugo mod get -u
+        run: |
+          hugo mod tidy
+          hugo mod get -u github.com/jpanther/congo/v2
 
       - name: Build
         run: hugo --minify
