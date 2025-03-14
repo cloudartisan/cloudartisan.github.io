@@ -68,7 +68,7 @@ This will generate the static site in the `public` directory.
 
 The site is automatically deployed to GitHub Pages using GitHub Actions when changes are pushed to the main branch. The workflow:
 
-1. Builds the Hugo site
+1. Builds the Hugo site using Hugo modules
 2. Deploys the generated files to the gh-pages branch
 3. GitHub Pages then serves the content from the gh-pages branch
 
@@ -77,6 +77,8 @@ To configure GitHub Pages:
 2. Set the source to "Deploy from a branch"
 3. Select the "gh-pages" branch and "/" (root) folder
 4. Save the settings
+
+Note: The site uses two workflows - "Deploy Hugo site" builds the site, and "pages-build-deployment" handles the GitHub Pages publishing.
 
 ## License
 
