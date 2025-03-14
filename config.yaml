@@ -5,6 +5,24 @@ theme: congo
 
 enableRobotsTXT: true
 
+# RSS configuration
+outputFormats:
+  RSS:
+    mediatype: "application/rss+xml"
+    baseName: "feed"  # Changes default filename from index.xml to feed.xml
+
+# Output formats for specific page types
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+
 # Allow raw HTML in content
 markup:
   goldmark:
@@ -78,19 +96,22 @@ params:
     showScrollToTop: true
 
   social:
-    - name: X (Twitter)
-      url: https://x.com/davidltaylor
-      icon: x-twitter
+    - name: GitHub
+      url: https://github.com/cloudartisan
+      icon: brand-github
     - name: Mastodon
       url: https://fosstodon.org/@cloudartisan
       rel: me noopener
       icon: brand-mastodon
-    - name: GitHub
-      url: https://github.com/cloudartisan
-      icon: brand-github
+    - name: X (Twitter)
+      url: https://x.com/davidltaylor
+      icon: x-twitter
     - name: LinkedIn
       url: https://www.linkedin.com/in/davidleslietaylor/
       icon: brand-linkedin
+    - name: RSS
+      url: /feed.xml
+      icon: rss-simple
 
 languages:
   en:
@@ -102,10 +123,11 @@ languages:
         image: images/profile.png
         headline: Cloud Artisan
         links:
-          - x-twitter: https://x.com/davidltaylor
-          - mastodon: https://fosstodon.org/@cloudartisan
           - github: https://github.com/cloudartisan
+          - mastodon: https://fosstodon.org/@cloudartisan
+          - x-twitter: https://x.com/davidltaylor
           - linkedin: https://www.linkedin.com/in/davidleslietaylor/
+          - rss-simple: /feed.xml
 
 menu:
   main:
