@@ -12,14 +12,14 @@ Old School TKD is a digital resource dedicated to preserving and sharing traditi
 ## Features
 
 - Comprehensive form/pattern tutorials
-- Traditional self-defense applications (bunkai)
+- Traditional self-defence applications
 - Training methodologies and drills
 - Historical context and development of Taekwondo
 - Reference guides for terminology and techniques
 
 ## Status
 
-Currently developing content and building the technical infrastructure. Initial content focusing on Palgwe forms and traditional Korean martial arts training approaches.
+Currently developing content and building the technical infrastructure. Initial content focusing on traditional Korean martial arts training approaches.
 
 ## Visit
 
