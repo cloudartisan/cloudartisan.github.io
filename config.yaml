@@ -89,6 +89,11 @@ params:
     imageUrl: "/images/profile.png"
     imageTitle: David Taylor
 
+  # Google Analytics configuration (using Google Analytics 4)
+  analytics:
+    google:
+      id: G-KXNWL3SH38
+    
   footer:
     showCopyright: true
     showThemeAttribution: true
