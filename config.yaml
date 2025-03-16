@@ -2,6 +2,9 @@ baseURL: https://cloudartisan.github.io/
 languageCode: en-us
 title: Cloud Artisan
 
+# Google Analytics 4 - must be at root level of config
+googleAnalytics: G-KXNWL3SH38
+
 enableRobotsTXT: true
 
 # RSS configuration
@@ -89,11 +92,6 @@ params:
     imageUrl: "/images/profile.png"
     imageTitle: David Taylor
 
-  # Google Analytics configuration (using Google Analytics 4)
-  analytics:
-    google:
-      id: G-KXNWL3SH38
-    
   footer:
     showCopyright: true
     showThemeAttribution: true
