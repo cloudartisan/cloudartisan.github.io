@@ -5,7 +5,7 @@ title: Cloud Artisan
 # Google Analytics configuration (proper Congo/Hugo way)
 services:
   googleAnalytics:
-    id: G-KXNWL3SH38
+    id: G-QSQSFQWPEH
 
 enableRobotsTXT: true
 
