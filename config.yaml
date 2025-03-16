@@ -2,8 +2,10 @@ baseURL: https://cloudartisan.github.io/
 languageCode: en-us
 title: Cloud Artisan
 
-# Google Analytics 4 - must be at root level of config
-googleAnalytics: G-KXNWL3SH38
+# Google Analytics configuration (proper Congo/Hugo way)
+services:
+  googleAnalytics:
+    id: G-KXNWL3SH38
 
 enableRobotsTXT: true
 
