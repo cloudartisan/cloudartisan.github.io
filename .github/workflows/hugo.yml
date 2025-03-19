@@ -45,6 +45,13 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Copy CNAME file
+        run: |
+          if [ -f "CNAME" ]; then
+            echo "Copying CNAME file to publish directory..."
+            cp CNAME public/
+          fi
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
@@ -52,5 +59,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages  # deploying to gh-pages branch
-          # Remove the CNAME setting until custom domain is properly configured
-          # cname: cloudartisan.com
+          cname: cloudartisan.com   # Explicit CNAME setting for custom domain
