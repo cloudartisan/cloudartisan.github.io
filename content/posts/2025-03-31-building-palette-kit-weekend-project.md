@@ -11,7 +11,7 @@ So I built [Palette Kit](https://palettekit.com) over the weekend. The whole thi
 
 ## The Spark
 
-It began with a phone call with my sister. She runs [My Colourful Country Life](https://www.mycolourfulcountrylife.com/), a site for adult colouring enthusiasts. During our chat, I had this "aha" moment about how coloured pencil artists struggle to find the right colour combinations.
+It began with a phone call with my sister. She runs [My Colourful Country Life](https://www.mycolourfulcountrylife.com/), a site for adult colouring enthusiasts. As my sister explained the value of her PDFs for artists, I realised it'd translate VERY well into an application with search and other features.
 
 My sister spends ages testing different pencil combinations for her artwork. There are tons of brands and colours out there, and finding good combinations for blending and creating depth is a real pain. I figured there had to be a better way.
 
