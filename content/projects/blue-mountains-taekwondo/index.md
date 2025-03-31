@@ -9,7 +9,7 @@ summary: "A martial arts school teaching traditional Taekwondo in the Blue Mount
 
 A martial arts school based in Blaxland, NSW, Australia, dedicated to teaching traditional Taekwondo while incorporating modern training methods.
 
-![Roundhouse kick instruction in class](class-roundhouse-kick-optimized.jpg)
+![Roundhouse kick instruction in class](class-roundhouse-kick-trimmed2-optimised.jpg)
 
 ## About
 
@@ -27,16 +27,13 @@ Whether students are looking to develop confidence, improve fitness, or compete 
 
 ## Training Techniques
 
-Training at Blue Mountains Taekwondo includes a balance of traditional techniques, practical self-defense applications, and sport-focused training.
+Training at Blue Mountains Taekwondo includes a balance of traditional techniques, practical self-defence applications, and sport-focused training.
 
-![Roundhouse kick demonstration](roundhouse-kick-optimized.jpg)
+![Roundhouse kick demonstration](roundhouse-kick-optimised.jpg)
 
 ## Visit
 
-Website: [bluemountainstaekwondo.com](https://bluemountainstaekwondo.com)
-
-### Social Media
-
+- [Website](https://bluemountainstaekwondo.com)
 - [Facebook](https://www.facebook.com/BlueMountainsTaekwondo)
-- [YouTube](https://www.youtube.com/@BlueMountainsTKD)
 - [Instagram](https://www.instagram.com/bluemountainstkd)
+- [YouTube](https://www.youtube.com/@BlueMountainsTKD)
