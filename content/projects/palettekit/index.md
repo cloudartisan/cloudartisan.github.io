@@ -1,6 +1,6 @@
 ---
 title: "Palette Kit"
-date: 2025-03-30
+weight: 20
 draft: false
 tags: ["project", "art", "coloured pencils", "tools", "colour matching"]
 thumbnail: "thumbnail.png"
