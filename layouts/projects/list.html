@@ -38,7 +38,7 @@
           {{ end }}
         {{ end }}
       {{ else }}
-        {{ range (.Paginate .Pages).Pages }}
+        {{ range (.Paginate (.Pages.ByWeight)).Pages }}
           {{ partial "article-link-project.html" . }}
         {{ end }}
       {{ end }}

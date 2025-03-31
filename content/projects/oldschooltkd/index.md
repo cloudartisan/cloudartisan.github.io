@@ -1,6 +1,6 @@
 ---
 title: "Old School TKD"
-date: 2025-03-27
+weight: 50
 draft: false
 tags: ["project", "martial arts", "taekwondo", "education"]
 thumbnail: "thumbnail.svg"
