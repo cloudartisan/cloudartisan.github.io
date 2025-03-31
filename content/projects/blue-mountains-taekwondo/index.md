@@ -27,12 +27,7 @@ Whether students are looking to develop confidence, improve fitness, or compete 
 
 ## Training Techniques
 
-Training at Blue Mountains Taekwondo includes a balance of traditional techniques, practical self-defense applications, and sport-focused training. Students learn essential Taekwondo techniques including:
-
-- **Dollyo Chagi** (Roundhouse Kick) - A powerful circular kick targeting the opponent's mid-section
-- **Ap Chagi** (Front Kick) - A direct, straight-line kick for stopping advancing opponents
-- **Yop Chagi** (Side Kick) - A devastating kick using the edge of the foot as the striking surface
-- **Poomsae** (Forms) - Pre-arranged patterns of movements for developing proper technique and focus
+Training at Blue Mountains Taekwondo includes a balance of traditional techniques, practical self-defense applications, and sport-focused training.
 
 ## Visit
 
