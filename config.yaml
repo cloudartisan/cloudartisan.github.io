@@ -112,7 +112,7 @@ params:
       url: https://x.com/davidltaylor
       icon: x-twitter
     - name: LinkedIn
-      url: https://www.linkedin.com/in/davidleslietaylor/
+      url: https://www.linkedin.com/in/cloudartisan/
       icon: brand-linkedin
     - name: RSS
       url: /feed.xml
@@ -131,7 +131,7 @@ languages:
           - github: https://github.com/cloudartisan
           - mastodon: https://fosstodon.org/@cloudartisan
           - x-twitter: https://x.com/davidltaylor
-          - linkedin: https://www.linkedin.com/in/davidleslietaylor/
+          - linkedin: https://www.linkedin.com/in/cloudartisan/
           - rss-simple: /feed.xml
 
 menu:
