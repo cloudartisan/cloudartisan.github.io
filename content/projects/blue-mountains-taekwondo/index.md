@@ -1,6 +1,6 @@
 ---
 title: "Blue Mountains Taekwondo"
-date: 2025-03-13
+date: 2025-03-31
 draft: false
 tags: ["project", "martial arts", "taekwondo", "teaching"]
 thumbnail: "thumbnail.png"

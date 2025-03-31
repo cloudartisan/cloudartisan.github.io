@@ -1,6 +1,6 @@
 ---
 title: "RunMyDojo"
-date: 2025-03-15
+date: 2025-03-28
 draft: false
 tags: ["project", "martial arts", "software", "management"]
 thumbnail: "thumbnail.svg"

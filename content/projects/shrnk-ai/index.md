@@ -1,6 +1,6 @@
 ---
 title: "Shrnk.ai"
-date: 2025-03-12
+date: 2025-03-29
 draft: false
 tags: ["project", "AI", "URL shortener"]
 thumbnail: "thumbnail.svg"
