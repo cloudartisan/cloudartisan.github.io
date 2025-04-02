@@ -1,6 +1,6 @@
 ---
 title: "The Turing Option: A Prophetic Vision of Modern AI"
-date: 2023-04-02
+date: 2025-04-02
 draft: false
 description: "Exploring how a 33-year-old sci-fi novel by Marvin Minsky and Harry Harrison eerily predicted today's AI landscape, from LLMs to agent-based systems."
 tags: ["AI", "books", "LLMs", "agents", "Marvin Minsky"]
