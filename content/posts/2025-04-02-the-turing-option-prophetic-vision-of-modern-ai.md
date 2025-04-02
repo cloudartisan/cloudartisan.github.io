@@ -16,13 +16,13 @@ Throughout *The Turing Option*, Minsky and Harrison describe a core AI concept b
 
 > Thinking is the result of all those agents being connected in ways that make them help each other [...] even though each one can do very little, it can still carry a little fragment of knowledge to share with the others
 
-This reads like it could be from the abstract for a technical paper about modern LLM/AI agents coordinating through the use of context. Minsky was famously an advocate for the "society of mind" theory that intelligence emerges from the interaction of many simple processes—agents—each specialised for different tasks.
+Minsky was famously an advocate for the "society of mind" theory that intelligence emerges from the interaction of many simple processes—agents—each specialised for different tasks.
 
-Sound familiar? It should. The explosion of AI agents we're seeing today—from coding assistants like Lovable, Cursor, Windsurf to research agents like Google's Deep Research or Notebook LLM that can search, summarise, and reason—follows this exact paradigm. Especially when you bring MCP (Model Context Protocol, more on that later) into the mix and give Cursor or Claude Desktop the ability to talk to other tools, resources, and even other agents for more context.
+Sound familiar? It should. The explosion of AI agents we're seeing today—from coding assistants like Lovable, Cursor, Windsurf to research agents like Google's Deep Research or Notebook LLM that can search, summarise, and "reason"—follows this exact paradigm. Especially when you bring MCP (Model Context Protocol, more on that later) into the mix. MCP gives Cursor or Claude Desktop the ability to talk to other tools, resources, and even other agents for more context.
 
 ## Beyond the Turing Trap
 
-Erik Brynjolfsson's 2022 article "The Turing Trap" provides a lens through which to reconsider Minsky's (and Harrison's) novel. Brynjolfsson argues that our focus on human-like AI (passing the Turing Test) may be limiting AI's true potential:
+Erik Brynjolfsson's 2022 article ["The Turing Trap"](https://digitaleconomy.stanford.edu/news/the-turing-trap-the-promise-peril-of-human-like-artificial-intelligence/) provides a lens through which to reconsider Minsky's (and Harrison's) novel. Brynjolfsson argues that our focus on human-like AI (passing the Turing Test) may be limiting AI's true potential:
 
 > "We already have intelligence that can carry on a conversation, it's called a human being. We don't have an abundance of intelligence that can simultaneously consider multiple viewpoints or alternative scenarios, and synthesize robust strategies or novel approaches."
 
