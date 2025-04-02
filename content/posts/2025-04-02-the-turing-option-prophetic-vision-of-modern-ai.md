@@ -8,7 +8,7 @@ tags: ["AI", "books", "LLMs", "agents", "Marvin Minsky", "MCP"]
 
 Recently, I found myself reminiscing about a sci-fi novel I read in high school: *The Turing Option* by Marvin Minsky and Harry Harrison. Published in 1992, this book has been on my mind as I've watched the recent explosion in development of modern AI.
 
-![The Turing Option by Marvin Minsky and Harry Harrison](/images/2023/04/the_turing_option.jpg)
+![The Turing Option by Marvin Minsky and Harry Harrison](/images/2025/04/the_turing_option.jpg)
 
 What stands out isn't just that it was co-authored by Minsky: one of the founding fathers of artificial intelligence--but how many concepts in the book parallel today's AI landscape.
 
