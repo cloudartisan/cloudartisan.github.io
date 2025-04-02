@@ -2,8 +2,8 @@
 title: "The Turing Option: A Prophetic Vision of Modern AI"
 date: 2025-04-02
 draft: false
-description: "Exploring how a 33-year-old sci-fi novel by Marvin Minsky and Harry Harrison eerily predicted today's AI landscape, from LLMs to agent-based systems."
-tags: ["AI", "books", "LLMs", "agents", "Marvin Minsky"]
+description: "Exploring how a 33-year-old sci-fi novel by Marvin Minsky and Harry Harrison eerily predicted today's AI landscape, from LLMs to agent-based systems and Machine Context Protocol."
+tags: ["AI", "books", "LLMs", "agents", "Marvin Minsky", "MCP"]
 ---
 
 Recently, I found myself reminiscing about a sci-fi novel I read in high school: *The Turing Option* by Marvin Minsky and Harry Harrison. Published in 1992, this book has been on my mind lately as I've watched the explosive development of modern AI systems.
@@ -38,24 +38,32 @@ In one of those strange moments of synchronicity, the novel also describes a pro
 
 > "lets you write programs that write and run other programs"
 
-Fast forward to today, and we have Meta's LLaMA (Large Language Model Meta AI). While the real-world LLaMA isn't exactly what Minsky described, the parallel is fun--modern LLMs effectively enable programs to write and run other programs, especially with tools like function calling and agent frameworks (and the new hotness, MCP.
+Fast forward to today, and we have Meta's LLaMA (Large Language Model Meta AI). While the real-world LLaMA isn't exactly what Minsky described, the parallel is fun--modern LLMs effectively enable programs to write and run other programs, especially with tools like function calling and agent frameworks (and the new hotness, MCP).
+
+## MCP: The Missing Piece of the Agent Puzzle
+
+If Minsky were alive today, he might be particularly excited about Machine Context Protocol (MCP). This emerging standard provides the crucial "connective tissue" that enables different AI agents to communicate meaningfully--forming exactly the kind of agent society he envisioned.
+
+MCP creates a standardised way for AI systems to exchange context, share knowledge, and coordinate actions. It's the technological embodiment of Minsky's vision where "agents are connected in ways that make them help each other." With MCP, one agent can seamlessly pass relevant information to another, preserving context and enabling more complex collaborative workflows.
+
+Tools like Claude Desktop, Cursor, and Windsurf that implement MCP demonstrate precisely what Minsky described: systems where specialised agents carry "fragments of knowledge to share with others." For example, one agent might retrieve information from documentation, another might analyse code structure, while a third handles natural language understanding--all seamlessly sharing context through MCP to solve problems collaboratively.
 
 ## The Society of Mind Made Real
 
-Today's AI systems are increasingly built as collections of specialised models and tools working in concert:
+With MCP as an enabling technology, today's AI systems are increasingly built as collections of specialised models and tools working in concert:
 
 1. **Large language models** provide reasoning and generation capabilities
 2. **Tool-using agents** extend these abilities with specific functions
 3. **Retrieval augmented systems** access specialised knowledge stores
-4. **Multi-agent architectures** allow different AI instances to work together
+4. **Multi-agent architectures** allow different AI instances to work together via MCP
 
-What we're seeing aligns perfectly with Brynjolfsson's perspective: the most promising AI systems aren't just single models trying to mimic humans but complex ecosystems of specialised components working together. This is Minsky's "Society of Mind" theory finally finding its implementation.
+What we're seeing aligns perfectly with Brynjolfsson's perspective: the most promising AI systems aren't just single models trying to mimic humans but complex ecosystems of specialised components working together. This is Minsky's "Society of Mind" theory finally finding its implementation, with MCP serving as the communication protocol that makes it all possible.
 
 ## From The Turing Test through The Turing Trap and back to The Turing Option
 
 The novel's title itself suggests moving beyond the simple human-mimicry of the Turing Test toward something more profound: the option to create truly intelligent systems that aren't just imitations of human cognition.
 
-In 2025, we're facing exactly that option as AI capabilities accelerate. Current systems still have significant limitations, but the theoretical frameworks Minsky proposed decades ago are now being implemented, refined, and extended in ways that could help us escape the "Turing Trap" Brynjolfsson warns about.
+In 2025, we're facing exactly that option as AI capabilities accelerate. MCP and similar technologies are helping us transcend the limitations of single-model AI and move toward genuinely collaborative agent networks. The theoretical frameworks Minsky proposed decades ago are now being implemented, refined, and extended in ways that could help us escape the "Turing Trap" Brynjolfsson warns about--not by making AIs more human-like, but by embracing their unique potential as societies of interconnected agents.
 
 ## Time for a Re-read
 
