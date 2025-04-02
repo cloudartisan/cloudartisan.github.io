@@ -6,9 +6,11 @@ description: "Exploring how a 33-year-old sci-fi novel by Marvin Minsky and Harr
 tags: ["AI", "books", "LLMs", "agents", "Marvin Minsky", "MCP"]
 ---
 
-Recently, I found myself reminiscing about a sci-fi novel I read in high school: *The Turing Option* by Marvin Minsky and Harry Harrison. Published in 1992, this book has been on my mind as I've watched the recent explosion in development of modern AI.
+<div style="float: right; margin-left: 20px; margin-bottom: 10px;">
+<img src="/images/2025/04/the_turing_option.jpg" alt="The Turing Option by Marvin Minsky and Harry Harrison" width="175" />
+</div>
 
-![The Turing Option by Marvin Minsky and Harry Harrison](/images/2025/04/the_turing_option.jpg)
+Recently, I found myself reminiscing about a sci-fi novel I read in high school: *The Turing Option* by Marvin Minsky and Harry Harrison. Published in 1992, this book has been on my mind as I've watched the recent explosion in development of modern AI.
 
 What stands out isn't just that it was co-authored by Minsky—one of the founding fathers of artificial intelligence—but how many concepts in the book parallel today's AI landscape.
 
