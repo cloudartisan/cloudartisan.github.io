@@ -28,11 +28,11 @@ Sound familiar? It should. The explosion of AI agents we're seeing today: from c
 
 Erik Brynjolfsson's 2022 article ["The Turing Trap"](https://digitaleconomy.stanford.edu/news/the-turing-trap-the-promise-peril-of-human-like-artificial-intelligence/) provides a lens through which to reconsider Minsky's (and Harrison's) novel. Brynjolfsson argues that our focus on human-like AI (passing the Turing Test) may be limiting AI's true potential:
 
-> "We already have intelligence that can carry on a conversation, it's called a human being. We don't have an abundance of intelligence that can simultaneously consider multiple viewpoints or alternative scenarios, and synthesize robust strategies or novel approaches."
+> We already have intelligence that can carry on a conversation, it's called a human being. We don't have an abundance of intelligence that can simultaneously consider multiple viewpoints or alternative scenarios, and synthesize robust strategies or novel approaches.
 
 Minsky and Harrison weren't just writing about AI that mimics humans: they were envisioning something more transformative: the interaction of agents performing many small tasks simultaneously while sharing context. This aligns with Brynjolfsson's view that AI's most profound contribution could arise from what Minsky called a "Society of Mind":
 
-> "The society of mind theory views the human mind and any other naturally evolved cognitive systems as a vast society of individually simple processes known as agents. These processes are the fundamental thinking entities from which minds are built, and together produce the many abilities we attribute to minds. The great power in viewing a mind as a society of agents, as opposed to the consequence of some basic principle or some simple formal system, is that different agents can be based on different types of processes with different purposes, ways of representing knowledge, and methods for producing results."
+> The society of mind theory views the human mind and any other naturally evolved cognitive systems as a vast society of individually simple processes known as agents. These processes are the fundamental thinking entities from which minds are built, and together produce the many abilities we attribute to minds. The great power in viewing a mind as a society of agents, as opposed to the consequence of some basic principle or some simple formal system, is that different agents can be based on different types of processes with different purposes, ways of representing knowledge, and methods for producing results.
 
 *The Turing Option* didn't just anticipate conversational AI: it envisioned systems that are genuinely new and potentially more powerful-an "agentic" network sharing context.
 
@@ -40,7 +40,7 @@ Minsky and Harrison weren't just writing about AI that mimics humans: they were 
 
 In one of those strange moments of synchronicity, the novel also describes a programming language called LAMA (with one L!) that:
 
-> "lets you write programs that write and run other programs"
+> lets you write programs that write and run other programs
 
 Fast forward to today, and we have Meta's LLaMA (Large Language Model Meta AI). While the real-world LLaMA isn't exactly what Minsky described, the parallel is fun--modern LLMs effectively enable programs to write and run other programs, especially with tools like function calling and agent frameworks and the new hotness, MCP...
 
