@@ -47,9 +47,9 @@ Setting up MCP servers with Claude Code is fairly simple:
 
 The best way to use MCP servers depends on the specific server type and your use-case. For local development, an "stdio" server will do fine. And, if you don't want to mess with having many Docker containers running, most people will do fine with running them through `uvx` (for Python) or `npx` (for Node.js). For the purposes of this post we'll be sticking with local and simple.
 
-To set up the reference MCP servers to run via `uvx` and `npx`, follow these steps:
+To set up the reference MCP servers to run via `uvx` and `npx`, follow these steps...
 
-1. First, register each MCP server using the Claude Code CLI:
+First, register each MCP server using the Claude Code CLI:
 
 ```bash
 # Install prerequisites on macOS:
