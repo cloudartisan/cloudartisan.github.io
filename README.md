@@ -34,13 +34,65 @@ This site is built with:
 
 ### New Posts
 ```
-hugo new content posts/my-new-post.md
+hugo new content posts/YYYY-MM-DD-post-name.md
 ```
+
+A new post will be created with the following template:
+
+```yaml
+---
+title: "Post Name"
+date: YYYY-MM-DDT00:00:00+00:00
+draft: true
+description: ""
+tags: []
+categories: []
+series: []
+---
+
+# Post Name
+
+## Introduction
+
+<!-- Write your introduction here -->
+
+## Main Content
+
+<!-- Main content starts here -->
+
+## Conclusion
+
+<!-- Wrap up your post here -->
+```
+
+#### Draft Post Guidelines
+
+1. **File naming**: Use the format `YYYY-MM-DD-post-name.md` (kebab-case)
+2. **Frontmatter**:
+   - `title`: Clear, descriptive title in title case
+   - `date`: Publication date in ISO format
+   - `draft`: Set to `true` until ready to publish
+   - `description`: 1-2 sentences summarising the post (used for SEO)
+   - `tags`: Array of relevant keywords (use existing tags where possible)
+   - `categories`: Optional grouping (e.g., "Tutorials", "Cloud Computing")
+   - `series`: Optional series name if part of a multi-post series
+
+3. **Content Structure**:
+   - Use Markdown for content with `##` (H2) and `###` (H3) for sections
+   - Store images in `/static/images/YYYY/MM/` directory
+   - Reference images with absolute paths (e.g., `/images/2025/04/example.png`)
+   - Use UK English spelling and grammar
+
+4. **Testing**:
+   - Preview with `hugo server -D` to see drafts locally
+   - Drafts will not be published to the live site
 
 ### New Projects
 ```
-hugo new content projects/project-name.md
+hugo new content projects/project-name/index.md
 ```
+
+Create a project directory to include additional assets like images and thumbnails.
 
 ## Maintenance Scripts
 
