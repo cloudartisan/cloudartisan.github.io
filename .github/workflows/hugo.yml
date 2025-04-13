@@ -23,7 +23,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.145.0'  # Pin to 0.145.0 which works with Congo theme
           extended: true
 
       - name: Debug Environment
