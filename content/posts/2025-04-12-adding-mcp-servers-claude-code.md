@@ -252,7 +252,7 @@ The Model Context Protocol and its server implementations are still maturing. In
 
 The reference servers are just the beginning. As mentioned earlier, the real power will come from specialised servers that offer capabilities beyond Claude Code's native features. Some examples:
 
-   - [Cloudflare MCP Server](https://mcp.so/server/cloudflare): Manage Cloudflare DNS, Workers, and more
+   - [Cloudflare](https://mcp.so/server/cloudflare): Manage Cloudflare DNS, Workers, and more
    - [Brave Search](https://mcp.so/server/brave-search/modelcontextprotocol): Privacy-focused web search integration
    - [Firecrawl](https://mcp.so/server/firecrawl-mcp-server/mendableai): Specialised document search and retrieval
    - [BrowserBase](https://mcp.so/server/mcp-server-browserbase/browserbase): Browser automation and web interaction
