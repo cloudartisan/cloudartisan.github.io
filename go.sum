@@ -1,8 +1,2 @@
-github.com/jpanther/congo v1.6.4 h1:Pf84RN3jXMYVbeZIyPCb5krSDIjvuwbo7sv5fCGwbAE=
-github.com/jpanther/congo v1.6.4/go.mod h1:fFwW7KKbofyaZgwLJdh6h1L51UZrSyymQgk31rclcuQ=
-github.com/jpanther/congo/v2 v2.7.4 h1:VQk57hz/eNiR0BVgL8u4r6K7Wa8kkP/bN5zV4lLQBHY=
-github.com/jpanther/congo/v2 v2.7.4/go.mod h1:1S7DRoO1ZYS4YUdFd1LjTkdyjQwsjFWd8TqSfz3Jd+M=
 github.com/jpanther/congo/v2 v2.11.0 h1:whwuUIn20egAPfMR3HaFu7sW7/rz096bz26sgpsUAwk=
 github.com/jpanther/congo/v2 v2.11.0/go.mod h1:1S7DRoO1ZYS4YUdFd1LjTkdyjQwsjFWd8TqSfz3Jd+M=
-github.com/yihui/hugo-ivy v0.0.0-20230225141933-db8f9ffcd75b h1:8iZ5hiTI43LScGCFui9k5GCMp/2oK9CbhDP+KKb1iJI=
-github.com/yihui/hugo-ivy v0.0.0-20230225141933-db8f9ffcd75b/go.mod h1:StgFymb5YFHQFX++9iKo43EFh50x4/wgz0JFoUsOUtA=
