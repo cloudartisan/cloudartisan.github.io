@@ -139,7 +139,7 @@ claude mcp add-json --scope=user server-name '{...configuration...}'
 Available scopes include:
 
 - `local` (default): Available only in your current session. These servers are temporary and will not persist when you close Claude Code.
-- `user`: Available across all your projects on your system. This is stored in `~/.claude/mcp.json` and is my recommended choice for tools you'll use regularly.
+- `user`: Available across all your projects on your system. This is stored in `~/.claude.json` and is my recommended choice for tools you'll use regularly.
 - `project`: Available to anyone working on this specific project who has Claude Code installed. These settings are stored in the project's `.mcp.json` file, making them shareable with your team.
 
 For personal tooling that you intend to reuse, the `user` scope is typically best as it reduces duplication and ensures consistent availability.
