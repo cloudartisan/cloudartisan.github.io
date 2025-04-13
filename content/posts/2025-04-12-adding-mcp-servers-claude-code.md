@@ -110,7 +110,7 @@ This should show all configured MCP servers:
 
 As shown in the screenshot, when registration is successful, you'll see all four reference MCP servers listed.
 
-> *Note:* We use `uvx` for the time, fetch, and git servers, and `npx` for the filesystem server simply because they're written in different languages (Python and Node.js).
+> **Note:** We use `uvx` for the time, fetch, and git servers, and `npx` for the filesystem server simply because they're written in different languages (Python and Node.js).
 
 ## MCP Configuration Approaches
 
