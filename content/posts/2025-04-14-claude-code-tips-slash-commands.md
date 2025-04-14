@@ -9,8 +9,6 @@ series: ["Claude Code Tips & Tricks"]
 author: "david-taylor"
 ---
 
-# Claude Code Tips & Tricks: Custom Slash Commands
-
 ## The Power of Custom Slash Commands
 
 I've been using Claude Code to help manage this website, and I kept finding myself typing similar instructions repeatedly: "Create a new draft post titled \<X\>," "Check this file for spelling, grammar, and UK English," "Clear the cache and start the server" in a very wordy way with a lot of back and forth -- these repetitive tasks were begging to be streamlined.
