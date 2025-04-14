@@ -22,7 +22,7 @@ Throughout *The Turing Option*, Minsky and Harrison describe a core AI concept b
 
 Minsky was famously an advocate for the "society of mind" theory that intelligence emerges from the interaction of many simple processes—agents—each specialised for different tasks.
 
-Sound familiar? It should. The explosion of AI agents we're seeing today—from coding assistants like Lovable, Cursor, Windsurf to research agents like Google's Deep Research or Notebook LLM that can search, summarise, and "reason"—follows this exact paradigm. Especially when you bring MCP (Model Context Protocol, more on that later) into the mix. MCP gives Cursor or Claude Desktop the ability to talk to other tools, resources, and even other agents for more context.
+Sound familiar? It should. The explosion of AI agents we're seeing today—from coding assistants like Lovable, Cursor, Windsurf to research agents like Google's Deep Research or Notebook Large Language Model (LLM) that can search, summarise, and "reason"—follows this exact paradigm. Especially when you bring Model Context Protocol (MCP, more on that later) into the mix. MCP gives Cursor or Claude Desktop the ability to talk to other tools, resources, and even other agents for more context.
 
 ## Beyond the Turing Trap
 

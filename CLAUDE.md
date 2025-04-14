@@ -59,3 +59,6 @@
 - Don't add CLAUDE.md to .gitignore
 - Don't use emojis in commit messages
 - Use clear, concise commit messages describing the changes
+- Consolidate all changes for a single post into one commit
+- Work locally until a post is completely ready before pushing
+- Remember that pushing to main triggers the GitHub Pages deployment workflow
