@@ -60,7 +60,6 @@ Command files also support interpolation using `$ARGUMENTS` syntax. This lets me
 
 I've created several custom commands that address common tasks when managing this Hugo site. I've chosen to use a consistent verb-noun naming format to make them more intuitive, organised into categories:
 
-![My custom slash commands available in Claude Code](/images/2025/04/screenshot_claude_custom_commands.png)
 
 ### Post Management Commands
 
@@ -143,7 +142,7 @@ After dealing with broken image references one too many times, I created this co
 Verify all image references exist in the filesystem for post(s): $ARGUMENTS
 
 1. Use the View tool to read the specified post(s)
-2. Extract all image references (both Markdown format ![alt](path) and Hugo shortcode format {{< figure src="path" >}})
+2. Extract all image references (both Markdown format ![alt](path) and Hugo shortcode format)
 3. For each image reference:
    - Check if the path is absolute or relative
    - If relative, convert to the correct absolute path (considering the static/ directory for standard references)
@@ -304,7 +303,7 @@ Find unused images in the static/images directory.
 2. Use GrepTool to search through all content files (posts, projects, pages) for references to each image
 3. For each image:
    - Check for direct references in markdown format: ![alt](/images/path)
-   - Check for shortcode references: {{< figure src="/images/path" >}}
+   - Check for shortcode references in Hugo format
    - Check for CSS references: url('/images/path')
    - Check for HTML img tags: <img src="/images/path">
    - Check for relative paths in project directories: ![alt](image.jpg)
