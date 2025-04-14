@@ -11,15 +11,15 @@ author: "david-taylor"
 
 # Claude Code Tips & Tricks: Custom Slash Commands
 
-## Learning About Custom Slash Commands
+## The Power of Custom Slash Commands
 
-I've been using Claude Code quite a bit lately, especially for managing this website, and I kept finding myself typing the same instructions over and over. "Create a new post with today's date," "check this file for UK English," "start the Hugo server" – these repetitive tasks were begging for shortcuts.
+I've been using Claude Code extensively for managing this website, and I kept finding myself typing the same instructions repeatedly: "Create a new post," "Check this file for UK English," "Start the Hugo server"—these repetitive tasks were begging for shortcuts.
 
-That's when I discovered custom slash commands in Claude Code. Think of them as your personal shortcuts for common tasks. Instead of typing out detailed instructions each time, you can invoke them with a simple `/command` syntax. They've been a massive time-saver for me, and I thought I'd share how I'm using them.
+That's when I discovered custom slash commands in Claude Code. Think of them as your personal shortcuts for common tasks. Instead of typing detailed instructions each time, you can invoke them with a simple `/command` syntax. They've been a massive time-saver for me, and I thought I'd share how I'm using them.
 
-In this first post of my "Claude Code Tips & Tricks" series, I'll share the custom slash commands I've created to help maintain this Hugo website. I'm all about practical solutions, so these are real commands I use daily.
+In this first post of my "Claude Code Tips & Tricks" series, I'll share the custom slash commands I've created to help maintain this Hugo website.
 
-## What I've Learned About Custom Slash Commands
+## Understanding Custom Slash Commands
 
 Custom slash commands are essentially saved prompts that you can invoke with a simple `/commandname` syntax. They're stored as Markdown files in your project, which means they can be version-controlled and shared with others.
 
@@ -30,19 +30,7 @@ While exploring the [official documentation](https://docs.anthropic.com/en/docs/
 
 I've been focusing on project-scoped commands since I wanted to share them with anyone who might work on this site in the future.
 
-## The Commands I've Created for This Website
-
-I've created several custom commands that address common tasks when managing this Hugo site. I've used a consistent verb-noun naming format to make them more intuitive:
-
-1. `/project:new_post` - Quickly create a new post with proper front matter
-2. `/project:check_language` - Ensure my posts use UK English with proper grammar and acronym definitions
-3. `/project:check_links` - Verify all links in a post are valid
-4. `/project:preview_site` - Generate and serve the site locally with a clickable link to the current post
-5. `/project:check_updates` - Check for updates to Hugo and the Congo theme
-
-Here's how I've set them up:
-
-## How Custom Slash Commands Work
+## How to Create Custom Slash Commands
 
 Creating custom slash commands is surprisingly simple. You just create Markdown files in a special directory structure, and Claude Code automatically recognizes them as commands.
 
@@ -50,7 +38,7 @@ The system supports two scopes for commands:
 
 1. **Project-scoped commands** are available only within a specific project
    - I store these in the `.claude/commands/` directory within this website's repository
-   - When I want to use one, I type `/project:command_name`
+   - When I want to use one, I type `/project:command_name` or `/project:category:command_name` if organized in subdirectories
 
 2. **User-scoped commands** are available across all my projects
    - These would be stored in `~/.claude/commands/` on my system
@@ -58,7 +46,7 @@ The system supports two scopes for commands:
 
 I'm sticking with project-scoped commands for now since they can be checked into Git and shared with anyone who might help maintain this site.
 
-### How Command Files Work
+### Command File Structure
 
 Each command is just a Markdown file that contains the instructions I want Claude to execute. The filename (minus the `.md` extension) becomes the command name.
 
@@ -68,11 +56,17 @@ So when I create:
 
 What I really like is the ability to include placeholders using `$ARGUMENTS` syntax. This lets me pass in different values each time I use the command.
 
-Here's the first command I created:
+## My Custom Commands for Hugo Site Management
 
-### My Post Creation Command: `/project:new_post`
+I've created several custom commands that address common tasks when managing this Hugo site. I've used a consistent verb-noun naming format to make them more intuitive, organized into categories:
 
-My first and most-used command automates creating new posts. I created a file at `.claude/commands/new_post.md` with:
+![My custom slash commands available in Claude Code](/images/2025/04/screenshot_claude_custom_commands.png)
+
+### Post Management Commands
+
+#### Creating New Posts: `/project:posts:new`
+
+My first and most-used command automates creating new posts. I created a file at `.claude/commands/posts/new.md` with:
 
 ```markdown
 I want to create a new blog post with the following details:
@@ -94,17 +88,41 @@ Please:
 Ensure all formatting follows UK English standards.
 ```
 
-Now whenever I want to create a new post, I just type `/project:new_post My Amazing New Post` and Claude handles all the file creation with the right format and front matter. It's saved me countless minutes of repetitive work.
+Now whenever I want to create a new post, I just type `/project:posts:new My Amazing New Post` and Claude handles all the file creation with the right format and front matter.
 
-### UK English Checker: `/project:check_language`
+#### Finding Draft Posts: `/project:posts:find_drafts`
 
-A peculiar challenge I face is ensuring consistent UK English spelling in my posts (not US English). I created `.claude/commands/check_language.md`:
+To keep track of posts I'm still working on, I created a command that lists all draft posts:
+
+```markdown
+Find all draft posts in the content/posts directory.
+
+Please:
+1. Use GlobTool to find all post files in the content/posts directory
+2. Use GrepTool to check each file for 'draft: true' in the front matter
+3. Sort the results by modification date (most recent first)
+4. Display the list of draft posts with:
+   - Filename
+   - Post title
+   - Last modification date
+   - Brief description if available
+
+This helps keep track of which posts still need work before publication.
+```
+
+This gives me a quick overview of what's in my drafts folder and which posts need attention.
+
+#### Checking for UK English: `/project:posts:check_language`
+
+A peculiar challenge I face is ensuring consistent UK English spelling in my posts (not US English). I created `.claude/commands/posts/check_language.md`:
 
 ```markdown
 Please review the file(s) $ARGUMENTS for:
 1. UK English spelling (not US English)
 2. Grammar and punctuation errors
 3. Undefined acronyms - ensure each acronym is expanded on first use
+   (Note: No need to expand commonly understood acronyms like AI, UI, URL, HTML, CSS, etc., 
+   or acronyms that are part of brand/company names like OpenAI)
 4. Consistency in terminology and style
 
 For each issue found, please provide:
@@ -118,9 +136,58 @@ Use the View tool to read the files, then provide a summary of findings and sugg
 
 This command catches those sneaky "z" spellings that creep in and ensures I define acronyms properly.
 
-### Link Validation: `/project:check_links`
+![The check_language custom command in action](/images/2025/04/screenshot_claude_custom_command_check_language.png)
 
-After having a few embarrassing broken links in past posts, I created a link checker at `.claude/commands/check_links.md`:
+#### Verifying Images: `/project:posts:check_images`
+
+After dealing with broken image references one too many times, I created this command:
+
+```markdown
+Verify all image references in the post(s) $ARGUMENTS exist in the filesystem.
+
+Please:
+1. Use the View tool to read the specified post(s)
+2. Extract all image references (both Markdown format ![alt](path) and Hugo shortcode format {{< figure src="path" >}})
+3. For each image reference:
+   - Check if the path is absolute or relative
+   - If relative, convert to the correct absolute path (considering the static/ directory for standard references)
+   - Use GlobTool to verify the image exists
+4. Report:
+   - Total number of image references found
+   - Number of images successfully verified
+   - List of any missing images with their references
+   - Suggestions for fixing missing images
+
+This ensures all images referenced in posts are available and prevents broken image links.
+```
+
+This helps me catch missing images before publishing.
+
+#### Viewing Recent Posts: `/project:posts:recent`
+
+When I need to see what I've been working on lately:
+
+```markdown
+Show the most recent blog posts in the content/posts directory.
+
+Please:
+1. Use GlobTool to find all post files in the content/posts directory
+2. Sort the results by file modification date (most recent first)
+3. Display the $ARGUMENTS most recent posts (default to 5 if no number is provided)
+4. For each post, show:
+   - Post title
+   - Publication date from front matter
+   - Draft status
+   - Brief description if available
+   - Tags/categories
+   - Last modification date
+
+This provides a quick overview of recent content work.
+```
+
+#### Checking Links: `/project:posts:check_links`
+
+After having a few embarrassing broken links in past posts, I created a link checker at `.claude/commands/posts/check_links.md`:
 
 ```markdown
 Please check all links in the file(s) $ARGUMENTS for validity:
@@ -139,9 +206,90 @@ Provide a summary of:
 Use the View tool to read the files first.
 ```
 
-### Local Preview: `/project:preview_site`
+#### Publishing Posts: `/project:posts:publish`
 
-This is probably my second-most-used command, since I'm constantly previewing changes. It's stored in `.claude/commands/preview_site.md`:
+When a post is ready to go live:
+
+```markdown
+I want to publish the draft post $ARGUMENTS. Please:
+
+1. Use the View tool to read the current post
+2. Change 'draft: true' to 'draft: false' in the front matter
+3. Verify all images and links with appropriate tools
+4. Perform a final check for UK English spelling and grammar
+5. Stage the changes with git add
+6. Commit the changes with a descriptive message
+7. Push to GitHub
+
+This automates the publishing workflow for new posts.
+```
+
+### Project Management Commands
+
+#### Creating New Projects: `/project:projects:new`
+
+For adding new projects to my portfolio section:
+
+```markdown
+Create a new project with the following details:
+
+Title: $ARGUMENTS
+Description: A detailed description for the project
+Technology: [Technologies used]
+
+Please:
+1. Generate the proper kebab-case directory name for the project (content/projects/project-slug/)
+2. Create the directory structure with:
+   - index.md (main content file with proper front matter)
+   - An empty thumbnail.png placeholder (or recommend dimensions)
+3. Update the front matter in index.md to include:
+   - title: properly formatted
+   - description: from input
+   - draft: true
+   - weight: next available weight value
+   - links: section for website/github/etc (with placeholders)
+   - tags: appropriate technology tags
+   - thumbnail: "thumbnail.png"
+4. Add placeholder sections in the content:
+   - Overview
+   - Features
+   - Technologies Used
+   - Challenges & Solutions
+   - Screenshots/Demo (with image shortcode examples)
+5. Remind me to add a proper thumbnail image (square 1:1 aspect ratio, ideally 512x512px PNG with transparency or SVG for logos) before publishing
+
+This ensures all projects follow a consistent structure and formatting.
+```
+
+#### Verifying Project Thumbnails: `/project:projects:check_thumbnails`
+
+To ensure my project showcase looks good:
+
+```markdown
+Verify all project thumbnails exist and have the correct dimensions.
+
+Please:
+1. Use GlobTool to find all project directories in content/projects/
+2. For each project:
+   - Check if index.md exists
+   - Extract thumbnail filename from front matter
+   - Verify thumbnail file exists in the project directory
+   - Check thumbnail dimensions (should be square 1:1 aspect ratio, ideally 512x512px)
+   - Verify the image format is appropriate (PNG with transparency or SVG preferred for logos)
+3. Report:
+   - Projects with missing thumbnails
+   - Projects with thumbnails that don't meet dimension requirements
+   - Projects with thumbnails in non-optimal formats
+   - Suggestions for fixing any issues found
+
+This ensures all projects have properly formatted thumbnails for the project showcase.
+```
+
+### Site Management Commands
+
+#### Local Preview: `/project:site:preview`
+
+This is probably my second-most-used command, since I'm constantly previewing changes. It's stored in `.claude/commands/site/preview.md`:
 
 ```markdown
 I want to preview the current Hugo site locally. Please:
@@ -156,9 +304,33 @@ Format the URL as a clickable link for easy navigation.
 
 I love that it formats the URL as a clickable link so I can just click straight through to the post I'm working on.
 
-### Theme Update Checker: `/project:check_updates`
+#### Finding Unused Images: `/project:site:find_orphaned_images`
 
-Finally, I created a command to help me keep the site up-to-date at `.claude/commands/check_updates.md`:
+To keep my site's static assets clean:
+
+```markdown
+Find unused images in the static/images directory.
+
+Please:
+1. Use GlobTool to catalog all image files in the static/images directory
+2. Use GrepTool to search through all content files (posts, projects, pages) for references to each image
+3. For each image:
+   - Check for direct references in markdown format: ![alt](/images/path)
+   - Check for shortcode references: {{< figure src="/images/path" >}}
+   - Check for CSS references: url('/images/path')
+   - Check for other common reference patterns
+4. Compile a list of images that appear to be unused
+5. Organize results by:
+   - Definitely unused (no references found)
+   - Potentially unused (found in unusual patterns that might be false negatives)
+6. Provide suggestions for cleanup (with caution about removing potentially used images)
+
+This helps maintain a clean static directory without unused assets.
+```
+
+#### Theme Update Checker: `/project:site:check_updates`
+
+I created a command to help me keep the site up-to-date at `.claude/commands/site/check_updates.md`:
 
 ```markdown
 Please check if updates are available for:
@@ -176,7 +348,86 @@ For each:
 Then run a test build to verify compatibility if updates are available.
 ```
 
-## Version Control Benefits
+#### Site Deployment: `/project:site:deploy`
+
+When it's time to go live:
+
+```markdown
+Deploy the site to GitHub Pages. Please:
+
+1. Run a final build with `hugo` (no draft content)
+2. Verify the build completed successfully
+3. Stage all changes with git
+4. Commit with a message describing the deployment
+5. Push to GitHub to trigger the GitHub Pages deployment
+
+Provide a confirmation when complete and estimate when the changes will be live.
+```
+
+## Command Documentation and Organization
+
+### Documenting Available Commands
+
+I've also created a help command at `.claude/commands/view_commands.md`:
+
+```markdown
+Here are all the available project commands, organized by category:
+
+## Post Management
+
+- `/project:posts:new` - Create a new blog post with proper front matter
+- `/project:posts:check_language` - Check posts for UK English spelling and grammar
+- `/project:posts:check_links` - Verify all links in posts are valid
+- `/project:posts:publish` - Publish a draft post and push changes to GitHub
+- `/project:posts:find_drafts` - List all draft posts with their details
+- `/project:posts:check_images` - Verify all image references exist in the filesystem
+- `/project:posts:recent` - Show the most recent blog posts
+
+## Project Management
+
+- `/project:projects:new` - Create a new project with proper structure and frontmatter
+- `/project:projects:check_thumbnails` - Verify all project thumbnails exist and have correct dimensions
+
+## Site Management
+
+- `/project:site:preview` - Generate and serve the site locally
+- `/project:site:check_updates` - Check for updates to Hugo and the Congo theme
+- `/project:site:deploy` - Deploy the site to GitHub Pages
+- `/project:site:find_orphaned_images` - Find unused images in static folder
+
+To get more details about a specific command, look at the corresponding Markdown file in the `.claude/commands/` directory.
+```
+
+This way, when I come back to this project after working on something else, I can just type `/project:view_commands` to get a refresher on what commands are available.
+
+### Directory Organization
+
+I've organized my commands into subdirectories to keep them well-structured:
+
+```
+.claude/commands/
+├── posts/
+│   ├── new.md
+│   ├── check_language.md
+│   ├── check_links.md
+│   ├── publish.md
+│   ├── find_drafts.md
+│   ├── check_images.md
+│   └── recent.md
+├── projects/
+│   ├── new.md
+│   └── check_thumbnails.md
+├── site/
+│   ├── preview.md
+│   ├── check_updates.md
+│   ├── deploy.md
+│   └── find_orphaned_images.md
+└── view_commands.md
+```
+
+This creates namespaced commands that help keep things organized as the number of commands grows. The categorization makes it intuitive to find the right command for any task.
+
+## Benefits of Version-Controlled Commands
 
 One of my favorite aspects of these commands is that they're just regular Markdown files in the project's directory structure. This brings several advantages:
 
@@ -187,81 +438,55 @@ One of my favorite aspects of these commands is that they're just regular Markdo
 
 All I had to do was commit the `.claude/commands/` directory to my repository like any other files.
 
-## Using My Custom Commands
+## Daily Usage Examples
 
-Here's a quick summary of how I use these commands day-to-day:
+Here's how I use these commands in my daily workflow:
 
 1. When I want to write a new post:
    ```
-   /project:new_post My Amazing New Post
+   /project:posts:new My Amazing New Post
    ```
 
-2. When I want to make sure I'm using UK English (my American spelling has a tendency to creep in):
+2. When I'm checking my content for UK English:
    ```
-   /project:check_language content/posts/2025-04-14-claude-code-tips-slash-commands.md
-   ```
-
-3. Before publishing, I check all the links:
-   ```
-   /project:check_links content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   /project:posts:check_language content/posts/2025-04-14-claude-code-tips-slash-commands.md
    ```
 
-4. To preview the site while I'm working:
+3. To find out which drafts I still need to finish:
    ```
-   /project:preview_site content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   /project:posts:find_drafts
    ```
 
-5. Occasionally, to check if I need to update the theme or Hugo itself:
+4. To verify all my images exist:
    ```
-   /project:check_updates
+   /project:posts:check_images content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   ```
+
+5. Before publishing, I check all the links:
+   ```
+   /project:posts:check_links content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   ```
+
+6. To preview the site while I'm working:
+   ```
+   /project:site:preview content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   ```
+
+7. To identify unused images that could be removed:
+   ```
+   /project:site:find_orphaned_images
    ```
 
 One thing to remember is that `$ARGUMENTS` captures everything after the command name. So for commands that need complex input, I sometimes include instructions in the command itself about how to format the input.
 
-## Other Command Ideas I'm Considering
+## Future Command Ideas
 
-I've just started exploring the possibilities, but here are some additional command ideas I'm considering (following the same verb-noun format):
+I've just started exploring the possibilities, but here are some additional command ideas I'm considering:
 
-- `/project:optimize_images` - To automatically optimize images for a post (this would be amazing given my terrible track record with optimizing images)
-- `/project:analyze_seo` - To analyze a post for SEO opportunities 
-- `/project:view_stats` - To generate statistics about my blog (word count, post frequency, etc.)
-
-## Organization Tips for Command Fanatics
-
-As I create more commands, I'm starting to think about organizing them into subdirectories. If you end up with lots of commands, you might want to try something like this:
-
-```
-.claude/commands/
-├── posts/
-│   ├── new.md             # /project:posts:new
-│   ├── check_language.md  # /project:posts:check_language
-│   └── publish.md         # /project:posts:publish
-├── site/
-│   ├── preview.md         # /project:site:preview
-│   └── deploy.md          # /project:site:deploy
-└── general/
-    └── view_commands.md   # /project:general:view_commands
-```
-
-This creates namespaced commands that help keep things organized. I haven't needed this level of organization yet, but it's nice to know it's available.
-
-## Advanced Usage Tip: Documentation
-
-I've also created a help command at `.claude/commands/view_commands.md`:
-
-```markdown
-Here are all the available project commands:
-
-- `/project:new_post` - Create a new blog post with proper front matter
-- `/project:check_language` - Check posts for UK English spelling and grammar
-- `/project:check_links` - Verify all links in posts are valid
-- `/project:preview_site` - Generate and serve the site locally
-- `/project:check_updates` - Check for updates to Hugo and the Congo theme
-
-To get more details about a specific command, look at the corresponding Markdown file in the `.claude/commands/` directory.
-```
-
-This way, when I come back to this project after working on something else for a while, I can just type `/project:view_commands` to get a refresher on what commands are available.
+- `/project:posts:optimise_images` - To automatically optimise images for a post
+- `/project:posts:analyse_seo` - To analyse a post for SEO opportunities 
+- `/project:site:view_stats` - To generate statistics about my blog (word count, post frequency, etc.)
+- `/project:projects:update_thumbnails` - To batch update project thumbnails to a consistent style
 
 ## Wrapping Up
 
@@ -274,4 +499,3 @@ In future posts in this "Claude Code Tips & Tricks" series, I'll share more disc
 You can find all the commands I've mentioned in this post in the [GitHub repository for this website](https://github.com/cloudartisan/cloudartisan.github.io/tree/main/.claude/commands) if you want to use them as inspiration for your own custom commands.
 
 If you create your own custom slash commands inspired by these, I'd be interested to hear about your experience. These commands have improved my workflow, and may prove useful for yours as well.
-
