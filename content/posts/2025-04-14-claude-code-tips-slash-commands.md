@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Tips & Tricks: Custom Slash Commands"
 date: 2025-04-14T15:18:37+10:00
-draft: true
+draft: false
 description: "Learn how to create custom slash commands in Claude Code to automate repetitive tasks and enhance your workflow when managing a Hugo website."
 tags: ["Claude", "Claude Code", "Tips", "CLI", "Slash Commands", "Hugo"]
 categories: ["Tutorials"]
@@ -13,7 +13,7 @@ author: "david-taylor"
 
 ## The Power of Custom Slash Commands
 
-I've been using Claude Code to help manage this website, and I kept finding myself typing similar instructions repeatedly: "Create a new draft post titled \<X\>," "Check this file for spelling, grammar, and UK English," "Clear the cache and start the server" but very wordy way with a lot of back and forth — these repetitive tasks were begging to be streamlined.
+I've been using Claude Code to help manage this website, and I kept finding myself typing similar instructions repeatedly: "Create a new draft post titled \<X\>," "Check this file for spelling, grammar, and UK English," "Clear the cache and start the server" in a very wordy way with a lot of back and forth — these repetitive tasks were begging to be streamlined.
 
 That's when I discovered custom slash commands in Claude Code. Think of them as shortcuts for common tasks. Instead of typing detailed instructions each time, you can invoke them with a simple `/command_name` syntax. They've been a time-saver for me, and I thought I'd share how I'm using them.
 
@@ -285,7 +285,7 @@ I want to preview the current Hugo site locally.
 1. Stop any running Hugo server processes
 2. If I'm working on a specific post ($ARGUMENTS), show the local URL the post will be available at so I can click it
 3. Otherwise, show the local URL the site will be available at so I can click it
-3. Serve the site with draft content enabled: `hugo server -D`
+4. Serve the site with draft content enabled: `hugo server -D`
 
 Format the URL as a clickable link for easy navigation.
 ```
@@ -484,7 +484,7 @@ I've just started exploring the possibilities, but here are some additional comm
 
 ### MCP?
 
-MCP supports prompts. It's starting to seem like a good idea to make a more generalised Hugo MCP server with prompts that work for Hugo sites, regardless of theme or content. That way others can get more benefit from the prompts, contribute to it, and it can be extended to include specific tools and resources. Also, it would mean the prompts can be used in clients other than Claude Code and Claude Desktop, such as Cursor, Windsurf, etc.
+Model Context Protocol (MCP) supports prompts. It's starting to seem like a good idea to make a more generalised Hugo MCP server with prompts that work for Hugo sites, regardless of theme or content. That way others can get more benefit from the prompts, contribute to it, and it can be extended to include specific tools and resources. Also, it would mean the prompts can be used in clients other than Claude Code and Claude Desktop, such as Cursor, Windsurf, etc.
 
 ## Wrapping Up
 
