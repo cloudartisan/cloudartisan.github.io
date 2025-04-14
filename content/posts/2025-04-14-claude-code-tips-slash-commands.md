@@ -11,70 +11,74 @@ author: "david-taylor"
 
 # Claude Code Tips & Tricks: Custom Slash Commands
 
-## Introduction
+## Learning About Custom Slash Commands
 
-If you've been using Claude Code for a while, you've probably found yourself typing the same commands or instructions repeatedly. Whether it's starting a new blog post, checking for errors, or running local servers, these tasks follow predictable patterns.
+I've been using Claude Code quite a bit lately, especially for managing this website, and I kept finding myself typing the same instructions over and over. "Create a new post with today's date," "check this file for UK English," "start the Hugo server" – these repetitive tasks were begging for shortcuts.
 
-What if you could create shortcuts for these common workflows? That's exactly what custom slash commands in Claude Code allow you to do. They're like reusable templates that you can invoke with a simple `/command` syntax to avoid repetitive typing and ensure consistency.
+That's when I discovered custom slash commands in Claude Code. Think of them as your personal shortcuts for common tasks. Instead of typing out detailed instructions each time, you can invoke them with a simple `/command` syntax. They've been a massive time-saver for me, and I thought I'd share how I'm using them.
 
-In this first post of my "Claude Code Tips & Tricks" series, I'll show you how to create custom slash commands specifically designed to help maintain this Hugo website. By the end, you'll have a set of powerful shortcuts that make website management faster and more reliable, and you'll understand how to adapt this approach for your own projects.
+In this first post of my "Claude Code Tips & Tricks" series, I'll share the custom slash commands I've created to help maintain this Hugo website. I'm all about practical solutions, so these are real commands I use daily.
 
-## What Are Custom Slash Commands?
+## What I've Learned About Custom Slash Commands
 
-Custom slash commands are personalized shortcuts you can create in Claude Code that execute predefined prompts or instructions. Think of them as command aliases or script templates that you can invoke with a simple `/commandname` syntax.
+Custom slash commands are essentially saved prompts that you can invoke with a simple `/commandname` syntax. They're stored as Markdown files in your project, which means they can be version-controlled and shared with others.
 
-While Claude Code comes with several built-in slash commands (like `/help` or `/mcp`), the real power comes from creating your own commands tailored to your specific workflows.
+While exploring the [official documentation](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials?q=worktrees#create-custom-slash-commands), I found that Claude Code supports two types of commands:
 
-According to the [official documentation](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials?q=worktrees#create-custom-slash-commands), custom slash commands can help you:
+- **Project-scoped commands**: Stored in your project's `.claude/commands/` directory and specific to that project
+- **User-scoped commands**: Stored in your home directory's `~/.claude/commands/` folder and available across all projects
 
-- Create reusable prompts for common tasks
-- Maintain consistency in repetitive operations
-- Share standardized workflows with your team
-- Automate complex multi-step processes
+I've been focusing on project-scoped commands since I wanted to share them with anyone who might work on this site in the future.
 
-## Setting Up Our Custom Website Management Commands
+## The Commands I've Created for This Website
 
-For this website, we'll create several custom commands that address common tasks when managing a Hugo site. We'll store these commands in version control so they can evolve with the website and be shared with collaborators.
+I've created several custom commands that address common tasks when managing this Hugo site:
 
-Here are the custom commands we'll implement:
+1. `/project:newpost` - Quickly create a new post with proper front matter
+2. `/project:ukcheck` - Ensure my posts use UK English with proper grammar and acronym definitions
+3. `/project:linkcheck` - Verify all links in a post are valid
+4. `/project:preview` - Generate and serve the site locally with a clickable link to the current post
+5. `/project:upgradecheck` - Check for updates to Hugo and the Congo theme
 
-1. `/newpost` - Create a new post with proper front matter
-2. `/ukcheck` - Ensure posts use UK English with proper grammar and defined acronyms
-3. `/linkcheck` - Verify all links in a post are valid
-4. `/preview` - Generate and serve the site locally with a clickable link to the current post
-5. `/upgradecheck` - Check for updates to Hugo and the Congo theme
+Here's how I've set them up:
 
-Let's build these one by one.
+## How Custom Slash Commands Work
 
-## Creating Your First Custom Slash Command
+Creating custom slash commands is surprisingly simple. You just create Markdown files in a special directory structure, and Claude Code automatically recognizes them as commands.
 
-To create a custom slash command in Claude Code, you use the `/cmd` built-in command followed by the configuration for your custom command.
+The system supports two scopes for commands:
 
-Here's the basic format:
+1. **Project-scoped commands** are available only within a specific project
+   - I store these in the `.claude/commands/` directory within this website's repository
+   - When I want to use one, I type `/project:command_name`
 
-```
-/cmd add mynewcommand "Description of what this command does" <<EOF
-Instructions or prompt template that will run when the command is invoked
-EOF
-```
+2. **User-scoped commands** are available across all my projects
+   - These would be stored in `~/.claude/commands/` on my system
+   - I'd access them with `/user:command_name`
 
-The structure has three main parts:
-- Command name (without the slash)
-- Description (helps you remember what the command does)
-- Template content (the actual instructions or prompt to execute)
+I'm sticking with project-scoped commands for now since they can be checked into Git and shared with anyone who might help maintain this site.
 
-Let's implement our first command.
+### How Command Files Work
 
-### Command 1: Creating New Posts with `/newpost`
+Each command is just a Markdown file that contains the instructions I want Claude to execute. The filename (minus the `.md` extension) becomes the command name.
 
-Our first command will automate the creation of new posts with the proper front matter. Here's how we'll implement it:
+So when I create:
+- `.claude/commands/newpost.md`, I can invoke it with `/project:newpost`
+- If I wanted subdirectories like `.claude/commands/posts/new.md`, I'd call it with `/project:posts:new`
 
-```
-/cmd add newpost "Create a new Hugo post with proper front matter" <<EOF
+What I really like is the ability to include placeholders using `$ARGUMENTS` syntax. This lets me pass in different values each time I use the command.
+
+Here's the first command I created:
+
+### My Post Creation Command: `/project:newpost`
+
+My first and most-used command automates creating new posts. I created a file at `.claude/commands/newpost.md` with:
+
+```markdown
 I want to create a new blog post with the following details:
 
-Title: {{title}}
-Description: {{description}}
+Title: $ARGUMENTS
+Description: A description for the post
 
 Please:
 1. Generate the proper kebab-case filename with today's date (YYYY-MM-DD-title-slug.md)
@@ -85,29 +89,23 @@ Please:
    - draft: true
    - The description
    - Author: david-taylor
-   - Series: {{series if provided}}
-   - Tags: {{tags if provided}}
 4. Show me the command to serve the site locally so I can preview it
 
 Ensure all formatting follows UK English standards.
-EOF
 ```
 
-When used, this command will prompt for the title, description, and optional series and tags information, then create a properly formatted new post file.
+Now whenever I want to create a new post, I just type `/project:newpost My Amazing New Post` and Claude handles all the file creation with the right format and front matter. It's saved me countless minutes of repetitive work.
 
-### Command 2: UK English and Grammar Check with `/ukcheck`
+### UK English Checker: `/project:ukcheck`
 
-For ensuring our content maintains consistent UK English spelling and proper grammar:
+A peculiar challenge I face is ensuring consistent UK English spelling in my posts (not US English). I created `.claude/commands/ukcheck.md`:
 
-```
-/cmd add ukcheck "Check posts for UK English, grammar, and undefined acronyms" <<EOF
-Please review the following post(s) for:
+```markdown
+Please review the file(s) $ARGUMENTS for:
 1. UK English spelling (not US English)
 2. Grammar and punctuation errors
 3. Undefined acronyms - ensure each acronym is expanded on first use
 4. Consistency in terminology and style
-
-Post paths: {{file paths}}
 
 For each issue found, please provide:
 - The location (file and approximate position)
@@ -116,18 +114,16 @@ For each issue found, please provide:
 - A brief explanation when helpful
 
 Use the View tool to read the files, then provide a summary of findings and suggested edits.
-EOF
 ```
 
-### Command 3: Link Checking with `/linkcheck`
+This command catches those sneaky "z" spellings that creep in and ensures I define acronyms properly.
 
-To verify that all links in a post are valid:
+### Link Validation: `/project:linkcheck`
 
-```
-/cmd add linkcheck "Verify all links in posts are valid" <<EOF
-Please check all links in the following post(s) for validity:
+After having a few embarrassing broken links in past posts, I created a link checker at `.claude/commands/linkcheck.md`:
 
-Post paths: {{file paths}}
+```markdown
+Please check all links in the file(s) $ARGUMENTS for validity:
 
 For each link:
 1. Extract the URL
@@ -141,32 +137,30 @@ Provide a summary of:
 - For each broken link, suggest alternatives if possible
 
 Use the View tool to read the files first.
-EOF
 ```
 
-### Command 4: Local Preview with `/preview`
+### Local Preview: `/project:preview`
 
-For generating and serving the site locally:
+This is probably my second-most-used command, since I'm constantly previewing changes. It's stored in `.claude/commands/preview.md`:
 
-```
-/cmd add preview "Generate and serve the site locally" <<EOF
+```markdown
 I want to preview the current Hugo site locally. Please:
 
 1. Stop any running Hugo server processes
 2. Serve the site with draft content enabled: `hugo server -D`
 3. Provide the local URL where I can view the site
-4. If I'm working on a specific post ({{post path if provided}}), give me the direct URL to that post so I can click it
+4. If I'm working on a specific post ($ARGUMENTS), give me the direct URL to that post so I can click it
 
 Format the URL as a clickable link for easy navigation.
-EOF
 ```
 
-### Command 5: Theme Update Check with `/upgradecheck`
+I love that it formats the URL as a clickable link so I can just click straight through to the post I'm working on.
 
-For checking for updates to Hugo and the Congo theme:
+### Theme Update Checker: `/project:upgradecheck`
 
-```
-/cmd add upgradecheck "Check for Hugo and Congo theme updates" <<EOF
+Finally, I created a command to help me keep the site up-to-date at `.claude/commands/upgradecheck.md`:
+
+```markdown
 Please check if updates are available for:
 
 1. The Hugo version we're currently using
@@ -180,73 +174,104 @@ For each:
 - If major version changes are available, note potential compatibility issues
 
 Then run a test build to verify compatibility if updates are available.
-EOF
 ```
 
-## Storing Custom Commands in Version Control
+## Version Control Benefits
 
-To make these commands reusable and shareable, we'll create a `.claude-commands.json` file in the repository. This way, the commands can be version-controlled and referenced in documentation.
+One of my favorite aspects of these commands is that they're just regular Markdown files in the project's directory structure. This brings several advantages:
 
-First, we'll examine how to export our commands:
+1. They're automatically version-controlled with the rest of the site
+2. Anyone who clones the repo gets all my custom commands for free
+3. I can refine them over time with my normal Git workflow
+4. If I mess something up, I have a history to roll back to
+
+All I had to do was commit the `.claude/commands/` directory to my repository like any other files.
+
+## Using My Custom Commands
+
+Here's a quick summary of how I use these commands day-to-day:
+
+1. When I want to write a new post:
+   ```
+   /project:newpost My Amazing New Post
+   ```
+
+2. When I want to make sure I'm using UK English (my American spelling has a tendency to creep in):
+   ```
+   /project:ukcheck content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   ```
+
+3. Before publishing, I check all the links:
+   ```
+   /project:linkcheck content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   ```
+
+4. To preview the site while I'm working:
+   ```
+   /project:preview content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   ```
+
+5. Occasionally, to check if I need to update the theme or Hugo itself:
+   ```
+   /project:upgradecheck
+   ```
+
+One thing to remember is that `$ARGUMENTS` captures everything after the command name. So for commands that need complex input, I sometimes include instructions in the command itself about how to format the input.
+
+## Other Command Ideas I'm Considering
+
+I've just started exploring the possibilities, but here are some additional command ideas I'm considering:
+
+- `/project:imageoptimize` - To automatically optimize images for a post (this would be amazing given my terrible track record with optimizing images)
+- `/project:seo` - To analyze a post for SEO opportunities 
+- `/project:stats` - To generate statistics about my blog (word count, post frequency, etc.)
+
+## Organization Tips for Command Fanatics
+
+As I create more commands, I'm starting to think about organizing them into subdirectories. If you end up with lots of commands, you might want to try something like this:
 
 ```
-/cmd export
+.claude/commands/
+├── posts/
+│   ├── new.md        # /project:posts:new
+│   ├── check.md      # /project:posts:check
+│   └── publish.md    # /project:posts:publish
+├── site/
+│   ├── preview.md    # /project:site:preview
+│   └── deploy.md     # /project:site:deploy
+└── general/
+    └── help.md       # /project:general:help
 ```
 
-Then we'll save the exported commands to a file in the repository.
+This creates namespaced commands that help keep things organized. I haven't needed this level of organization yet, but it's nice to know it's available.
 
-## Using Our Custom Commands
+## Advanced Usage Tip: Documentation
 
-Here's a quick guide on how to use each of the commands we've created:
+I've also created a help command at `.claude/commands/help.md`:
 
-1. `/newpost` - Use when starting a new blog post
-   ```
-   /newpost
-   Title: My Amazing New Post
-   Description: This post explores the wonders of custom commands
-   Series: Claude Code Tips & Tricks
-   Tags: claude, tips, commands
-   ```
+```markdown
+Here are all the available project commands:
 
-2. `/ukcheck` - Use to check UK English in posts you're working on
-   ```
-   /ukcheck
-   File paths: content/posts/2025-04-14-claude-code-tips-slash-commands.md
-   ```
+- `/project:newpost` - Create a new blog post with proper front matter
+- `/project:ukcheck` - Check posts for UK English spelling and grammar
+- `/project:linkcheck` - Verify all links in posts are valid
+- `/project:preview` - Generate and serve the site locally
+- `/project:upgradecheck` - Check for updates to Hugo and the Congo theme
 
-3. `/linkcheck` - Verify links in your posts
-   ```
-   /linkcheck
-   File paths: content/posts/2025-04-14-claude-code-tips-slash-commands.md
-   ```
+To get more details about a specific command, look at the corresponding Markdown file in the `.claude/commands/` directory.
+```
 
-4. `/preview` - Preview the site locally
-   ```
-   /preview
-   Post path: content/posts/2025-04-14-claude-code-tips-slash-commands.md
-   ```
+This way, when I come back to this project after working on something else for a while, I can just type `/project:help` to get a refresher on what commands are available.
 
-5. `/upgradecheck` - Check for updates
-   ```
-   /upgradecheck
-   ```
+## Wrapping Up
 
-## Extending and Customizing Commands
+I've found these custom slash commands to be huge time-savers in my workflow with Claude Code. They've eliminated repetitive tasks, ensured consistency in how I manage the site, and generally made working with Claude Code more efficient and enjoyable.
 
-The beauty of custom slash commands is that you can extend and customize them for your specific needs. Here are some ideas for additional commands you might find useful:
+The beauty of this approach is that everything is stored as simple Markdown files in the project's `.claude/commands/` directory. This makes them easy to version control, share with others, and customize over time.
 
-- `/imageoptimize` - Automatically optimize images for a post
-- `/seo` - Analyze a post for SEO opportunities
-- `/deploy` - Trigger a manual deployment of the site
-- `/stats` - Generate statistics about your blog (word count, post frequency, etc.)
+In future posts in this "Claude Code Tips & Tricks" series, I'll share more discoveries I've made while using Claude Code for various development tasks.
 
-## Conclusion
+You can find all the commands I've mentioned in this post in the [GitHub repository for this website](https://github.com/cloudartisan/cloudartisan.github.io/tree/main/.claude/commands) if you want to use them as inspiration for your own custom commands.
 
-Custom slash commands are a powerful way to streamline your workflow when managing a Hugo website with Claude Code. By creating these five commands, we've automated common tasks, reduced the potential for errors, and made the content creation process more efficient.
-
-In future posts in this "Claude Code Tips & Tricks" series, we'll explore more advanced techniques for leveraging Claude Code to enhance your development workflow.
-
-Remember, you can find the commands we created in this post in our [GitHub repository](https://github.com/cloudartisan/cloudartisan.github.io/blob/{{current_commit_sha}}/.claude-commands.json) for reference and reuse.
-
-What custom slash commands have you created? Let me know in the comments, and maybe we can feature them in a future post!
+If you create your own custom slash commands inspired by these, I'd be interested to hear about your experience. These commands have improved my workflow, and may prove useful for yours as well.
 
