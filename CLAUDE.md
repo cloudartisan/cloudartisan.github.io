@@ -1,26 +1,23 @@
-# CloudArtisan Hugo Blog - Development Guide
+# Cloud Artisan Site - Development Guide
 
 ## Development Philosophy
 - This is a Hugo site - use idiomatic Hugo approaches for all changes where possible
 - Prefer configuration changes over custom CSS/templates when available
 - Follow the Congo theme conventions and documentation
 - Use Hugo shortcodes instead of raw HTML when appropriate
-- Keep customizations minimal and maintainable
+- Keep customisations minimal and maintainable
 
 ## Project Status
-- Currently in `hugo` branch with Congo theme v2
-- Initial site structure is set up with placeholders for content
-- Need to migrate old blog posts from Jekyll to Hugo format
 - Profile image implemented at static/images/profile.png
 - Site includes blog posts plus project showcase sections
 
 ## Deployment
 - Target is GitHub Pages
 - Domain is cloudartisan.com
-- Need to verify GitHub Pages setup (note: cloudartisan.github.com repo may also exist)
+- Repository is cloudartisan.github.io
 
 ## Build Commands
-- Install Hugo: `brew install hugo`
+- Install Hugo: `go install -tags extended github.com/gohugoio/hugo@v0.145.0`
 - Update theme modules: `hugo mod get -u`
 - Local development: `hugo server -D` (includes draft content)
 - Production build: `hugo` (generates static site in /public)
@@ -55,10 +52,9 @@
 - Reference theme shortcodes documentation for content formatting
 
 ## Git Guidelines
-- Never commit CLAUDE.md or mention it in commits
-- Don't add CLAUDE.md to .gitignore
 - Don't use emojis in commit messages
 - Use clear, concise commit messages describing the changes
 - Consolidate all changes for a single post into one commit
 - Work locally until a post is completely ready before pushing
 - Remember that pushing to main triggers the GitHub Pages deployment workflow
+  and updates the site

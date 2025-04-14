@@ -18,10 +18,12 @@ This site is built with:
    cd cloudartisan.github.io
    ```
 
-2. Install Hugo:
+2. Install Hugo (specific version to ensure compatibility):
    ```
-   brew install hugo
+   go install -tags extended github.com/gohugoio/hugo@v0.145.0
    ```
+   
+   Ensure your Go bin directory (typically ~/go/bin) is in your PATH.
 
 3. Run the local development server:
    ```
