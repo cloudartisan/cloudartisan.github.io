@@ -355,7 +355,7 @@ Deploy the site to GitHub Pages.
 Provide a confirmation when complete and estimate when the changes will be live.
 ```
 
-## Command Documentation and Organization
+## Command Documentation and Organisation
 
 ### Documenting Available Commands
 
@@ -391,7 +391,7 @@ To get more details about a specific command, look at the corresponding Markdown
 
 This way, when I come back to this project after working on something else, I can just type `/project:view_commands` to get a refresher on what commands are available.
 
-### Directory Organization
+### Directory Organisation
 
 I've organised my commands into subdirectories to keep them well-structured:
 
