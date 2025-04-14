@@ -132,8 +132,6 @@ Use the View tool to read the files, then provide a summary of findings and sugg
 
 This command catches those sneaky "z" spellings that creep in and ensures I define acronyms properly.
 
-![The check_language custom command in action](/images/2025/04/screenshot_claude_custom_command_check_language.png)
-
 #### Verifying Images: `/project:posts:check_images`
 
 After dealing with broken image references one too many times, I created this command:
