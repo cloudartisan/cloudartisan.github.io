@@ -32,13 +32,13 @@ I've been focusing on project-scoped commands since I wanted to share them with 
 
 ## The Commands I've Created for This Website
 
-I've created several custom commands that address common tasks when managing this Hugo site:
+I've created several custom commands that address common tasks when managing this Hugo site. I've used a consistent verb-noun naming format to make them more intuitive:
 
-1. `/project:newpost` - Quickly create a new post with proper front matter
-2. `/project:ukcheck` - Ensure my posts use UK English with proper grammar and acronym definitions
-3. `/project:linkcheck` - Verify all links in a post are valid
-4. `/project:preview` - Generate and serve the site locally with a clickable link to the current post
-5. `/project:upgradecheck` - Check for updates to Hugo and the Congo theme
+1. `/project:new_post` - Quickly create a new post with proper front matter
+2. `/project:check_language` - Ensure my posts use UK English with proper grammar and acronym definitions
+3. `/project:check_links` - Verify all links in a post are valid
+4. `/project:preview_site` - Generate and serve the site locally with a clickable link to the current post
+5. `/project:check_updates` - Check for updates to Hugo and the Congo theme
 
 Here's how I've set them up:
 
@@ -70,9 +70,9 @@ What I really like is the ability to include placeholders using `$ARGUMENTS` syn
 
 Here's the first command I created:
 
-### My Post Creation Command: `/project:newpost`
+### My Post Creation Command: `/project:new_post`
 
-My first and most-used command automates creating new posts. I created a file at `.claude/commands/newpost.md` with:
+My first and most-used command automates creating new posts. I created a file at `.claude/commands/new_post.md` with:
 
 ```markdown
 I want to create a new blog post with the following details:
@@ -94,11 +94,11 @@ Please:
 Ensure all formatting follows UK English standards.
 ```
 
-Now whenever I want to create a new post, I just type `/project:newpost My Amazing New Post` and Claude handles all the file creation with the right format and front matter. It's saved me countless minutes of repetitive work.
+Now whenever I want to create a new post, I just type `/project:new_post My Amazing New Post` and Claude handles all the file creation with the right format and front matter. It's saved me countless minutes of repetitive work.
 
-### UK English Checker: `/project:ukcheck`
+### UK English Checker: `/project:check_language`
 
-A peculiar challenge I face is ensuring consistent UK English spelling in my posts (not US English). I created `.claude/commands/ukcheck.md`:
+A peculiar challenge I face is ensuring consistent UK English spelling in my posts (not US English). I created `.claude/commands/check_language.md`:
 
 ```markdown
 Please review the file(s) $ARGUMENTS for:
@@ -118,9 +118,9 @@ Use the View tool to read the files, then provide a summary of findings and sugg
 
 This command catches those sneaky "z" spellings that creep in and ensures I define acronyms properly.
 
-### Link Validation: `/project:linkcheck`
+### Link Validation: `/project:check_links`
 
-After having a few embarrassing broken links in past posts, I created a link checker at `.claude/commands/linkcheck.md`:
+After having a few embarrassing broken links in past posts, I created a link checker at `.claude/commands/check_links.md`:
 
 ```markdown
 Please check all links in the file(s) $ARGUMENTS for validity:
@@ -139,9 +139,9 @@ Provide a summary of:
 Use the View tool to read the files first.
 ```
 
-### Local Preview: `/project:preview`
+### Local Preview: `/project:preview_site`
 
-This is probably my second-most-used command, since I'm constantly previewing changes. It's stored in `.claude/commands/preview.md`:
+This is probably my second-most-used command, since I'm constantly previewing changes. It's stored in `.claude/commands/preview_site.md`:
 
 ```markdown
 I want to preview the current Hugo site locally. Please:
@@ -156,9 +156,9 @@ Format the URL as a clickable link for easy navigation.
 
 I love that it formats the URL as a clickable link so I can just click straight through to the post I'm working on.
 
-### Theme Update Checker: `/project:upgradecheck`
+### Theme Update Checker: `/project:check_updates`
 
-Finally, I created a command to help me keep the site up-to-date at `.claude/commands/upgradecheck.md`:
+Finally, I created a command to help me keep the site up-to-date at `.claude/commands/check_updates.md`:
 
 ```markdown
 Please check if updates are available for:
@@ -193,38 +193,38 @@ Here's a quick summary of how I use these commands day-to-day:
 
 1. When I want to write a new post:
    ```
-   /project:newpost My Amazing New Post
+   /project:new_post My Amazing New Post
    ```
 
 2. When I want to make sure I'm using UK English (my American spelling has a tendency to creep in):
    ```
-   /project:ukcheck content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   /project:check_language content/posts/2025-04-14-claude-code-tips-slash-commands.md
    ```
 
 3. Before publishing, I check all the links:
    ```
-   /project:linkcheck content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   /project:check_links content/posts/2025-04-14-claude-code-tips-slash-commands.md
    ```
 
 4. To preview the site while I'm working:
    ```
-   /project:preview content/posts/2025-04-14-claude-code-tips-slash-commands.md
+   /project:preview_site content/posts/2025-04-14-claude-code-tips-slash-commands.md
    ```
 
 5. Occasionally, to check if I need to update the theme or Hugo itself:
    ```
-   /project:upgradecheck
+   /project:check_updates
    ```
 
 One thing to remember is that `$ARGUMENTS` captures everything after the command name. So for commands that need complex input, I sometimes include instructions in the command itself about how to format the input.
 
 ## Other Command Ideas I'm Considering
 
-I've just started exploring the possibilities, but here are some additional command ideas I'm considering:
+I've just started exploring the possibilities, but here are some additional command ideas I'm considering (following the same verb-noun format):
 
-- `/project:imageoptimize` - To automatically optimize images for a post (this would be amazing given my terrible track record with optimizing images)
-- `/project:seo` - To analyze a post for SEO opportunities 
-- `/project:stats` - To generate statistics about my blog (word count, post frequency, etc.)
+- `/project:optimize_images` - To automatically optimize images for a post (this would be amazing given my terrible track record with optimizing images)
+- `/project:analyze_seo` - To analyze a post for SEO opportunities 
+- `/project:view_stats` - To generate statistics about my blog (word count, post frequency, etc.)
 
 ## Organization Tips for Command Fanatics
 
@@ -233,35 +233,35 @@ As I create more commands, I'm starting to think about organizing them into subd
 ```
 .claude/commands/
 ├── posts/
-│   ├── new.md        # /project:posts:new
-│   ├── check.md      # /project:posts:check
-│   └── publish.md    # /project:posts:publish
+│   ├── new.md             # /project:posts:new
+│   ├── check_language.md  # /project:posts:check_language
+│   └── publish.md         # /project:posts:publish
 ├── site/
-│   ├── preview.md    # /project:site:preview
-│   └── deploy.md     # /project:site:deploy
+│   ├── preview.md         # /project:site:preview
+│   └── deploy.md          # /project:site:deploy
 └── general/
-    └── help.md       # /project:general:help
+    └── view_commands.md   # /project:general:view_commands
 ```
 
 This creates namespaced commands that help keep things organized. I haven't needed this level of organization yet, but it's nice to know it's available.
 
 ## Advanced Usage Tip: Documentation
 
-I've also created a help command at `.claude/commands/help.md`:
+I've also created a help command at `.claude/commands/view_commands.md`:
 
 ```markdown
 Here are all the available project commands:
 
-- `/project:newpost` - Create a new blog post with proper front matter
-- `/project:ukcheck` - Check posts for UK English spelling and grammar
-- `/project:linkcheck` - Verify all links in posts are valid
-- `/project:preview` - Generate and serve the site locally
-- `/project:upgradecheck` - Check for updates to Hugo and the Congo theme
+- `/project:new_post` - Create a new blog post with proper front matter
+- `/project:check_language` - Check posts for UK English spelling and grammar
+- `/project:check_links` - Verify all links in posts are valid
+- `/project:preview_site` - Generate and serve the site locally
+- `/project:check_updates` - Check for updates to Hugo and the Congo theme
 
 To get more details about a specific command, look at the corresponding Markdown file in the `.claude/commands/` directory.
 ```
 
-This way, when I come back to this project after working on something else for a while, I can just type `/project:help` to get a refresher on what commands are available.
+This way, when I come back to this project after working on something else for a while, I can just type `/project:view_commands` to get a refresher on what commands are available.
 
 ## Wrapping Up
 
