@@ -60,6 +60,8 @@ Command files also support interpolation using `$ARGUMENTS` syntax. This lets me
 
 I've created several custom commands that address common tasks when managing this Hugo site. I've chosen to use a consistent verb-noun naming format to make them more intuitive, organised into categories:
 
+![Screenshot of Claude Code custom commands](/images/2025/04/screenshot_claude_custom_commands.png)
+
 
 ### Post Management Commands
 
