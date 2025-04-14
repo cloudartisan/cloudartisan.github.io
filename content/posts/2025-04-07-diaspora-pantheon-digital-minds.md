@@ -77,7 +77,7 @@ Where these stories diverge most interestingly is in their treatment of the rela
 
 "Pantheon," set in a recognisable near-future, explores the tension and conflict arising when digital minds begin to influence and potentially dominate physical society. It asks questions about power, agency, and control when some humans gain the advantage of digital existence. The series explicitly addresses the global implications and power struggles as different organisations compete to control this transformative technology.
 
-This friction seems increasingly relevant today. We're already developing LLMs, neural interfaces, and agentic systems. What happens when some people think faster than others or have greater digital access? What new forms of inequality might emerge? It's less science fiction and more like speculative forecasting at this point.
+This friction seems increasingly relevant today. We're already developing Large Language Models (LLMs), neural interfaces, and agentic systems. What happens when some people think faster than others or have greater digital access? What new forms of inequality might emerge? It's less science fiction and more like speculative forecasting at this point.
 
 ## Simulation All the Way Down
 

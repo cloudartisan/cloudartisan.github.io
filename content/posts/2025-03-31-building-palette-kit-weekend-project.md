@@ -30,7 +30,7 @@ I kept it dead simple--no fancy database, just some JSON files. Quick and dirty,
 For the UI, I took the lazy (ahem, "efficient") approach:
 1. Browsed Figma for designs I liked
 2. Found some nice Shadcn components that would work
-3. Had OpenAI help me write a PRD because I couldn't be bothered to write all the details
+3. Had OpenAI help me write a Product Requirements Document (PRD) because I couldn't be bothered to write all the details
 
 Then I just dumped the PRD, Figma designs, and component picks into Lovable (an AI dev platform). First try, it spit out a working landing page with search. Not too shabby!
 

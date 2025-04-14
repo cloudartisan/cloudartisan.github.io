@@ -8,7 +8,7 @@ tags: ["AI", "Claude", "MCP", "CLI"]
 
 ## What Are MCP Servers?
 
-MCP (Model Context Protocol) servers extend AI Assistants' capabilities by connecting them to external tools and services.
+Model Context Protocol (MCP) servers extend AI Assistants' capabilities by connecting them to external tools and services.
 
 Recently, Claude Code gained support for MCP servers, enabling integration with more specialised services like Stripe, Cloudflare, Supabase, Blender, and a whole lot more.
 
