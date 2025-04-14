@@ -43,6 +43,7 @@
 - Date format: YYYY-MM-DD in front matter
 - Use Hugo shortcodes for complex content elements
 - Maintain responsive image usage with appropriate dimensions
+- Always use UK English
 
 ## Congo Theme Configuration
 - Theme documentation: https://jpanther.github.io/congo/docs/
