@@ -223,20 +223,18 @@ Please refresh your memory from my CLAUDE.md files and confirm the key instructi
 
 This can be especially useful after making changes to your memory files or when starting a new session after a long break.
 
-## Future Directions for Memory in Claude Code
+## Other Memory Uses in Claude Code
 
-Claude Code already supports some interesting memory capabilities that aren't immediately obvious:
+Claude Code supports some interesting memory capabilities that aren't immediately obvious:
 
 1. **Hierarchical directory-based memory** - Claude Code reads CLAUDE.md files recursively up the directory tree, meaning you can create specialised memory files in subdirectories for different parts of your project
 2. **Local memory overrides** with CLAUDE.local.md (which shouldn't be checked into version control)
 
-As Claude Code continues to evolve, I expect to see even more sophisticated memory capabilities:
+There are also capabilities I'd like to see more of in future releases:
 
 1. **More structured hierarchical memory** with clearer precedence rules
 2. **Memory scopes beyond user and project** (perhaps team or organisation levels)
 3. **More interactive memory management** through the Claude Code interface
-
-I'm particularly interested in the potential for memory to become more dynamic and adaptive over time, learning from interactions to better understand preferences without explicit configuration.
 
 ## Cost Efficiency Through Memory Usage
 
