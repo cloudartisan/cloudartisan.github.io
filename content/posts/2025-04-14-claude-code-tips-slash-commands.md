@@ -490,7 +490,7 @@ I've found these custom slash commands to be huge time-savers in my workflow wit
 
 The beauty of this approach is that everything is stored as simple Markdown files in the project's `.claude/commands/` directory. This makes them easy to version control, share with others, and customise over time.
 
-In future posts in this "Claude Code Tips & Tricks" series, I'll share more discoveries I've made while using Claude Code for various development tasks.
+In future posts in this series, I'll share more discoveries I've made while using Claude Code for various development tasks.
 
 You can find all the commands I've mentioned in this post in the [GitHub repository for this website](https://github.com/cloudartisan/cloudartisan.github.io/tree/main/.claude/commands) if you want to use them as inspiration for your own custom commands.
 
