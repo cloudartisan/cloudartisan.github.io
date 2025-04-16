@@ -1,9 +1,12 @@
 ---
-title: "Setting Up MCP Servers with Claude Code"
+title: "Claude Code Tips & Tricks: Setting Up MCP Servers"
 date: 2025-04-12
 draft: false
 description: "How to install and configure Model Context Protocol (MCP) servers to extend Claude Code's capabilities"
-tags: ["AI", "Claude", "MCP", "CLI"]
+tags: ["Claude", "Claude Code", "Tips", "CLI", "MCP"]
+categories: ["Tutorials"]
+series: ["Claude Code Tips & Tricks"]
+author: "david-taylor"
 ---
 
 ## What Are MCP Servers?
