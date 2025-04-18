@@ -1,7 +1,7 @@
 ---
 title: "OpenAI Codex Tips & Tricks: Listing Available Models"
 date: 2025-04-19T09:00:00+10:00
-draft: false
+draft: true
 description: "Useful techniques for working efficiently with OpenAI's Codex CLI tool"
 author: "david-taylor"
 tags: ["OpenAI", "Codex", "CLI", "AI", "Development Tools", "Tips"]
