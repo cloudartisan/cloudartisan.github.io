@@ -1,13 +1,19 @@
-Find all draft posts in the content/posts directory.
-
-Please:
-1. Use GlobTool to find all post files in the content/posts directory
-2. Use GrepTool to check each file for 'draft: true' in the front matter
-3. Sort the results by modification date (most recent first)
+1. Use `hugo list drafts` to identy all drafts
+2. Extract drafts that have `section: posts` and `draft: true` 
+3. Sort the results by date (oldest first)
 4. Display the list of draft posts with:
-   - Filename
-   - Post title
-   - Last modification date
-   - Brief description if available
+   - Date
+   - Title
+   - Path
 
-This helps keep track of which posts still need work before publication.
+Background:
+Drafts are pages that need more work before publication. Drafts are identified by 'draft: true' in the front matter. 
+
+The command `hugo list drafts` will list all drafts. Its output is in CSV format. The first line of output identifies the name of each field. Every subsequent line represents a draft.
+
+Example Output: 
+
+```
+path,slug,title,date,expiryDate,publishDate,draft,permalink,kind,section
+content/posts/2025-04-19-openai-codex-tips-tricks.md,,OpenAI Codex Tips & Tricks: Listing Available Models,2025-04-19T09:00:00+10:00,0001-01-01T00:00:00Z,2025-04-19T09:00:00+10:00,true,https://cloudartisan.com/posts/2025-04-19-openai-codex-tips-tricks/,page,posts
+```
