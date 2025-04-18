@@ -22,3 +22,6 @@ hugo_stats.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Credentials/keys/etc
+.env
