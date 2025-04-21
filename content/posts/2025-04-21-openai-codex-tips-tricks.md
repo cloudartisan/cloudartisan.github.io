@@ -1,7 +1,7 @@
 ---
 title: "OpenAI Codex Tips & Tricks: Listing Available Models"
-date: 2025-04-19T09:00:00+10:00
-draft: true
+date: 2025-04-21T09:00:00+10:00
+draft: false
 description: "Useful techniques for working efficiently with OpenAI's Codex CLI tool"
 author: "david-taylor"
 tags: ["OpenAI", "Codex", "CLI", "AI", "Development Tools", "Tips"]
@@ -9,7 +9,7 @@ categories: ["Tutorials"]
 series: ["OpenAI Codex Tips & Tricks"]
 ---
 
-After [getting started with OpenAI Codex CLI](/posts/2025-04-17-getting-started-with-openai-codex-cli/), I've discovered some handy tips to make working with it a bit easier.
+After [getting started with OpenAI Codex CLI](/posts/2025-04-18-getting-started-with-openai-codex-cli/), I've discovered some handy tips to make working with it a bit easier.
 
 ## Listing Available Models
 
