@@ -1,8 +1,8 @@
-# Cloud Artisan Blog
+# [Cloud Artisan Blog](https://cloudartisan.com/)
 
 [![Deploy Hugo site](https://github.com/cloudartisan/cloudartisan.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/cloudartisan/cloudartisan.github.io/actions/workflows/hugo.yml)
 
-Personal blog and project showcase for David Taylor (Cloud Artisan).
+Personal [blog](https://cloudartisan.com/) and project showcase for David Taylor (Cloud Artisan).
 
 ## Technology
 
