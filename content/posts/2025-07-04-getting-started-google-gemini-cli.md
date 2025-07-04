@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with Google Gemini CLI"
-date: 2025-07-01T19:10:04+10:00
+date: 2025-07-04T19:10:04+10:00
 draft: false
 description: "A practical guide to installing, configuring, and using Google's new Gemini CLI."
 tags: ["Google", "Gemini", "CLI", "AI", "Development Tools"]
