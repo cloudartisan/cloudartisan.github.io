@@ -158,6 +158,28 @@ Execute shell commands:
 
 The `@` syntax for file inclusion is particularly handy - it's more direct than having to ask the AI to read files for you.
 
+## Built-in Tools
+
+You can see what tools are available using the `/tools` command:
+
+![Gemini CLI Available Tools](/images/2025/06/screenshot_gemini_cli_tools.png)
+
+The available tools include:
+
+- **ReadFolder** - Browse directory contents
+- **ReadFile** - Read individual files  
+- **SearchText** - Search within file contents
+- **FindFiles** - Locate files by name or pattern
+- **Edit** - Modify existing files
+- **WriteFile** - Create new files
+- **WebFetch** - Retrieve content from URLs
+- **ReadManyFiles** - Efficiently read multiple files
+- **Shell** - Execute shell commands
+- **Save Memory** - Persist information across sessions
+- **GoogleSearch** - Search the web with Google
+
+The toolkit is very similar to what you get with OpenAI's Codex CLI and Claude Code out of the box.
+
 ## Customisation with GEMINI.md Files
 
 Gemini CLI supports `GEMINI.md` files, similar to Claude Code's `CLAUDE.md` files. You can place them in your project directories to provide context and instructions to the AI.
@@ -194,28 +216,6 @@ I then asked it to create an agent-agnostic solution:
 ![Gemini CLI creating symlinks for cross-tool compatibility](/images/2025/06/screenshot_gemini_cli_task_rename_link_claude_md.png)
 
 Gemini CLI executed commands to rename `CLAUDE.md` to `AI.md` and create symlinks for all three tools. This shows the context threading through the chat and the CLI executing shell commands.
-
-## Built-in Tools
-
-You can see what tools are available using the `/tools` command:
-
-![Gemini CLI Available Tools](/images/2025/06/screenshot_gemini_cli_tools.png)
-
-The available tools include:
-
-- **ReadFolder** - Browse directory contents
-- **ReadFile** - Read individual files  
-- **SearchText** - Search within file contents
-- **FindFiles** - Locate files by name or pattern
-- **Edit** - Modify existing files
-- **WriteFile** - Create new files
-- **WebFetch** - Retrieve content from URLs
-- **ReadManyFiles** - Efficiently read multiple files
-- **Shell** - Execute shell commands
-- **Save Memory** - Persist information across sessions
-- **GoogleSearch** - Search the web with Google
-
-The toolkit is very similar to what you get with OpenAI's Codex CLI and Claude Code out of the box.
 
 ### API Key Authentication
 
