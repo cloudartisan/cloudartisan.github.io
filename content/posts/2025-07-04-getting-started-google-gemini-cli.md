@@ -22,6 +22,33 @@ With Gemini CLI you can:
 - Connect to MCP (Model Context Protocol) servers for extended capabilities
 - Use Google Search for grounding queries with real-time information
 
+## Key Features
+
+### Large Context Window
+
+Gemini's 1M token context window means you can work with substantial codebases without losing context. This is useful for:
+
+- Refactoring across multiple files
+- Understanding complex system architectures
+- Maintaining context during long conversations
+
+### Multimodal Input
+
+The CLI can work with:
+- Text and code
+- Images and sketches
+- PDFs and documents
+
+This means you can generate applications from UI mockups or process documentation images.
+
+### MCP Server Integration
+
+Like Claude Code, Gemini CLI supports Model Context Protocol (MCP) servers for extending functionality. The CLI includes an `/mcp` command for managing MCP servers, though the setup process isn't well documented yet.
+
+### Built-in Google Search
+
+Queries can be grounded with real-time Google Search results, ensuring your AI interactions have access to current information.
+
 ## Installation
 
 The Gemini CLI requires Node.js version 18 or higher. Once you have that prerequisite, you have two installation options:
@@ -68,6 +95,19 @@ The CLI offers several authentication options:
 - **API Key** - For higher limits or programmatic access
 
 For most users getting started, either Google account option provides sufficient quota for exploration and light usage.
+
+### API Key Authentication
+
+For advanced use cases or higher limits, you can use an API key instead:
+
+1. Generate a key from [Google AI Studio](https://aistudio.google.com/apikey)
+2. Set it as an environment variable:
+
+```bash
+export GEMINI_API_KEY="YOUR_API_KEY"
+```
+
+This approach is particularly useful for automated scripts or when you need higher rate limits.
 
 ### Google Workspace Authentication Gotcha
 
@@ -124,19 +164,6 @@ export GOOGLE_CLOUD_PROJECT="your-actual-project-id"
 ```
 
 Now you can run `gemini` and use the `/auth` command to trigger the authentication process again. It should work with your Google Workspace account this time.
-
-### API Key Authentication
-
-For advanced use cases or higher limits, you can use an API key instead:
-
-1. Generate a key from [Google AI Studio](https://aistudio.google.com/apikey)
-2. Set it as an environment variable:
-
-```bash
-export GEMINI_API_KEY="YOUR_API_KEY"
-```
-
-This approach is particularly useful for automated scripts or when you need higher rate limits.
 
 ## Getting Started with Commands
 
@@ -272,45 +299,6 @@ gemini -p "Show me what changed in the last 3 commits and summarise the impact"
 
 The `-p` flag lets you pass a prompt directly, and the `@` syntax works the same way for including file contents in your one-shot commands.
 
-## Key Features
-
-### Large Context Window
-
-Gemini's 1M token context window means you can work with substantial codebases without losing context. This is useful for:
-
-- Refactoring across multiple files
-- Understanding complex system architectures
-- Maintaining context during long conversations
-
-### Multimodal Input
-
-The CLI can work with:
-- Text and code
-- Images and sketches
-- PDFs and documents
-
-This means you can generate applications from UI mockups or process documentation images.
-
-### MCP Server Integration
-
-Like Claude Code, Gemini CLI supports Model Context Protocol (MCP) servers for extending functionality. The CLI includes an `/mcp` command for managing MCP servers, though the setup process isn't well documented yet.
-
-### Built-in Google Search
-
-Queries can be grounded with real-time Google Search results, ensuring your AI interactions have access to current information.
-
-## How It Compares to Other AI CLIs
-
-I've been using both Claude Code and OpenAI's Codex CLI, so here's how Gemini CLI feels different:
-
-**Context Window**: Gemini's 1M token context is significantly larger than most competitors, allowing for more comprehensive codebase understanding.
-
-**Authentication**: The Google account integration is more streamlined than API key management, though both options are available.
-
-**Multimodal Support**: The ability to work with images, PDFs, and sketches sets it apart from text-only alternatives.
-
-**MCP Integration**: The extensibility through MCP servers provides a path for custom integrations.
-
 ## Getting Started: Your First Tasks
 
 Once you have the CLI running, here are some suggested first tasks to explore its capabilities:
@@ -330,12 +318,23 @@ When writing `GEMINI.md` files (or `CLAUDE.md` for Claude Code, `AGENTS.md` for 
 
 ## Limitations and Considerations
 
-As with any new AI tool, there are some limitations worth keeping in mind:
+As with any of these AI tools, there are some common limitations worth keeping in mind:
 
 - **Rate limits** on the free tier may be restrictive if you're planning heavy usage
 - **Experimental status** means features and behaviour might change as Google develops it further
-- **Internet connectivity** required for all operations
 - **Data privacy** considerations when working with proprietary code
+
+## How It Compares to Other AI CLIs
+
+I've been using both Claude Code and OpenAI's Codex CLI, so here's how Gemini CLI feels different:
+
+**Context Window**: Gemini's 1M token context is significantly larger than most competitors, allowing for more comprehensive codebase understanding.
+
+**Authentication**: The Google account integration is more streamlined than API key management, though both options are available.
+
+**Multimodal Support**: The ability to work with images, PDFs, and sketches sets it apart from text-only alternatives.
+
+**MCP Integration**: The extensibility through MCP servers provides a path for custom integrations.
 
 ## Next Steps
 
