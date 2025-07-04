@@ -60,3 +60,4 @@ jobs:
           publish_dir: ./public
           publish_branch: gh-pages  # deploying to gh-pages branch
           cname: cloudartisan.com   # Explicit CNAME setting for custom domain
+          force_orphan: true        # Force clean deployment
