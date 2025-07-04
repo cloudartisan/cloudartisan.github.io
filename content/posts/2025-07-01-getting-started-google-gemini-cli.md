@@ -125,6 +125,19 @@ export GOOGLE_CLOUD_PROJECT="your-actual-project-id"
 
 Now you can run `gemini` and use the `/auth` command to trigger the authentication process again. It should work with your Google Workspace account this time.
 
+### API Key Authentication
+
+For advanced use cases or higher limits, you can use an API key instead:
+
+1. Generate a key from [Google AI Studio](https://aistudio.google.com/apikey)
+2. Set it as an environment variable:
+
+```bash
+export GEMINI_API_KEY="YOUR_API_KEY"
+```
+
+This approach is particularly useful for automated scripts or when you need higher rate limits.
+
 ## Getting Started with Commands
 
 Once you're authenticated and in the Gemini CLI, you can use the `/help` command to see what's available:
@@ -216,19 +229,6 @@ I then asked it to create an agent-agnostic solution:
 ![Gemini CLI creating symlinks for cross-tool compatibility](/images/2025/06/screenshot_gemini_cli_task_rename_link_claude_md.png)
 
 Gemini CLI executed commands to rename `CLAUDE.md` to `AI.md` and create symlinks for all three tools. This shows the context threading through the chat and the CLI executing shell commands.
-
-### API Key Authentication
-
-For advanced use cases or higher limits, you can use an API key instead:
-
-1. Generate a key from [Google AI Studio](https://aistudio.google.com/apikey)
-2. Set it as an environment variable:
-
-```bash
-export GEMINI_API_KEY="YOUR_API_KEY"
-```
-
-This approach is particularly useful for automated scripts or when you need higher rate limits.
 
 ## Basic Usage Patterns
 
