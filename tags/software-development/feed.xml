@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development on Cloud Artisan</title><link>https://cloudartisan.com/tags/software-development/</link><description>Recent content in Software Development on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 18 Oct 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://cloudartisan.com/tags/software-development/feed.xml" rel="self" type="application/rss+xml"/><item><title>Migrating from Google App Engine to Django</title><link>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</link><pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</guid><description>&lt;p>Unfortunately, I had to migrate one of my projects from Google App Engine to Django on a self-managed server. I didn&amp;rsquo;t want to do this. See &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/" target="_blank" rel="noreferrer">Google App Engine Gotcha #2&lt;/a> and &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-3/" target="_blank" rel="noreferrer">Google App Engine Gotcha #3&lt;/a> for the main reasons. Those headaches became bad enough that I had to bite the bullet and migrate out of Google App Engine.&lt;/p>
+&lt;p>&lt;em>It&amp;rsquo;s not for the faint-hearted&amp;hellip;&lt;/em>&lt;/p>
+&lt;h2 id="why-google-app-engine-in-the-first-place" class="relative group">Why Google App Engine In The First Place? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#why-google-app-engine-in-the-first-place" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Google App Engine is a PaaS (Platform as a Service). PaaS products eliminate the need for lower-level server management and, if they&amp;rsquo;re good, make it very easy to write and maintain code for that platform.&lt;/p></description></item><item><title>Install Hudson on Debian Lenny for Continuous Integration</title><link>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</guid><description>&lt;p>I found that Hudson depends on &lt;code>daemon&lt;/code> but it doesn&amp;rsquo;t install automatically. So, before we get started:&lt;/p>
+&lt;pre>&lt;code>```bash
+apt-get install daemon
+&lt;/code>&lt;/pre>
+&lt;pre tabindex="0">&lt;code>
+
+Now that&amp;#39;s out of the way, we need to grab the Hudson key and install the package:
+
+
+ ```bash
+ wget -q -O - http://hudson-ci.org/debian/hudson-ci.org.key | apt-key add -
+ cd /tmp
+ wget http://hudson-ci.org/latest/debian/hudson.deb
+ dpkg --install ./hudson.deb
+&lt;/code>&lt;/pre>&lt;p>If everything went well you&amp;rsquo;ll see Hudson running:&lt;/p>
+&lt;pre>&lt;code>ps auxw | grep hudson
+hudson 9101 0.0 0.1 2108 516 ? Ss 09:59 0:00 /usr/bin/daemon --name=hudson --inherit --env=HUDSON_HOME=/var/lib/hudson --output=/var/log/hudson/hudson.log --pidfile=/var/run/hudson/hudson.pid -- /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+hudson 9103 18.9 10.3 297064 52660 ? Sl 09:59 0:03 /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+&lt;/code>&lt;/pre>
+&lt;p>&amp;hellip; and listening on port 8080:&lt;/p></description></item><item><title>Install uWSGI (latest) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</guid><description>&lt;p>First, why would you want it? uWSGI is a fast, self-healing, WSGI server, originally intended for use with Python web applications. I intend to use it with Python Django, served by Cherokee.&lt;/p>
+&lt;p>As for installation&amp;hellip;&lt;/p>
+&lt;p>Do not bother doing a hands-on install from source. It&amp;rsquo;s messy. Just use &lt;code>pip&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>```bash
+apt-get install gcc python-dev libxml2-dev
+apt-get install python-pip
+pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code>&lt;/pre>
+&lt;pre tabindex="0">&lt;code>
+
+Simple as that.
+
+You should [follow me on twitter](https://twitter.com/davidltaylor).
+&lt;/code>&lt;/pre></description></item><item><title>Python One-Liner: Debug Mail Server</title><link>https://cloudartisan.com/posts/python-one-liner-debug-mail-server/</link><pubDate>Sun, 03 Oct 2010 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/posts/python-one-liner-debug-mail-server/</guid><description>&lt;p>Need a pretend mail server that you can use for debugging? Try this:&lt;/p>
+&lt;pre>&lt;code>```bash
+python -m smtpd -n -c DebuggingServer localhost:1025
+&lt;/code>&lt;/pre>
+&lt;pre tabindex="0">&lt;code>
+
+It listens on port 1025 for local connections.
+&lt;/code>&lt;/pre></description></item></channel></rss>
