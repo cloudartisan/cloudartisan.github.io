@@ -7,16 +7,16 @@ description: "A curated collection of films that inspire thought, showcase quali
 
 ## My Film Philosophy
 
-This is my collection of essential films - it's a blend of favourite movies and a list of films that must be seen. I'm drawn to quality sci-fi that isn't derivative and inspires thought, martial arts films with compelling storytelling and exceptional choreography, and drama that makes you think and feel deeply.
+This is my collection of essential films - it's a blend of favourite movies and a list of films that must be seen. I'm drawn to drama that makes you think and feel deeply, quality sci-fi that isn't derivative and inspires thought, and martial arts films with compelling storytelling and exceptional choreography.
 
 It's very rare that I like a popcorn movie, but if it hits all the right points for a bit of vacuous fun without any groan-inducing moments or preachy, moralistic messaging, I'm in.
 
 ## Selection Criteria
 
-- **Quality Sci-Fi**: Films that explore ideas, challenge assumptions, and avoid tired tropes
-- **Martial Arts**: Compelling narratives with choreography that serves the story
 - **Drama**: Stories that provoke thought and genuine emotional response
-- **Occasional Popcorn**: Pure entertainment that doesn't insult intelligence
+- **Quality Sci-Fi**: Films that explore ideas, challenge assumptions, and avoid tired tropes (e.g., Arrival)
+- **Martial Arts**: Compelling narratives with choreography that serves the story (e.g., Crouching Tiger, Hidden Dragon)
+- **Occasional Popcorn**: Pure entertainment that doesn't insult intelligence (e.g., Clerks)
 
 ---
 
@@ -30,8 +30,8 @@ It's very rare that I like a popcorn movie, but if it hits all the right points 
 
 This page is automatically generated from structured data. To update:
 
-1. **Add movies**: Edit `data/movies.yaml` with new entries (just title, imdb_id, and why_essential)
+1. **Add movies**: Edit `data/movies.yaml` with new entries (just `title`, `imdb_id`, and `why_essential`)
 2. **Update all data**: Run `python3 scripts/update_all_movies.py` to fetch current IMDB data for ALL movies
 3. **Rebuild**: Run `hugo` to regenerate the table with updated data
 
-The update script fetches year, rating, runtime, genres, and director from IMDB - no subscriptions required!
+The update script fetches year, rating, runtime, genres, and director from IMDB.
