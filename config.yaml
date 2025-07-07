@@ -147,6 +147,9 @@ menu:
     - name: Movies
       url: /movies/
       weight: 25
+    - name: Books
+      url: /books/
+      weight: 27
     - name: About
       url: /about/
       weight: 30
