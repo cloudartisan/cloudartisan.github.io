@@ -1,222 +1,329 @@
 books:
-  # Ursula K. Le Guin
-  - title: "A Wizard of Earthsea"
-    author: "Ursula K. Le Guin"
-    series: "Earthsea"
-    series_number: 1
-    isbn: "9780553383041"
-    why_essential: "Coming-of-age fantasy masterpiece about responsibility and balance"
-  - title: "The Left Hand of Darkness"
-    author: "Ursula K. Le Guin"
-    isbn: "9780441478125"
-    why_essential: "Gender-fluid aliens challenge assumptions about sexuality and society"
-  - title: "The Lathe of Heaven"
-    author: "Ursula K. Le Guin"
-    isbn: "9780061054952"
-    why_essential: "Reality-altering dreams explore power, responsibility, and unintended consequences"
-  - title: "The Dispossessed"
-    author: "Ursula K. Le Guin"
-    isbn: "9780061054884"
-    why_essential: "Anarchist utopia examined with nuance - Le Guin's political masterpiece"
-
-  # John Wyndham
-  - title: "The Chrysalids"
-    author: "John Wyndham"
-    isbn: "9780241284674"
-    why_essential: "Post-apocalyptic masterpiece about telepathy, prejudice, and evolution"
-  - title: "The Day of the Triffids"
-    author: "John Wyndham"
-    isbn: "9780241284681"
-    why_essential: "Cosy catastrophe classic - civilisation collapse with quintessentially British tone"
-  - title: "The Midwich Cuckoos"
-    author: "John Wyndham"
-    isbn: "9780241284704"
-    why_essential: "Chilling alien breeding programme in an English village setting"
-  - title: "The Kraken Wakes"
-    author: "John Wyndham"
-    isbn: "9780241284698"
-    why_essential: "Alien invasion from the depths - Wyndham's most atmospheric work"
-
-  # Roger Zelazny - The Chronicles of Amber
-  - title: "Nine Princes in Amber"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 1
-    isbn: "9780380014309"
-    why_essential: "Fantasy classic introducing Corwin and the infinite shadows of Amber"
-  - title: "The Guns of Avalon"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 2
-    isbn: "9780380008322"
-    why_essential: "Corwin's powers grow as he wages war across infinite realities"
-  - title: "Sign of the Unicorn"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 3
-    isbn: "9780380008315"
-    why_essential: "Amber mythology deepens with family intrigue and cosmic stakes"
-  - title: "The Hand of Oberon"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 4
-    isbn: "9780380008339"
-    why_essential: "Amber's greatest mystery unfolds with trademark Zelazny brilliance"
-  - title: "The Courts of Chaos"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 5
-    isbn: "9780380472758"
-    why_essential: "Epic finale to Corwin's story with reality-bending consequences"
-  - title: "Trumps of Doom"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 6
-    isbn: "9780380896350"
-    why_essential: "Second Amber cycle begins with Merlin discovering his heritage"
-  - title: "Blood of Amber"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 7
-    isbn: "9780380753208"
-    why_essential: "Second Corwin cycle begins - Merlin's story with fresh perspective"
-  - title: "Sign of Chaos"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 8
-    isbn: "9780380753215"
-    why_essential: "Merlin's powers grow as chaos threatens the pattern itself"
-  - title: "Knight of Shadows"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 9
-    isbn: "9780380753222"
-    why_essential: "Merlin's journey continues with trademark Zelazny wit and complexity"
-  - title: "Prince of Chaos"
-    author: "Roger Zelazny"
-    series: "The Chronicles of Amber"
-    series_number: 10
-    isbn: "9780380753239"
-    why_essential: "Satisfying conclusion to Merlin's arc and the Amber chronicles"
-
-  # China Miéville
-  - title: "King Rat"
-    author: "China Miéville"
-    isbn: "9780330399296"
-    why_essential: "Urban fantasy debut showcasing Miéville's inventive world-building"
-  - title: "Perdido Street Station"
-    author: "China Miéville"
-    isbn: "9780345459404"
-    why_essential: "Weird fiction masterpiece blending steampunk, horror, and political allegory"
-  - title: "The Scar"
-    author: "China Miéville"
-    isbn: "9780345460011"
-    why_essential: "Floating city adventure showcasing Miéville's imagination at its peak"
-
-  # David Epstein
-  - title: "The Sports Gene"
-    author: "David Epstein"
-    isbn: "9781617230127"
-    why_essential: "Science of athletic performance - nature vs nurture in sport"
-  - title: "Range"
-    author: "David Epstein"
-    isbn: "9780735214484"
-    why_essential: "Compelling argument for broad experience over narrow specialisation"
-
-  # Jon Ronson
-  - title: "The Psychopath Test"
-    author: "Jon Ronson"
-    isbn: "9781594488016"
-    why_essential: "Darkly funny investigation into the madness industry and who gets to decide sanity"
-  - title: "The Men Who Stare at Goats"
-    author: "Jon Ronson"
-    isbn: "9780743254502"
-    why_essential: "Bizarre true story of military psychic experiments - stranger than fiction"
-
-  # Standalone Classics
-  - title: "Flowers for Algernon"
-    author: "Daniel Keyes"
-    isbn: "9780156030304"
-    why_essential: "Heartbreaking exploration of intelligence, humanity, and what we lose"
-  - title: "I Am Legend"
-    author: "Richard Matheson"
-    isbn: "9780765357151"
-    why_essential: "Pioneering vampire apocalypse with philosophical depth about isolation"
-
-  # Barry Eisler - John Rain Series
-  - title: "A Clean Kill in Tokyo"
-    author: "Barry Eisler"
-    series: "John Rain"
-    series_number: 1
-    isbn: "9780451412577"
-    why_essential: "First John Rain novel - perfectly blends martial arts expertise with spy thriller"
-  - title: "A Lonely Resurrection"
-    author: "Barry Eisler"
-    series: "John Rain"
-    series_number: 2
-    isbn: "9780451412584"
-    why_essential: "Rain's psychological complexity deepens in this superior sequel"
-  - title: "Winner Take All"
-    author: "Barry Eisler"
-    series: "John Rain"
-    series_number: 3
-    isbn: "9780451412614"
-    why_essential: "Rain's world expands with new allies and deadlier enemies"
-  - title: "Redemption Games"
-    author: "Barry Eisler"
-    series: "John Rain"
-    series_number: 4
-    isbn: "9780451412591"
-    why_essential: "Rain's moral complexity reaches new depths in this gripping entry"
-  - title: "Extremis"
-    author: "Barry Eisler"
-    series: "John Rain"
-    series_number: 5
-    isbn: "9780451412607"
-    why_essential: "Rain faces his most personal mission with devastating consequences"
-  - title: "The Killer Ascendant"
-    author: "Barry Eisler"
-    series: "John Rain"
-    series_number: 6
-    isbn: "9780451417770"
-    why_essential: "Rain's evolution as character and killer reaches new heights"
-
-  # Robert Ludlum - Bourne Series
-  - title: "The Bourne Identity"
-    author: "Robert Ludlum"
-    series: "Jason Bourne"
-    series_number: 1
-    isbn: "9780553593549"
-    why_essential: "Defining spy thriller about identity, memory, and deadly competence"
-  - title: "The Bourne Supremacy"
-    author: "Robert Ludlum"
-    series: "Jason Bourne"
-    series_number: 2
-    isbn: "9780553266122"
-    why_essential: "Bourne's past catches up in this taut, psychological thriller"
-  - title: "The Bourne Ultimatum"
-    author: "Robert Ludlum"
-    series: "Jason Bourne"
-    series_number: 3
-    isbn: "9780553286199"
-    why_essential: "Trilogy conclusion brings Bourne face-to-face with his creators"
-
-  # Tad Williams - Memory, Sorrow and Thorn
-  - title: "The Dragonbone Chair"
-    author: "Tad Williams"
-    series: "Memory, Sorrow and Thorn"
-    series_number: 1
-    isbn: "9780886773847"
-    why_essential: "Memory, Sorrow and Thorn begins - rich fantasy with genuine emotional stakes"
-  - title: "Stone of Farewell"
-    author: "Tad Williams"
-    series: "Memory, Sorrow and Thorn"
-    series_number: 2
-    isbn: "9780886775094"
-    why_essential: "Memory, Sorrow and Thorn continues with epic scope and emotional depth"
-  - title: "To Green Angel Tower"
-    author: "Tad Williams"
-    series: "Memory, Sorrow and Thorn"
-    series_number: 3
-    isbn: "9780886775681"
-    why_essential: "Epic conclusion to Memory, Sorrow and Thorn with satisfying resolution"
+- title: A Wizard of Earthsea
+  author: Ursula K. Le Guin
+  series: Earthsea
+  series_number: 1
+  isbn: '9780553383041'
+  why_essential: Coming-of-age fantasy masterpiece about responsibility and balance
+  year: 1968
+  genre: Fantasy
+  pages: 191
+- title: The Left Hand of Darkness
+  author: Ursula K. Le Guin
+  isbn: '9780441478125'
+  why_essential: Gender-fluid aliens challenge assumptions about sexuality and society
+  year: 1969
+  genre: Science Fiction
+  pages: 285
+- title: The Lathe of Heaven
+  author: Ursula K. Le Guin
+  isbn: '9780061054952'
+  why_essential: Reality-altering dreams explore power, responsibility, and unintended
+    consequences
+  year: 1971
+  genre: Science Fiction
+  pages: 224
+- title: The Dispossessed
+  author: Ursula K. Le Guin
+  isbn: '9780061054884'
+  why_essential: Anarchist utopia examined with nuance - Le Guin's political masterpiece
+  year: 1974
+  genre: Science Fiction
+  pages: 432
+- title: The Chrysalids
+  author: John Wyndham
+  isbn: '9780241284674'
+  why_essential: Post-apocalyptic masterpiece about telepathy, prejudice, and evolution
+  year: 1955
+  genre: Science Fiction
+  pages: 200
+- title: The Day of the Triffids
+  author: John Wyndham
+  isbn: '9780241284681'
+  why_essential: Cosy catastrophe classic - civilisation collapse with quintessentially
+    British tone
+  year: 1951
+  genre: Fantasy
+  pages: 264
+- title: The Midwich Cuckoos
+  author: John Wyndham
+  isbn: '9780241284704'
+  why_essential: Chilling alien breeding programme in an English village setting
+  year: 1957
+  genre: Mystery
+  pages: 224
+- title: The Kraken Wakes
+  author: John Wyndham
+  isbn: '9780241284698'
+  why_essential: Alien invasion from the depths - Wyndham's most atmospheric work
+  year: 1953
+  genre: Science Fiction
+  pages: 280
+- title: Nine Princes in Amber
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 1
+  isbn: '9780380014309'
+  why_essential: Fantasy classic introducing Corwin and the infinite shadows of Amber
+  year: 1970
+  genre: Science Fiction
+  pages: 224
+- title: The Guns of Avalon
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 2
+  isbn: '9780380008322'
+  why_essential: Corwin's powers grow as he wages war across infinite realities
+  year: 1972
+  genre: Fantasy
+  pages: 256
+- title: Sign of the Unicorn
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 3
+  isbn: '9780380008315'
+  why_essential: Amber mythology deepens with family intrigue and cosmic stakes
+  year: 1975
+  genre: Fantasy
+  pages: 221
+- title: The Hand of Oberon
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 4
+  isbn: '9780380008339'
+  why_essential: Amber's greatest mystery unfolds with trademark Zelazny brilliance
+  year: 1976
+  genre: Fantasy
+  pages: 191
+- title: The Courts of Chaos
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 5
+  isbn: '9780380472758'
+  why_essential: Epic finale to Corwin's story with reality-bending consequences
+  year: 1978
+  genre: Fantasy
+  pages: 183
+- title: Trumps of Doom
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 6
+  isbn: '9780380896350'
+  why_essential: Second Amber cycle begins with Merlin discovering his heritage
+  year: 1985
+  genre: Fantasy
+  pages: 184
+- title: Blood of Amber
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 7
+  isbn: '9780380753208'
+  why_essential: Second Corwin cycle begins - Merlin's story with fresh perspective
+  year: 1986
+  genre: Fantasy
+  pages: 215
+- title: Sign of Chaos
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 8
+  isbn: '9780380753215'
+  why_essential: Merlin's powers grow as chaos threatens the pattern itself
+  year: 1987
+  genre: Fantasy
+  pages: 288
+- title: Knight of Shadows
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 9
+  isbn: '9780380753222'
+  why_essential: Merlin's journey continues with trademark Zelazny wit and complexity
+  year: 1989
+  genre: Fantasy
+  pages: 256
+- title: Prince of Chaos
+  author: Roger Zelazny
+  series: The Chronicles of Amber
+  series_number: 10
+  isbn: '9780380753239'
+  why_essential: Satisfying conclusion to Merlin's arc and the Amber chronicles
+  year: 1991
+  genre: Fantasy
+  pages: 241
+- title: King Rat
+  author: China Miéville
+  isbn: '9780330399296'
+  why_essential: Urban fantasy debut showcasing Miéville's inventive world-building
+  year: 1998
+  genre: Fantasy
+  pages: 352
+- title: Perdido Street Station
+  author: China Miéville
+  isbn: '9780345459404'
+  why_essential: Weird fiction masterpiece blending steampunk, horror, and political
+    allegory
+  year: 2000
+  genre: Science Fiction
+  pages: 720
+- title: The Scar
+  author: China Miéville
+  isbn: '9780345460011'
+  why_essential: Floating city adventure showcasing Miéville's imagination at its
+    peak
+  year: 2002
+  genre: Fantasy
+  pages: 624
+- title: The Sports Gene
+  author: David Epstein
+  isbn: '9781617230127'
+  why_essential: Science of athletic performance - nature vs nurture in sport
+  year: 2013
+  genre: Non-Fiction
+  pages: 338
+- title: Range
+  author: David Epstein
+  isbn: '9780735214484'
+  why_essential: Compelling argument for broad experience over narrow specialisation
+  year: 2019
+  genre: Non-Fiction
+  pages: 352
+- title: The Psychopath Test
+  author: Jon Ronson
+  isbn: '9781594488016'
+  why_essential: Darkly funny investigation into the madness industry and who gets
+    to decide sanity
+  year: 2011
+  genre: Non-Fiction
+  pages: 275
+- title: The Men Who Stare at Goats
+  author: Jon Ronson
+  isbn: '9780743254502'
+  why_essential: Bizarre true story of military psychic experiments - stranger than
+    fiction
+  year: 2004
+  genre: Horror
+  pages: 259
+- title: Flowers for Algernon
+  author: Daniel Keyes
+  isbn: '9780156030304'
+  why_essential: Heartbreaking exploration of intelligence, humanity, and what we
+    lose
+  year: 1966
+  genre: Science Fiction
+  pages: 443
+- title: I Am Legend
+  author: Richard Matheson
+  isbn: '9780765357151'
+  why_essential: Pioneering vampire apocalypse with philosophical depth about isolation
+  year: 1954
+  genre: Horror
+  pages: 192
+- title: A Clean Kill in Tokyo
+  author: Barry Eisler
+  series: John Rain
+  series_number: 1
+  isbn: '9780451412577'
+  why_essential: First John Rain novel - perfectly blends martial arts expertise with
+    spy thriller
+  year: 2014
+  pages: 408
+  genre: Spy Fiction
+- title: A Lonely Resurrection
+  author: Barry Eisler
+  series: John Rain
+  series_number: 2
+  isbn: '9780451412584'
+  why_essential: Rain's psychological complexity deepens in this superior sequel
+  year: 2014
+  pages: 286
+  genre: Spy Fiction
+- title: Winner Take All
+  author: Barry Eisler
+  series: John Rain
+  series_number: 3
+  isbn: '9780451412614'
+  why_essential: Rain's world expands with new allies and deadlier enemies
+  year: 2013
+  pages: 298
+  genre: Spy Fiction
+- title: Redemption Games
+  author: Barry Eisler
+  series: John Rain
+  series_number: 4
+  isbn: '9780451412591'
+  why_essential: Rain's moral complexity reaches new depths in this gripping entry
+  year: 2013
+  pages: 290
+  genre: Spy Fiction
+- title: Extremis
+  author: Barry Eisler
+  series: John Rain
+  series_number: 5
+  isbn: '9780451412607'
+  why_essential: Rain faces his most personal mission with devastating consequences
+  year: 2014
+  pages: 268
+  genre: Spy Fiction
+- title: The Killer Ascendant
+  author: Barry Eisler
+  series: John Rain
+  series_number: 6
+  isbn: '9780451417770'
+  why_essential: Rain's evolution as character and killer reaches new heights
+  year: 2014
+  genre: Spy Fiction
+- title: The Bourne Identity
+  author: Robert Ludlum
+  series: Jason Bourne
+  series_number: 1
+  isbn: '9780553593549'
+  why_essential: Defining spy thriller about identity, memory, and deadly competence
+  year: 1980
+  genre: Thriller
+  pages: 535
+- title: The Bourne Supremacy
+  author: Robert Ludlum
+  series: Jason Bourne
+  series_number: 2
+  isbn: '9780553266122'
+  why_essential: Bourne's past catches up in this taut, psychological thriller
+  year: 1986
+  genre: Spy Fiction
+  pages: 597
+- title: The Bourne Ultimatum
+  author: Robert Ludlum
+  series: Jason Bourne
+  series_number: 3
+  isbn: '9780553286199'
+  why_essential: Trilogy conclusion brings Bourne face-to-face with his creators
+  year: 1990
+  genre: Spy Fiction
+  pages: 720
+- title: The Dragonbone Chair
+  author: Tad Williams
+  series: Memory, Sorrow and Thorn
+  series_number: 1
+  isbn: '9780886773847'
+  why_essential: Memory, Sorrow and Thorn begins - rich fantasy with genuine emotional
+    stakes
+  year: 1988
+  genre: Fantasy
+  pages: 672
+- title: Stone of Farewell
+  author: Tad Williams
+  series: Memory, Sorrow and Thorn
+  series_number: 2
+  isbn: '9780886775094'
+  why_essential: Memory, Sorrow and Thorn continues with epic scope and emotional
+    depth
+  year: 1990
+  genre: Science Fiction
+  pages: 874
+- title: To Green Angel Tower
+  author: Tad Williams
+  series: Memory, Sorrow and Thorn
+  series_number: 3
+  isbn: '9780886775681'
+  why_essential: Epic conclusion to Memory, Sorrow and Thorn with satisfying resolution
+  year: 1993
+  genre: Fantasy
+  pages: 1083

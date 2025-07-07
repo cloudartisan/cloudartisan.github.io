@@ -4,9 +4,8 @@
 <th>Title</th>
 <th>Author</th>
 <th>Year</th>
-<th>Rating</th>
 <th>Pages</th>
-<th>Genres</th>
+<th>Genre</th>
 <th>Why It's Essential</th>
 </tr>
 </thead>
@@ -16,9 +15,8 @@
 <td><strong>{{ .title }}</strong></td>
 <td>{{ .author | default "—" }}</td>
 <td>{{ .year | default "—" }}</td>
-<td>{{ .rating | default "—" }}</td>
 <td>{{ .pages | default "—" }}</td>
-<td>{{ if .genres }}{{ delimit .genres ", " }}{{ else }}—{{ end }}</td>
+<td>{{ .genre | default "—" }}</td>
 <td>{{ .why_essential }}</td>
 </tr>
 {{- end }}
