@@ -1,0 +1,485 @@
+movies:
+- title: '2001: A Space Odyssey'
+  imdb_id: tt0062622
+  year: 1968
+  imdb_rating: 8.3
+  runtime: 149
+  genres:
+  - Adventure Epic
+  - Artificial Intelligence
+  - Epic
+  director: Stanley Kubrick
+  why_essential: Philosophical masterpiece that redefined sci-fi cinema
+- title: Akira
+  imdb_id: tt0094625
+  year: 1988
+  imdb_rating: 8.0
+  runtime: 124
+  genres:
+  - Action Epic
+  - Adult Animation
+  - Anime
+  director: Katsuhiro Ôtomo
+  why_essential: Groundbreaking anime that influenced cyberpunk cinema
+- title: Alien
+  imdb_id: tt0078748
+  year: 1979
+  imdb_rating: 8.5
+  runtime: 117
+  genres:
+  - Alien Invasion
+  - Body Horror
+  - Cyberpunk
+  director: Ridley Scott
+  why_essential: Claustrophobic masterpiece that redefined sci-fi horror
+- title: Aliens
+  imdb_id: tt0090605
+  year: 1986
+  imdb_rating: 8.4
+  runtime: 137
+  genres:
+  - Alien Invasion
+  - Cyberpunk
+  - Monster Horror
+  director: James Cameron
+  why_essential: Perfect sequel that shifts from horror to action
+- title: Arrival
+  imdb_id: tt2543164
+  year: 2016
+  imdb_rating: 7.9
+  runtime: 116
+  genres:
+  - Alien Invasion
+  - Psychological Drama
+  - Sci-Fi Epic
+  director: Denis Villeneuve
+  why_essential: Thoughtful exploration of communication and time
+- title: Being John Malkovich
+  imdb_id: tt0120601
+  year: 1999
+  imdb_rating: 7.7
+  runtime: 15
+  genres:
+  - Body Swap Comedy
+  - High-Concept Comedy
+  - Psychological Drama
+  director: Spike Jonze
+  why_essential: Surreal masterpiece of identity and celebrity obsession
+- title: Blade Runner
+  imdb_id: tt0083658
+  year: 1982
+  imdb_rating: 8.1
+  runtime: 117
+  genres:
+  - Artificial Intelligence
+  - Cyber Thriller
+  - Cyberpunk
+  director: Ridley Scott
+  why_essential: Definitive cyberpunk questioning humanity
+- title: Blade Runner 2049
+  imdb_id: tt1856101
+  year: 2017
+  imdb_rating: 8.0
+  runtime: 164
+  genres:
+  - Action Epic
+  - Artificial Intelligence
+  - Cyber Thriller
+  director: Denis Villeneuve
+  why_essential: Worthy sequel that deepens the original's themes
+- title: Children of Men
+  imdb_id: tt0206634
+  year: 2006
+  imdb_rating: 7.9
+  runtime: 109
+  genres:
+  - Dystopian Sci-Fi
+  - Epic
+  - Psychological Drama
+  director: Alfonso Cuarón
+  why_essential: Dystopian masterpiece about hope and humanity
+- title: Clerks
+  imdb_id: tt0109445
+  year: 1994
+  imdb_rating: 7.7
+  runtime: 92
+  genres:
+  - Buddy Comedy
+  - Satire
+  - Comedy
+  director: Kevin Smith
+  why_essential: Sharp, dialogue-driven indie comedy that launched a career
+- title: Crouching Tiger, Hidden Dragon
+  imdb_id: tt0190332
+  year: 2000
+  imdb_rating: 7.9
+  runtime: 90
+  genres:
+  - Action Epic
+  - Adventure Epic
+  - Epic
+  director: Ang Lee
+  why_essential: Poetry in motion with profound emotional depth
+- title: Drive
+  imdb_id: tt0780504
+  year: 2011
+  imdb_rating: 7.8
+  runtime: 100
+  genres:
+  - Car Action
+  - One-Person Army Action
+  - Action
+  director: Nicolas Winding Refn
+  why_essential: Stylish neo-noir with perfect pacing
+- title: Drunken Master II
+  imdb_id: tt0111512
+  year: 1994
+  imdb_rating: 7.5
+  runtime: 20
+  genres:
+  - Kung Fu
+  - Martial Arts
+  - Slapstick
+  director: Chia-Liang Liu
+  why_essential: Jackie Chan's finest hour of comedic kung fu
+- title: Enter the Dragon
+  imdb_id: tt0070034
+  year: 1973
+  imdb_rating: 7.6
+  runtime: 102
+  genres:
+  - Kung Fu
+  - Martial Arts
+  - One-Person Army Action
+  director: Robert Clouse
+  why_essential: Bruce Lee's masterpiece blending philosophy and combat
+- title: Ex Machina
+  imdb_id: tt0470752
+  year: 2014
+  imdb_rating: 7.7
+  runtime: 108
+  genres:
+  - Artificial Intelligence
+  - Psychological Thriller
+  - Drama
+  director: Alex Garland
+  why_essential: Thought-provoking AI thriller with philosophical depth
+- title: Fearless
+  imdb_id: tt0446059
+  year: 2006
+  imdb_rating: 7.6
+  runtime: 104
+  genres:
+  - Docudrama
+  - Kung Fu
+  - Martial Arts
+  director: Ronny Yu
+  why_essential: Jet Li's philosophical farewell to martial arts cinema
+- title: Ghost in the Shell
+  imdb_id: tt0113568
+  year: 1995
+  imdb_rating: 8.0
+  runtime: 83
+  genres:
+  - Adult Animation
+  - Anime
+  - Artificial Intelligence
+  director: Mamoru Oshii
+  why_essential: Cyberpunk anime exploring consciousness and identity
+- title: Heat
+  imdb_id: tt0113277
+  year: 1995
+  imdb_rating: 8.3
+  runtime: 170
+  genres:
+  - Action Epic
+  - Cop Drama
+  - Epic
+  director: Michael Mann
+  why_essential: Epic cat-and-mouse thriller with perfect character depth
+- title: Her
+  imdb_id: tt1798709
+  year: 2013
+  imdb_rating: 8.0
+  runtime: 126
+  genres:
+  - Artificial Intelligence
+  - Psychological Drama
+  - Drama
+  director: Spike Jonze
+  why_essential: Tender exploration of love and technology
+- title: Hero
+  imdb_id: tt0299977
+  year: 2002
+  imdb_rating: 7.9
+  runtime: 107
+  genres:
+  - Martial Arts
+  - Wuxia
+  - Action
+  director: Yimou Zhang
+  why_essential: Visually stunning wuxia film with layered storytelling
+- title: Interstellar
+  imdb_id: tt0816692
+  year: 2014
+  imdb_rating: 8.7
+  runtime: 169
+  genres:
+  - Adventure Epic
+  - Epic
+  - Psychological Drama
+  director: Christopher Nolan
+  why_essential: Emotional space epic grounded in real science
+- title: Ip Man
+  imdb_id: tt1220719
+  year: 2008
+  imdb_rating: 8.0
+  runtime: 106
+  genres:
+  - Docudrama
+  - Kung Fu
+  - Martial Arts
+  director: Wilson Yip
+  why_essential: Wing Chun mastery with historical gravitas
+- title: 'Mad Max: Fury Road'
+  imdb_id: tt1392190
+  year: 2015
+  imdb_rating: 8.1
+  runtime: 28920
+  genres:
+  - Action Epic
+  - Adventure Epic
+  - Car Action
+  director: George Miller
+  why_essential: Pure cinema - action as visual storytelling
+- title: Memento
+  imdb_id: tt0209144
+  year: 2000
+  imdb_rating: 8.4
+  runtime: 113
+  genres:
+  - Psychological Thriller
+  - Suspense Mystery
+  - Drama
+  director: Christopher Nolan
+  why_essential: Innovative reverse narrative exploring memory and truth
+- title: Memories of Murder
+  imdb_id: tt0353969
+  year: 2003
+  imdb_rating: 8.1
+  runtime: 131
+  genres:
+  - Dark Comedy
+  - Police Procedural
+  - Serial Killer
+  director: Bong Joon Ho
+  why_essential: Darkly comic investigation of incompetence and truth
+- title: Minority Report
+  imdb_id: tt0181689
+  year: 2002
+  imdb_rating: 7.6
+  runtime: 145
+  genres:
+  - Conspiracy Thriller
+  - Cyber Thriller
+  - Cyberpunk
+  director: Steven Spielberg
+  why_essential: Pre-crime ethics wrapped in stellar action
+- title: Moonlight
+  imdb_id: tt4975722
+  year: 2016
+  imdb_rating: 7.4
+  runtime: 111
+  genres:
+  - Coming-of-Age
+  - Drama
+  - Back to top
+  director: Barry Jenkins
+  why_essential: Intimate portrayal of identity and human connection
+- title: No Country for Old Men
+  imdb_id: tt0477348
+  year: 2007
+  imdb_rating: 8.1
+  runtime: 122
+  genres:
+  - Contemporary Western
+  - Psychological Thriller
+  - Serial Killer
+  director: Ethan Coen
+  why_essential: Haunting meditation on fate and morality
+- title: Oldboy
+  imdb_id: tt0364569
+  year: 2003
+  imdb_rating: 8.4
+  runtime: 5
+  genres:
+  - Dark Comedy
+  - One-Person Army Action
+  - Psychological Drama
+  director: Park Chan-wook
+  why_essential: Revenge thriller with philosophical undertones
+- title: Parasite
+  imdb_id: tt6751668
+  year: 2019
+  imdb_rating: 8.5
+  runtime: 132
+  genres:
+  - Dark Comedy
+  - Psychological Drama
+  - Psychological Thriller
+  director: Bong Joon Ho
+  why_essential: Masterful class commentary wrapped in genre perfection
+- title: Rec
+  imdb_id: tt1038988
+  year: 2007
+  imdb_rating: 7.4
+  runtime: 5
+  genres:
+  - Body Horror
+  - Found Footage Horror
+  - Supernatural Horror
+  director: Jaume Balagueró
+  why_essential: Claustrophobic found-footage horror done right
+- title: Ring
+  imdb_id: tt0178868
+  year: 1998
+  imdb_rating: 7.2
+  runtime: 96
+  genres:
+  - Supernatural Horror
+  - Horror
+  - Mystery
+  director: Hideo Nakata
+  why_essential: J-horror classic that redefined supernatural terror
+- title: Seven Samurai
+  imdb_id: tt0047478
+  year: 1954
+  imdb_rating: 8.6
+  runtime: 207
+  genres:
+  - Action Epic
+  - Epic
+  - Period Drama
+  director: Akira Kurosawa
+  why_essential: Epic tale of honour, sacrifice, and masterful filmmaking
+- title: Sicario
+  imdb_id: tt3397884
+  year: 2015
+  imdb_rating: 7.6
+  runtime: 121
+  genres:
+  - Contemporary Western
+  - Cop Drama
+  - Drug Crime
+  director: Denis Villeneuve
+  why_essential: Brutal, uncompromising border thriller
+- title: Spirited Away
+  imdb_id: tt0245429
+  year: 2001
+  imdb_rating: 9.3
+  runtime: 124
+  genres:
+  - Anime
+  - Coming-of-Age
+  - Fairy Tale
+  director: Hayao Miyazaki
+  why_essential: Miyazaki's masterpiece of imagination and environmental themes
+- title: The Godfather
+  imdb_id: tt0068646
+  year: 1972
+  imdb_rating: 9.2
+  runtime: 175
+  genres:
+  - Epic
+  - Gangster
+  - Tragedy
+  director: Francis Ford Coppola
+  why_essential: Perfect storytelling and character development
+- title: The Handmaiden
+  imdb_id: tt4016934
+  year: 2016
+  imdb_rating: 8.1
+  runtime: 145
+  genres:
+  - Dark Romance
+  - Erotic Thriller
+  - Psychological Thriller
+  director: Park Chan-wook
+  why_essential: Elegant psychological thriller with stunning visuals
+- title: The Matrix
+  imdb_id: tt0133093
+  year: 1999
+  imdb_rating: 8.7
+  runtime: 136
+  genres:
+  - Action Epic
+  - Artificial Intelligence
+  - Cyberpunk
+  director: Lana Wachowski
+  why_essential: Reality-bending philosophy with groundbreaking action
+- title: The Prestige
+  imdb_id: tt0482571
+  year: 2006
+  imdb_rating: 8.5
+  runtime: 130
+  genres:
+  - Period Drama
+  - Steampunk
+  - Tragedy
+  director: Christopher Nolan
+  why_essential: Intricate puzzle box about obsession and sacrifice
+- title: The Raid
+  imdb_id: tt1899353
+  year: 2011
+  imdb_rating: 7.6
+  runtime: 101
+  genres:
+  - Gun Fu
+  - Martial Arts
+  - Action
+  director: Gareth Evans
+  why_essential: Relentless action with Indonesian martial arts excellence
+- title: The Raid 2
+  imdb_id: tt2265171
+  year: 2014
+  imdb_rating: 7.9
+  runtime: 150
+  genres:
+  - Cop Drama
+  - Gangster
+  - Martial Arts
+  director: Gareth Evans
+  why_essential: Expands the first film's world with epic scope
+- title: The Social Network
+  imdb_id: tt1285016
+  year: 2010
+  imdb_rating: 7.7
+  runtime: 128
+  genres:
+  - Docudrama
+  - Epic
+  - Legal Drama
+  director: David Fincher
+  why_essential: Sharp dissection of ambition and betrayal
+- title: The Wailing
+  imdb_id: tt5215952
+  year: 2016
+  imdb_rating: 7.4
+  runtime: 156
+  genres:
+  - Body Horror
+  - Folk Horror
+  - Tragedy
+  director: Na Hong-jin
+  why_essential: Atmospheric horror that questions faith and certainty
+- title: There Will Be Blood
+  imdb_id: tt0469494
+  year: 2007
+  imdb_rating: 8.2
+  runtime: 158
+  genres:
+  - Epic
+  - Period Drama
+  - Psychological Drama
+  director: Paul Thomas Anderson
+  why_essential: Devastating character study of American capitalism

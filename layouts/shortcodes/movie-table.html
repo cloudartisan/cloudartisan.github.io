@@ -1,0 +1,26 @@
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Year</th>
+<th>IMDB</th>
+<th>Runtime</th>
+<th>Genres</th>
+<th>Director</th>
+<th>Why It's Essential</th>
+</tr>
+</thead>
+<tbody>
+{{- range sort .Site.Data.movies.movies "title" }}
+<tr>
+<td><a href="https://www.imdb.com/title/{{ .imdb_id }}/">{{ .title }}</a></td>
+<td>{{ .year | default "—" }}</td>
+<td>{{ .imdb_rating | default "—" }}</td>
+<td>{{ .runtime | default "—" }}</td>
+<td>{{ if .genres }}{{ delimit .genres ", " }}{{ else }}—{{ end }}</td>
+<td>{{ .director | default "—" }}</td>
+<td>{{ .why_essential }}</td>
+</tr>
+{{- end }}
+</tbody>
+</table>
