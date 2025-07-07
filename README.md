@@ -106,10 +106,10 @@ The repository includes several maintenance scripts in the `scripts/` directory:
 
 To run a script:
 ```
-python3 -m venv venv          # Create virtual environment (first time only)
-source venv/bin/activate      # Activate virtual environment
-pip install pyyaml            # Install dependencies (first time only)
-python3 scripts/script_name.py   # Run the script
+python3 -m venv venv                # Create virtual environment (first time only)
+source venv/bin/activate            # Activate virtual environment
+pip3 install -r requirements.txt    # Install dependencies (first time only)
+python3 scripts/script_name.py      # Run the script
 ```
 
 ## Building for Production
