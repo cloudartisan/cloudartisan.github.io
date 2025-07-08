@@ -298,6 +298,14 @@ books:
   year: 1990
   genre: Spy Fiction
   pages: 720
+- title: The Turing Option
+  author: Harry Harrison
+  isbn: '9780446364041'
+  why_essential: Collaboration between SF master and AI pioneer explores consciousness
+    and identity
+  year: 1992
+  genre: Science Fiction
+  pages: 473
 - title: The Dragonbone Chair
   author: Tad Williams
   series: Memory, Sorrow and Thorn
