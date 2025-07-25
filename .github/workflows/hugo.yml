@@ -1,3 +1,5 @@
+# Version-locked deployment workflow for Hugo site with Congo theme
+# Hugo 0.148.1 + Congo v2.12.2 + Go 1.20.14 for reproducible builds
 name: Deploy Hugo site
 
 on:
@@ -11,19 +13,19 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.1.7
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5.2.0
         with:
-          go-version: '^1.20.0'
+          go-version: '1.20.14'  # Pin to specific Go version for reproducible builds
       
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v2.6.0
         with:
-          hugo-version: '0.145.0'  # Pin to 0.145.0 which works with Congo theme
+          hugo-version: '0.148.1'  # Pin to 0.148.1 for Congo v2.12.2 compatibility
           extended: true
 
       - name: Debug Environment
@@ -40,7 +42,7 @@ jobs:
       - name: Setup Hugo Modules
         run: |
           hugo mod tidy
-          hugo mod get github.com/jpanther/congo/v2@v2.11.0
+          hugo mod get github.com/jpanther/congo/v2@v2.12.2
 
       - name: Build
         run: hugo --minify
@@ -53,7 +55,7 @@ jobs:
           fi
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4.0.0
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
