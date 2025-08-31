@@ -87,7 +87,7 @@ For this Hugo website, I have a project-specific [`CLAUDE.md`](https://github.co
 - Follow Congo theme conventions
 
 ## Build Commands
-- Install Hugo: `go install -tags extended github.com/gohugoio/hugo@v0.145.0`
+ - Install Hugo: `go install -tags extended github.com/gohugoio/hugo@v0.149.0`
 - Local development: `hugo server -D` (includes draft content)
 - Production build: `hugo` (generates static site in /public)
 - Create new post: `hugo new content/posts/my-post-name.md`

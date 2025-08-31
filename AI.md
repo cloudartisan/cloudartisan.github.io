@@ -17,7 +17,7 @@
 - Repository is cloudartisan.github.io
 
 ## Build Commands
-- Install Hugo: `go install -tags extended github.com/gohugoio/hugo@v0.145.0`
+- Install Hugo: `go install -tags extended github.com/gohugoio/hugo@v0.149.0`
 - Update theme modules: `hugo mod get -u`
 - Local development: `hugo server -D` (includes draft content)
 - Production build: `hugo` (generates static site in /public)
