@@ -1,5 +1,5 @@
 # Version-locked deployment workflow for Hugo site with Congo theme
-# Hugo 0.148.1 + Congo v2.12.2 + Go 1.20.14 for reproducible builds
+# Hugo 0.149.0 + Congo v2.12.2 + Go 1.25.0 for reproducible builds
 name: Deploy Hugo site
 
 on:
@@ -25,7 +25,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.6.0
         with:
-          hugo-version: '0.148.1'  # Pin to 0.148.1 for Congo v2.12.2 compatibility
+          hugo-version: '0.149.0'  # Pin to 0.149.0 for Congo v2.12.2 compatibility
           extended: true
 
       - name: Debug Environment
