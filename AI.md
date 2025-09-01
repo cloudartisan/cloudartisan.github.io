@@ -40,10 +40,15 @@
 - Follow standard Markdown syntax
 - File naming: Use kebab-case for filenames (e.g., my-post-name.md)
 - Content organization: Place images in static/images/YYYY/MM/ folders
-- Date format: YYYY-MM-DD in front matter
+- Date format: YYYY-MM-DD in front matter (site timezone is Australia/Sydney)
 - Use Hugo shortcodes for complex content elements
 - Maintain responsive image usage with appropriate dimensions
 - Always use UK English
+
+## Timezone Configuration
+- Site timezone: Australia/Sydney (set in config.yaml)
+- Build process includes --buildFuture flag to handle timezone differences
+- When creating new posts, use current date in Australia/Sydney timezone
 
 ## Writing Tone and Style
 - Reference STYLE_GUIDE.md for comprehensive tone and voice guidelines

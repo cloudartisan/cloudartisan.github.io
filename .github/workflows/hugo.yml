@@ -45,7 +45,7 @@ jobs:
           hugo mod get github.com/jpanther/congo/v2@v2.12.2
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --buildFuture
 
       - name: Copy CNAME file
         run: |
