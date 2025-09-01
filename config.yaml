@@ -1,6 +1,7 @@
 baseURL: https://cloudartisan.com/
 languageCode: en-us
 title: Cloud Artisan
+timezone: Australia/Sydney
 
 # Google Analytics configuration (proper Congo/Hugo way)
 services:
