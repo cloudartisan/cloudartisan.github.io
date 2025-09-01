@@ -46,6 +46,7 @@
 - Always use UK English
 
 ## Writing Tone and Style
+- Reference STYLE_GUIDE.md for comprehensive tone and voice guidelines
 - Use personal, conversational tone rather than formal documentation style
 - Write from first-person experience ("In my testing" not "In testing")
 - Use personal recommendations ("I'd recommend" not "It is recommended")
