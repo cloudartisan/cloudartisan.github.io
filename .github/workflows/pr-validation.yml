@@ -18,25 +18,35 @@ jobs:
   validate-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
 
       - name: Setup Go
-        uses: actions/setup-go@v5.2.0
+        uses: actions/setup-go@v5.5.0
         with:
           go-version: '1.25.0'
       
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.6.0
+        uses: peaceiris/actions-hugo@v3.0.0
         with:
-          hugo-version: '0.148.1'
+          hugo-version: '0.149.0'
           extended: true
 
       - name: Setup Hugo Modules
         run: |
-          hugo mod tidy
+          # Clean start - remove any existing module files that might be corrupted
+          rm -f go.sum
+          
+          # Initialize Hugo modules
+          hugo mod init github.com/cloudartisan/cloudartisan.github.io
+          
+          # Get specific Congo version
           hugo mod get github.com/jpanther/congo/v2@v2.12.2
+          
+          # Verify module setup
+          echo "Module status:"
+          hugo mod graph
 
       - name: Validate Hugo Configuration
         run: |
@@ -102,7 +112,7 @@ jobs:
   validate-content:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
 
@@ -162,7 +172,7 @@ jobs:
   validate-images:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v5.0.0
 
       - name: Check Image References
         run: |
