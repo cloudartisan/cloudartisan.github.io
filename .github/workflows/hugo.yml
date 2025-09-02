@@ -13,17 +13,17 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Go
-        uses: actions/setup-go@v5.2.0
+        uses: actions/setup-go@v5.5.0
         with:
           go-version: '1.25.0'  # Pin to specific Go version for reproducible builds
       
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.6.0
+        uses: peaceiris/actions-hugo@v3.0.0
         with:
           hugo-version: '0.149.0'  # Pin to 0.149.0 for Congo v2.12.2 compatibility
           extended: true
@@ -41,8 +41,18 @@ jobs:
 
       - name: Setup Hugo Modules
         run: |
-          hugo mod tidy
+          # Clean start - remove any existing module files that might be corrupted
+          rm -f go.sum
+          
+          # Initialize Hugo modules
+          hugo mod init github.com/cloudartisan/cloudartisan.github.io
+          
+          # Get specific Congo version
           hugo mod get github.com/jpanther/congo/v2@v2.12.2
+          
+          # Verify module setup
+          echo "Module status:"
+          hugo mod graph
 
       - name: Build
         run: hugo --minify --buildFuture
