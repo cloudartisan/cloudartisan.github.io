@@ -20,7 +20,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5.2.0
         with:
-          go-version: '1.20.14'  # Pin to specific Go version for reproducible builds
+          go-version: '1.25.0'  # Pin to specific Go version for reproducible builds
       
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.6.0
