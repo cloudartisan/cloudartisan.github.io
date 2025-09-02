@@ -95,13 +95,13 @@ jobs:
       - name: Test Build (Development)
         run: |
           echo "Testing development build..."
-          hugo --buildDrafts --buildFuture --verbose
+          hugo --buildDrafts --buildFuture
           echo "✅ Development build successful"
 
       - name: Test Build (Production)
         run: |
           echo "Testing production build..."
-          hugo --minify --buildFuture --verbose
+          hugo --minify --buildFuture
           echo "✅ Production build successful"
 
       - name: Check Build Output
