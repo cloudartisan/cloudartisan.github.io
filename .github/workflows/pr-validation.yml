@@ -38,8 +38,13 @@ jobs:
           # Clean start - remove any existing module files that might be corrupted
           rm -f go.sum
           
-          # Initialize Hugo modules
-          hugo mod init github.com/cloudartisan/cloudartisan.github.io
+          # Only initialize if go.mod doesn't exist
+          if [ ! -f go.mod ]; then
+            echo "Initializing Hugo modules..."
+            hugo mod init github.com/cloudartisan/cloudartisan.github.io
+          else
+            echo "go.mod already exists, using existing module configuration"
+          fi
           
           # Get specific Congo version
           hugo mod get github.com/jpanther/congo/v2@v2.12.2
