@@ -1,0 +1,232 @@
+# PR validation workflow - test builds and content quality
+name: PR Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'content/**'
+      - 'config.yaml'
+      - 'go.mod'
+      - 'layouts/**'
+      - 'assets/**'
+      - 'static/**'
+      - '.github/workflows/**'
+
+jobs:
+  validate-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.7
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5.2.0
+        with:
+          go-version: '1.20.14'
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.6.0
+        with:
+          hugo-version: '0.148.1'
+          extended: true
+
+      - name: Setup Hugo Modules
+        run: |
+          hugo mod tidy
+          hugo mod get github.com/jpanther/congo/v2@v2.12.2
+
+      - name: Validate Hugo Configuration
+        run: |
+          echo "Validating Hugo configuration..."
+          hugo config
+          echo "✅ Configuration is valid"
+
+      - name: Check for Draft Posts
+        run: |
+          echo "Checking for draft posts..."
+          DRAFTS=$(hugo list drafts | wc -l)
+          if [ $DRAFTS -gt 1 ]; then
+            echo "⚠️  Found $((DRAFTS-1)) draft posts"
+            hugo list drafts
+          else
+            echo "✅ No draft posts found"
+          fi
+
+      - name: Check for Future Posts
+        run: |
+          echo "Checking for future posts..."
+          FUTURE=$(hugo list future | wc -l)
+          if [ $FUTURE -gt 1 ]; then
+            echo "⚠️  Found $((FUTURE-1)) future posts"
+            hugo list future
+            echo "Note: Future posts are built with --buildFuture flag in production"
+          else
+            echo "✅ No future posts found"
+          fi
+
+      - name: Test Build (Development)
+        run: |
+          echo "Testing development build..."
+          hugo --buildDrafts --buildFuture --verbose
+          echo "✅ Development build successful"
+
+      - name: Test Build (Production)
+        run: |
+          echo "Testing production build..."
+          hugo --minify --buildFuture --verbose
+          echo "✅ Production build successful"
+
+      - name: Check Build Output
+        run: |
+          echo "Analysing build output..."
+          echo "Total pages: $(find public -name "*.html" | wc -l)"
+          echo "Total assets: $(find public -type f ! -name "*.html" | wc -l)"
+          echo "Site size: $(du -sh public | cut -f1)"
+          
+          # Check for common issues
+          if [ ! -f "public/index.html" ]; then
+            echo "❌ Missing homepage!"
+            exit 1
+          fi
+          
+          if [ ! -f "public/posts/index.html" ]; then
+            echo "❌ Missing posts index!"
+            exit 1
+          fi
+          
+          echo "✅ Build output looks good"
+
+  validate-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.7
+        with:
+          fetch-depth: 0
+
+      - name: Check Markdown Files
+        run: |
+          echo "Validating markdown files..."
+          
+          # Check for files with missing front matter
+          for file in content/posts/*.md; do
+            if [ -f "$file" ]; then
+              if ! head -1 "$file" | grep -q "^---"; then
+                echo "❌ Missing front matter in $file"
+                exit 1
+              fi
+            fi
+          done
+          
+          # Check for required front matter fields
+          for file in content/posts/*.md; do
+            if [ -f "$file" ]; then
+              if ! grep -q "^title:" "$file"; then
+                echo "❌ Missing title in $file"
+                exit 1
+              fi
+              if ! grep -q "^date:" "$file"; then
+                echo "❌ Missing date in $file"
+                exit 1
+              fi
+            fi
+          done
+          
+          echo "✅ All markdown files have valid front matter"
+
+      - name: Check for Broken Internal Links
+        run: |
+          echo "Checking for potential broken internal links..."
+          
+          # Look for common broken link patterns
+          if grep -r "](http://localhost" content/; then
+            echo "❌ Found localhost links in content"
+            exit 1
+          fi
+          
+          # Check for missing project references
+          if grep -r "](/projects/" content/; then
+            echo "Found internal project links, checking they exist..."
+            for link in $(grep -ro "](/projects/[^)]*)" content/ | sed 's/.*](/projects//;s/[)].*//' | sort -u); do
+              if [ ! -d "content/projects$link" ] && [ ! -f "content/projects$link.md" ] && [ ! -f "content/projects$link/index.md" ]; then
+                echo "❌ Broken internal link: /projects$link"
+                exit 1
+              fi
+            done
+          fi
+          
+          echo "✅ No obvious broken internal links found"
+
+  validate-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.7
+
+      - name: Check Image References
+        run: |
+          echo "Checking image references in content..."
+          
+          # Find all image references in markdown
+          for file in content/**/*.md; do
+            if [ -f "$file" ]; then
+              # Check for markdown image syntax
+              grep -n "!\[.*\](" "$file" | while read -r line; do
+                image_path=$(echo "$line" | sed 's/.*!\[.*\](\([^)]*\)).*/\1/')
+                
+                # Skip external URLs
+                if [[ "$image_path" =~ ^https?:// ]]; then
+                  continue
+                fi
+                
+                # Check if local image exists
+                if [[ "$image_path" =~ ^/ ]]; then
+                  # Absolute path
+                  full_path="static${image_path}"
+                else
+                  # Relative path
+                  dir=$(dirname "$file")
+                  full_path="${dir}/${image_path}"
+                fi
+                
+                if [ ! -f "$full_path" ]; then
+                  echo "❌ Missing image: $image_path referenced in $file"
+                  echo "   Expected at: $full_path"
+                fi
+              done
+            fi
+          done
+          
+          echo "✅ Image reference check complete"
+
+  summary:
+    runs-on: ubuntu-latest
+    needs: [validate-build, validate-content, validate-images]
+    if: always()
+    steps:
+      - name: PR Validation Summary
+        run: |
+          echo "## PR Validation Results 📝" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ needs.validate-build.result }}" == "success" ]; then
+            echo "✅ **Build Validation**: Passed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Build Validation**: Failed" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ needs.validate-content.result }}" == "success" ]; then
+            echo "✅ **Content Validation**: Passed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Content Validation**: Failed" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ needs.validate-images.result }}" == "success" ]; then
+            echo "✅ **Image Validation**: Passed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Image Validation**: Failed" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Your PR is ready to merge! 🚀" >> $GITHUB_STEP_SUMMARY

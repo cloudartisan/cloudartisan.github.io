@@ -82,3 +82,17 @@
 - Work locally until a post is completely ready before pushing
 - Remember that pushing to main triggers the GitHub Pages deployment workflow
   and updates the site
+
+## Pull Request Workflow
+- For significant changes, create a feature branch and PR instead of pushing directly to main
+- The PR validation workflow will automatically test:
+  - Hugo build success (both development and production)
+  - Content validation (front matter, required fields)
+  - Internal link checking
+  - Image reference validation
+- All validation checks must pass before merging
+- Use PR workflow for:
+  - New blog posts (for review and validation)
+  - Theme or configuration changes
+  - Multiple file changes
+  - Experimental features
