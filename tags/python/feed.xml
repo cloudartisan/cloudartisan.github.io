@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Cloud Artisan</title><link>https://cloudartisan.com/tags/python/</link><description>Recent content in Python on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 23 Nov 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/python/feed.xml" rel="self" type="application/rss+xml"/><item><title>My Djangy invite arrived!</title><link>https://cloudartisan.com/posts/my-djangy-invite-arrived/</link><pubDate>Tue, 23 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/my-djangy-invite-arrived/</guid><description>&lt;p&gt;My Djangy invite arrived and I&amp;rsquo;m very excited!&lt;/p&gt;
+&lt;p&gt;Now I just need to set aside the time to use it. I already have some ideas&amp;hellip;&lt;/p&gt;</description></item><item><title>Google App Engine SDK broken on Ubuntu Maverick 10.10</title><link>https://cloudartisan.com/posts/google-app-engine-sdk-broken-on-ubuntu-maverick-10-10/</link><pubDate>Sun, 24 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-sdk-broken-on-ubuntu-maverick-10-10/</guid><description>&lt;p&gt;The Google App Engine SDK is broken on Ubuntu 10.10, but it&amp;rsquo;s easy enough to fix&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The Google App Engine SDK requires Python 2.5. It does not work with Python 2.6.&lt;/p&gt;
+&lt;p&gt;This problem is covered in these Google Code issues:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://code.google.com/p/googleappengine/issues/detail?id=1159" target="_blank" rel="noreferrer"&gt;http://code.google.com/p/googleappengine/issues/detail?id=1159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://code.google.com/p/googleappengine/issues/detail?id=757" target="_blank" rel="noreferrer"&gt;http://code.google.com/p/googleappengine/issues/detail?id=757&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you try to use Google App Engine SDK on Python 2.6 you will encounter tracebacks like the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+Traceback (most recent call last):
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 3211, in _HandleRequest
+ self._Dispatch(dispatcher, self.rfile, outfile, env_dict)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 3154, in _Dispatch
+ base_env_dict=env_dict)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 527, in Dispatch
+ base_env_dict=base_env_dict)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 2452, in Dispatch
+ CGIDispatcher.Dispatch(self, *args, **kwargs)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 2404, in Dispatch
+ self._module_dict)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 2441, in curried_exec_cgi
+ return ExecuteCGI(*args, **kwargs)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 2312, in ExecuteCGI
+ logging.debug('Executing CGI with env: %s', pprint.pformat(env))
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 60, in pformat
+ return PrettyPrinter(indent=indent, width=width, depth=depth).pformat(object)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 119, in pformat
+ self._format(object, sio, 0, 0, {}, 0)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 137, in _format
+ rep = self._repr(object, context, level - 1)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 230, in _repr
+ self._depth, level)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 242, in format
+ return _safe_repr(object, context, maxlevels, level)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 284, in _safe_repr
+ for k, v in _sorted(object.items()):
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 75, in _sorted
+ with warnings.catch_warnings():
+ File &amp;quot;/usr/lib/python2.6/warnings.py&amp;quot;, line 333, in __init__
+ self._module = sys.modules['warnings'] if module is None else module
+ KeyError: 'warnings'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+... which is a pain in the proverbial to debug.
+
+Ubuntu Maverick 10.10 (and some earlier releases of Ubuntu) uses Python 2.6 by default. In older versions of Ubuntu the fix involved installing the older Python 2.5 from the official repository. However, with Ubuntu Maverick 10.10 things are worse... Python 2.5 is no longer available from an official repository!
+
+Thankfully, there is a repository on Launchpad that contains the necessary packages. To install, do the following:
+
+
+ ```bash
+ sudo add-apt-repository ppa:fkrull/deadsnakes
+ sudo apt-get update
+ sudo apt-get install python2.5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, modify &lt;code&gt;dev_appserver.py&lt;/code&gt; in the Google App Engine SDK. Change the first line from:&lt;/p&gt;</description></item><item><title>Migrating from Google App Engine to Django</title><link>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</link><pubDate>Mon, 18 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</guid><description>&lt;p&gt;Unfortunately, I had to migrate one of my projects from Google App Engine to Django on a self-managed server. I didn&amp;rsquo;t want to do this. See &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #2&lt;/a&gt; and &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-3/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #3&lt;/a&gt; for the main reasons. Those headaches became bad enough that I had to bite the bullet and migrate out of Google App Engine.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It&amp;rsquo;s not for the faint-hearted&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="why-google-app-engine-in-the-first-place" class="relative group"&gt;Why Google App Engine In The First Place? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#why-google-app-engine-in-the-first-place" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Google App Engine is a PaaS (Platform as a Service). PaaS products eliminate the need for lower-level server management and, if they&amp;rsquo;re good, make it very easy to write and maintain code for that platform.&lt;/p&gt;</description></item><item><title>Install uWSGI (latest) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</guid><description>&lt;p&gt;First, why would you want it? uWSGI is a fast, self-healing, WSGI server, originally intended for use with Python web applications. I intend to use it with Python Django, served by Cherokee.&lt;/p&gt;
+&lt;p&gt;As for installation&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Do not bother doing a hands-on install from source. It&amp;rsquo;s messy. Just use &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install gcc python-dev libxml2-dev
+apt-get install python-pip
+pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Simple as that.
+
+You should [follow me on twitter](https://twitter.com/davidltaylor).
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Python One-Liner: Debug Mail Server</title><link>https://cloudartisan.com/posts/python-one-liner-debug-mail-server/</link><pubDate>Sun, 03 Oct 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/python-one-liner-debug-mail-server/</guid><description>&lt;p&gt;Need a pretend mail server that you can use for debugging? Try this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+python -m smtpd -n -c DebuggingServer localhost:1025
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+It listens on port 1025 for local connections.
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Migrating from Google App Engine to Django... a preamble</title><link>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django-preamble/</link><pubDate>Wed, 29 Sep 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django-preamble/</guid><description>&lt;p&gt;I&amp;rsquo;ve been nose-deep migrating a project from Google App Engine to Django.  See &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #2&lt;/a&gt; and &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-3/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #3&lt;/a&gt; for the reasons.  I&amp;rsquo;m keeping notes on the experience, in case any other poor suckers out there have to migrate from the cosy, loving embrace of a PaaS to the cold, hard trenches of a self-managed server.&lt;/p&gt;
+&lt;p&gt;Stay tuned&amp;hellip;&lt;/p&gt;</description></item><item><title>Google App Engine - unknown URL handler type</title><link>https://cloudartisan.com/posts/google-app-engine-unknown-url-handler-type/</link><pubDate>Sun, 15 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-unknown-url-handler-type/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Fatal error when loading application configuration:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Invalid object:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Unknown url handler type.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;lt;URLMap 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; secure=always 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; static_files=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; auth_fail_action=redirect 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; require_matching_file=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; static_dir=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; script=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; url=https://cloudartisan.com/admin/.* 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; upload=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; expiration=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; login=admin 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; mime_type=None
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; in &amp;#34;/home/david/Subversion/cloudzu/software/cloudzuum/src/app.yaml&amp;#34;, line 37, column 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;This happens when you have an error in your `script:` definition in `app.yaml` or `script:` is missing entirely.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;In my case, it was missing entirely... woops!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Google App Engine Gotcha 2</title><link>https://cloudartisan.com/posts/google-app-engine-gotcha-2/</link><pubDate>Mon, 09 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-gotcha-2/</guid><description>&lt;p&gt;For &lt;em&gt;Google App Engine: Gotcha #2&lt;/em&gt; I choose the default 5 second timeout on &lt;code&gt;urlfetch&lt;/code&gt;. This function is part of the Google App Engine&amp;rsquo;s API and applies to both Python and Java.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="http://code.google.com/appengine/docs/python/urlfetch/fetchfunction.html" target="_blank" rel="noreferrer"&gt;Python documentation&lt;/a&gt; states:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The deadline can be up to a maximum of 10 seconds. If deadline is None, the deadline is set to 5 seconds.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The &lt;a href="http://code.google.com/appengine/docs/java/urlfetch/overview.html" target="_blank" rel="noreferrer"&gt;Java documentation&lt;/a&gt; states:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can set a deadline for a request, the most amount of time the service will wait for a response. By default, the deadline for a fetch is 5 seconds. The maximum deadline is 10 seconds.&lt;/p&gt;</description></item><item><title>Google App Engine Gotcha 1</title><link>https://cloudartisan.com/posts/google-app-engine-gotcha-1/</link><pubDate>Sun, 27 Jun 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-gotcha-1/</guid><description>&lt;p&gt;I like Google App Engine. However, there are a number of &lt;em&gt;gotchas&lt;/em&gt; that can creep up on you. Especially if you dive right in without doing any reading first.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s gotcha #1&amp;hellip;&lt;/p&gt;
+&lt;p&gt;A number of standard Python modules are not available or only provide limited functionality. Click &lt;a href="http://code.google.com/appengine/kb/libraries.html" target="_blank" rel="noreferrer"&gt;here&lt;/a&gt; to see Google App Engine&amp;rsquo;s list of enabled, partially-enabled and empty modules.&lt;/p&gt;
+&lt;p&gt;Sometimes developing for Google App Engine isn&amp;rsquo;t straightforward and requires a little imagination. However, most of the time there&amp;rsquo;s a simple alternative; it just takes a little reading. For example, if you want to send e-mail on Google App Engine you can&amp;rsquo;t use Python&amp;rsquo;s &lt;code&gt;smtplib&lt;/code&gt; (because it relies on &lt;code&gt;socket&lt;/code&gt;, which is implemented as an empty module). Instead, you would do the following:&lt;/p&gt;</description></item><item><title>Scheduled Tasks With Google App Engine &amp; Python</title><link>https://cloudartisan.com/posts/scheduled-tasks-with-google-app-engine-python/</link><pubDate>Wed, 02 Jun 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/scheduled-tasks-with-google-app-engine-python/</guid><description>&lt;p&gt;We&amp;rsquo;ll create a simple Hello World application that sends an e-mail every 5 minutes to reassure you that the Internet is still out there and still cares.&lt;/p&gt;
+&lt;p&gt;First, download and install the &lt;a href="http://code.google.com/appengine/downloads.html" target="_blank" rel="noreferrer"&gt;Google App Engine SDK&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+wget http://googleappengine.googlecode.com/files/google_appengine_1.3.4.zip
+unzip google_appengine_1.3.4.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Create a directory for your application:
+
+ ```bash
+ mkdir helloworld
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create an app.yaml file to describe your application:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```yaml
+application: helloworld
+version: 1
+runtime: python
+api_version: 1handlers:
+- url: /helloworld
+ script: helloworld.py
+ login: admin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+Create a cron.yaml file to run your scheduled task:
+
+ ```yaml
+ cron:
+ - description: hello... is it me you&amp;#39;re looking for?
+ url: /helloworld
+ schedule: every 5 minutes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create your script (changing the e-mail addresses, of course):&lt;/p&gt;</description></item><item><title>RightScripts In Any Scripting Language</title><link>https://cloudartisan.com/posts/rightscripts-in-any-scripting-language/</link><pubDate>Sun, 30 May 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/rightscripts-in-any-scripting-language/</guid><description>&lt;p&gt;&lt;a href="http://www.rightscale.com/" target="_blank" rel="noreferrer"&gt;RightScale&amp;rsquo;s&lt;/a&gt; cloud management platform can be used to deploy and manage solutions on cloud infrastructure with some degree of automation, control, and scaling.&lt;/p&gt;
+&lt;p&gt;Users create &lt;a href="http://support.rightscale.com/12-Guides/01-RightScale_Dashboard_User_Guide/03-Design/02-RightScripts" target="_blank" rel="noreferrer"&gt;RightScripts&lt;/a&gt; to automate actions on their servers. Think of them the same way you would any other script for managing a server. The differences are that they are managed inside RightScale&amp;rsquo;s management platform, with version control, easy reuse, and access to handy environment variables. A RightScript is typically written in Bash, Ruby, or Perl, and has variables that are initialised using input parameters.&lt;/p&gt;</description></item></channel></rss>
