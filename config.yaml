@@ -46,7 +46,6 @@ ignoreLogs:
 module:
   imports:
     - path: github.com/jpanther/congo/v2
-      version: v2.11.0
 
 # Theme-specific configuration
 params:
