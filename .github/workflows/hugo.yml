@@ -62,8 +62,8 @@ jobs:
             echo "go.mod already exists, using existing module configuration"
           fi
           
-          # Download modules based on go.mod
-          hugo mod download
+          # Ensure modules are up to date
+          hugo mod tidy
           
           # Verify module setup
           echo "Module status:"
