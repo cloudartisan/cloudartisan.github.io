@@ -1,6 +1,6 @@
 ---
 title: "Claude Code Tips & Tricks: Working with Lovable"
-date: 2025-09-01
+date: 2025-09-02
 draft: false
 description: "How to effectively combine Claude Code and Lovable for full-stack development, avoiding common pitfalls and leveraging each tool's strengths."
 tags: ["Claude Code", "Lovable", "Tips", "CLI", "AI Assistants", "TypeScript", "React", "Full-Stack Development"]
