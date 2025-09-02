@@ -34,9 +34,7 @@ jobs:
           extended: true
 
       - name: Setup Hugo Modules
-        run: |
-          hugo mod tidy
-          hugo mod get github.com/jpanther/congo/v2@v2.12.2
+        run: hugo mod tidy
 
       - name: Validate Hugo Configuration
         run: |
