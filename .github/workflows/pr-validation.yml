@@ -18,25 +18,50 @@ jobs:
   validate-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
 
+      - name: Extract versions from go.mod
+        id: versions
+        run: |
+          GO_VERSION=$(grep "^go " go.mod | awk '{print $2}')
+          HUGO_VERSION=$(grep "github.com/gohugoio/hugo v" go.mod | awk '{print $2}' | sed 's/v//')
+          echo "go_version=${GO_VERSION}.0" >> $GITHUB_OUTPUT
+          echo "hugo_version=${HUGO_VERSION}" >> $GITHUB_OUTPUT
+          echo "Using Go version: ${GO_VERSION}.0"
+          echo "Using Hugo version: ${HUGO_VERSION}"
+
       - name: Setup Go
-        uses: actions/setup-go@v5.2.0
+        uses: actions/setup-go@v5.5.0
         with:
-          go-version: '1.25.0'
+          go-version: ${{ steps.versions.outputs.go_version }}
       
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.6.0
+        uses: peaceiris/actions-hugo@v3.0.0
         with:
-          hugo-version: '0.148.1'
+          hugo-version: ${{ steps.versions.outputs.hugo_version }}
           extended: true
 
       - name: Setup Hugo Modules
         run: |
+          # Clean start - remove any existing module files that might be corrupted
+          rm -f go.sum
+          
+          # Only initialize if go.mod doesn't exist
+          if [ ! -f go.mod ]; then
+            echo "Initializing Hugo modules..."
+            hugo mod init github.com/cloudartisan/cloudartisan.github.io
+          else
+            echo "go.mod already exists, using existing module configuration"
+          fi
+          
+          # Ensure modules are up to date
           hugo mod tidy
-          hugo mod get github.com/jpanther/congo/v2@v2.12.2
+          
+          # Verify module setup
+          echo "Module status:"
+          hugo mod graph
 
       - name: Validate Hugo Configuration
         run: |
@@ -70,13 +95,13 @@ jobs:
       - name: Test Build (Development)
         run: |
           echo "Testing development build..."
-          hugo --buildDrafts --buildFuture --verbose
+          hugo --buildDrafts --buildFuture
           echo "✅ Development build successful"
 
       - name: Test Build (Production)
         run: |
           echo "Testing production build..."
-          hugo --minify --buildFuture --verbose
+          hugo --minify --buildFuture
           echo "✅ Production build successful"
 
       - name: Check Build Output
@@ -102,7 +127,7 @@ jobs:
   validate-content:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
 
@@ -162,7 +187,7 @@ jobs:
   validate-images:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v5.0.0
 
       - name: Check Image References
         run: |

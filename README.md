@@ -20,7 +20,7 @@ This site is built with:
 
 2. Install Hugo (specific version to ensure compatibility):
    ```
-   go install -tags extended github.com/gohugoio/hugo@v0.145.0
+    go install -tags extended github.com/gohugoio/hugo@v0.149.0
    ```
    
    Ensure your Go bin directory (typically ~/go/bin) is in your PATH.
