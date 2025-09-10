@@ -1,6 +1,6 @@
 # [Cloud Artisan Blog](https://cloudartisan.com/)
 
-[![Deploy Hugo site](https://github.com/cloudartisan/cloudartisan.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/cloudartisan/cloudartisan.github.io/actions/workflows/hugo.yml)
+[![Deploy Hugo site](https://github.com/cloudartisan/cloudartisan.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/cloudartisan/cloudartisan.github.io/actions/workflows/hugo.yml) [![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
 
 Personal [blog](https://cloudartisan.com/) and project showcase for David Taylor (Cloud Artisan).
 
