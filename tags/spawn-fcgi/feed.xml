@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spawn-Fcgi on Cloud Artisan</title><link>https://cloudartisan.com/tags/spawn-fcgi/</link><description>Recent content in Spawn-Fcgi on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 04 Oct 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/spawn-fcgi/feed.xml" rel="self" type="application/rss+xml"/><item><title>Cherokee failing to exec spawn-fcgi</title><link>https://cloudartisan.com/posts/cherokee-failin-to-exec-spawn-fcgi/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/cherokee-failin-to-exec-spawn-fcgi/</guid><description>&lt;p&gt;If you&amp;rsquo;re using &lt;code&gt;spawn-fcgi&lt;/code&gt; with Cherokee (probably to get a wiki or PHP application or similar working) and you see:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;503 Service Unavailable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; you might be having the same problem I had. That is, Cherokee was failing to launch &lt;code&gt;spawn-fcgi&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To verify this is the cause of your problem, stop Cherokee, then start it manually at the command line:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# /usr/sbin/cherokee --admin_child -C /etc/cherokee/cherokee.conf
+Cherokee Web Server 1.0.8 (Aug 18 2010): Listening on port ALL:80, TLS disabled, IPv6 enabled, using epoll, 4096 fds system limit, max. 2041 connections, caching I/O, 20 threads, 102 connections per thread, standard scheduling policy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, try to visit the site giving you the problem. If you see the following in your terminal then you&amp;rsquo;ve probably got the same problem I had:&lt;/p&gt;</description></item></channel></rss>

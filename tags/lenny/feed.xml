@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lenny on Cloud Artisan</title><link>https://cloudartisan.com/tags/lenny/</link><description>Recent content in Lenny on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 02 Oct 2010 00:00:00 +1000</lastBuildDate><atom:link href="https://cloudartisan.com/tags/lenny/feed.xml" rel="self" type="application/rss+xml"/><item><title>Install Cherokee (testing) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-cherokee-testing-on-debian-lenny/</link><pubDate>Sat, 02 Oct 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/install-cherokee-testing-on-debian-lenny/</guid><description>&lt;p&gt;Add the following to &lt;code&gt;/etc/sources&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Create `/etc/apt/apt.conf` with:
+
+
+ ```text
+ APT::Default-Release &amp;#34;stable&amp;#34;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create &lt;code&gt;/etc/apt/preferences&lt;/code&gt; for pinning the testing packages:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+Package: libssl-dev
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libssl0.9.8
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-base0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: mysql-common
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libmysqlclient16
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-server0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-config0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-mod-admin
+Pin: release a=testing
+Pin-Priority: 999 
+Package: cherokee
+Pin: release a=testing
+Pin-Priority: 999 
+Package: *
+Pin: release a=stable
+Pin-Priority: 500
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Then install the packages:
+
+
+ ```bash
+ apt-get install -t testing cherokee libcherokee-base0 libcherokee-server0 libcherokee-config0 libcherokee-mod-admin libssl0.9.8
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s the installation. For the configuration, check out the &lt;a href="http://www.cherokee-project.com/doc/cookbook.html" target="_blank" rel="noreferrer"&gt;Cherokee cookbooks&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

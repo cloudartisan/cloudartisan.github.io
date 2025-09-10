@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hudson on Cloud Artisan</title><link>https://cloudartisan.com/tags/hudson/</link><description>Recent content in Hudson on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 11 Oct 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/hudson/feed.xml" rel="self" type="application/rss+xml"/><item><title>Hudson: pam_authenticate failed</title><link>https://cloudartisan.com/posts/hudson-pam-authenticate-failed/</link><pubDate>Mon, 11 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/hudson-pam-authenticate-failed/</guid><description>&lt;p&gt;If you&amp;rsquo;re getting login failures after enabling &lt;em&gt;Unix user/group database&lt;/em&gt; security check the log: &lt;code&gt;/var/log/hudson/hudson.log&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you see:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+Oct 11, 2010 9:41:08 PM hudson.security.AuthenticationProcessingFilter2 onUnsuccessfulAuthentication
+INFO: Login attempt failed
+org.acegisecurity.BadCredentialsException: pam_authenticate failed : Authentication failure; nested exception is org.jvnet.libpam.PAMException: pam_authenticate failed : Authentication failure
+ at hudson.security.PAMSecurityRealm$PAMAuthenticationProvider.authenticate(PAMSecurityRealm.java:100)
+ at org.acegisecurity.providers.ProviderManager.doAuthentication(ProviderManager.java:195)
+ at org.acegisecurity.AbstractAuthenticationManager.authenticate(AbstractAuthenticationManager.java:45)
+ at org.acegisecurity.ui.webapp.AuthenticationProcessingFilter.attemptAuthentication(AuthenticationProcessingFilter.java:71)
+ at org.acegisecurity.ui.AbstractProcessingFilter.doFilter(AbstractProcessingFilter.java:252)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at org.acegisecurity.ui.basicauth.BasicProcessingFilter.doFilter(BasicProcessingFilter.java:173)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at org.acegisecurity.context.HttpSessionContextIntegrationFilter.doFilter(HttpSessionContextIntegrationFilter.java:249)
+ at hudson.security.HttpSessionContextIntegrationFilter2.doFilter(HttpSessionContextIntegrationFilter2.java:66)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:76)
+ at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:164)
+ at winstone.FilterConfiguration.execute(FilterConfiguration.java:195)
+ at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:368)
+ at winstone.RequestDispatcher.forward(RequestDispatcher.java:333)
+ at winstone.RequestHandlerThread.processRequest(RequestHandlerThread.java:244)
+ at winstone.RequestHandlerThread.run(RequestHandlerThread.java:150)
+ at java.lang.Thread.run(Thread.java:619) Caused by: org.jvnet.libpam.PAMException: pam_authenticate failed : Authentication failure
+ at org.jvnet.libpam.PAM.check(PAM.java:105)
+ at org.jvnet.libpam.PAM.authenticate(PAM.java:123)
+ at hudson.security.PAMSecurityRealm$PAMAuthenticationProvider.authenticate(PAMSecurityRealm.java:90)
+ ... 18 more
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; the problem is likely caused by Hudson being unable to read your &lt;code&gt;/etc/shadow&lt;/code&gt; file.&lt;/p&gt;</description></item><item><title>Install Hudson on Debian Lenny for Continuous Integration</title><link>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</guid><description>&lt;p&gt;I found that Hudson depends on &lt;code&gt;daemon&lt;/code&gt; but it doesn&amp;rsquo;t install automatically. So, before we get started:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install daemon
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Now that&amp;#39;s out of the way, we need to grab the Hudson key and install the package:
+
+
+ ```bash
+ wget -q -O - http://hudson-ci.org/debian/hudson-ci.org.key | apt-key add -
+ cd /tmp
+ wget http://hudson-ci.org/latest/debian/hudson.deb
+ dpkg --install ./hudson.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If everything went well you&amp;rsquo;ll see Hudson running:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ps auxw | grep hudson
+hudson 9101 0.0 0.1 2108 516 ? Ss 09:59 0:00 /usr/bin/daemon --name=hudson --inherit --env=HUDSON_HOME=/var/lib/hudson --output=/var/log/hudson/hudson.log --pidfile=/var/run/hudson/hudson.pid -- /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+hudson 9103 18.9 10.3 297064 52660 ? Sl 09:59 0:03 /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; and listening on port 8080:&lt;/p&gt;</description></item></channel></rss>

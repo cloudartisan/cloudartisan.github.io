@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Drupal on Cloud Artisan</title><link>https://cloudartisan.com/tags/drupal/</link><description>Recent content in Drupal on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 Oct 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/drupal/feed.xml" rel="self" type="application/rss+xml"/><item><title>RightScale ServerTemplate: Bitnami Drupal Stack</title><link>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-drupal-stack/</link><pubDate>Thu, 21 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-drupal-stack/</guid><description>&lt;p&gt;I&amp;rsquo;ve published a &lt;a href="http://www.rightscale.com" target="_blank" rel="noreferrer"&gt;RightScale&lt;/a&gt; ServerTemplate for installing &lt;a href="http://bitnami.org/stack/drupal" target="_blank" rel="noreferrer"&gt;Bitnami&amp;rsquo;s Drupal stack&lt;/a&gt; on Amazon EC2.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Drupal is an open source content management platform powering millions of websites and applications. It’s built, used, and supported by an active and diverse community of people around the world.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;My ServerTemplate is based on an existing ServerTemplate by Bitnami. It differs from Bitnami&amp;rsquo;s existing Drupal ServerTemplate in a few ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;it uses an Ubuntu RightScale MultiCloud Image as its base&lt;/li&gt;
+&lt;li&gt;it has some of RightScale&amp;rsquo;s RightScripts for logging and monitoring added&lt;/li&gt;
+&lt;li&gt;it installs the Drupal stack from a supplied URL, meaning you can trial different versions of the Drupal stack easily&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using this ServerTemplate you can easily fire up a Drupal instance to either:&lt;/p&gt;</description></item></channel></rss>

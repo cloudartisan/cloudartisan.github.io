@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ec2 on Cloud Artisan</title><link>https://cloudartisan.com/tags/ec2/</link><description>Recent content in Ec2 on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 02 Jun 2010 00:00:00 +1000</lastBuildDate><atom:link href="https://cloudartisan.com/tags/ec2/feed.xml" rel="self" type="application/rss+xml"/><item><title>Install EC2 AMI &amp; API Tools in Debian</title><link>https://cloudartisan.com/posts/install-ec2-tools-debian/</link><pubDate>Wed, 02 Jun 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/install-ec2-tools-debian/</guid><description>&lt;p&gt;Download the zip files for the tools:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+$ wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip
+$ wget http://s3.amazonaws.com/ec2-downloads/ec2-ami-tools.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+Unzip the tools:
+
+ ```bash
+ $ unzip ec2-api-tools.zip
+ $ unzip ec2-ami-tools.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will give you some directories with version numbers appended.
+Put them in a safe place:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+$ mkdir /usr/local/ec2
+$ cp -r ec2-ami-tools-1.3-34544/* /usr/local/ec2/
+$ cp -r ec2-api-tools-1.3-42584/* /usr/local/ec2/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+Install Java:
+
+ ```bash
+ $ apt-get install sun-java6-jre
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit the system-wide profile:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+$ vi /etc/profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+Add the following to the file:
+
+ ```bash
+ # EC2 Tools
+ export EC2_HOME=/usr/local/ec2
+ export PATH=$PATH:$EC2_HOME/bin
+ export JAVA_HOME=/usr
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When someone logs in, their environment will be ready and raring
+to go. Users can then issue commands such as:&lt;/p&gt;</description></item></channel></rss>
