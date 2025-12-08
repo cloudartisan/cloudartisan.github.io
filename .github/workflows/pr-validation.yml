@@ -18,7 +18,7 @@ jobs:
   validate-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5.0.0
+      - uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
 
@@ -127,7 +127,7 @@ jobs:
   validate-content:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5.0.0
+      - uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
 
@@ -187,7 +187,7 @@ jobs:
   validate-images:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5.0.0
+      - uses: actions/checkout@v6.0.1
 
       - name: Check Image References
         run: |
