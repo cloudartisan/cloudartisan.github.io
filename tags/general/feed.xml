@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>General on Cloud Artisan</title><link>https://cloudartisan.com/tags/general/</link><description>Recent content in General on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 29 Nov 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/general/feed.xml" rel="self" type="application/rss+xml"/><item><title>Tuning PHP APC with Cherokee - Round 1</title><link>https://cloudartisan.com/posts/tuning-php-apc-with-cherokee-round-1/</link><pubDate>Mon, 29 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/tuning-php-apc-with-cherokee-round-1/</guid><description>&lt;p&gt;Since writing &lt;a href="http://www.cloudartisan.com/2010/11/using-php-apc-with-cherokee/" target="_blank" rel="noreferrer"&gt;Using PHP APC with Cherokee&lt;/a&gt; I noticed that my cache hits were dropping and my cache misses were growing. This is my first attempt at tweaking the configuration of &lt;code&gt;php-apc&lt;/code&gt; to try to eke out more performance.&lt;/p&gt;
+&lt;p&gt;I enabled my &lt;code&gt;apc.php&lt;/code&gt; page (check the previous article), checked the statistics, and saw that the &lt;code&gt;Cache full count&lt;/code&gt; was growing. My cache had filled several times.&lt;/p&gt;
+&lt;p&gt;According to the &lt;a href="http://www.php.net/manual/en/apc.configuration.php" target="_blank" rel="noreferrer"&gt;APC configuration documentation&lt;/a&gt; there are two settings that control the expiration of cache entries. They are:&lt;/p&gt;</description></item><item><title>Using PHP APC with Cherokee</title><link>https://cloudartisan.com/posts/using-php-apc-with-cherokee/</link><pubDate>Sun, 28 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/using-php-apc-with-cherokee/</guid><description>&lt;p&gt;If you&amp;rsquo;re using Cherokee as your web server, you&amp;rsquo;re probably already interested in squeezing every drop of performance out of your server. If you&amp;rsquo;re hosting PHP sites with Cherokee, using APC (Alternative PHP Cache) could enable you to squeeze out even more drops.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Alternative PHP Cache (APC) is a free and open opcode cache for PHP. Its goal is to provide a free, open, and robust framework for caching and optimizing PHP intermediate code.&lt;/p&gt;</description></item><item><title>Using ISPConfig with Cherokee</title><link>https://cloudartisan.com/posts/using-ispconfig-with-cherokee/</link><pubDate>Thu, 25 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/using-ispconfig-with-cherokee/</guid><description>&lt;p&gt;The &lt;a href="http://www.cherokee-project.com/" target="_blank" rel="noreferrer"&gt;Cherokee Project&lt;/a&gt; describes Cherokee as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a very fast, flexible and easy to configure Web Server. It supports the widespread technologies nowadays: FastCGI, SCGI, PHP, CGI, uWSGI, SSI, TLS and SSL encrypted connections, Virtual hosts, Authentication, on the fly encoding, Load Balancing, Apache compatible log files, Data Base Balancing, Reverse HTTP Proxy, Traffic Shaper, Video Streaming and much more.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;It makes a great alternative to the swiss-army chainsaw that is &lt;a href="http://www.apache.org" target="_blank" rel="noreferrer"&gt;Apache&lt;/a&gt; and the documentation, wizards, and screencasts make it infinitely more friendly than &lt;a href="http://nginx.net" target="_blank" rel="noreferrer"&gt;nginx&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Install uWSGI (latest) on Ubuntu Server 10.10</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-ubuntu-server-10-10/</link><pubDate>Sun, 21 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-ubuntu-server-10-10/</guid><description>&lt;p&gt;uWSGI is a fast, self-healing, WSGI server. It is typically used with Python web applications. It works very well with the Cherokee Web Server and the Django web application framework.&lt;/p&gt;
+&lt;p&gt;To install the latest uWSGI use &lt;code&gt;pip&lt;/code&gt; and the URL for the latest version of uWSGI:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+sudo apt-get install libxml2-dev build-essential python-dev python-pip
+sudo pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Simple as that.
+
+You should [follow me on Twitter](https://twitter.com/davidltaylor).
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Adding the Cherokee Web Server PPA to Ubuntu</title><link>https://cloudartisan.com/posts/adding-the-cherokee-web-server-ppa-to-ubuntu/</link><pubDate>Sat, 20 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/adding-the-cherokee-web-server-ppa-to-ubuntu/</guid><description>&lt;p&gt;The following commands will add the Cherokee Web Server PPA to Ubuntu (version 9.10 and higher). The first command adds the extremely handy &lt;code&gt;add-apt-repository&lt;/code&gt; program to your system. The second adds the Cherokee Personal Package Archive.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:cherokee-webserver/ppa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+At the moment, Cherokee is at version 1.0.9.
+
+If you don&amp;#39;t already have Cherokee installed and you want to install it I find the following combination of packages most useful:
+
+
+ ```bash
+ sudo apt-get update
+ sudo apt-get install cherokee cherokee-doc libcherokee-mod-libssl libcherokee-mod-streaming libcherokee-mod-rrd libcherokee-mod-admin spawn-fcgi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s it. If you want more simple posts on building lean servers, cloud computing, software development and more, &lt;a href="http://www.cloudartisan.com/feed" target="_blank" rel="noreferrer"&gt;subscribe to my RSS feed&lt;/a&gt; and/or &lt;a href="https://twitter.com/davidltaylor" target="_blank" rel="noreferrer"&gt;follow me on Twitter&lt;/a&gt;. Cheers!&lt;/p&gt;</description></item><item><title>Migrating from Google App Engine to Django</title><link>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</link><pubDate>Mon, 18 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</guid><description>&lt;p&gt;Unfortunately, I had to migrate one of my projects from Google App Engine to Django on a self-managed server. I didn&amp;rsquo;t want to do this. See &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #2&lt;/a&gt; and &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-3/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #3&lt;/a&gt; for the main reasons. Those headaches became bad enough that I had to bite the bullet and migrate out of Google App Engine.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It&amp;rsquo;s not for the faint-hearted&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="why-google-app-engine-in-the-first-place" class="relative group"&gt;Why Google App Engine In The First Place? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#why-google-app-engine-in-the-first-place" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Google App Engine is a PaaS (Platform as a Service). PaaS products eliminate the need for lower-level server management and, if they&amp;rsquo;re good, make it very easy to write and maintain code for that platform.&lt;/p&gt;</description></item><item><title>Hudson: pam_authenticate failed</title><link>https://cloudartisan.com/posts/hudson-pam-authenticate-failed/</link><pubDate>Mon, 11 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/hudson-pam-authenticate-failed/</guid><description>&lt;p&gt;If you&amp;rsquo;re getting login failures after enabling &lt;em&gt;Unix user/group database&lt;/em&gt; security check the log: &lt;code&gt;/var/log/hudson/hudson.log&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you see:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+Oct 11, 2010 9:41:08 PM hudson.security.AuthenticationProcessingFilter2 onUnsuccessfulAuthentication
+INFO: Login attempt failed
+org.acegisecurity.BadCredentialsException: pam_authenticate failed : Authentication failure; nested exception is org.jvnet.libpam.PAMException: pam_authenticate failed : Authentication failure
+ at hudson.security.PAMSecurityRealm$PAMAuthenticationProvider.authenticate(PAMSecurityRealm.java:100)
+ at org.acegisecurity.providers.ProviderManager.doAuthentication(ProviderManager.java:195)
+ at org.acegisecurity.AbstractAuthenticationManager.authenticate(AbstractAuthenticationManager.java:45)
+ at org.acegisecurity.ui.webapp.AuthenticationProcessingFilter.attemptAuthentication(AuthenticationProcessingFilter.java:71)
+ at org.acegisecurity.ui.AbstractProcessingFilter.doFilter(AbstractProcessingFilter.java:252)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at org.acegisecurity.ui.basicauth.BasicProcessingFilter.doFilter(BasicProcessingFilter.java:173)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at org.acegisecurity.context.HttpSessionContextIntegrationFilter.doFilter(HttpSessionContextIntegrationFilter.java:249)
+ at hudson.security.HttpSessionContextIntegrationFilter2.doFilter(HttpSessionContextIntegrationFilter2.java:66)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:76)
+ at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:164)
+ at winstone.FilterConfiguration.execute(FilterConfiguration.java:195)
+ at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:368)
+ at winstone.RequestDispatcher.forward(RequestDispatcher.java:333)
+ at winstone.RequestHandlerThread.processRequest(RequestHandlerThread.java:244)
+ at winstone.RequestHandlerThread.run(RequestHandlerThread.java:150)
+ at java.lang.Thread.run(Thread.java:619) Caused by: org.jvnet.libpam.PAMException: pam_authenticate failed : Authentication failure
+ at org.jvnet.libpam.PAM.check(PAM.java:105)
+ at org.jvnet.libpam.PAM.authenticate(PAM.java:123)
+ at hudson.security.PAMSecurityRealm$PAMAuthenticationProvider.authenticate(PAMSecurityRealm.java:90)
+ ... 18 more
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; the problem is likely caused by Hudson being unable to read your &lt;code&gt;/etc/shadow&lt;/code&gt; file.&lt;/p&gt;</description></item><item><title>Cherokee failing to exec spawn-fcgi</title><link>https://cloudartisan.com/posts/cherokee-failin-to-exec-spawn-fcgi/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/cherokee-failin-to-exec-spawn-fcgi/</guid><description>&lt;p&gt;If you&amp;rsquo;re using &lt;code&gt;spawn-fcgi&lt;/code&gt; with Cherokee (probably to get a wiki or PHP application or similar working) and you see:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;503 Service Unavailable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; you might be having the same problem I had. That is, Cherokee was failing to launch &lt;code&gt;spawn-fcgi&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To verify this is the cause of your problem, stop Cherokee, then start it manually at the command line:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# /usr/sbin/cherokee --admin_child -C /etc/cherokee/cherokee.conf
+Cherokee Web Server 1.0.8 (Aug 18 2010): Listening on port ALL:80, TLS disabled, IPv6 enabled, using epoll, 4096 fds system limit, max. 2041 connections, caching I/O, 20 threads, 102 connections per thread, standard scheduling policy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, try to visit the site giving you the problem. If you see the following in your terminal then you&amp;rsquo;ve probably got the same problem I had:&lt;/p&gt;</description></item><item><title>Install Hudson on Debian Lenny for Continuous Integration</title><link>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</guid><description>&lt;p&gt;I found that Hudson depends on &lt;code&gt;daemon&lt;/code&gt; but it doesn&amp;rsquo;t install automatically. So, before we get started:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install daemon
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Now that&amp;#39;s out of the way, we need to grab the Hudson key and install the package:
+
+
+ ```bash
+ wget -q -O - http://hudson-ci.org/debian/hudson-ci.org.key | apt-key add -
+ cd /tmp
+ wget http://hudson-ci.org/latest/debian/hudson.deb
+ dpkg --install ./hudson.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If everything went well you&amp;rsquo;ll see Hudson running:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ps auxw | grep hudson
+hudson 9101 0.0 0.1 2108 516 ? Ss 09:59 0:00 /usr/bin/daemon --name=hudson --inherit --env=HUDSON_HOME=/var/lib/hudson --output=/var/log/hudson/hudson.log --pidfile=/var/run/hudson/hudson.pid -- /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+hudson 9103 18.9 10.3 297064 52660 ? Sl 09:59 0:03 /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; and listening on port 8080:&lt;/p&gt;</description></item><item><title>Install uWSGI (latest) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</guid><description>&lt;p&gt;First, why would you want it? uWSGI is a fast, self-healing, WSGI server, originally intended for use with Python web applications. I intend to use it with Python Django, served by Cherokee.&lt;/p&gt;
+&lt;p&gt;As for installation&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Do not bother doing a hands-on install from source. It&amp;rsquo;s messy. Just use &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install gcc python-dev libxml2-dev
+apt-get install python-pip
+pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Simple as that.
+
+You should [follow me on twitter](https://twitter.com/davidltaylor).
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Install Cherokee (testing) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-cherokee-testing-on-debian-lenny/</link><pubDate>Sat, 02 Oct 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/install-cherokee-testing-on-debian-lenny/</guid><description>&lt;p&gt;Add the following to &lt;code&gt;/etc/sources&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Create `/etc/apt/apt.conf` with:
+
+
+ ```text
+ APT::Default-Release &amp;#34;stable&amp;#34;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create &lt;code&gt;/etc/apt/preferences&lt;/code&gt; for pinning the testing packages:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+Package: libssl-dev
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libssl0.9.8
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-base0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: mysql-common
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libmysqlclient16
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-server0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-config0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-mod-admin
+Pin: release a=testing
+Pin-Priority: 999 
+Package: cherokee
+Pin: release a=testing
+Pin-Priority: 999 
+Package: *
+Pin: release a=stable
+Pin-Priority: 500
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Then install the packages:
+
+
+ ```bash
+ apt-get install -t testing cherokee libcherokee-base0 libcherokee-server0 libcherokee-config0 libcherokee-mod-admin libssl0.9.8
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s the installation. For the configuration, check out the &lt;a href="http://www.cherokee-project.com/doc/cookbook.html" target="_blank" rel="noreferrer"&gt;Cherokee cookbooks&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

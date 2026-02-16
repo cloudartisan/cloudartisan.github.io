@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#E5E7EB"/>
+  
+  <!-- Student 1 -->
+  <circle cx="100" cy="80" r="20" fill="#9CA3AF"/>
+  <path d="M85 100 L115 100 L100 150 Z" fill="#9CA3AF"/>
+  <path d="M90 150 L110 150 L100 200 L90 150 Z" fill="#9CA3AF"/>
+  <path d="M85 120 L65 150" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M115 120 L135 150" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Student 2 -->
+  <circle cx="200" cy="80" r="20" fill="#9CA3AF"/>
+  <path d="M185 100 L215 100 L200 150 Z" fill="#9CA3AF"/>
+  <path d="M190 150 L210 150 L200 200 L190 150 Z" fill="#9CA3AF"/>
+  <path d="M185 120 L165 150" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M215 120 L235 150" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Student 3 -->
+  <circle cx="300" cy="80" r="20" fill="#9CA3AF"/>
+  <path d="M285 100 L315 100 L300 150 Z" fill="#9CA3AF"/>
+  <path d="M290 150 L310 150 L300 200 L290 150 Z" fill="#9CA3AF"/>
+  <path d="M285 120 L265 150" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M315 120 L335 150" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1F2937">Students of All Ages</text>
+</svg>

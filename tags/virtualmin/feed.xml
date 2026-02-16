@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Virtualmin on Cloud Artisan</title><link>https://cloudartisan.com/tags/virtualmin/</link><description>Recent content in Virtualmin on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 20 Oct 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/virtualmin/feed.xml" rel="self" type="application/rss+xml"/><item><title>RightScale ServerTemplate: Virtualmin</title><link>https://cloudartisan.com/posts/rightscale-servertemplate-virtualmin/</link><pubDate>Wed, 20 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/rightscale-servertemplate-virtualmin/</guid><description>&lt;p&gt;I&amp;rsquo;ve published a &lt;a href="http://www.rightscale.com" target="_blank" rel="noreferrer"&gt;RightScale&lt;/a&gt; ServerTemplate for launching &lt;a href="http://www.virtualmin.com" target="_blank" rel="noreferrer"&gt;Virtualmin&lt;/a&gt; on Amazon EC2.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Virtualmin is a powerful and flexible web server control panel based on the well-known Open Source web-based systems management GUI, Webmin. Manage your virtual domains, mailboxes, databases, applications, and the entire server, from one comprehensive and friendly interface.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The ServerTemplate I&amp;rsquo;ve created makes it easy for anyone to get started providing managed hosting on cloud infrastructure.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2010/10/Virtualmin-Server-Template.png" alt="Virtualmin Server Template" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;</description></item></channel></rss>

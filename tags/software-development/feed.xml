@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development on Cloud Artisan</title><link>https://cloudartisan.com/tags/software-development/</link><description>Recent content in Software Development on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 04 Aug 2025 21:30:00 +1000</lastBuildDate><atom:link href="https://cloudartisan.com/tags/software-development/feed.xml" rel="self" type="application/rss+xml"/><item><title>Why Change Moratoriums Don't Work</title><link>https://cloudartisan.com/posts/2025-08-04-why-change-moratoriums-dont-work/</link><pubDate>Mon, 04 Aug 2025 21:30:00 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-08-04-why-change-moratoriums-dont-work/</guid><description>&lt;p&gt;I&amp;rsquo;ve been in this situation more times than I&amp;rsquo;d care to count: production is unstable, customers are unhappy, and leadership decides the solution is to freeze all changes until further notice. On the surface, it makes perfect sense. If changes are causing problems, stop making changes, right?&lt;/p&gt;
+&lt;p&gt;Wrong!&lt;/p&gt;
+&lt;p&gt;I understand the logic. I understand why executives think they should make this call. They assess the business impact of continuing with potentially risky changes versus grinding everything to a halt.&lt;/p&gt;</description></item><item><title>Migrating from Google App Engine to Django</title><link>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</link><pubDate>Mon, 18 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</guid><description>&lt;p&gt;Unfortunately, I had to migrate one of my projects from Google App Engine to Django on a self-managed server. I didn&amp;rsquo;t want to do this. See &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #2&lt;/a&gt; and &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-3/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #3&lt;/a&gt; for the main reasons. Those headaches became bad enough that I had to bite the bullet and migrate out of Google App Engine.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It&amp;rsquo;s not for the faint-hearted&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="why-google-app-engine-in-the-first-place" class="relative group"&gt;Why Google App Engine In The First Place? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#why-google-app-engine-in-the-first-place" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Google App Engine is a PaaS (Platform as a Service). PaaS products eliminate the need for lower-level server management and, if they&amp;rsquo;re good, make it very easy to write and maintain code for that platform.&lt;/p&gt;</description></item><item><title>Install Hudson on Debian Lenny for Continuous Integration</title><link>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</guid><description>&lt;p&gt;I found that Hudson depends on &lt;code&gt;daemon&lt;/code&gt; but it doesn&amp;rsquo;t install automatically. So, before we get started:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install daemon
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Now that&amp;#39;s out of the way, we need to grab the Hudson key and install the package:
+
+
+ ```bash
+ wget -q -O - http://hudson-ci.org/debian/hudson-ci.org.key | apt-key add -
+ cd /tmp
+ wget http://hudson-ci.org/latest/debian/hudson.deb
+ dpkg --install ./hudson.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If everything went well you&amp;rsquo;ll see Hudson running:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ps auxw | grep hudson
+hudson 9101 0.0 0.1 2108 516 ? Ss 09:59 0:00 /usr/bin/daemon --name=hudson --inherit --env=HUDSON_HOME=/var/lib/hudson --output=/var/log/hudson/hudson.log --pidfile=/var/run/hudson/hudson.pid -- /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+hudson 9103 18.9 10.3 297064 52660 ? Sl 09:59 0:03 /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; and listening on port 8080:&lt;/p&gt;</description></item><item><title>Install uWSGI (latest) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</guid><description>&lt;p&gt;First, why would you want it? uWSGI is a fast, self-healing, WSGI server, originally intended for use with Python web applications. I intend to use it with Python Django, served by Cherokee.&lt;/p&gt;
+&lt;p&gt;As for installation&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Do not bother doing a hands-on install from source. It&amp;rsquo;s messy. Just use &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install gcc python-dev libxml2-dev
+apt-get install python-pip
+pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Simple as that.
+
+You should [follow me on twitter](https://twitter.com/davidltaylor).
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Python One-Liner: Debug Mail Server</title><link>https://cloudartisan.com/posts/python-one-liner-debug-mail-server/</link><pubDate>Sun, 03 Oct 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/python-one-liner-debug-mail-server/</guid><description>&lt;p&gt;Need a pretend mail server that you can use for debugging? Try this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+python -m smtpd -n -c DebuggingServer localhost:1025
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+It listens on port 1025 for local connections.
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

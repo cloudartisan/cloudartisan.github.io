@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rightscale on Cloud Artisan</title><link>https://cloudartisan.com/tags/rightscale/</link><description>Recent content in Rightscale on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 Oct 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/rightscale/feed.xml" rel="self" type="application/rss+xml"/><item><title>RightScale ServerTemplate: Bitnami Drupal Stack</title><link>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-drupal-stack/</link><pubDate>Thu, 21 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-drupal-stack/</guid><description>&lt;p&gt;I&amp;rsquo;ve published a &lt;a href="http://www.rightscale.com" target="_blank" rel="noreferrer"&gt;RightScale&lt;/a&gt; ServerTemplate for installing &lt;a href="http://bitnami.org/stack/drupal" target="_blank" rel="noreferrer"&gt;Bitnami&amp;rsquo;s Drupal stack&lt;/a&gt; on Amazon EC2.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Drupal is an open source content management platform powering millions of websites and applications. It’s built, used, and supported by an active and diverse community of people around the world.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;My ServerTemplate is based on an existing ServerTemplate by Bitnami. It differs from Bitnami&amp;rsquo;s existing Drupal ServerTemplate in a few ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;it uses an Ubuntu RightScale MultiCloud Image as its base&lt;/li&gt;
+&lt;li&gt;it has some of RightScale&amp;rsquo;s RightScripts for logging and monitoring added&lt;/li&gt;
+&lt;li&gt;it installs the Drupal stack from a supplied URL, meaning you can trial different versions of the Drupal stack easily&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using this ServerTemplate you can easily fire up a Drupal instance to either:&lt;/p&gt;</description></item><item><title>RightScale ServerTemplate: Bitnami WordPress Stack</title><link>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-wordpress-stack/</link><pubDate>Thu, 21 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-wordpress-stack/</guid><description>&lt;p&gt;I&amp;rsquo;ve published a &lt;a href="http://www.rightscale.com" target="_blank" rel="noreferrer"&gt;RightScale&lt;/a&gt; ServerTemplate for installing &lt;a href="http://bitnami.org/stack/wordpress" target="_blank" rel="noreferrer"&gt;Bitnami&amp;rsquo;s WordPress stack&lt;/a&gt; on Amazon EC2.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;WordPress is web software you can use to create a beautiful website or blog.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;It is based on an existing ServerTemplate by Bitnami. It differs from Bitnami&amp;rsquo;s existing WordPress ServerTemplate in a few ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;it uses an Ubuntu RightScale MultiCloud Image as its base&lt;/li&gt;
+&lt;li&gt;it has some of RightScale&amp;rsquo;s RightScripts for logging and monitoring added&lt;/li&gt;
+&lt;li&gt;it installs the WordPress stack from a supplied URL, meaning you can trial different versions of the WordPress stack easily&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using this ServerTemplate you can easily fire up a WordPress instance to:&lt;/p&gt;</description></item><item><title>RightScale ServerTemplate: Virtualmin</title><link>https://cloudartisan.com/posts/rightscale-servertemplate-virtualmin/</link><pubDate>Wed, 20 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/rightscale-servertemplate-virtualmin/</guid><description>&lt;p&gt;I&amp;rsquo;ve published a &lt;a href="http://www.rightscale.com" target="_blank" rel="noreferrer"&gt;RightScale&lt;/a&gt; ServerTemplate for launching &lt;a href="http://www.virtualmin.com" target="_blank" rel="noreferrer"&gt;Virtualmin&lt;/a&gt; on Amazon EC2.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Virtualmin is a powerful and flexible web server control panel based on the well-known Open Source web-based systems management GUI, Webmin. Manage your virtual domains, mailboxes, databases, applications, and the entire server, from one comprehensive and friendly interface.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The ServerTemplate I&amp;rsquo;ve created makes it easy for anyone to get started providing managed hosting on cloud infrastructure.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2010/10/Virtualmin-Server-Template.png" alt="Virtualmin Server Template" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;</description></item><item><title>Auto-Scaling Is Avoidable, Potentially Dangerous... But Fun</title><link>https://cloudartisan.com/posts/auto-scaling-is-avoidable-potentially-dangerous-but-fun/</link><pubDate>Sat, 07 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/auto-scaling-is-avoidable-potentially-dangerous-but-fun/</guid><description>&lt;p&gt;RightScale have some tutorials on using their service to set up auto-scaling. Recently I played around with it, configuring auto-scaling in response to increases and decreases in server load. Honestly, it was fun. But it was essentially a folly, an exercise in dealing unnecessarily with dangerous corner cases.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s why&amp;hellip;&lt;/p&gt;
+&lt;h2 id="unconstrained-scaling" class="relative group"&gt;Unconstrained Scaling &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#unconstrained-scaling" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Unconstrained scaling is bad, mmkay. If you allow your systems to scale without constraint, you&amp;rsquo;re risking a surprise credit card bill. Worse yet, if you&amp;rsquo;re not paying any attention to your systems (shame!) then you could be in for a &lt;em&gt;jaw-dropping&lt;/em&gt; credit card bill.&lt;/p&gt;</description></item><item><title>RightScripts In Any Scripting Language</title><link>https://cloudartisan.com/posts/rightscripts-in-any-scripting-language/</link><pubDate>Sun, 30 May 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/rightscripts-in-any-scripting-language/</guid><description>&lt;p&gt;&lt;a href="http://www.rightscale.com/" target="_blank" rel="noreferrer"&gt;RightScale&amp;rsquo;s&lt;/a&gt; cloud management platform can be used to deploy and manage solutions on cloud infrastructure with some degree of automation, control, and scaling.&lt;/p&gt;
+&lt;p&gt;Users create &lt;a href="http://support.rightscale.com/12-Guides/01-RightScale_Dashboard_User_Guide/03-Design/02-RightScripts" target="_blank" rel="noreferrer"&gt;RightScripts&lt;/a&gt; to automate actions on their servers. Think of them the same way you would any other script for managing a server. The differences are that they are managed inside RightScale&amp;rsquo;s management platform, with version control, easy reuse, and access to handy environment variables. A RightScript is typically written in Bash, Ruby, or Perl, and has variables that are initialised using input parameters.&lt;/p&gt;</description></item></channel></rss>

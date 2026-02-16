@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on Cloud Artisan</title><link>https://cloudartisan.com/tags/ubuntu/</link><description>Recent content in Ubuntu on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 29 Nov 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/ubuntu/feed.xml" rel="self" type="application/rss+xml"/><item><title>Tuning PHP APC with Cherokee - Round 1</title><link>https://cloudartisan.com/posts/tuning-php-apc-with-cherokee-round-1/</link><pubDate>Mon, 29 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/tuning-php-apc-with-cherokee-round-1/</guid><description>&lt;p&gt;Since writing &lt;a href="http://www.cloudartisan.com/2010/11/using-php-apc-with-cherokee/" target="_blank" rel="noreferrer"&gt;Using PHP APC with Cherokee&lt;/a&gt; I noticed that my cache hits were dropping and my cache misses were growing. This is my first attempt at tweaking the configuration of &lt;code&gt;php-apc&lt;/code&gt; to try to eke out more performance.&lt;/p&gt;
+&lt;p&gt;I enabled my &lt;code&gt;apc.php&lt;/code&gt; page (check the previous article), checked the statistics, and saw that the &lt;code&gt;Cache full count&lt;/code&gt; was growing. My cache had filled several times.&lt;/p&gt;
+&lt;p&gt;According to the &lt;a href="http://www.php.net/manual/en/apc.configuration.php" target="_blank" rel="noreferrer"&gt;APC configuration documentation&lt;/a&gt; there are two settings that control the expiration of cache entries. They are:&lt;/p&gt;</description></item><item><title>Using PHP APC with Cherokee</title><link>https://cloudartisan.com/posts/using-php-apc-with-cherokee/</link><pubDate>Sun, 28 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/using-php-apc-with-cherokee/</guid><description>&lt;p&gt;If you&amp;rsquo;re using Cherokee as your web server, you&amp;rsquo;re probably already interested in squeezing every drop of performance out of your server. If you&amp;rsquo;re hosting PHP sites with Cherokee, using APC (Alternative PHP Cache) could enable you to squeeze out even more drops.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Alternative PHP Cache (APC) is a free and open opcode cache for PHP. Its goal is to provide a free, open, and robust framework for caching and optimizing PHP intermediate code.&lt;/p&gt;</description></item><item><title>Adding the Cherokee Web Server PPA to Ubuntu</title><link>https://cloudartisan.com/posts/adding-the-cherokee-web-server-ppa-to-ubuntu/</link><pubDate>Sat, 20 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/adding-the-cherokee-web-server-ppa-to-ubuntu/</guid><description>&lt;p&gt;The following commands will add the Cherokee Web Server PPA to Ubuntu (version 9.10 and higher). The first command adds the extremely handy &lt;code&gt;add-apt-repository&lt;/code&gt; program to your system. The second adds the Cherokee Personal Package Archive.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:cherokee-webserver/ppa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+At the moment, Cherokee is at version 1.0.9.
+
+If you don&amp;#39;t already have Cherokee installed and you want to install it I find the following combination of packages most useful:
+
+
+ ```bash
+ sudo apt-get update
+ sudo apt-get install cherokee cherokee-doc libcherokee-mod-libssl libcherokee-mod-streaming libcherokee-mod-rrd libcherokee-mod-admin spawn-fcgi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s it. If you want more simple posts on building lean servers, cloud computing, software development and more, &lt;a href="http://www.cloudartisan.com/feed" target="_blank" rel="noreferrer"&gt;subscribe to my RSS feed&lt;/a&gt; and/or &lt;a href="https://twitter.com/davidltaylor" target="_blank" rel="noreferrer"&gt;follow me on Twitter&lt;/a&gt;. Cheers!&lt;/p&gt;</description></item><item><title>How to upgrade Ubuntu Server 10.04 to 10.10</title><link>https://cloudartisan.com/posts/upgrade-ubuntu-server-10-04-to-10-10/</link><pubDate>Fri, 19 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/upgrade-ubuntu-server-10-04-to-10-10/</guid><description>&lt;p&gt;The following commands can be followed blindly to update an Ubuntu Server install from version 10.04 (Lucid) to version 10.10 (Maverick).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get update
+apt-get install update-manager-core
+sed -i 's/Prompt=lts/Prompt=normal/' /etc/update-manager/release-upgrades
+do-release-upgrade
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

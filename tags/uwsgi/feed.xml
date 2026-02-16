@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Uwsgi on Cloud Artisan</title><link>https://cloudartisan.com/tags/uwsgi/</link><description>Recent content in Uwsgi on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 21 Nov 2010 00:00:00 +1100</lastBuildDate><atom:link href="https://cloudartisan.com/tags/uwsgi/feed.xml" rel="self" type="application/rss+xml"/><item><title>Install uWSGI (latest) on Ubuntu Server 10.10</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-ubuntu-server-10-10/</link><pubDate>Sun, 21 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-ubuntu-server-10-10/</guid><description>&lt;p&gt;uWSGI is a fast, self-healing, WSGI server. It is typically used with Python web applications. It works very well with the Cherokee Web Server and the Django web application framework.&lt;/p&gt;
+&lt;p&gt;To install the latest uWSGI use &lt;code&gt;pip&lt;/code&gt; and the URL for the latest version of uWSGI:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+sudo apt-get install libxml2-dev build-essential python-dev python-pip
+sudo pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Simple as that.
+
+You should [follow me on Twitter](https://twitter.com/davidltaylor).
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Install uWSGI (latest) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</guid><description>&lt;p&gt;First, why would you want it? uWSGI is a fast, self-healing, WSGI server, originally intended for use with Python web applications. I intend to use it with Python Django, served by Cherokee.&lt;/p&gt;
+&lt;p&gt;As for installation&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Do not bother doing a hands-on install from source. It&amp;rsquo;s messy. Just use &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install gcc python-dev libxml2-dev
+apt-get install python-pip
+pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Simple as that.
+
+You should [follow me on twitter](https://twitter.com/davidltaylor).
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

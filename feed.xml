@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Personal Website of David Taylor on Cloud Artisan</title><link>https://cloudartisan.com/</link><description>Recent content in Personal Website of David Taylor on Cloud Artisan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 02 Sep 2025 00:00:00 +1000</lastBuildDate><atom:link href="https://cloudartisan.com/feed.xml" rel="self" type="application/rss+xml"/><item><title>Blue Mountains Taekwondo</title><link>https://cloudartisan.com/projects/blue-mountains-taekwondo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/projects/blue-mountains-taekwondo/</guid><description>A martial arts school teaching traditional Taekwondo in the Blue Mountains, NSW.</description></item><item><title>Palette Kit</title><link>https://cloudartisan.com/projects/palettekit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/projects/palettekit/</guid><description>A digital tool to help artists find the perfect coloured pencil combinations for their artwork.</description></item><item><title>Shrnk.ai</title><link>https://cloudartisan.com/projects/shrnk-ai/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/projects/shrnk-ai/</guid><description>A modern URL shortening service with AI-powered features for link management.</description></item><item><title>RunMyDojo</title><link>https://cloudartisan.com/projects/runmydojo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/projects/runmydojo/</guid><description>A comprehensive management system for martial arts schools and dojos.</description></item><item><title>Old School TKD</title><link>https://cloudartisan.com/projects/oldschooltkd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cloudartisan.com/projects/oldschooltkd/</guid><description>A resource for traditional Taekwondo techniques, forms, and training methods.</description></item><item><title>Claude Code Tips &amp; Tricks: Working with Lovable</title><link>https://cloudartisan.com/posts/2025-09-02-claude-code-tips-working-with-lovable/</link><pubDate>Tue, 02 Sep 2025 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-09-02-claude-code-tips-working-with-lovable/</guid><description>&lt;h2 id="when-ai-tools-collide-a-real-world-experience" class="relative group"&gt;When AI Tools Collide: A Real-World Experience &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#when-ai-tools-collide-a-real-world-experience" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;While building my latest project, 
+ 
+ &lt;a href="https://cloudartisan.com/projects/palettekit/"&gt;Palette Kit&lt;/a&gt; (a React/TypeScript app for managing colored pencil gradients), I discovered something interesting: using &lt;a href="https://docs.anthropic.com/en/docs/about-claude/claude" target="_blank" rel="noreferrer"&gt;Claude Code&lt;/a&gt; and &lt;a href="https://lovable.dev" target="_blank" rel="noreferrer"&gt;Lovable&lt;/a&gt; together is incredibly powerful, but it requires a specific approach to avoid some nasty pitfalls.&lt;/p&gt;
+&lt;p&gt;Honestly, I nearly broke my entire deployment pipeline learning this the hard way. But here&amp;rsquo;s what I learned - and how you can make these tools work beautifully together without the pain I went through.&lt;/p&gt;</description></item><item><title>Why Change Moratoriums Don't Work</title><link>https://cloudartisan.com/posts/2025-08-04-why-change-moratoriums-dont-work/</link><pubDate>Mon, 04 Aug 2025 21:30:00 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-08-04-why-change-moratoriums-dont-work/</guid><description>&lt;p&gt;I&amp;rsquo;ve been in this situation more times than I&amp;rsquo;d care to count: production is unstable, customers are unhappy, and leadership decides the solution is to freeze all changes until further notice. On the surface, it makes perfect sense. If changes are causing problems, stop making changes, right?&lt;/p&gt;
+&lt;p&gt;Wrong!&lt;/p&gt;
+&lt;p&gt;I understand the logic. I understand why executives think they should make this call. They assess the business impact of continuing with potentially risky changes versus grinding everything to a halt.&lt;/p&gt;</description></item><item><title>Essential Books</title><link>https://cloudartisan.com/books/</link><pubDate>Mon, 07 Jul 2025 15:20:00 +1000</pubDate><guid>https://cloudartisan.com/books/</guid><description>&lt;h2 id="my-reading-philosophy" class="relative group"&gt;My Reading Philosophy &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#my-reading-philosophy" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;This is my collection of essential books - stories and ideas that have shaped my thinking and sparked my imagination. I&amp;rsquo;m drawn to speculative fiction that explores profound themes, spy fiction with psychological complexity, and non-fiction that challenges conventional wisdom.&lt;/p&gt;
+&lt;p&gt;My favourite authors include Ursula K. Le Guin for her philosophical depth, John Wyndham for his &amp;ldquo;cosy catastrophes&amp;rdquo;, China Miéville for inventive world-building, Barry Eisler for morally complex thrillers, and David Epstein for thought-provoking analysis of human potential.&lt;/p&gt;</description></item><item><title>Essential Films</title><link>https://cloudartisan.com/movies/</link><pubDate>Mon, 07 Jul 2025 15:15:00 +1000</pubDate><guid>https://cloudartisan.com/movies/</guid><description>&lt;h2 id="my-film-philosophy" class="relative group"&gt;My Film Philosophy &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#my-film-philosophy" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;This is my collection of essential films - it&amp;rsquo;s a blend of favourite movies and a list of films that must be seen. I&amp;rsquo;m drawn to drama that makes you think and feel deeply, quality sci-fi that isn&amp;rsquo;t derivative and inspires thought, and martial arts films with compelling storytelling and exceptional choreography.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s very rare that I like a popcorn movie, but if it hits all the right points for a bit of vacuous fun without any groan-inducing moments or preachy, moralistic messaging, I&amp;rsquo;m in.&lt;/p&gt;</description></item><item><title>Getting Started with Google Gemini CLI</title><link>https://cloudartisan.com/posts/2025-07-04-getting-started-google-gemini-cli/</link><pubDate>Fri, 04 Jul 2025 19:10:04 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-07-04-getting-started-google-gemini-cli/</guid><description>&lt;p&gt;Google recently released their own entry into the agentic CLI arena: Gemini CLI. What might set it apart from OpenAI&amp;rsquo;s Codex CLI and Anthropic&amp;rsquo;s Claude Code is Gemini&amp;rsquo;s large context window and support for multimodal input.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve started testing it out to see just how it compares to Codex CLI and Claude Code (the latter of which I&amp;rsquo;ve been using regularly). This is where I started&amp;hellip;&lt;/p&gt;
+&lt;h2 id="what-you-can-do-with-gemini-cli" class="relative group"&gt;What You Can Do with Gemini CLI &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-you-can-do-with-gemini-cli" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;With Gemini CLI you can:&lt;/p&gt;</description></item><item><title>OpenAI Codex Tips &amp; Tricks: Listing Available Models</title><link>https://cloudartisan.com/posts/2025-04-21-openai-codex-tips-tricks/</link><pubDate>Mon, 21 Apr 2025 09:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-04-21-openai-codex-tips-tricks/</guid><description>&lt;p&gt;After 
+ 
+ &lt;a href="https://cloudartisan.com/posts/2025-04-18-getting-started-with-openai-codex-cli/"&gt;getting started with OpenAI Codex CLI&lt;/a&gt;, I&amp;rsquo;ve discovered some handy tips to make working with it a bit easier.&lt;/p&gt;
+&lt;h2 id="listing-available-models" class="relative group"&gt;Listing Available Models &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#listing-available-models" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;When working with Codex CLI, you can specify which model to use with the &lt;code&gt;-m&lt;/code&gt; flag:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;codex -m o4-mini &lt;span class="s2"&gt;&amp;#34;explain this code&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But what if you want to know all the models available to you? The default documentation doesn&amp;rsquo;t provide a straightforward way to list them. Here&amp;rsquo;s a simple one-liner that queries the OpenAI API to list all models available to your account:&lt;/p&gt;</description></item><item><title>Getting Started with OpenAI Codex CLI</title><link>https://cloudartisan.com/posts/2025-04-18-getting-started-with-openai-codex-cli/</link><pubDate>Fri, 18 Apr 2025 12:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-04-18-getting-started-with-openai-codex-cli/</guid><description>&lt;p&gt;I&amp;rsquo;ve been playing with the recently announced OpenAI Codex CLI.&lt;/p&gt;
+&lt;h2 id="what-is-openai-codex-cli" class="relative group"&gt;What is OpenAI Codex CLI? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-is-openai-codex-cli" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href="https://github.com/openai/codex" target="_blank" rel="noreferrer"&gt;OpenAI Codex CLI is available on GitHub&lt;/a&gt;. It&amp;rsquo;s a lightweight AI coding assistant that runs directly in the terminal, like Claude Code from Anthropic.&lt;/p&gt;
+&lt;p&gt;Features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read, modify, and run code&lt;/li&gt;
+&lt;li&gt;Multimodal input for processing screenshots and diagrams&lt;/li&gt;
+&lt;li&gt;Different approval levels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While it&amp;rsquo;s still labeled as experimental, OpenAI is actively seeking community contributions. They&amp;rsquo;re even offering a &lt;a href="https://openai.com/form/codex-open-source-fund/" target="_blank" rel="noreferrer"&gt;$1 million initiative&lt;/a&gt; supporting open-source projects that use Codex CLI, with grants in $25,000 API credit increments.&lt;/p&gt;</description></item><item><title>Claude Code Tips &amp; Tricks: Maximising Memory</title><link>https://cloudartisan.com/posts/2025-04-16-claude-code-tips-memory/</link><pubDate>Wed, 16 Apr 2025 10:55:08 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-04-16-claude-code-tips-memory/</guid><description>&lt;h2 id="the-power-of-memory-in-claude-code" class="relative group"&gt;The Power of Memory in Claude Code &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-power-of-memory-in-claude-code" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Having used Claude Code for a while now to help manage this website and other projects, I&amp;rsquo;ve come to appreciate how crucial its memory features are for productive work. In AI assistants like Claude, memory refers to the system&amp;rsquo;s ability to retain information across interactions, which can significantly reduce repetitive instructions and improve continuity.&lt;/p&gt;</description></item><item><title>Claude Code Tips &amp; Tricks: Custom Slash Commands</title><link>https://cloudartisan.com/posts/2025-04-14-claude-code-tips-slash-commands/</link><pubDate>Mon, 14 Apr 2025 15:18:37 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-04-14-claude-code-tips-slash-commands/</guid><description>&lt;h2 id="the-power-of-custom-slash-commands" class="relative group"&gt;The Power of Custom Slash Commands &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-power-of-custom-slash-commands" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve been using Claude Code to help manage this website, and I kept finding myself typing similar instructions repeatedly: &amp;ldquo;Create a new draft post titled &amp;lt;X&amp;gt;,&amp;rdquo; &amp;ldquo;Check this file for spelling, grammar, and UK English,&amp;rdquo; &amp;ldquo;Clear the cache and start the server&amp;rdquo; in a very wordy way with a lot of back and forth &amp;ndash; these repetitive tasks were begging to be streamlined.&lt;/p&gt;</description></item><item><title>Claude Code Tips &amp; Tricks: Setting Up MCP Servers</title><link>https://cloudartisan.com/posts/2025-04-12-adding-mcp-servers-claude-code/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-04-12-adding-mcp-servers-claude-code/</guid><description>&lt;h2 id="what-are-mcp-servers" class="relative group"&gt;What Are MCP Servers? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-are-mcp-servers" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Model Context Protocol (MCP) servers extend AI Assistants&amp;rsquo; capabilities by connecting them to external tools and services.&lt;/p&gt;
+&lt;p&gt;Recently, Claude Code gained support for MCP servers, enabling integration with more specialised services like Stripe, Cloudflare, Supabase, Blender, and a whole lot more.&lt;/p&gt;
+&lt;p&gt;This post demonstrates setting up some simple reference MCP servers. These servers won&amp;rsquo;t dramatically enhance Claude Code, since it already has built-in tools for filesystem, git, and web fetching. However, they serve as a gentle introduction to installing and configuring MCP servers without having to worry about overly-complex configuration. We can tackle more advanced integrations later in a future post.&lt;/p&gt;</description></item><item><title>Digital Diaspora: Where Egan's 'Diaspora' Meets 'Pantheon'</title><link>https://cloudartisan.com/posts/2025-04-07-diaspora-pantheon-digital-minds/</link><pubDate>Mon, 07 Apr 2025 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/2025-04-07-diaspora-pantheon-digital-minds/</guid><description>&lt;p&gt;I&amp;rsquo;ve been thinking about digital consciousness lately. A lot. What happens when human minds transition into a digital realm?&lt;/p&gt;
+&lt;p&gt;Two works explore this territory in fascinating ways. Greg Egan&amp;rsquo;s novel &amp;ldquo;Diaspora&amp;rdquo; (1997), which I finally got round to reading a year ago. And the animated series &amp;ldquo;Pantheon&amp;rdquo; (2022), which I just finished watching.&lt;/p&gt;
+&lt;div style="display: flex; justify-content: space-between; margin-bottom: 20px;"&gt;
+ &lt;div style="flex: 1; margin-right: 10px;"&gt;
+ &lt;img src="https://cloudartisan.com/images/2025/04/diaspora_book.jpg" alt="Greg Egan's Diaspora book cover" style="width: 100%; max-width: 300px; height: auto;"&gt;
+ &lt;/div&gt;
+ &lt;div style="flex: 1; margin-left: 10px;"&gt;
+ &lt;img src="https://cloudartisan.com/images/2025/04/pantheon_series.jpg" alt="Pantheon animated series" style="width: 100%; max-width: 300px; height: auto;"&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;ldquo;Diaspora&amp;rdquo; is an ambitious novel set in a posthuman future where consciousness exists primarily as software. Beginning with a catastrophe that threatens Earth, the novel follows digital entities on a journey spanning thousands of years and multiple dimensions of space. It&amp;rsquo;s a rigorous exploration of what existence might mean when freed from biological constraints. It can be a challenging read at times, but well worth it.&lt;/p&gt;</description></item><item><title>The Turing Option: A Prophetic Vision of Modern AI</title><link>https://cloudartisan.com/posts/2025-04-02-the-turing-option-prophetic-vision-of-modern-ai/</link><pubDate>Wed, 02 Apr 2025 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/2025-04-02-the-turing-option-prophetic-vision-of-modern-ai/</guid><description>&lt;div style="float: right; margin-left: 20px; margin-bottom: 10px;"&gt;
+&lt;img src="https://cloudartisan.com/images/2025/04/the_turing_option.jpg" alt="The Turing Option by Marvin Minsky and Harry Harrison" width="175" /&gt;
+&lt;/div&gt;
+&lt;p&gt;Recently, I found myself reminiscing about a sci-fi novel I read in high school: &lt;em&gt;The Turing Option&lt;/em&gt; by Marvin Minsky and Harry Harrison. Published in 1992, this book has been on my mind as I&amp;rsquo;ve watched the recent explosion in development of modern AI.&lt;/p&gt;
+&lt;p&gt;What stands out isn&amp;rsquo;t just that it was co-authored by Minsky: one of the founding fathers of artificial intelligence&amp;ndash;but how many concepts in the book parallel today&amp;rsquo;s AI landscape.&lt;/p&gt;</description></item><item><title>Building Palette Kit: From Zero to Production in a Weekend</title><link>https://cloudartisan.com/posts/building-palette-kit-weekend-project/</link><pubDate>Mon, 31 Mar 2025 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/building-palette-kit-weekend-project/</guid><description>&lt;p&gt;So I built &lt;a href="https://palettekit.com" target="_blank" rel="noreferrer"&gt;Palette Kit&lt;/a&gt; over the weekend. The whole thing, start to finish: from zero lines of code to a published site.&lt;/p&gt;
+&lt;h2 id="the-spark" class="relative group"&gt;The Spark &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-spark" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;It began with a phone call with my sister. She runs &lt;a href="https://www.mycolourfulcountrylife.com/" target="_blank" rel="noreferrer"&gt;My Colourful Country Life&lt;/a&gt;, a site for adult colouring enthusiasts. As my sister explained the value of her PDFs for artists, I realised it&amp;rsquo;d translate VERY well into an application with search and other features.&lt;/p&gt;</description></item><item><title>About Me</title><link>https://cloudartisan.com/about/</link><pubDate>Sat, 09 Sep 2023 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/about/</guid><description>&lt;h2 id="cloud-artisan" class="relative group"&gt;Cloud Artisan &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloud-artisan" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m David Taylor, a software engineer and cloud architect with a passion for technology, martial arts, and retro computing.&lt;/p&gt;
+&lt;p&gt;With over 20 years of experience in the tech industry, I&amp;rsquo;ve worked on various projects ranging from cloud infrastructure to software development. This blog serves as a platform to share my knowledge, experiences, and insights.&lt;/p&gt;
+&lt;h3 id="interests" class="relative group"&gt;Interests &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#interests" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Cloud Computing and DevOps&lt;/li&gt;
+&lt;li&gt;Software Development&lt;/li&gt;
+&lt;li&gt;Retro Computing and Technology&lt;/li&gt;
+&lt;li&gt;Martial Arts (Taekwondo)&lt;/li&gt;
+&lt;li&gt;Open Source Projects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="projects" class="relative group"&gt;Projects &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#projects" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Check out my 
+ 
+ &lt;a href="https://cloudartisan.com/projects/"&gt;projects&lt;/a&gt; page to see what I&amp;rsquo;m currently working on.&lt;/p&gt;</description></item><item><title>Google App Engine for Python: Getting Started On Mac</title><link>https://cloudartisan.com/posts/google_app_engine_python_getting_started_on_mac/</link><pubDate>Mon, 22 Aug 2011 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/google_app_engine_python_getting_started_on_mac/</guid><description>&lt;p&gt;Download the DMG package from &lt;a href="http://code.google.com/appengine/downloads.html" target="_blank" rel="noreferrer"&gt;http://code.google.com/appengine/downloads.html&lt;/a&gt; and open it.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2011/08/vdrive_googleappenginelauncher.png" alt="Virtual Drive - GoogleAppEngineLauncher" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Drag GoogleAppEngineLauncher to your Applications folder. Press CMD-Space to bring up Spotlight and type in &amp;ldquo;GoogleAppEngineLauncher&amp;rdquo; and hit Enter.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2011/08/spotlight_googleappenginelauncher.png" alt="Spotlight - GoogleAppEngineLauncher" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Agree to opening the application.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2011/08/opendialogue_googleappenginelauncher.png" alt="Open Dialogue - GoogleAppEngineLauncher" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Click on OK when prompted to make command symbolic links.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2011/08/googleappenginelauncher_makesymlinks.png" alt="GoogleAppEngineLauncher - Make Symlinks" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll be prompted for your password. Once you&amp;rsquo;ve provided your password the symbolic links should be created; take note of the available commands:&lt;/p&gt;</description></item><item><title>Installing mr.awsome on Mac OS X</title><link>https://cloudartisan.com/posts/installing-mr-awsome-on-mac-os-x/</link><pubDate>Tue, 21 Jun 2011 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/installing-mr-awsome-on-mac-os-x/</guid><description>&lt;p&gt;To quote the &lt;a href="https://github.com/fschulze/mr.awsome" target="_blank" rel="noreferrer"&gt;mr.awsome&lt;/a&gt; documentation &amp;ldquo;mr.awsome is a commandline-tool (aws) to manage and control Amazon Webservice&amp;rsquo;s EC2 instances.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Once you know the correct incantation, installing it is easy.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -o setuptools-0.6c11-py2.6.egg http://pypi.python.org/packages/2.6/s/setuptools/setuptools-0.6c11-py2.6.egg#md5&lt;span class="o"&gt;=&lt;/span&gt;bfa92100bd772d5a213eedd356d64086
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo sh setuptools-0.6c11-py2.6.egg
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rm setuptools-0.6c11-py2.6.egg
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;ARCHFLAGS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;-arch i386 -arch x86_64&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;easy_install mr.awsome
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Simple as that.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/davidltaylor" target="_blank" rel="noreferrer"&gt;Follow me&lt;/a&gt; on Twitter. If you don&amp;rsquo;t, kittens and fairies will die.&lt;/p&gt;</description></item><item><title>Resizing an RDS database instance</title><link>https://cloudartisan.com/posts/resizing-an-rds-database-instance/</link><pubDate>Mon, 30 May 2011 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/resizing-an-rds-database-instance/</guid><description>&lt;p&gt;I keep forgetting how to do this, so&amp;hellip;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-console" data-lang="console"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt; wintermute:~ $ rds-modify-db-instance mydb --region us-east-1 --db-instance-class db.m2.2xlarge --apply-immediately
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt; DBINSTANCE mydb 2011-05-20T01:24:19.131Z db.m1.large mysql 250 master available mydb.abcdefghijk.us-east-1.rds.amazonaws.com 3306 us-east-1b 0 db.m2.2xlarge n 5.5.8
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt; SECGROUP default active
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt; PARAMGRP mydb-params in-sync
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Yup, that involves an immediate outage for that database.&lt;/p&gt;
+&lt;p&gt;Yup, that&amp;rsquo;s the really expensive one&amp;hellip;&lt;/p&gt;</description></item><item><title>Resizing EC2 Instances</title><link>https://cloudartisan.com/posts/resizing-ec2-instances/</link><pubDate>Mon, 30 May 2011 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/resizing-ec2-instances/</guid><description>&lt;p&gt;An EC2 instance needs to be stopped before it can be resized. Also, it can only be resized to a &amp;ldquo;compatible&amp;rdquo; type (ie, one with a compatible kernel, 32 bit or 64 bit). So, if you started with a 32 bit &lt;code&gt;t1.micro&lt;/code&gt; you can only resize up to a 32 bit &lt;code&gt;m1.small&lt;/code&gt;. If you started with a 64 bit &lt;code&gt;t1.micro&lt;/code&gt; you could resize up to a 64 bit &lt;code&gt;m1.large&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-console" data-lang="console"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;wintermute:~ $ ec2-stop-instances i-3e15ff51
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;INSTANCE i-3e15ff51 running stopping
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;wintermute:~ $ ec2-modify-instance-attribute -t m2.2xlarge i-3e15ff51
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Client.IncorrectInstanceState: The instance &amp;#39;i-3e15ff51&amp;#39; is not in the &amp;#39;stopped&amp;#39; state.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;wintermute:~ $ ec2-modify-instance-attribute -t m2.2xlarge i-3e15ff51
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;instanceType i-3e15ff51 m2.2xlarge
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;wintermute:~ $ ec2-start-instances i-3e15ff51
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;INSTANCE i-3e15ff51 stopped pending
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By the way, these short posts are essentially notes to myself while working (I keep forgetting the syntax!). I&amp;rsquo;ve got some Cherokee-related posts in the pipeline, I just need to find some extra spare time at night.&lt;/p&gt;</description></item><item><title>Server Density Plugin for Monitoring Cherokee</title><link>https://cloudartisan.com/posts/server-density-plugin-for-monitoring-cherokee/</link><pubDate>Sat, 07 May 2011 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/server-density-plugin-for-monitoring-cherokee/</guid><description>&lt;p&gt;I&amp;rsquo;ve created a Server Density plugin that can be used to monitor the Cherokee web server. The plugin is currently &lt;a href="http://github.com/cloudartisan/sd-cherokee" target="_blank" rel="noreferrer"&gt;available on github&lt;/a&gt;. The installation instructions are over there. If you have any changes or improvements you&amp;rsquo;d like to see, please fork and create pull requests.&lt;/p&gt;
+&lt;p&gt;Here are some screenshots&amp;hellip;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2011/05/cherokee_uptime.jpg" alt="Cherokee Uptime" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2011/05/cherokee_config_threads.jpg" alt="Cherokee Configured Threads" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2011/05/cherokee_connections.jpg" alt="Cherokee Connections" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2011/05/cherokee_traffic.jpg" alt="Cherokee Traffic" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;</description></item><item><title>Getting Started With AWS Identity Access Management</title><link>https://cloudartisan.com/posts/getting-started-with-aws-identity-access-management/</link><pubDate>Mon, 18 Apr 2011 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/getting-started-with-aws-identity-access-management/</guid><description>&lt;p&gt;AWS Identity Access Management (IAM) is a free feature provided with your AWS
+account&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;enabling businesses to create multiple Users with individual security credentials who can use AWS web services, all controlled by and billed to a single AWS Account&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;For example, you might use it to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;restrict your web application to only manage S3&lt;/li&gt;
+&lt;li&gt;give accounts to an operations team, adding them to an operations group that can reboot EC2 instances&lt;/li&gt;
+&lt;li&gt;bring on contractors for short-term work&lt;/li&gt;
+&lt;li&gt;prevent yourself from accidentally stopping or deleting your RDS instance&lt;/li&gt;
+&lt;li&gt;enforce separation of your testing, staging, and production environments&lt;/li&gt;
+&lt;li&gt;and much more&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How many of you are using the credentials of your AWS &amp;lsquo;master&amp;rsquo; account to do everything? Well&amp;hellip; simply put&amp;hellip; don&amp;rsquo;t do that!&lt;/p&gt;</description></item><item><title>Installing newrelic_api gem from GitHub</title><link>https://cloudartisan.com/posts/installing-newrelic_api-gem-from-github/</link><pubDate>Mon, 07 Mar 2011 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/installing-newrelic_api-gem-from-github/</guid><description>&lt;p&gt;I needed to correlate some logs with New Relic monitoring data. I started doing this manually&amp;hellip; and got bored very quickly. It was too slow and painstaking. After some poking around I came across &lt;a href="https://github.com/newrelic/newrelic_api" target="_blank" rel="noreferrer"&gt;newrelic_api&lt;/a&gt; (not to be confused with &lt;a href="https://github.com/newrelic/rpm" target="_blank" rel="noreferrer"&gt;rpm&lt;/a&gt;, which is the monitoring agent).&lt;/p&gt;
+&lt;p&gt;Next thing I discovered&amp;hellip; I had no idea how to install gems from GitHub!&lt;/p&gt;
+&lt;p&gt;No longer!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wintermute:~/Git $ mkdir newrelic
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wintermute:~/Git $ cd newrelic/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wintermute:~/Git/newrelic $ git clone git://github.com/newrelic/newrelic_api.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Cloning into newrelic_api...
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;remote: Counting objects: 132, done.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;remote: Compressing objects: 100% (116/116), done.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;remote: Total 132 (delta 59), reused 0 (delta 0) Receiving objects: 100% (132/132), 26.02 KiB, done.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Resolving deltas: 100% (59/59), done.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wintermute:~/Git/newrelic $ cd newrelic_api/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wintermute:~/Git/newrelic/newrelic_api (master)$ ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;CHANGELOG Gemfile.lock README.rdoc VERSION log test Gemfile LICENSE.txt Rakefile lib newrelic_api.gemspec
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wintermute:~/Git/newrelic/newrelic_api (master)$ gem build newrelic_api.gemspec
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Successfully built RubyGem
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Name: newrelic_api
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Version: 1.1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;File: newrelic_api-1.1.1.gem
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wintermute:~/Git/newrelic/newrelic_api (master)$ gem install newrelic_api-1.1.1.gem
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Successfully installed newrelic_api-1.1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;1 gem installed
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Installing ri documentation for newrelic_api-1.1.1...
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Installing RDoc documentation for newrelic_api-1.1.1...
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wintermute:~/Git/newrelic/newrelic_api (master)$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s as simple as that.&lt;/p&gt;</description></item><item><title>Install Ruby 1.9.2 and Rails 3.0.3 using rvm on Ubuntu 10.10</title><link>https://cloudartisan.com/posts/install-ruby-1-9-rails-3-using-rvm-on-ubuntu-10-10/</link><pubDate>Fri, 10 Dec 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-ruby-1-9-rails-3-using-rvm-on-ubuntu-10-10/</guid><description>&lt;p&gt;It&amp;rsquo;s terse, probably more for my benefit than yours, but let&amp;rsquo;s dive in&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Install the packages required by &lt;code&gt;rvm&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-console" data-lang="console"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;david@continuity:~$ sudo apt-get install curl git
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Install &lt;code&gt;rvm&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-console" data-lang="console"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;david@continuity:~$ bash &amp;lt; &amp;lt;( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;&lt;/span&gt;&lt;span class="gp"&gt;%&lt;/span&gt; Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;100 986 100 986 0 0 524 0 0:00:01 0:00:01 --:--:-- 4522
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Initialized empty Git repository in /home/david/.rvm/src/rvm/.git/
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;remote: Counting objects: 16240, done.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;remote: Compressing objects: 100% (4166/4166), done.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;remote: Total 16240 (delta 10951), reused 15861 (delta 10649)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Receiving objects: 100% (16240/16240), 2.91 MiB | 457 KiB/s, done.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Resolving deltas: 100% (10951/10951), done.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="go"&gt;RVM: Shell scripts enabling management of multiple ruby environments.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;RTFM: http://rvm.beginrescueend.com/
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;HELP: http://webchat.freenode.net/?channels=rvm (#rvm on irc.freenode.net)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="go"&gt;Installing RVM to /home/david/.rvm/
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Correct permissions for base binaries in /home/david/.rvm/bin...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Copying manpages into place.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Backup and update your &lt;code&gt;.bashrc&lt;/code&gt; to make sure &lt;code&gt;rvm&lt;/code&gt; is ready whenever you fire up a terminal:&lt;/p&gt;</description></item><item><title>Upgrading Djangy</title><link>https://cloudartisan.com/posts/upgrading-djangy/</link><pubDate>Wed, 08 Dec 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/upgrading-djangy/</guid><description>&lt;p&gt;With the newer versions of Djangy comes support for the fantastic &lt;code&gt;pip&lt;/code&gt; installer.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s as easy as:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-console" data-lang="console"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;david@continuity:~$ sudo pip install --upgrade djangy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Downloading/unpacking djangy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Downloading Djangy-0.14.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Running setup.py egg_info for package djangy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Installing collected packages: djangy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Found existing installation: Djangy 0.11
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Uninstalling Djangy: Successfully uninstalled Djangy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Running setup.py install for djangy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Installing djangy script to /usr/local/bin
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Successfully installed djangy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="go"&gt;Cleaning up... 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>My first Djangy project (local testing)</title><link>https://cloudartisan.com/posts/my-first-djangy-project-local-testing/</link><pubDate>Sat, 04 Dec 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/my-first-djangy-project-local-testing/</guid><description>&lt;p&gt;In my &lt;a href="http://www.cloudartisan.com/2010/12/my-first-djangy-project-initial-testing/" target="_blank" rel="noreferrer"&gt;previous post&lt;/a&gt; I knocked out some simple code and pushed it straight to Djangy. I didn&amp;rsquo;t even test it locally first (&lt;em&gt;gosh shock horror aghast&lt;/em&gt;)! Well, that must end&amp;hellip; now.&lt;/p&gt;
+&lt;p&gt;A Djangy project is, in it&amp;rsquo;s heart of hearts, a Django project that you&amp;rsquo;ve shoved out your door into the big bad world. And the great thing about Django projects&amp;hellip; you can run them locally for testing.&lt;/p&gt;
+&lt;p&gt;Simply go to your project&amp;rsquo;s directory. In there you&amp;rsquo;ll find &lt;code&gt;manage.py&lt;/code&gt;. This handy script will do a lot of project management tasks, but the main one I&amp;rsquo;m interested in is running a local version of my project.&lt;/p&gt;</description></item><item><title>My first Djangy project (initial testing)</title><link>https://cloudartisan.com/posts/my-first-djangy-project-initial-testing/</link><pubDate>Thu, 02 Dec 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/my-first-djangy-project-initial-testing/</guid><description>&lt;p&gt;My first Djangy project will be an application called &lt;code&gt;rightscalefeed&lt;/code&gt;. It will pull down a user&amp;rsquo;s RightScale event feed. Ideally, I&amp;rsquo;d like to transform the feed into a WebSocket, suitable for continuous updates, perhaps for display in a data centre or network operations centre.&lt;/p&gt;
+&lt;p&gt;I may have bitten off more than I can chew, as I&amp;rsquo;m not sure Django (or Djangy&amp;rsquo;s environment) has WebSocket support yet, but we&amp;rsquo;ll see&amp;hellip;&lt;/p&gt;
+&lt;p&gt;First, I need Djangy:&lt;/p&gt;</description></item><item><title>Tuning PHP APC with Cherokee - Round 1</title><link>https://cloudartisan.com/posts/tuning-php-apc-with-cherokee-round-1/</link><pubDate>Mon, 29 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/tuning-php-apc-with-cherokee-round-1/</guid><description>&lt;p&gt;Since writing &lt;a href="http://www.cloudartisan.com/2010/11/using-php-apc-with-cherokee/" target="_blank" rel="noreferrer"&gt;Using PHP APC with Cherokee&lt;/a&gt; I noticed that my cache hits were dropping and my cache misses were growing. This is my first attempt at tweaking the configuration of &lt;code&gt;php-apc&lt;/code&gt; to try to eke out more performance.&lt;/p&gt;
+&lt;p&gt;I enabled my &lt;code&gt;apc.php&lt;/code&gt; page (check the previous article), checked the statistics, and saw that the &lt;code&gt;Cache full count&lt;/code&gt; was growing. My cache had filled several times.&lt;/p&gt;
+&lt;p&gt;According to the &lt;a href="http://www.php.net/manual/en/apc.configuration.php" target="_blank" rel="noreferrer"&gt;APC configuration documentation&lt;/a&gt; there are two settings that control the expiration of cache entries. They are:&lt;/p&gt;</description></item><item><title>Using PHP APC with Cherokee</title><link>https://cloudartisan.com/posts/using-php-apc-with-cherokee/</link><pubDate>Sun, 28 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/using-php-apc-with-cherokee/</guid><description>&lt;p&gt;If you&amp;rsquo;re using Cherokee as your web server, you&amp;rsquo;re probably already interested in squeezing every drop of performance out of your server. If you&amp;rsquo;re hosting PHP sites with Cherokee, using APC (Alternative PHP Cache) could enable you to squeeze out even more drops.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Alternative PHP Cache (APC) is a free and open opcode cache for PHP. Its goal is to provide a free, open, and robust framework for caching and optimizing PHP intermediate code.&lt;/p&gt;</description></item><item><title>Using ISPConfig with Cherokee</title><link>https://cloudartisan.com/posts/using-ispconfig-with-cherokee/</link><pubDate>Thu, 25 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/using-ispconfig-with-cherokee/</guid><description>&lt;p&gt;The &lt;a href="http://www.cherokee-project.com/" target="_blank" rel="noreferrer"&gt;Cherokee Project&lt;/a&gt; describes Cherokee as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a very fast, flexible and easy to configure Web Server. It supports the widespread technologies nowadays: FastCGI, SCGI, PHP, CGI, uWSGI, SSI, TLS and SSL encrypted connections, Virtual hosts, Authentication, on the fly encoding, Load Balancing, Apache compatible log files, Data Base Balancing, Reverse HTTP Proxy, Traffic Shaper, Video Streaming and much more.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;It makes a great alternative to the swiss-army chainsaw that is &lt;a href="http://www.apache.org" target="_blank" rel="noreferrer"&gt;Apache&lt;/a&gt; and the documentation, wizards, and screencasts make it infinitely more friendly than &lt;a href="http://nginx.net" target="_blank" rel="noreferrer"&gt;nginx&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>My Djangy invite arrived!</title><link>https://cloudartisan.com/posts/my-djangy-invite-arrived/</link><pubDate>Tue, 23 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/my-djangy-invite-arrived/</guid><description>&lt;p&gt;My Djangy invite arrived and I&amp;rsquo;m very excited!&lt;/p&gt;
+&lt;p&gt;Now I just need to set aside the time to use it. I already have some ideas&amp;hellip;&lt;/p&gt;</description></item><item><title>Install uWSGI (latest) on Ubuntu Server 10.10</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-ubuntu-server-10-10/</link><pubDate>Sun, 21 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-ubuntu-server-10-10/</guid><description>&lt;p&gt;uWSGI is a fast, self-healing, WSGI server. It is typically used with Python web applications. It works very well with the Cherokee Web Server and the Django web application framework.&lt;/p&gt;
+&lt;p&gt;To install the latest uWSGI use &lt;code&gt;pip&lt;/code&gt; and the URL for the latest version of uWSGI:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+sudo apt-get install libxml2-dev build-essential python-dev python-pip
+sudo pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Simple as that.
+
+You should [follow me on Twitter](https://twitter.com/davidltaylor).
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Adding the Cherokee Web Server PPA to Ubuntu</title><link>https://cloudartisan.com/posts/adding-the-cherokee-web-server-ppa-to-ubuntu/</link><pubDate>Sat, 20 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/adding-the-cherokee-web-server-ppa-to-ubuntu/</guid><description>&lt;p&gt;The following commands will add the Cherokee Web Server PPA to Ubuntu (version 9.10 and higher). The first command adds the extremely handy &lt;code&gt;add-apt-repository&lt;/code&gt; program to your system. The second adds the Cherokee Personal Package Archive.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:cherokee-webserver/ppa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+At the moment, Cherokee is at version 1.0.9.
+
+If you don&amp;#39;t already have Cherokee installed and you want to install it I find the following combination of packages most useful:
+
+
+ ```bash
+ sudo apt-get update
+ sudo apt-get install cherokee cherokee-doc libcherokee-mod-libssl libcherokee-mod-streaming libcherokee-mod-rrd libcherokee-mod-admin spawn-fcgi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s it. If you want more simple posts on building lean servers, cloud computing, software development and more, &lt;a href="http://www.cloudartisan.com/feed" target="_blank" rel="noreferrer"&gt;subscribe to my RSS feed&lt;/a&gt; and/or &lt;a href="https://twitter.com/davidltaylor" target="_blank" rel="noreferrer"&gt;follow me on Twitter&lt;/a&gt;. Cheers!&lt;/p&gt;</description></item><item><title>How to upgrade Ubuntu Server 10.04 to 10.10</title><link>https://cloudartisan.com/posts/upgrade-ubuntu-server-10-04-to-10-10/</link><pubDate>Fri, 19 Nov 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/upgrade-ubuntu-server-10-04-to-10-10/</guid><description>&lt;p&gt;The following commands can be followed blindly to update an Ubuntu Server install from version 10.04 (Lucid) to version 10.10 (Maverick).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get update
+apt-get install update-manager-core
+sed -i 's/Prompt=lts/Prompt=normal/' /etc/update-manager/release-upgrades
+do-release-upgrade
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Google App Engine SDK broken on Ubuntu Maverick 10.10</title><link>https://cloudartisan.com/posts/google-app-engine-sdk-broken-on-ubuntu-maverick-10-10/</link><pubDate>Sun, 24 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-sdk-broken-on-ubuntu-maverick-10-10/</guid><description>&lt;p&gt;The Google App Engine SDK is broken on Ubuntu 10.10, but it&amp;rsquo;s easy enough to fix&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The Google App Engine SDK requires Python 2.5. It does not work with Python 2.6.&lt;/p&gt;
+&lt;p&gt;This problem is covered in these Google Code issues:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://code.google.com/p/googleappengine/issues/detail?id=1159" target="_blank" rel="noreferrer"&gt;http://code.google.com/p/googleappengine/issues/detail?id=1159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://code.google.com/p/googleappengine/issues/detail?id=757" target="_blank" rel="noreferrer"&gt;http://code.google.com/p/googleappengine/issues/detail?id=757&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you try to use Google App Engine SDK on Python 2.6 you will encounter tracebacks like the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+Traceback (most recent call last):
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 3211, in _HandleRequest
+ self._Dispatch(dispatcher, self.rfile, outfile, env_dict)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 3154, in _Dispatch
+ base_env_dict=env_dict)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 527, in Dispatch
+ base_env_dict=base_env_dict)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 2452, in Dispatch
+ CGIDispatcher.Dispatch(self, *args, **kwargs)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 2404, in Dispatch
+ self._module_dict)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 2441, in curried_exec_cgi
+ return ExecuteCGI(*args, **kwargs)
+ File &amp;quot;/home/david/lib/google_appengine/google/appengine/tools/dev_appserver.py&amp;quot;, line 2312, in ExecuteCGI
+ logging.debug('Executing CGI with env: %s', pprint.pformat(env))
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 60, in pformat
+ return PrettyPrinter(indent=indent, width=width, depth=depth).pformat(object)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 119, in pformat
+ self._format(object, sio, 0, 0, {}, 0)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 137, in _format
+ rep = self._repr(object, context, level - 1)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 230, in _repr
+ self._depth, level)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 242, in format
+ return _safe_repr(object, context, maxlevels, level)
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 284, in _safe_repr
+ for k, v in _sorted(object.items()):
+ File &amp;quot;/usr/lib/python2.6/pprint.py&amp;quot;, line 75, in _sorted
+ with warnings.catch_warnings():
+ File &amp;quot;/usr/lib/python2.6/warnings.py&amp;quot;, line 333, in __init__
+ self._module = sys.modules['warnings'] if module is None else module
+ KeyError: 'warnings'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+... which is a pain in the proverbial to debug.
+
+Ubuntu Maverick 10.10 (and some earlier releases of Ubuntu) uses Python 2.6 by default. In older versions of Ubuntu the fix involved installing the older Python 2.5 from the official repository. However, with Ubuntu Maverick 10.10 things are worse... Python 2.5 is no longer available from an official repository!
+
+Thankfully, there is a repository on Launchpad that contains the necessary packages. To install, do the following:
+
+
+ ```bash
+ sudo add-apt-repository ppa:fkrull/deadsnakes
+ sudo apt-get update
+ sudo apt-get install python2.5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, modify &lt;code&gt;dev_appserver.py&lt;/code&gt; in the Google App Engine SDK. Change the first line from:&lt;/p&gt;</description></item><item><title>RightScale ServerTemplate: Bitnami Drupal Stack</title><link>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-drupal-stack/</link><pubDate>Thu, 21 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-drupal-stack/</guid><description>&lt;p&gt;I&amp;rsquo;ve published a &lt;a href="http://www.rightscale.com" target="_blank" rel="noreferrer"&gt;RightScale&lt;/a&gt; ServerTemplate for installing &lt;a href="http://bitnami.org/stack/drupal" target="_blank" rel="noreferrer"&gt;Bitnami&amp;rsquo;s Drupal stack&lt;/a&gt; on Amazon EC2.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Drupal is an open source content management platform powering millions of websites and applications. It’s built, used, and supported by an active and diverse community of people around the world.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;My ServerTemplate is based on an existing ServerTemplate by Bitnami. It differs from Bitnami&amp;rsquo;s existing Drupal ServerTemplate in a few ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;it uses an Ubuntu RightScale MultiCloud Image as its base&lt;/li&gt;
+&lt;li&gt;it has some of RightScale&amp;rsquo;s RightScripts for logging and monitoring added&lt;/li&gt;
+&lt;li&gt;it installs the Drupal stack from a supplied URL, meaning you can trial different versions of the Drupal stack easily&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using this ServerTemplate you can easily fire up a Drupal instance to either:&lt;/p&gt;</description></item><item><title>RightScale ServerTemplate: Bitnami WordPress Stack</title><link>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-wordpress-stack/</link><pubDate>Thu, 21 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/rightscale-servertemplate-bitnami-wordpress-stack/</guid><description>&lt;p&gt;I&amp;rsquo;ve published a &lt;a href="http://www.rightscale.com" target="_blank" rel="noreferrer"&gt;RightScale&lt;/a&gt; ServerTemplate for installing &lt;a href="http://bitnami.org/stack/wordpress" target="_blank" rel="noreferrer"&gt;Bitnami&amp;rsquo;s WordPress stack&lt;/a&gt; on Amazon EC2.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;WordPress is web software you can use to create a beautiful website or blog.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;It is based on an existing ServerTemplate by Bitnami. It differs from Bitnami&amp;rsquo;s existing WordPress ServerTemplate in a few ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;it uses an Ubuntu RightScale MultiCloud Image as its base&lt;/li&gt;
+&lt;li&gt;it has some of RightScale&amp;rsquo;s RightScripts for logging and monitoring added&lt;/li&gt;
+&lt;li&gt;it installs the WordPress stack from a supplied URL, meaning you can trial different versions of the WordPress stack easily&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using this ServerTemplate you can easily fire up a WordPress instance to:&lt;/p&gt;</description></item><item><title>RightScale ServerTemplate: Virtualmin</title><link>https://cloudartisan.com/posts/rightscale-servertemplate-virtualmin/</link><pubDate>Wed, 20 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/rightscale-servertemplate-virtualmin/</guid><description>&lt;p&gt;I&amp;rsquo;ve published a &lt;a href="http://www.rightscale.com" target="_blank" rel="noreferrer"&gt;RightScale&lt;/a&gt; ServerTemplate for launching &lt;a href="http://www.virtualmin.com" target="_blank" rel="noreferrer"&gt;Virtualmin&lt;/a&gt; on Amazon EC2.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Virtualmin is a powerful and flexible web server control panel based on the well-known Open Source web-based systems management GUI, Webmin. Manage your virtual domains, mailboxes, databases, applications, and the entire server, from one comprehensive and friendly interface.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The ServerTemplate I&amp;rsquo;ve created makes it easy for anyone to get started providing managed hosting on cloud infrastructure.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+ 
+ 
+&lt;figure&gt;&lt;img src="https://cloudartisan.com/images/2010/10/Virtualmin-Server-Template.png" alt="Virtualmin Server Template" class="mx-auto my-0 rounded-md" /&gt;
+&lt;/figure&gt;
+&lt;/p&gt;</description></item><item><title>Migrating from Google App Engine to Django</title><link>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</link><pubDate>Mon, 18 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django/</guid><description>&lt;p&gt;Unfortunately, I had to migrate one of my projects from Google App Engine to Django on a self-managed server. I didn&amp;rsquo;t want to do this. See &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #2&lt;/a&gt; and &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-3/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #3&lt;/a&gt; for the main reasons. Those headaches became bad enough that I had to bite the bullet and migrate out of Google App Engine.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It&amp;rsquo;s not for the faint-hearted&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="why-google-app-engine-in-the-first-place" class="relative group"&gt;Why Google App Engine In The First Place? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#why-google-app-engine-in-the-first-place" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Google App Engine is a PaaS (Platform as a Service). PaaS products eliminate the need for lower-level server management and, if they&amp;rsquo;re good, make it very easy to write and maintain code for that platform.&lt;/p&gt;</description></item><item><title>Hudson: pam_authenticate failed</title><link>https://cloudartisan.com/posts/hudson-pam-authenticate-failed/</link><pubDate>Mon, 11 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/hudson-pam-authenticate-failed/</guid><description>&lt;p&gt;If you&amp;rsquo;re getting login failures after enabling &lt;em&gt;Unix user/group database&lt;/em&gt; security check the log: &lt;code&gt;/var/log/hudson/hudson.log&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you see:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+Oct 11, 2010 9:41:08 PM hudson.security.AuthenticationProcessingFilter2 onUnsuccessfulAuthentication
+INFO: Login attempt failed
+org.acegisecurity.BadCredentialsException: pam_authenticate failed : Authentication failure; nested exception is org.jvnet.libpam.PAMException: pam_authenticate failed : Authentication failure
+ at hudson.security.PAMSecurityRealm$PAMAuthenticationProvider.authenticate(PAMSecurityRealm.java:100)
+ at org.acegisecurity.providers.ProviderManager.doAuthentication(ProviderManager.java:195)
+ at org.acegisecurity.AbstractAuthenticationManager.authenticate(AbstractAuthenticationManager.java:45)
+ at org.acegisecurity.ui.webapp.AuthenticationProcessingFilter.attemptAuthentication(AuthenticationProcessingFilter.java:71)
+ at org.acegisecurity.ui.AbstractProcessingFilter.doFilter(AbstractProcessingFilter.java:252)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at org.acegisecurity.ui.basicauth.BasicProcessingFilter.doFilter(BasicProcessingFilter.java:173)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at org.acegisecurity.context.HttpSessionContextIntegrationFilter.doFilter(HttpSessionContextIntegrationFilter.java:249)
+ at hudson.security.HttpSessionContextIntegrationFilter2.doFilter(HttpSessionContextIntegrationFilter2.java:66)
+ at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+ at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:76)
+ at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:164)
+ at winstone.FilterConfiguration.execute(FilterConfiguration.java:195)
+ at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:368)
+ at winstone.RequestDispatcher.forward(RequestDispatcher.java:333)
+ at winstone.RequestHandlerThread.processRequest(RequestHandlerThread.java:244)
+ at winstone.RequestHandlerThread.run(RequestHandlerThread.java:150)
+ at java.lang.Thread.run(Thread.java:619) Caused by: org.jvnet.libpam.PAMException: pam_authenticate failed : Authentication failure
+ at org.jvnet.libpam.PAM.check(PAM.java:105)
+ at org.jvnet.libpam.PAM.authenticate(PAM.java:123)
+ at hudson.security.PAMSecurityRealm$PAMAuthenticationProvider.authenticate(PAMSecurityRealm.java:90)
+ ... 18 more
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; the problem is likely caused by Hudson being unable to read your &lt;code&gt;/etc/shadow&lt;/code&gt; file.&lt;/p&gt;</description></item><item><title>Cherokee failing to exec spawn-fcgi</title><link>https://cloudartisan.com/posts/cherokee-failin-to-exec-spawn-fcgi/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/cherokee-failin-to-exec-spawn-fcgi/</guid><description>&lt;p&gt;If you&amp;rsquo;re using &lt;code&gt;spawn-fcgi&lt;/code&gt; with Cherokee (probably to get a wiki or PHP application or similar working) and you see:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;503 Service Unavailable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; you might be having the same problem I had. That is, Cherokee was failing to launch &lt;code&gt;spawn-fcgi&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To verify this is the cause of your problem, stop Cherokee, then start it manually at the command line:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# /usr/sbin/cherokee --admin_child -C /etc/cherokee/cherokee.conf
+Cherokee Web Server 1.0.8 (Aug 18 2010): Listening on port ALL:80, TLS disabled, IPv6 enabled, using epoll, 4096 fds system limit, max. 2041 connections, caching I/O, 20 threads, 102 connections per thread, standard scheduling policy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, try to visit the site giving you the problem. If you see the following in your terminal then you&amp;rsquo;ve probably got the same problem I had:&lt;/p&gt;</description></item><item><title>Install Hudson on Debian Lenny for Continuous Integration</title><link>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-hudson-on-debian-lenny-for-continuous-integration/</guid><description>&lt;p&gt;I found that Hudson depends on &lt;code&gt;daemon&lt;/code&gt; but it doesn&amp;rsquo;t install automatically. So, before we get started:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install daemon
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Now that&amp;#39;s out of the way, we need to grab the Hudson key and install the package:
+
+
+ ```bash
+ wget -q -O - http://hudson-ci.org/debian/hudson-ci.org.key | apt-key add -
+ cd /tmp
+ wget http://hudson-ci.org/latest/debian/hudson.deb
+ dpkg --install ./hudson.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If everything went well you&amp;rsquo;ll see Hudson running:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ps auxw | grep hudson
+hudson 9101 0.0 0.1 2108 516 ? Ss 09:59 0:00 /usr/bin/daemon --name=hudson --inherit --env=HUDSON_HOME=/var/lib/hudson --output=/var/log/hudson/hudson.log --pidfile=/var/run/hudson/hudson.pid -- /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+hudson 9103 18.9 10.3 297064 52660 ? Sl 09:59 0:03 /usr/bin/java -jar /usr/share/hudson/hudson.war --webroot=/var/run/hudson/war --httpPort=8080 --ajp13Port=-1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip; and listening on port 8080:&lt;/p&gt;</description></item><item><title>Install uWSGI (latest) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</link><pubDate>Mon, 04 Oct 2010 00:00:00 +1100</pubDate><guid>https://cloudartisan.com/posts/install-uwsgi-latest-on-debian-lenny/</guid><description>&lt;p&gt;First, why would you want it? uWSGI is a fast, self-healing, WSGI server, originally intended for use with Python web applications. I intend to use it with Python Django, served by Cherokee.&lt;/p&gt;
+&lt;p&gt;As for installation&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Do not bother doing a hands-on install from source. It&amp;rsquo;s messy. Just use &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+apt-get install gcc python-dev libxml2-dev
+apt-get install python-pip
+pip install http://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Simple as that.
+
+You should [follow me on twitter](https://twitter.com/davidltaylor).
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Python One-Liner: Debug Mail Server</title><link>https://cloudartisan.com/posts/python-one-liner-debug-mail-server/</link><pubDate>Sun, 03 Oct 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/python-one-liner-debug-mail-server/</guid><description>&lt;p&gt;Need a pretend mail server that you can use for debugging? Try this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+python -m smtpd -n -c DebuggingServer localhost:1025
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+It listens on port 1025 for local connections.
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Install Cherokee (testing) on Debian Lenny</title><link>https://cloudartisan.com/posts/install-cherokee-testing-on-debian-lenny/</link><pubDate>Sat, 02 Oct 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/install-cherokee-testing-on-debian-lenny/</guid><description>&lt;p&gt;Add the following to &lt;code&gt;/etc/sources&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Create `/etc/apt/apt.conf` with:
+
+
+ ```text
+ APT::Default-Release &amp;#34;stable&amp;#34;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create &lt;code&gt;/etc/apt/preferences&lt;/code&gt; for pinning the testing packages:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```text
+Package: libssl-dev
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libssl0.9.8
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-base0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: mysql-common
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libmysqlclient16
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-server0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-config0
+Pin: release a=testing
+Pin-Priority: 999 
+Package: libcherokee-mod-admin
+Pin: release a=testing
+Pin-Priority: 999 
+Package: cherokee
+Pin: release a=testing
+Pin-Priority: 999 
+Package: *
+Pin: release a=stable
+Pin-Priority: 500
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Then install the packages:
+
+
+ ```bash
+ apt-get install -t testing cherokee libcherokee-base0 libcherokee-server0 libcherokee-config0 libcherokee-mod-admin libssl0.9.8
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s the installation. For the configuration, check out the &lt;a href="http://www.cherokee-project.com/doc/cookbook.html" target="_blank" rel="noreferrer"&gt;Cherokee cookbooks&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Migrating from Google App Engine to Django... a preamble</title><link>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django-preamble/</link><pubDate>Wed, 29 Sep 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/migrating-from-google-app-engine-to-django-preamble/</guid><description>&lt;p&gt;I&amp;rsquo;ve been nose-deep migrating a project from Google App Engine to Django.  See &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #2&lt;/a&gt; and &lt;a href="http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-3/" target="_blank" rel="noreferrer"&gt;Google App Engine Gotcha #3&lt;/a&gt; for the reasons.  I&amp;rsquo;m keeping notes on the experience, in case any other poor suckers out there have to migrate from the cosy, loving embrace of a PaaS to the cold, hard trenches of a self-managed server.&lt;/p&gt;
+&lt;p&gt;Stay tuned&amp;hellip;&lt;/p&gt;</description></item><item><title>IronRuby on Rails on Azure (Part 2 of 3) – Connecting your Rails app to SQLAzure</title><link>https://cloudartisan.com/posts/ironruby-on-rails-on-azure-part-2-of-3-e28093-connecting-your-rails-app-to-sqlazure/</link><pubDate>Wed, 08 Sep 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/ironruby-on-rails-on-azure-part-2-of-3-e28093-connecting-your-rails-app-to-sqlazure/</guid><description>&lt;p&gt;This is the continuation of my bungling around with IronRuby, Rails and getting it running on SLQAzure. In part 1, we installed a basic rails application using IronRuby with SQL Server as it&amp;rsquo;s backend. We&amp;rsquo;ll now examine how we can connect this application to a SQLAzure backend as opposed to a SQL Server hosted on your development machine.&lt;/p&gt;
+&lt;p&gt;I’m assuming you have the vanilla rails application from Part 1 up and running and have verified that the rails application can communicate with your SQL server database by clicking on the “About your application’s environment” link as described in the previous article. I’m also assuming you’ve already signed up for a SQLAzure account and know how to connect to it.&lt;/p&gt;</description></item><item><title>IronRuby on Rails on Azure (Part 1 of 3) - Getting Started</title><link>https://cloudartisan.com/posts/ironruby-on-rails-on-azure-part-1-of-3-getting-started/</link><pubDate>Tue, 07 Sep 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/ironruby-on-rails-on-azure-part-1-of-3-getting-started/</guid><description>&lt;p&gt;This is the first of a three part series on running a rails application on Windows Azure using SQLAzure as your database backend. The Rail Guides website, of course, has a wonderful getting started &lt;a href="http://guides.rubyonrails.org/getting_started.html" target="_blank" rel="noreferrer"&gt;article&lt;/a&gt; that I couldn&amp;rsquo;t possibly do justice. This small series is just a very simple demonstration of one possible way of developing a rails application on Microsoft&amp;rsquo;s Azure platform.&lt;/p&gt;
+&lt;p&gt;In this part, we&amp;rsquo;ll simply be focusing on getting a basic rails application running on your laptop or desktop using IronRuby and SQL Server and links to download bundles that you can try out for yourself. If you already know how to do all that, skip to the end of this article to the download bundles and head over to Part 2: Connecting your rails application to SQLAzure&lt;/p&gt;</description></item><item><title>Google App Engine Gotcha 3</title><link>https://cloudartisan.com/posts/google-app-engine-gotcha-3/</link><pubDate>Sun, 29 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-gotcha-3/</guid><description>&lt;h2 id="whats-the-problem" class="relative group"&gt;What&amp;rsquo;s the problem? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#whats-the-problem" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Well, gotcha #3 is a simple but annoying one. The &lt;code&gt;urlfetch&lt;/code&gt; call does not use a fixed source IP address.&lt;/p&gt;
+&lt;p&gt;It makes sense, when you think about it. Google App Engine is (&lt;a href="http://code.google.com/appengine/docs/whatisgoogleappengine.html" target="_blank" rel="noreferrer"&gt;apparently&lt;/a&gt;) distributed all over the place, with no guarantee of where your code will run at any given time. I presume this is so that Google are free to move applications between data centres to optimise uptime and performance.&lt;/p&gt;</description></item><item><title>Google App Engine - unknown URL handler type</title><link>https://cloudartisan.com/posts/google-app-engine-unknown-url-handler-type/</link><pubDate>Sun, 15 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-unknown-url-handler-type/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Fatal error when loading application configuration:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Invalid object:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Unknown url handler type.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;lt;URLMap 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; secure=always 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; static_files=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; auth_fail_action=redirect 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; require_matching_file=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; static_dir=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; script=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; url=https://cloudartisan.com/admin/.* 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; upload=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; expiration=None 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; login=admin 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; mime_type=None
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; in &amp;#34;/home/david/Subversion/cloudzu/software/cloudzuum/src/app.yaml&amp;#34;, line 37, column 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;This happens when you have an error in your `script:` definition in `app.yaml` or `script:` is missing entirely.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;In my case, it was missing entirely... woops!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>appengine-jruby "no such file to load -- builtin/core_ext/symbol</title><link>https://cloudartisan.com/posts/appengine-jruby-no-such-file-to-load-builtincore_extsymbol/</link><pubDate>Fri, 13 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/appengine-jruby-no-such-file-to-load-builtincore_extsymbol/</guid><description>&lt;p&gt;A while ago I wrote a proof of concept in JRuby on Google App Engine, using the fantastic &lt;a href="http://code.google.com/p/appengine-jruby/" target="_blank" rel="noreferrer"&gt;appengine-jruby&lt;/a&gt; project. The code worked (albeit, &lt;em&gt;very slowly!&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;Satisfied, I put the code to the side, committed to a Subversion repository.&lt;/p&gt;
+&lt;p&gt;Today I got a chance to dust off the code and do some more work on it&amp;hellip; only to find it no longer worked.&lt;/p&gt;
+&lt;p&gt;When I started my code with &lt;code&gt;dev_appserver.rb&lt;/code&gt; I saw:&lt;/p&gt;</description></item><item><title>Google App Engine Gotcha 2</title><link>https://cloudartisan.com/posts/google-app-engine-gotcha-2/</link><pubDate>Mon, 09 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-gotcha-2/</guid><description>&lt;p&gt;For &lt;em&gt;Google App Engine: Gotcha #2&lt;/em&gt; I choose the default 5 second timeout on &lt;code&gt;urlfetch&lt;/code&gt;. This function is part of the Google App Engine&amp;rsquo;s API and applies to both Python and Java.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="http://code.google.com/appengine/docs/python/urlfetch/fetchfunction.html" target="_blank" rel="noreferrer"&gt;Python documentation&lt;/a&gt; states:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The deadline can be up to a maximum of 10 seconds. If deadline is None, the deadline is set to 5 seconds.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The &lt;a href="http://code.google.com/appengine/docs/java/urlfetch/overview.html" target="_blank" rel="noreferrer"&gt;Java documentation&lt;/a&gt; states:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can set a deadline for a request, the most amount of time the service will wait for a response. By default, the deadline for a fetch is 5 seconds. The maximum deadline is 10 seconds.&lt;/p&gt;</description></item><item><title>Auto-Scaling Is Avoidable, Potentially Dangerous... But Fun</title><link>https://cloudartisan.com/posts/auto-scaling-is-avoidable-potentially-dangerous-but-fun/</link><pubDate>Sat, 07 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/auto-scaling-is-avoidable-potentially-dangerous-but-fun/</guid><description>&lt;p&gt;RightScale have some tutorials on using their service to set up auto-scaling. Recently I played around with it, configuring auto-scaling in response to increases and decreases in server load. Honestly, it was fun. But it was essentially a folly, an exercise in dealing unnecessarily with dangerous corner cases.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s why&amp;hellip;&lt;/p&gt;
+&lt;h2 id="unconstrained-scaling" class="relative group"&gt;Unconstrained Scaling &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#unconstrained-scaling" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Unconstrained scaling is bad, mmkay. If you allow your systems to scale without constraint, you&amp;rsquo;re risking a surprise credit card bill. Worse yet, if you&amp;rsquo;re not paying any attention to your systems (shame!) then you could be in for a &lt;em&gt;jaw-dropping&lt;/em&gt; credit card bill.&lt;/p&gt;</description></item><item><title>CloudCamp Sydney 2010v2 (Aug 6, 2010)</title><link>https://cloudartisan.com/posts/cloudcamp-sydney-2010v2-aug-6-2010/</link><pubDate>Fri, 06 Aug 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/cloudcamp-sydney-2010v2-aug-6-2010/</guid><description>&lt;p&gt;I&amp;rsquo;ve just come back from &lt;a href="http://www.cloudcamp.org/sydney/2010-08-06" target="_blank" rel="noreferrer"&gt;CloudCamp Sydney 2010v2&lt;/a&gt; and I have some mixed thoughts about the event&amp;hellip;&lt;/p&gt;
+&lt;h1 id="event-format" class="relative group"&gt;Event Format &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#event-format" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;The event format is an &lt;a href="http://en.wikipedia.org/wiki/Unconference" target="_blank" rel="noreferrer"&gt;unconference&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An unconference is a facilitated, participant-driven conference centered on a theme or purpose.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Basically, the format is an effort to break away from the staid conferences of old, where the audience would fight boredom and stave off sleep by hyper-caffeinating themselves and perching uncomfortably on plastic seats. For the most part, the format worked very well.&lt;/p&gt;</description></item><item><title>Auditing Cloud Service Providers</title><link>https://cloudartisan.com/posts/auditing-cloud-service-providers/</link><pubDate>Tue, 27 Jul 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/auditing-cloud-service-providers/</guid><description>&lt;h2 id="whats-up" class="relative group"&gt;What&amp;rsquo;s Up? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#whats-up" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;I want to find existing documented best practice processes and questionnaires for auditing cloud service providers.&lt;/p&gt;
+&lt;p&gt;I was hoping to find existing surveys/questionnaires that can be reused to perform audits on cloud service providers. I was also hoping those audits could be performed without introducing much additional load for the auditor or the cloud service providers. &lt;em&gt;Especially&lt;/em&gt; for the auditor&amp;hellip; because, no doubt, that will be me.&lt;/p&gt;</description></item><item><title>Google App Engine Gotcha 1</title><link>https://cloudartisan.com/posts/google-app-engine-gotcha-1/</link><pubDate>Sun, 27 Jun 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/google-app-engine-gotcha-1/</guid><description>&lt;p&gt;I like Google App Engine. However, there are a number of &lt;em&gt;gotchas&lt;/em&gt; that can creep up on you. Especially if you dive right in without doing any reading first.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s gotcha #1&amp;hellip;&lt;/p&gt;
+&lt;p&gt;A number of standard Python modules are not available or only provide limited functionality. Click &lt;a href="http://code.google.com/appengine/kb/libraries.html" target="_blank" rel="noreferrer"&gt;here&lt;/a&gt; to see Google App Engine&amp;rsquo;s list of enabled, partially-enabled and empty modules.&lt;/p&gt;
+&lt;p&gt;Sometimes developing for Google App Engine isn&amp;rsquo;t straightforward and requires a little imagination. However, most of the time there&amp;rsquo;s a simple alternative; it just takes a little reading. For example, if you want to send e-mail on Google App Engine you can&amp;rsquo;t use Python&amp;rsquo;s &lt;code&gt;smtplib&lt;/code&gt; (because it relies on &lt;code&gt;socket&lt;/code&gt;, which is implemented as an empty module). Instead, you would do the following:&lt;/p&gt;</description></item><item><title>Install EC2 AMI &amp; API Tools in Debian</title><link>https://cloudartisan.com/posts/install-ec2-tools-debian/</link><pubDate>Wed, 02 Jun 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/install-ec2-tools-debian/</guid><description>&lt;p&gt;Download the zip files for the tools:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+$ wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip
+$ wget http://s3.amazonaws.com/ec2-downloads/ec2-ami-tools.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+Unzip the tools:
+
+ ```bash
+ $ unzip ec2-api-tools.zip
+ $ unzip ec2-ami-tools.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will give you some directories with version numbers appended.
+Put them in a safe place:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+$ mkdir /usr/local/ec2
+$ cp -r ec2-ami-tools-1.3-34544/* /usr/local/ec2/
+$ cp -r ec2-api-tools-1.3-42584/* /usr/local/ec2/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+Install Java:
+
+ ```bash
+ $ apt-get install sun-java6-jre
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit the system-wide profile:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+$ vi /etc/profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+Add the following to the file:
+
+ ```bash
+ # EC2 Tools
+ export EC2_HOME=/usr/local/ec2
+ export PATH=$PATH:$EC2_HOME/bin
+ export JAVA_HOME=/usr
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When someone logs in, their environment will be ready and raring
+to go. Users can then issue commands such as:&lt;/p&gt;</description></item><item><title>Scheduled Tasks With Google App Engine &amp; Python</title><link>https://cloudartisan.com/posts/scheduled-tasks-with-google-app-engine-python/</link><pubDate>Wed, 02 Jun 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/scheduled-tasks-with-google-app-engine-python/</guid><description>&lt;p&gt;We&amp;rsquo;ll create a simple Hello World application that sends an e-mail every 5 minutes to reassure you that the Internet is still out there and still cares.&lt;/p&gt;
+&lt;p&gt;First, download and install the &lt;a href="http://code.google.com/appengine/downloads.html" target="_blank" rel="noreferrer"&gt;Google App Engine SDK&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+wget http://googleappengine.googlecode.com/files/google_appengine_1.3.4.zip
+unzip google_appengine_1.3.4.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+
+Create a directory for your application:
+
+ ```bash
+ mkdir helloworld
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create an app.yaml file to describe your application:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```yaml
+application: helloworld
+version: 1
+runtime: python
+api_version: 1handlers:
+- url: /helloworld
+ script: helloworld.py
+ login: admin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;
+Create a cron.yaml file to run your scheduled task:
+
+ ```yaml
+ cron:
+ - description: hello... is it me you&amp;#39;re looking for?
+ url: /helloworld
+ schedule: every 5 minutes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create your script (changing the e-mail addresses, of course):&lt;/p&gt;</description></item><item><title>RightScripts In Any Scripting Language</title><link>https://cloudartisan.com/posts/rightscripts-in-any-scripting-language/</link><pubDate>Sun, 30 May 2010 00:00:00 +1000</pubDate><guid>https://cloudartisan.com/posts/rightscripts-in-any-scripting-language/</guid><description>&lt;p&gt;&lt;a href="http://www.rightscale.com/" target="_blank" rel="noreferrer"&gt;RightScale&amp;rsquo;s&lt;/a&gt; cloud management platform can be used to deploy and manage solutions on cloud infrastructure with some degree of automation, control, and scaling.&lt;/p&gt;
+&lt;p&gt;Users create &lt;a href="http://support.rightscale.com/12-Guides/01-RightScale_Dashboard_User_Guide/03-Design/02-RightScripts" target="_blank" rel="noreferrer"&gt;RightScripts&lt;/a&gt; to automate actions on their servers. Think of them the same way you would any other script for managing a server. The differences are that they are managed inside RightScale&amp;rsquo;s management platform, with version control, easy reuse, and access to handy environment variables. A RightScript is typically written in Bash, Ruby, or Perl, and has variables that are initialised using input parameters.&lt;/p&gt;</description></item></channel></rss>
