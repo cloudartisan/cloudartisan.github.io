@@ -24,7 +24,7 @@ The theme is vendored under `_vendor/`, so day-to-day builds do not need Go or a
    - macOS (Homebrew): `brew install hugo`
    - Linux: download the extended release from [gohugo.io](https://gohugo.io/installation/) or install it via your preferred package manager
 
-   The site is pinned to Hugo `0.149.0` via `.hugo-version`, but I have also verified that it builds cleanly with newer Hugo releases.
+   The site is pinned to Hugo `0.160.1` via `.hugo-version`.
 
 3. Build or run the site through the wrapper script:
    ```

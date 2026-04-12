@@ -18,6 +18,7 @@
 
 ## Build Commands
 - Install the Hugo extended binary (`brew install hugo` on macOS, or use the official Linux package/binary)
+- The repo pins Hugo via `.hugo-version` (currently `0.160.1`)
 - Local development: `./scripts/hugo.sh server -D` (includes draft content)
 - Production build: `./scripts/hugo.sh --minify --buildFuture` (generates static site in `/public`)
 - Refresh vendored theme modules when needed: `./scripts/hugo.sh mod vendor`

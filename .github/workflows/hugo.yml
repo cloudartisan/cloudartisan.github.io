@@ -1,5 +1,5 @@
 # Version-locked deployment workflow for Hugo site with vendored Congo theme
-# Hugo 0.149.0 + Congo v2.12.2 for reproducible builds
+# Hugo 0.160.1 + Congo v2.12.2 for reproducible builds
 name: Deploy Hugo site
 
 on:
