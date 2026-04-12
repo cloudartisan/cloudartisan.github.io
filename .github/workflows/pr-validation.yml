@@ -33,7 +33,7 @@ jobs:
           echo "Using Hugo version: ${HUGO_VERSION}"
 
       - name: Setup Go
-        uses: actions/setup-go@v6.3.0
+        uses: actions/setup-go@v6.4.0
         with:
           go-version: ${{ steps.versions.outputs.go_version }}
       
