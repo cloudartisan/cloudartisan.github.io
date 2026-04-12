@@ -11,7 +11,7 @@
 </tr>
 </thead>
 <tbody>
-{{- range sort .Site.Data.movies.movies "title" }}
+{{- range sort hugo.Data.movies.movies "title" }}
 <tr>
 <td><a href="https://www.imdb.com/title/{{ .imdb_id }}/">{{ .title }}</a></td>
 <td>{{ .year | default "—" }}</td>

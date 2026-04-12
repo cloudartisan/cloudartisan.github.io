@@ -6,6 +6,7 @@ Gemfile.lock
 
 # Hugo
 .hugo_build.lock
+.hugo_cache/
 /public/
 /resources/
 /jsconfig.json
