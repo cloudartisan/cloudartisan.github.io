@@ -10,6 +10,8 @@ This site is built with:
 - [Hugo](https://gohugo.io/) - A fast and modern static site generator
 - [Congo Theme](https://github.com/jpanther/congo) - A powerful, lightweight theme for Hugo
 
+The theme is vendored under `_vendor/`, so day-to-day builds do not need Go or a live module download.
+
 ## Local Development
 
 1. Clone this repository:
@@ -18,19 +20,44 @@ This site is built with:
    cd cloudartisan.github.io
    ```
 
-2. Install Hugo (specific version to ensure compatibility):
-   ```
-    go install -tags extended github.com/gohugoio/hugo@v0.149.0
-   ```
-   
-   Ensure your Go bin directory (typically ~/go/bin) is in your PATH.
+2. Install the Hugo extended binary:
+   - macOS (Homebrew): `brew install hugo`
+   - Linux: download the extended release from [gohugo.io](https://gohugo.io/installation/) or install it via your preferred package manager
 
-3. Run the local development server:
+   The site is pinned to Hugo `0.160.1` via `.hugo-version`.
+
+3. Build or run the site through the wrapper script:
    ```
-   hugo server -D
+   ./scripts/hugo.sh server -D
    ```
+
+   The wrapper keeps Hugo's cache inside the repository (`.hugo_cache/`), which avoids permission and path quirks on both macOS and Linux.
 
 4. View the site at http://localhost:1313/
+
+## Production Build
+
+```
+./scripts/hugo.sh --minify --buildFuture
+```
+
+## Updating Theme Dependencies
+
+Normal builds do not require Go. You only need Go when you want to refresh vendored Hugo modules, for example when updating Congo.
+
+1. Install a recent Go toolchain.
+2. Refresh the module dependency:
+   ```
+   hugo mod get github.com/jpanther/congo/v2@v2.12.2
+   ```
+3. Re-vendor the module:
+   ```
+   ./scripts/hugo.sh mod vendor
+   ```
+4. Re-run the build:
+   ```
+   ./scripts/hugo.sh --minify --buildFuture
+   ```
 
 ## Creating Content
 
@@ -115,7 +142,7 @@ python3 scripts/script_name.py      # Run the script
 ## Building for Production
 
 ```
-hugo
+./scripts/hugo.sh --minify --buildFuture
 ```
 
 This will generate the static site in the `public` directory.

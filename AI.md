@@ -17,10 +17,12 @@
 - Repository is cloudartisan.github.io
 
 ## Build Commands
-- Install Hugo: `go install -tags extended github.com/gohugoio/hugo@v0.149.0`
-- Update theme modules: `hugo mod get -u`
-- Local development: `hugo server -D` (includes draft content)
-- Production build: `hugo` (generates static site in /public)
+- Install the Hugo extended binary (`brew install hugo` on macOS, or use the official Linux package/binary)
+- The repo pins Hugo via `.hugo-version` (currently `0.160.1`)
+- Local development: `./scripts/hugo.sh server -D` (includes draft content)
+- Production build: `./scripts/hugo.sh --minify --buildFuture` (generates static site in `/public`)
+- Refresh vendored theme modules when needed: `./scripts/hugo.sh mod vendor`
+- Go is only required when changing Hugo module dependencies
 - Create new post: `hugo new content/posts/my-post-name.md`
 - Create new project: `hugo new content/projects/project-name.md`
 

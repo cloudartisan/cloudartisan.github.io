@@ -10,7 +10,7 @@
 </tr>
 </thead>
 <tbody>
-{{- range .Site.Data.books.books }}
+{{- range hugo.Data.books.books }}
 <tr>
 <td><strong>{{ .title }}</strong></td>
 <td>{{ .author | default "—" }}</td>
