@@ -25,10 +25,22 @@
 - Go is only required when changing Hugo module dependencies
 - Create new post: `hugo new content/posts/my-post-name.md`
 - Create new project: `hugo new content/projects/project-name.md`
+- Create a post on a feature branch for PR review: `./scripts/create-post-pr.sh "Post Title"` (uses the site's `Australia/Sydney` date)
 
 ## Testing
-- Preview site locally: `hugo server -D`
+- Preview site locally: `./scripts/hugo.sh server -D`
 - Check links: `hugo server --navigateToChanged`
+- Validate Hugo configuration: `./scripts/hugo.sh config`
+- Check draft content: `hugo list drafts`
+- Check future-dated content: `hugo list future`
+- Test development build: `./scripts/hugo.sh --buildDrafts --buildFuture`
+- Test production build: `./scripts/hugo.sh --minify --buildFuture`
+
+## Content Maintenance
+- Movie data lives in `data/movies.yaml` and book data lives in `data/books.yaml`
+- Update all movies: `python3 scripts/update_all_movies.py`
+- Update all books: `python3 scripts/update_all_books.py`
+- Install script dependencies: `pip3 install -r scripts/requirements.txt`
 
 ## Content Structure
 - Posts: content/posts/
