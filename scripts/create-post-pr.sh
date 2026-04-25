@@ -3,6 +3,8 @@
 
 set -e
 
+SITE_TIMEZONE="Australia/Sydney"
+
 # Check if post title is provided
 if [ $# -eq 0 ]; then
     echo "Usage: $0 'Post Title Here'"
@@ -13,13 +15,14 @@ fi
 POST_TITLE="$1"
 # Convert title to slug (lowercase, spaces to hyphens, remove special chars)
 POST_SLUG=$(echo "$POST_TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9 ]//g' | sed 's/ \+/-/g')
-CURRENT_DATE=$(date '+%Y-%m-%d')
+CURRENT_DATE=$(TZ="$SITE_TIMEZONE" date '+%Y-%m-%d')
 BRANCH_NAME="post/$POST_SLUG"
 FILENAME="content/posts/$CURRENT_DATE-$POST_SLUG.md"
 
 echo "Creating new post PR..."
 echo "Title: $POST_TITLE"
 echo "Slug: $POST_SLUG" 
+echo "Timezone: $SITE_TIMEZONE"
 echo "Branch: $BRANCH_NAME"
 echo "File: $FILENAME"
 echo ""

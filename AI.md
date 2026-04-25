@@ -25,7 +25,7 @@
 - Go is only required when changing Hugo module dependencies
 - Create new post: `hugo new content/posts/my-post-name.md`
 - Create new project: `hugo new content/projects/project-name.md`
-- Create a post on a feature branch for PR review: `./scripts/create-post-pr.sh "Post Title"`
+- Create a post on a feature branch for PR review: `./scripts/create-post-pr.sh "Post Title"` (uses the site's `Australia/Sydney` date)
 
 ## Testing
 - Preview site locally: `./scripts/hugo.sh server -D`
