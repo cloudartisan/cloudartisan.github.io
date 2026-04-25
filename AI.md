@@ -99,6 +99,7 @@
 
 ## Pull Request Workflow
 - For significant changes, create a feature branch and PR instead of pushing directly to main
+- For new blog posts, you can use `./scripts/create-post-pr.sh "Post Title Here"` to create the branch and starter post file
 - The PR validation workflow will automatically test:
   - Hugo build success (both development and production)
   - Content validation (front matter, required fields)
