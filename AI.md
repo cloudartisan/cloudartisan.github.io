@@ -102,6 +102,8 @@
 - For new blog posts, you can use `./scripts/create-post-pr.sh "Post Title Here"` to create the branch and starter post file
 - The PR validation workflow will automatically test:
   - Hugo build success (both development and production)
+  - Hugo configuration validation
+  - Draft and future content checks
   - Content validation (front matter, required fields)
   - Internal link checking
   - Image reference validation
