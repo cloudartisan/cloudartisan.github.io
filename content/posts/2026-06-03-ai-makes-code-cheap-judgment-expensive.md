@@ -10,7 +10,7 @@ author: "david-taylor"
 
 There is a version of the AI coding story that absolutely kills in a boardroom.
 
-Engineers can produce code faster. Boilerplate gets cheaper. Ticket throughput goes up. Junior engineers can supposedly do more with less support. Maybe you even convince yourself that you need fewer engineers overall.
+Engineers can produce code faster. Boilerplate gets cheaper. Ticket throughput goes up. Junior engineers can supposedly do more with less support. Maybe leadership even convinces itself that fewer engineers are needed overall.
 
 I think that story is wrong. Or at least wrong enough to make expensive decisions with false confidence.
 
@@ -27,7 +27,7 @@ I don't think it's useful to pretend these tools have no value.
 GitHub's own [Copilot research](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/) reported faster completion on a bounded task, along with less frustration and better flow.
 
 ![GitHub Copilot bounded-task study: task time and completion rate](/images/2026/06/chart_github_copilot_bounded_task.svg)
-*Source: [GitHub research blog](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/). A constrained coding task: Copilot users averaged 71 minutes versus 161 minutes for the control group. GitHub summarises this as 55% faster. Worth holding onto. The real question is what happens when the task isn't constrained.*
+*Source: [GitHub research blog](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/). A constrained coding task: Copilot users averaged 71 minutes versus 161 minutes for the control group. GitHub summarises this as 55% faster. The real question is what happens when the task isn't constrained.*
 
 [Stack Overflow's 2024 developer survey](https://survey.stackoverflow.co/2024/ai/) showed that most developers still see productivity as the main hoped-for benefit of AI tooling.
 
@@ -36,13 +36,13 @@ None of that is hard to believe.
 ![Why developers use AI tools: Stack Overflow Developer Survey 2024](/images/2026/06/chart_stackoverflow_2024_ai_benefits.svg)
 *Source: [Stack Overflow Developer Survey 2024, AI section](https://survey.stackoverflow.co/2024/ai/)*
 
-If you've spent any time with modern coding assistants, you'll know they can be genuinely useful for:
+Modern coding assistants can be genuinely useful for:
 
 - reducing boilerplate
 - sketching first drafts
 - filling in repetitive test cases
 - translating intent into rough implementation quickly
-- helping you get unstuck when the problem is narrow enough
+- helping people get unstuck when the problem is narrow enough
 
 That is why adoption keeps happening. The gains are visible, immediate, and easy to show on a slide.
 
@@ -86,7 +86,7 @@ The hardest review work is rarely syntax, formatting, or whether the code compil
 
 I don't have to imagine this in the abstract. I've watched colleagues raise huge AI-assisted pull requests that were obviously generated faster than they were understood. In one case, a coworker spent more than half a day trying to review an AI-generated PR of well over a thousand lines before giving up and rewriting the thing properly. That's review debt, billed directly to the person with enough judgment to recognise the mess.
 
-I've also noticed that AI slop has a recognisable smell now. Long-winded paragraphs. Mixed formatting. Strange fragments that don't quite connect. Links pasted in as "evidence" that don't actually support the claim. Once you see enough of it, you stop reading a ticket as a good-faith technical summary and start reading it as forensic cleanup.
+I've also noticed that AI slop has a recognisable smell now. Long-winded paragraphs. Mixed formatting. Strange fragments that don't quite connect. Links pasted in as "evidence" that don't actually support the claim. After enough exposure, a ticket stops reading like a good-faith technical summary and starts reading like forensic cleanup.
 
 AI can help generate the code, but it can't take legal, operational, or professional responsibility for it.
 
@@ -112,7 +112,7 @@ Those duties are not evenly distributed. They concentrate on senior engineers, s
 
 A lot of this extra labour arrives disguised as "findings". I've worked incidents where the investigation got materially slower because an AI-generated summary had hallucinated a link between unrelated systems, and then I had to unwind that false premise across code, logs, and service boundaries. I can think of one investigation that sent me digging across roughly a dozen repositories and their logs partly because the original AI-assisted diagnosis had pointed blame in the wrong direction. Again: the model got to be fast. The humans got to be careful.
 
-There is also a more corrosive version of the same problem: you stop having technical conversations with people and start having technical conversations with their model output, relayed by a human proxy who doesn't properly understand it. If I see "Sent using @Slack MCP App" on a message from you to me, I will *not* read it. That is a miserable way to run an engineering organisation.
+There is also a more corrosive version of the same problem: technical conversations with people get replaced by technical conversations with model output, relayed by a human proxy who doesn't properly understand it. That is a miserable way to run an engineering organisation.
 
 This is why I don't buy the simplistic "AI means fewer engineers" line.
 
@@ -153,7 +153,7 @@ AI-assisted development appears to be making it easier to create production risk
 
 That is a different argument, and a better one.
 
-Take the recent Amazon reporting. The public coverage around AWS outages and internal follow-up has been messy, and Amazon has pushed back on simple claims that AI coding tools directly caused the incidents. GeekWire covered that pushback directly, while Tom's Hardware reported the internal response in more operational terms. Fair enough. That is exactly why I wouldn't overstate it.
+Take the recent Amazon reporting. The public coverage around AWS outages and internal follow-up has been messy, and Amazon has pushed back on simple claims that AI coding tools directly caused the incidents. GeekWire covered that pushback directly, while Tom's Hardware reported the internal response in more operational terms. Fair enough.
 
 But even with that caveat, the reporting still supports something useful: if AI-assisted changes are implicated often enough to trigger internal meetings, tighter approvals, and more senior attention, then the story is not really about magical productivity. It is about governance strain.
 
@@ -169,7 +169,7 @@ These stories are not all equal. Some are stronger than others. Some rely more h
 
 But they all point in a similar direction.
 
-The risk is not just that AI writes bad code.
+The risk is not just that AI can write bad code confidently.
 
 The risk is that AI makes it cheap to create changes that look good enough to move forward before the organisation has really solved the questions that matter:
 
@@ -215,7 +215,7 @@ If companies decide that AI lets them skip a generation of junior hires, they ma
 
 That worries me more than most of the productivity claims do.
 
-A lot of engineering judgment is not learned by consuming explanations. It is learned by doing real work, making manageable mistakes, being reviewed by people who know more than you, and gradually taking on more responsibility.
+A lot of engineering judgment is not learned by consuming explanations. It is learned by doing real work, making manageable mistakes, being reviewed by more experienced engineers, and gradually taking on more responsibility.
 
 If entry-level work becomes "cheap to automate" before junior engineers have had a chance to learn from doing it, the organisation may be liquidating its own apprenticeship model.
 
