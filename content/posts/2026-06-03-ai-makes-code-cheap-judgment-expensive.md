@@ -225,7 +225,7 @@ The capability loss shows up later.
 
 ## What companies should be asking instead
 
-If I were framing this for an engineering leadership team, I would not start with "How much faster can AI help us ship?"
+I would not start with "How much faster can AI help us ship?"
 
 I'd start with harder questions.
 
