@@ -122,6 +122,8 @@ That is a very different kind of scarcity.
 
 ## Faster generation != faster engineering
 
+![Public Enemy, *Don't Believe the Hype* cover art](/images/2026/06/public-enemy-dont-believe-the-hype.jpg)
+
 This is another place where the public conversation gets sloppy.
 
 There is a big difference between measuring speed on a constrained task and measuring throughput inside a real system with real context, legacy constraints, and production responsibility.
