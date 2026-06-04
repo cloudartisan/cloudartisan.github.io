@@ -187,7 +187,7 @@ But the pricing asymmetry is...
 
 The vendor gets paid once when the model generates the work. The buyer pays a second time when human beings have to validate it, integrate it, operate it, and take responsibility for it.
 
-That second bill never shows up on the pricing page. It's often the more expensive one.
+That second bill never shows up on the pricing page. Yet it's often the more expensive one.
 
 ## Layoffs: the most visible form of the same asymmetry
 
