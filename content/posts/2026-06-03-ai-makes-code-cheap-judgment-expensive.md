@@ -112,7 +112,7 @@ Those duties are not evenly distributed. They concentrate on senior engineers, s
 
 A lot of this extra labour arrives disguised as "findings". I've worked incidents where the investigation got materially slower because an AI-generated summary had hallucinated a link between unrelated systems, and then I had to unwind that false premise across code, logs, and service boundaries. I can think of one investigation that sent me digging across roughly a dozen repositories and their logs partly because the original AI-assisted diagnosis had pointed blame in the wrong direction. Again: the model got to be fast. The humans got to be careful.
 
-There is also a more corrosive version of the same problem: technical conversations with people get replaced by technical conversations with model output, relayed by a human proxy who doesn't properly understand it. That is a miserable way to run an engineering organisation.
+There is also a more corrosive version of the same problem: technical conversations with people get replaced by technical conversations with model output, relayed by a human proxy who doesn't properly understand it. If I see "Sent using @Slack MCP App" on a message from you to me, I will *not* read it. That is a miserable way to run an engineering organisation.
 
 This is why I don't buy the simplistic "AI means fewer engineers" line.
 
@@ -144,10 +144,6 @@ People feel busier. More code is moving around. More things look nearly done. Ye
 ## The outage angle is really a governance angle
 
 This is where the recent reporting gets interesting.
-
-I don't think the safest claim is "AI-generated code is causing outages everywhere". That is too blunt, and in some cases the attribution is contested.
-
-The stronger claim is narrower and, in my view, more important.
 
 AI-assisted development appears to be making it easier to create production risk faster than organisations can improve the guard rails around review, rollback, blast radius, risk ownership, and governance.
 
