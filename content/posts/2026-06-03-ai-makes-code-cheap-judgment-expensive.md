@@ -86,7 +86,7 @@ The hardest review work is rarely syntax, formatting, or whether the code compil
 
 I don't have to imagine this in the abstract. I've watched colleagues raise huge AI-assisted pull requests that were obviously generated faster than they were understood. In one case, a coworker spent more than half a day trying to review an AI-generated PR of well over a thousand lines before giving up and rewriting the thing properly. That's review debt, billed directly to the person with enough judgment to recognise the mess.
 
-I've also noticed that AI slop has a recognisable smell now. Long-winded paragraphs. Mixed formatting. Strange fragments that don't quite connect. Links pasted in as "evidence" that don't actually support the claim. After enough exposure, a ticket stops reading like a good-faith technical summary and starts reading like forensic cleanup.
+I've also noticed that AI slop has a recognisable smell now. Long-winded paragraphs. Mixed formatting. Strange fragments that don't quite connect. Links pasted in as "evidence" that don't actually support the claim. After enough exposure, a ticket stops reading like a good-faith technical summary and starts reading like a long-winded research paper in need of deep forensic cleanup.
 
 AI can help generate the code, but it can't take legal, operational, or professional responsibility for it.
 
