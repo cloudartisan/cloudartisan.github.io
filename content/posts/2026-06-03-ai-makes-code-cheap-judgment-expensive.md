@@ -189,7 +189,7 @@ The vendor gets paid once when the model generates the work. The buyer pays a se
 
 That second bill never shows up on the pricing page. Yet it's often the more expensive one.
 
-## Layoffs: the most visible form of the same asymmetry
+## Layoffs: the most visible form of the asymmetry
 
 This is where the argument stops being abstract.
 
