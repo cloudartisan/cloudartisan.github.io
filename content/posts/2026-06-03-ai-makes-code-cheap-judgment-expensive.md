@@ -94,6 +94,8 @@ So the burden moves uphill.
 
 ## Why senior engineers end up carrying the cost
 
+![Three-panel cartoon about AI productivity and burnout: "Investing in AI to boost productivity", "Ignoring stress and burnout", "Employees are more burnt out than ever"](/images/2026/06/ai-burnout-productivity-cartoon.jpg)
+
 This is where the labour side of the story matters.
 
 When companies adopt AI coding tools aggressively, they often talk as if they are reducing effort. In reality, they may just be changing whose effort counts.
