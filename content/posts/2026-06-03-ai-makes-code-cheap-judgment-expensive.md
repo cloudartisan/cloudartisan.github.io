@@ -183,7 +183,7 @@ But the asymmetry is still there. It shows up somewhere else.
 
 Vendors get paid for generated work, model-side processing, premium latency, search grounding, cache storage, long context, and other metered services around the model. Buyers are then pushed to manage those costs through batching, caching, prompt reuse, shorter outputs, and tighter controls around usage.
 
-So the real pricing asymmetry is this:
+But the pricing asymmetry is...
 
 The vendor gets paid once when the model generates the work. The buyer pays a second time when human beings have to validate it, integrate it, operate it, and take responsibility for it.
 
