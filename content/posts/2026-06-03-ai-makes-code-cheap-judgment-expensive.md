@@ -147,8 +147,6 @@ This is where the recent reporting gets interesting.
 
 AI-assisted development appears to be making it easier to create production risk faster than organisations can improve the guard rails around review, rollback, blast radius, risk ownership, and governance.
 
-That is a different argument, and a better one.
-
 Take the recent Amazon reporting. The public coverage around AWS outages and internal follow-up has been messy, and Amazon has pushed back on simple claims that AI coding tools directly caused the incidents. GeekWire covered that pushback directly, while Tom's Hardware reported the internal response in more operational terms. Fair enough.
 
 But even with that caveat, the reporting still supports something useful: if AI-assisted changes are implicated often enough to trigger internal meetings, tighter approvals, and more senior attention, then the story is not really about magical productivity. It is about governance strain.
