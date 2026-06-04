@@ -179,9 +179,7 @@ That's a governance problem.
 
 ## The pricing model reinforces the same asymmetry
 
-In the current published pricing for the major providers, output is generally more expensive than input.
-
-But the asymmetry is still there. It shows up somewhere else.
+Although in the current published pricing for the major providers, output is generally more expensive than input, the asymmetry in the other direction is still there. It just shows up somewhere else.
 
 Vendors get paid for generated work, model-side processing, premium latency, search grounding, cache storage, long context, and other metered services around the model. Buyers are then pushed to manage those costs through batching, caching, prompt reuse, shorter outputs, and tighter controls around usage.
 
