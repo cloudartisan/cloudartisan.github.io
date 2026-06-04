@@ -46,7 +46,7 @@ Modern coding assistants can be genuinely useful for:
 
 That is why adoption keeps happening. The gains are visible, immediate, and easy to show on a slide.
 
-The problem is that those are not the only costs that matter.
+The problem is that those are not the only criteria that matter.
 
 ## Draft code is cheap. Trusted judgment is not.
 
