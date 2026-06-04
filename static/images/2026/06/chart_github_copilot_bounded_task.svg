@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111827} .small{font-size:16px;fill:#4b5563} .title{font-size:34px;font-weight:700} .subtitle{font-size:20px;fill:#374151} .axis{font-size:16px;fill:#6b7280} .label{font-size:18px} .panel{font-size:24px;font-weight:700} .value{font-size:18px;font-weight:700}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="55" class="title">GitHub Copilot bounded-task study</text>
+<text x="40" y="85" class="subtitle">One positive counterweight to the thesis, on GitHub’s own numbers</text>
+<text x="70" y="95" class="panel">Average task time (minutes)</text>
+<line x1="70" y1="500.0" x2="525.0" y2="500.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="505.0" text-anchor="end" class="axis">0</text>
+<line x1="70" y1="457.8" x2="525.0" y2="457.8" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="462.8" text-anchor="end" class="axis">20</text>
+<line x1="70" y1="415.6" x2="525.0" y2="415.6" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="420.6" text-anchor="end" class="axis">40</text>
+<line x1="70" y1="373.3" x2="525.0" y2="373.3" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="378.3" text-anchor="end" class="axis">60</text>
+<line x1="70" y1="331.1" x2="525.0" y2="331.1" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="336.1" text-anchor="end" class="axis">80</text>
+<line x1="70" y1="288.9" x2="525.0" y2="288.9" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="293.9" text-anchor="end" class="axis">100</text>
+<line x1="70" y1="246.7" x2="525.0" y2="246.7" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="251.7" text-anchor="end" class="axis">120</text>
+<line x1="70" y1="204.4" x2="525.0" y2="204.4" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="209.4" text-anchor="end" class="axis">140</text>
+<line x1="70" y1="162.2" x2="525.0" y2="162.2" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="167.2" text-anchor="end" class="axis">160</text>
+<line x1="70" y1="120.0" x2="525.0" y2="120.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="125.0" text-anchor="end" class="axis">180</text>
+<rect x="132.6" y="350.1" width="102.4" height="149.9" fill="#2ca02c" rx="6"/>
+<text x="183.8" y="340.1" text-anchor="middle" class="value">71</text>
+<text x="183.8" y="532" text-anchor="middle" class="label">With Copilot</text>
+<rect x="360.1" y="160.1" width="102.4" height="339.9" fill="#6b7280" rx="6"/>
+<text x="411.2" y="150.1" text-anchor="middle" class="value">161</text>
+<text x="411.2" y="532" text-anchor="middle" class="label">Without Copilot</text>
+<text x="595.0" y="95" class="panel">Task completion rate (%)</text>
+<line x1="595.0" y1="500.0" x2="1050.0" y2="500.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="587.0" y="505.0" text-anchor="end" class="axis">0</text>
+<line x1="595.0" y1="424.0" x2="1050.0" y2="424.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="587.0" y="429.0" text-anchor="end" class="axis">20</text>
+<line x1="595.0" y1="348.0" x2="1050.0" y2="348.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="587.0" y="353.0" text-anchor="end" class="axis">40</text>
+<line x1="595.0" y1="272.0" x2="1050.0" y2="272.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="587.0" y="277.0" text-anchor="end" class="axis">60</text>
+<line x1="595.0" y1="196.0" x2="1050.0" y2="196.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="587.0" y="201.0" text-anchor="end" class="axis">80</text>
+<line x1="595.0" y1="120.0" x2="1050.0" y2="120.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="587.0" y="125.0" text-anchor="end" class="axis">100</text>
+<rect x="657.6" y="203.6" width="102.4" height="296.4" fill="#2ca02c" rx="6"/>
+<text x="708.8" y="193.6" text-anchor="middle" class="value">78</text>
+<text x="708.8" y="532" text-anchor="middle" class="label">With Copilot</text>
+<rect x="885.1" y="234.0" width="102.4" height="266.0" fill="#6b7280" rx="6"/>
+<text x="936.2" y="224.0" text-anchor="middle" class="value">70</text>
+<text x="936.2" y="532" text-anchor="middle" class="label">Without Copilot</text>
+<text x="40" y="565" class="small">Source: GitHub research blog.</text>
+<text x="40" y="585" class="small">Reported averages: 78% vs 70% completion; 1h11 vs 2h41 average task time; GitHub summarises this as 55% faster on that bounded task.</text>
+</svg>
