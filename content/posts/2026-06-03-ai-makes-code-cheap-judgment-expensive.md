@@ -149,7 +149,7 @@ AI-assisted development appears to be making it easier to create production risk
 
 Take the recent Amazon reporting. The public coverage around AWS outages and internal follow-up has been messy, and Amazon has pushed back on simple claims that AI coding tools directly caused the incidents. GeekWire covered that pushback directly, while Tom's Hardware reported the internal response in more operational terms. Fair enough.
 
-But even with that caveat, the reporting still supports something useful: if AI-assisted changes are implicated often enough to trigger internal meetings, tighter approvals, and more senior attention, then the story is not really about magical productivity. It is about governance strain.
+But even with that caveat, the reporting still shows that if AI-assisted changes are implicated often enough to trigger internal meetings, tighter approvals, and more senior attention, then the story is not really about magical productivity. It is about governance strain.
 
 I've seen the smaller-scale version of that problem up close. In one review cycle, an AI-assisted security finding was filed with enough authority to block release, despite describing a scenario that should have been ruled out immediately by the underlying system model. It was later acknowledged as reviewer oversight. But by then the damage was already done: time lost, confidence shaken, and accurate documentation treated as suspect because the false claim arrived wrapped in synthetic certainty.
 
