@@ -48,7 +48,7 @@ That is why adoption keeps happening. The gains are visible, immediate, and easy
 
 The problem is that those are not the only criteria that matter.
 
-## Draft code is cheap. Trusted judgment is not.
+## Code is cheap. Judgment is expensive.
 
 This is the strongest way I can put it.
 
