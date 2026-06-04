@@ -246,6 +246,8 @@ I don't think AI coding tools are a fad, and I don't think the answer is to ban 
 
 I also don't think the problem is AI per se. On my own projects, where I understand the domain, verify the output, and bear the consequences directly, these tools can be genuinely useful. They help me move faster.
 
+But...
+
 What I object to is the collaborative version where one person gets the local speed boost and someone else inherits the verification burden, the incident risk, the review fatigue, and the operational consequences.
 
 I do think a lot of organisations are mistaking cheaper code generation for cheaper engineering.
