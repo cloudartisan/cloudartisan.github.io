@@ -37,7 +37,7 @@ jobs:
           echo "Using Hugo version: ${HUGO_VERSION}"
       
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3.0.0
+        uses: peaceiris/actions-hugo@v3.2.1
         with:
           hugo-version: ${{ steps.versions.outputs.hugo_version }}
           extended: true
