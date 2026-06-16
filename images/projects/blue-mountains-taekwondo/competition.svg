@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#E5E7EB"/>
+  
+  <!-- Competitor 1 -->
+  <circle cx="130" cy="100" r="22" fill="#9CA3AF"/>
+  <path d="M115 120 L145 120 L130 170 Z" fill="#9CA3AF"/>
+  <path d="M120 170 L140 170 L130 220 L120 170 Z" fill="#9CA3AF"/>
+  <path d="M115 140 L90 160" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M145 140 L180 160" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Competitor 2 -->
+  <circle cx="270" cy="100" r="22" fill="#9CA3AF"/>
+  <path d="M255 120 L285 120 L270 170 Z" fill="#9CA3AF"/>
+  <path d="M260 170 L280 170 L270 220 L260 170 Z" fill="#9CA3AF"/>
+  <path d="M255 140 L220 160" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M285 140 L310 160" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Ring -->
+  <circle cx="200" cy="150" r="120" stroke="#4B5563" stroke-width="5" stroke-dasharray="10 5" fill="none"/>
+  
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1F2937">Competition Training</text>
+</svg>
