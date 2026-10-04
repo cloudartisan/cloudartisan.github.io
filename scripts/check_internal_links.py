@@ -69,6 +69,10 @@ def check_site(root, base_url):
         if url.scheme not in ("http", "https") or url.hostname not in internal_hosts:
             return
         checked += 1
+        default_port = 443 if url.scheme == "https" else 80
+        if url.port not in (None, default_port):
+            errors.append(f"{source}:{line}: non-default site port in {raw}")
+            return
         decoded_path = unquote(url.path)
         destination = (root / decoded_path.lstrip("/")).resolve()
         # A trailing slash requests a directory route, even if Path normalises

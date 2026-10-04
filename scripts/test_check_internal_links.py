@@ -78,6 +78,23 @@ class InternalLinksTest(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         self.assertIn("localhost", result.stdout)
 
+    def test_non_default_site_ports_fail_even_when_route_exists(self):
+        for target in ("https://cloudartisan.com:1313/about/", "http://www.cloudartisan.com:443/about/", "https://cloudartisan.com:0/about/"):
+            with self.subTest(target=target):
+                result = self.run_checker({
+                    "index.html": f'<a href="{target}">About</a>',
+                    "about/index.html": "<html></html>",
+                })
+                self.assertEqual(result.returncode, 1)
+                self.assertIn(target, result.stdout)
+
+    def test_explicit_default_site_ports_pass(self):
+        result = self.run_checker({
+            "index.html": '<a href="https://cloudartisan.com:443/about/">HTTPS</a><a href="http://www.cloudartisan.com:80/about/">HTTP</a>',
+            "about/index.html": "<html></html>",
+        })
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
     def test_base_element_changes_relative_link_resolution(self):
         result = self.run_checker({"index.html": '<base href="/posts/"><a href="missing/">Missing</a>'})
         self.assertEqual(result.returncode, 1)
