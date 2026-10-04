@@ -78,14 +78,20 @@ jobs:
       - name: Test Build (Development)
         run: |
           echo "Testing development build..."
-          ./scripts/hugo.sh --buildDrafts --buildFuture
+          ./scripts/hugo.sh --buildDrafts --buildFuture --destination "${RUNNER_TEMP}/hugo-development"
           echo "✅ Development build successful"
 
       - name: Test Build (Production)
         run: |
           echo "Testing production build..."
-          ./scripts/hugo.sh --minify --buildFuture
+          ./scripts/hugo.sh --minify --buildFuture --cleanDestinationDir
           echo "✅ Production build successful"
+
+      - name: Test Internal Link Checker
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Check Rendered Internal Links
+        run: python3 scripts/check_internal_links.py public --base-url https://cloudartisan.com/
 
       - name: Check Build Output
         run: |
@@ -143,29 +149,6 @@ jobs:
           done
           
           echo "✅ All markdown files have valid front matter"
-
-      - name: Check for Broken Internal Links
-        run: |
-          echo "Checking for potential broken internal links..."
-          
-          # Look for common broken link patterns
-          if grep -r "](http://localhost" content/; then
-            echo "❌ Found localhost links in content"
-            exit 1
-          fi
-          
-          # Check for missing project references
-          if grep -r "](/projects/" content/; then
-            echo "Found internal project links, checking they exist..."
-            for link in $(grep -ro "](/projects/[^)]*)" content/ | sed 's/.*](/projects//;s/[)].*//' | sort -u); do
-              if [ ! -d "content/projects$link" ] && [ ! -f "content/projects$link.md" ] && [ ! -f "content/projects$link/index.md" ]; then
-                echo "❌ Broken internal link: /projects$link"
-                exit 1
-              fi
-            done
-          fi
-          
-          echo "✅ No obvious broken internal links found"
 
   validate-images:
     runs-on: ubuntu-latest

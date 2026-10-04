@@ -5,6 +5,8 @@ draft: false
 slug: google-app-engine-sdk-broken-on-ubuntu-maverick-10-10
 tags: ["google app engine", "paas", "python"]
 description: The Google App Engine SDK is broken on Ubuntu 10.10, but it's easy enough to fix...
+aliases:
+  - /2010/10/google-app-engine-sdk-broken-on-ubuntu-maverick-10-10/
 ---
 
 The Google App Engine SDK is broken on Ubuntu 10.10, but it's easy enough to fix...

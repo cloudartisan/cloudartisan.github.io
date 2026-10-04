@@ -295,5 +295,5 @@ There's definitely a learning curve to using these tools effectively. You need t
 
 If you're already using Claude Code, Codex doesn't necessarily offer a compelling reason to switch. In my case, it was worth adding to my toolkit, as I already have an OpenAI account I'm paying for and so it was no great hurdle to set it up and add it to my development workflow.
 
-Keep an eye out for my next post in this series, where I'll dive into [more advanced tips and tricks](/posts/2025-04-19-openai-codex-tips-tricks/) for getting the most out of Codex CLI.
+Keep an eye out for my next post in this series, where I'll dive into [more advanced tips and tricks]({{< relref "2025-04-21-openai-codex-tips-tricks.md" >}}) for getting the most out of Codex CLI.
 

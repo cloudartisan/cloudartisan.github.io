@@ -4,6 +4,8 @@ date: 2010-11-28
 draft: false
 slug: using-php-apc-with-cherokee
 tags: ["cherokee", "general", "php-apc", "system administration", "ubuntu"]
+aliases:
+  - /2010/11/using-php-apc-with-cherokee/
 ---
 
 If you're using Cherokee as your web server, you're probably already interested in squeezing every drop of performance out of your server.  If you're hosting PHP sites with Cherokee, using APC (Alternative PHP Cache) could enable you to squeeze out even more drops.

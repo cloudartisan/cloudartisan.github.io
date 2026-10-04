@@ -7,6 +7,8 @@ author: "david-taylor"
 tags: ["OpenAI", "Codex", "CLI", "AI", "Development Tools", "Tips"]
 categories: ["Tutorials"]
 series: ["OpenAI Codex Tips & Tricks"]
+aliases:
+  - /posts/2025-04-19-openai-codex-tips-tricks/
 ---
 
 After [getting started with OpenAI Codex CLI](/posts/2025-04-18-getting-started-with-openai-codex-cli/), I've discovered some handy tips to make working with it a bit easier.

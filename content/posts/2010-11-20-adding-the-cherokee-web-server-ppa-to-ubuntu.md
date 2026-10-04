@@ -5,6 +5,8 @@ draft: false
 slug: adding-the-cherokee-web-server-ppa-to-ubuntu
 tags: ["general", "system administration", "ubuntu"]
 description: Follow the commands in this post to add the Cherokee Web Server PPA to Ubuntu 9.10 or higher...
+aliases:
+  - /2010/11/adding-the-cherokee-web-server-ppa-to-ubuntu/
 ---
 
 The following commands will add the Cherokee Web Server PPA to Ubuntu (version 9.10 and higher). The first command adds the extremely handy `add-apt-repository` program to your system. The second adds the Cherokee Personal Package Archive.
@@ -27,4 +29,4 @@ If you don't already have Cherokee installed and you want to install it I find t
 ```
 
  
-That's it. If you want more simple posts on building lean servers, cloud computing, software development and more, [subscribe to my RSS feed](http://www.cloudartisan.com/feed) and/or [follow me on Twitter](https://twitter.com/davidltaylor). Cheers!
+That's it. If you want more simple posts on building lean servers, cloud computing, software development and more, [subscribe to my RSS feed](/feed.xml) and/or [follow me on Twitter](https://twitter.com/davidltaylor). Cheers!

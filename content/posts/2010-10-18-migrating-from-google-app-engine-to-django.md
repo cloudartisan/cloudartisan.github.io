@@ -7,7 +7,7 @@ tags: ["general", "google app engine", "paas", "python", "software development"]
 description: Yup, I'm migrating from Google App Engine to Django.  In this post I go over some of the key differences and considerations...
 ---
 
-Unfortunately, I had to migrate one of my projects from Google App Engine to Django on a self-managed server. I didn't want to do this. See [Google App Engine Gotcha #2](http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/) and [Google App Engine Gotcha #3](http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-3/) for the main reasons. Those headaches became bad enough that I had to bite the bullet and migrate out of Google App Engine.
+Unfortunately, I had to migrate one of my projects from Google App Engine to Django on a self-managed server. I didn't want to do this. See [Google App Engine Gotcha #2]({{< relref "2010-08-09-google-app-engine-gotcha-2.md" >}}) and [Google App Engine Gotcha #3]({{< relref "2010-08-29-google-app-engine-gotcha-3.md" >}}) for the main reasons. Those headaches became bad enough that I had to bite the bullet and migrate out of Google App Engine.
 
 _It's not for the faint-hearted..._
 

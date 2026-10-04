@@ -37,7 +37,13 @@ jobs:
           test -f _vendor/modules.txt
 
       - name: Build
-        run: ./scripts/hugo.sh --minify --buildFuture
+        run: ./scripts/hugo.sh --minify --buildFuture --cleanDestinationDir
+
+      - name: Test Internal Link Checker
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Check Rendered Internal Links
+        run: python3 scripts/check_internal_links.py public --base-url https://cloudartisan.com/
 
       - name: Copy CNAME file
         run: |
