@@ -55,6 +55,16 @@ class InternalLinksTest(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         self.assertIn("/missing/", result.stdout)
 
+    def test_trailing_slash_cannot_turn_an_existing_file_into_a_route(self):
+        for target in ("/feed.xml/", "/feed.xml/?source=test", "/image.png/", "/feed.xml%2F"):
+            with self.subTest(target=target):
+                result = self.run_checker({
+                    "index.html": f'<a href="{target}">File</a>',
+                    "feed.xml": "<rss/>", "image.png": "image",
+                })
+                self.assertEqual(result.returncode, 1)
+                self.assertIn(target, result.stdout)
+
     def test_alias_redirect_and_data_images_pass(self):
         result = self.run_checker({
             "index.html": '<meta http-equiv="refresh" content="0; url=https://cloudartisan.com/new/"><link rel="canonical" href="/new/">',

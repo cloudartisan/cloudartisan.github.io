@@ -69,9 +69,13 @@ def check_site(root, base_url):
         if url.scheme not in ("http", "https") or url.hostname not in internal_hosts:
             return
         checked += 1
-        destination = (root / unquote(url.path).lstrip("/")).resolve()
+        decoded_path = unquote(url.path)
+        destination = (root / decoded_path.lstrip("/")).resolve()
+        # A trailing slash requests a directory route, even if Path normalises
+        # it to an existing file (e.g. /feed.xml/ is not /feed.xml).
+        file_exists = not decoded_path.endswith("/") and destination.is_file()
         if not destination.is_relative_to(root) or not (
-            destination.is_file() or (destination / "index.html").is_file()
+            file_exists or (destination / "index.html").is_file()
         ):
             errors.append(f"{source}:{line}: missing destination {raw} (resolved to {url.path})")
 
