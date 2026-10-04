@@ -5,7 +5,7 @@ draft: false
 slug: my-first-djangy-project-local-testing
 ---
 
-In my [previous post](http://www.cloudartisan.com/2010/12/my-first-djangy-project-initial-testing/) I knocked out some simple code and pushed it straight to Djangy. I didn't even test it locally first (_gosh shock horror aghast_)! Well, that must end... now.
+In my [previous post]({{< relref "2010-12-02-my-first-djangy-project-initial-testing.md" >}}) I knocked out some simple code and pushed it straight to Djangy. I didn't even test it locally first (_gosh shock horror aghast_)! Well, that must end... now.
 
 A Djangy project is, in it's heart of hearts, a Django project that you've shoved out your door into the big bad world. And the great thing about Django projects... you can run them locally for testing.
 

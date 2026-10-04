@@ -41,6 +41,43 @@ The theme is vendored under `_vendor/`, so day-to-day builds do not need Go or a
 ./scripts/hugo.sh --minify --buildFuture
 ```
 
+## Internal Links and Legacy URLs
+
+After a clean production build, run the offline link check:
+
+```sh
+./scripts/hugo.sh --minify --buildFuture --cleanDestinationDir
+python3 -m unittest discover -s scripts -p 'test_*.py'
+python3 scripts/check_internal_links.py public --base-url https://cloudartisan.com/
+```
+
+PR validation runs these checks against production output, so draft pages or stale
+development files cannot hide missing destinations. The checker covers same-site
+HTML links, canonical and redirect targets, images, scripts, stylesheets, `srcset`
+and sitemap URLs, including HTTP/www variants and relative links. It reports the
+rendered file, line and missing target, and fails on localhost links or an empty
+build. It does not fetch external sites or validate fragments, CSS URLs or URLs
+constructed by JavaScript. Use Hugo `relref` for article links so renamed or
+missing source pages also fail the Hugo build.
+
+Keep aliases for moved articles in their YAML front matter. GitHub Pages serves
+static files and does not expose arbitrary HTTP 301/308 path rules through this
+repository. Hugo aliases generate immediate (zero-second) meta-refresh redirects
+with a canonical destination, which [Google treats as permanent redirects for
+indexing](https://developers.google.com/search/docs/crawling-indexing/301-redirects).
+They still return HTTP 200, rather than 301. The legacy `/feed/` path has a static
+redirect to `/feed.xml`; link directly to `/feed.xml` for RSS clients.
+
+Search Console has no old-to-new path correction operation: its [Change of
+Address tool](https://support.google.com/webmasters/answer/9370220?hl=en) does not
+apply to moves within a site. After these changes are merged and deployed,
+verify the live redirects and current destinations, then optionally [request
+indexing](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)
+for the destination articles and validate the 404 fix in Search Console. A request
+encourages a recrawl; it does not force a canonical URL or guarantee rankings.
+Keep legacy redirects long-term, and keep only current canonical URLs in the
+sitemap. Do not use removals to correct moved URLs.
+
 ## Updating Theme Dependencies
 
 Normal builds do not require Go. You only need Go when you want to refresh vendored Hugo modules, for example when updating Congo.

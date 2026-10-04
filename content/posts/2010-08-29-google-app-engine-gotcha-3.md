@@ -5,6 +5,8 @@ draft: false
 slug: google-app-engine-gotcha-3
 tags: ["gae", "google app engine", "google apps", "gotcha", "paas", "sdc", "urlfetch"]
 description: Do I really need to whitelist every Google IP address ever?!
+aliases:
+  - /2010/08/google-app-engine-gotcha-3/
 ---
 
 ## What's the problem?
@@ -17,7 +19,7 @@ It makes sense, when you think about it. Google App Engine is ([apparently](http
 
 Unfortunately, some APIs (eg, eNom) still require users to register their source IP so that it can be whitelisted. If you can't register an IP you can't use their API.
 
-Google are really not making it easy to integrate Google App Engine with external (slow/legacy) APIs. Refer to [Google App Engine: Gotcha #2](http://www.cloudartisan.com/2010/08/google-app-engine-gotcha-2/) for another issue with `urlfetch` and consuming external APIs...
+Google are really not making it easy to integrate Google App Engine with external (slow/legacy) APIs. Refer to [Google App Engine: Gotcha #2]({{< relref "2010-08-09-google-app-engine-gotcha-2.md" >}}) for another issue with `urlfetch` and consuming external APIs...
 
 ## How did I test this?
 

@@ -5,6 +5,8 @@ draft: false
 slug: google-app-engine-gotcha-2
 tags: ["google app engine", "paas", "python"]
 description: Inflexible outbound timeouts are a pain in the...
+aliases:
+  - /2010/08/google-app-engine-gotcha-2/
 ---
 
 For _Google App Engine: Gotcha #2_ I choose the default 5 second timeout on `urlfetch`. This function is part of the Google App Engine's API and applies to both Python and Java.

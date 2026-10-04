@@ -3,6 +3,8 @@ title: My first Djangy project (initial testing)
 date: 2010-12-02
 draft: false
 slug: my-first-djangy-project-initial-testing
+aliases:
+  - /2010/12/my-first-djangy-project-initial-testing/
 ---
 
 My first Djangy project will be an application called `rightscalefeed`. It will pull down a user's RightScale event feed. Ideally, I'd like to transform the feed into a WebSocket, suitable for continuous updates, perhaps for display in a data centre or network operations centre.

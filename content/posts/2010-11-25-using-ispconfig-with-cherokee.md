@@ -26,8 +26,8 @@ There are some very good instructions for installing ISPConfig on various distri
 
 Also, I've previously written about installing Cherokee on Ubuntu and Debian Lenny (using the testing repository):
 
-  * [Adding the Cherokee Web Server PPA to Ubuntu](http://www.cloudartisan.com/2010/11/adding-the-cherokee-web-server-ppa-to-ubuntu/)
-  * [Install Cherokee (testing) on Debian Lenny](http://www.cloudartisan.com/2010/10/install-cherokee-testing-on-debian-lenny/)
+  * [Adding the Cherokee Web Server PPA to Ubuntu]({{< relref "2010-11-20-adding-the-cherokee-web-server-ppa-to-ubuntu.md" >}})
+  * [Install Cherokee (testing) on Debian Lenny]({{< relref "2010-10-02-install-cherokee-testing-on-debian-lenny.md" >}})
   
 Once you're past that, you need to get them both to work together.
 
@@ -104,6 +104,6 @@ Try loading the site again. As long as the usual culprits are OK (eg, DNS) ISPCo
 
 _Caveat: these permissions might pose a problem for future upgrades to ISPConfig. Also, it's the easy way out... I became bored and gave up before figuring out exactly what was experiencing permissions problems. If you know, let me know, I'll update the post._
 
-You should [subscribe to my feed](http://www.cloudartisan.com/feed/) and [follow me on twitter](https://twitter.com/davidltaylor).
+You should [subscribe to my feed](/feed.xml) and [follow me on twitter](https://twitter.com/davidltaylor).
 
 Cheers!
