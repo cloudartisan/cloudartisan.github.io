@@ -20,11 +20,11 @@ on:
       - '.gitignore'
       - '.github/workflows/**'
 
-# Runs of this workflow for the same PR share a cancellation group.
-# GitHub does not guarantee event ordering; live state/head guards reject stale runs.
+# Duplicate runs for the same PR/head/base share a cancellation group.
+# Different revisions cannot cancel current verification; stale runs fail live guards.
 # Non-PR runs have unique keys, preserving every main/manual/scheduled run.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || format('run-{0}', github.run_id) }}
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && format('pr-{0}-{1}-{2}', github.event.pull_request.number, github.event.pull_request.head.sha, github.event.pull_request.base.sha) || format('run-{0}', github.run_id) }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
@@ -91,15 +91,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           set -euo pipefail
-          : "${EXPECTED_HEAD_SHA:?}" "${PR_NUMBER:?}"
+          : "${EXPECTED_HEAD_SHA:?}" "${EXPECTED_BASE_SHA:?}" "${PR_NUMBER:?}"
           pr="$(gh api --method GET --header 'Cache-Control: no-cache' \
             "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}")"
-          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" \
-            '.state == "open" and .draft == false and .head.sha == $head' \
+          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" --arg base "$EXPECTED_BASE_SHA" \
+            '.state == "open" and .draft == false and .head.sha == $head and .base.sha == $base' \
             <<< "$pr" >/dev/null; then
-            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head.'
+            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head and base.'
             exit 1
           fi
 
@@ -148,15 +149,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           set -euo pipefail
-          : "${EXPECTED_HEAD_SHA:?}" "${PR_NUMBER:?}"
+          : "${EXPECTED_HEAD_SHA:?}" "${EXPECTED_BASE_SHA:?}" "${PR_NUMBER:?}"
           pr="$(gh api --method GET --header 'Cache-Control: no-cache' \
             "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}")"
-          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" \
-            '.state == "open" and .draft == false and .head.sha == $head' \
+          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" --arg base "$EXPECTED_BASE_SHA" \
+            '.state == "open" and .draft == false and .head.sha == $head and .base.sha == $base' \
             <<< "$pr" >/dev/null; then
-            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head.'
+            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head and base.'
             exit 1
           fi
 
@@ -249,15 +251,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           set -euo pipefail
-          : "${EXPECTED_HEAD_SHA:?}" "${PR_NUMBER:?}"
+          : "${EXPECTED_HEAD_SHA:?}" "${EXPECTED_BASE_SHA:?}" "${PR_NUMBER:?}"
           pr="$(gh api --method GET --header 'Cache-Control: no-cache' \
             "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}")"
-          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" \
-            '.state == "open" and .draft == false and .head.sha == $head' \
+          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" --arg base "$EXPECTED_BASE_SHA" \
+            '.state == "open" and .draft == false and .head.sha == $head and .base.sha == $base' \
             <<< "$pr" >/dev/null; then
-            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head.'
+            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head and base.'
             exit 1
           fi
 
