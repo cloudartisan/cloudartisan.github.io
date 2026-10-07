@@ -3,6 +3,7 @@ name: PR Validation
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, converted_to_draft]
     branches:
       - main
     paths:
@@ -18,6 +19,12 @@ on:
       - 'scripts/**'
       - '.gitignore'
       - '.github/workflows/**'
+
+# Only newer runs of this workflow for the same PR supersede older work.
+# Non-PR runs have unique keys, preserving every main/manual/scheduled run.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || format('run-{0}', github.run_id) }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   validate-build:
@@ -74,6 +81,15 @@ jobs:
           else
             echo "✅ No future posts found"
           fi
+
+      # Keep cheap checks on drafts, but never report full CI as successful.
+      # ready_for_review reruns this job at the same SHA; synchronize tests
+      # every later ready update. Conversion to draft cancels obsolete PR work.
+      - name: Require review readiness for full verification
+        if: github.event_name == 'pull_request' && github.event.pull_request.draft
+        run: |
+          echo '::error::Full verification is deferred while this PR is a draft. Mark it ready for review to run all checks.'
+          exit 1
 
       - name: Test Build (Development)
         run: |
@@ -220,4 +236,11 @@ jobs:
           fi
           
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Your PR is ready to merge! 🚀" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ needs.validate-build.result }}" != "success" ] ||
+             [ "${{ needs.validate-content.result }}" != "success" ] ||
+             [ "${{ needs.validate-images.result }}" != "success" ] ||
+             [ "${{ github.event.pull_request.draft }}" = "true" ]; then
+            echo "Full PR validation has not passed." >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          echo "All PR validation checks passed." >> $GITHUB_STEP_SUMMARY
