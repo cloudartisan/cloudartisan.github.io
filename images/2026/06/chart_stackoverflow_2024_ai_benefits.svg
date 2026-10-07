@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111827} .small{font-size:16px;fill:#4b5563} .title{font-size:34px;font-weight:700} .subtitle{font-size:20px;fill:#374151} .axis{font-size:16px;fill:#6b7280} .label{font-size:20px} .value{font-size:18px;font-weight:700}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="55" class="title">Why developers use AI tools</text>
+<text x="40" y="85" class="subtitle">Stack Overflow Developer Survey 2024</text>
+<line x1="320.0" y1="110" x2="320.0" y2="580" stroke="#e5e7eb" stroke-width="1"/>
+<text x="320.0" y="608" text-anchor="middle" class="axis">0%</text>
+<line x1="464.0" y1="110" x2="464.0" y2="580" stroke="#e5e7eb" stroke-width="1"/>
+<text x="464.0" y="608" text-anchor="middle" class="axis">20%</text>
+<line x1="608.0" y1="110" x2="608.0" y2="580" stroke="#e5e7eb" stroke-width="1"/>
+<text x="608.0" y="608" text-anchor="middle" class="axis">40%</text>
+<line x1="752.0" y1="110" x2="752.0" y2="580" stroke="#e5e7eb" stroke-width="1"/>
+<text x="752.0" y="608" text-anchor="middle" class="axis">60%</text>
+<line x1="896.0" y1="110" x2="896.0" y2="580" stroke="#e5e7eb" stroke-width="1"/>
+<text x="896.0" y="608" text-anchor="middle" class="axis">80%</text>
+<line x1="1040.0" y1="110" x2="1040.0" y2="580" stroke="#e5e7eb" stroke-width="1"/>
+<text x="1040.0" y="608" text-anchor="middle" class="axis">100%</text>
+<text x="305" y="141" text-anchor="end" class="label">Increase productivity</text>
+<rect x="320" y="110" width="720" height="48" fill="#f3f4f6" rx="6"/>
+<rect x="320" y="110" width="583.2" height="48" fill="#1d4ed8" rx="6"/>
+<text x="913.2" y="141" class="value">81%</text>
+<text x="305" y="211" text-anchor="end" class="label">Speed up learning</text>
+<rect x="320" y="180" width="720" height="48" fill="#f3f4f6" rx="6"/>
+<rect x="320" y="180" width="449.3" height="48" fill="#60a5fa" rx="6"/>
+<text x="779.3" y="211" class="value">62.4%</text>
+<text x="305" y="281" text-anchor="end" class="label">Greater efficiency</text>
+<rect x="320" y="250" width="720" height="48" fill="#f3f4f6" rx="6"/>
+<rect x="320" y="250" width="421.2" height="48" fill="#60a5fa" rx="6"/>
+<text x="751.2" y="281" class="value">58.5%</text>
+<text x="305" y="351" text-anchor="end" class="label">Improve accuracy in coding</text>
+<rect x="320" y="320" width="720" height="48" fill="#f3f4f6" rx="6"/>
+<rect x="320" y="320" width="218.2" height="48" fill="#60a5fa" rx="6"/>
+<text x="548.2" y="351" class="value">30.3%</text>
+<text x="305" y="421" text-anchor="end" class="label">Make workload more manageable</text>
+<rect x="320" y="390" width="720" height="48" fill="#f3f4f6" rx="6"/>
+<rect x="320" y="390" width="180.0" height="48" fill="#60a5fa" rx="6"/>
+<text x="510.0" y="421" class="value">25%</text>
+<text x="305" y="491" text-anchor="end" class="label">Improve collaboration</text>
+<rect x="320" y="460" width="720" height="48" fill="#f3f4f6" rx="6"/>
+<rect x="320" y="460" width="56.2" height="48" fill="#60a5fa" rx="6"/>
+<text x="386.2" y="491" class="value">7.8%</text>
+<text x="40" y="645" class="small">Source: Stack Overflow Developer Survey 2024, AI section.</text>
+<text x="40" y="665" class="small">Question: “For the AI tools you use as part of your development workflow, what are the MOST important benefits you are hoping to achieve?”</text>
+</svg>
