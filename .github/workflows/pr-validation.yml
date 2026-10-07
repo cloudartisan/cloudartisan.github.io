@@ -3,6 +3,7 @@ name: PR Validation
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, converted_to_draft]
     branches:
       - main
     paths:
@@ -18,6 +19,13 @@ on:
       - 'scripts/**'
       - '.gitignore'
       - '.github/workflows/**'
+
+# Duplicate runs for the same PR/head/base share a cancellation group.
+# Different revisions cannot cancel current verification; stale runs fail live guards.
+# Non-PR runs have unique keys, preserving every main/manual/scheduled run.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && format('pr-{0}-{1}-{2}', github.event.pull_request.number, github.event.pull_request.head.sha, github.event.pull_request.base.sha) || format('run-{0}', github.run_id) }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   validate-build:
@@ -75,6 +83,27 @@ jobs:
             echo "✅ No future posts found"
           fi
 
+      # Cheap checks precede this live read; event payloads can be stale.
+      # Fail drafts and stale heads before DB/browser/build setup.
+      - name: Require review readiness for full verification
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          : "${EXPECTED_HEAD_SHA:?}" "${EXPECTED_BASE_SHA:?}" "${PR_NUMBER:?}"
+          pr="$(gh api --method GET --header 'Cache-Control: no-cache' \
+            "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}")"
+          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" --arg base "$EXPECTED_BASE_SHA" \
+            '.state == "open" and .draft == false and .head.sha == $head and .base.sha == $base' \
+            <<< "$pr" >/dev/null; then
+            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head and base.'
+            exit 1
+          fi
+
       - name: Test Build (Development)
         run: |
           echo "Testing development build..."
@@ -112,6 +141,26 @@ jobs:
           fi
           
           echo "✅ Build output looks good"
+
+      # Recheck after expensive work before this job can report success.
+      - name: Confirm current PR state after full verification
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          : "${EXPECTED_HEAD_SHA:?}" "${EXPECTED_BASE_SHA:?}" "${PR_NUMBER:?}"
+          pr="$(gh api --method GET --header 'Cache-Control: no-cache' \
+            "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}")"
+          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" --arg base "$EXPECTED_BASE_SHA" \
+            '.state == "open" and .draft == false and .head.sha == $head and .base.sha == $base' \
+            <<< "$pr" >/dev/null; then
+            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head and base.'
+            exit 1
+          fi
 
   validate-content:
     runs-on: ubuntu-latest
@@ -196,6 +245,25 @@ jobs:
     needs: [validate-build, validate-content, validate-images]
     if: always()
     steps:
+      - name: Confirm current PR state before validation summary
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          : "${EXPECTED_HEAD_SHA:?}" "${EXPECTED_BASE_SHA:?}" "${PR_NUMBER:?}"
+          pr="$(gh api --method GET --header 'Cache-Control: no-cache' \
+            "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}")"
+          if ! jq -e --arg head "$EXPECTED_HEAD_SHA" --arg base "$EXPECTED_BASE_SHA" \
+            '.state == "open" and .draft == false and .head.sha == $head and .base.sha == $base' \
+            <<< "$pr" >/dev/null; then
+            echo '::error::Full verification is deferred or stale. The PR must be open, ready, and at the tested head and base.'
+            exit 1
+          fi
+
       - name: PR Validation Summary
         run: |
           echo "## PR Validation Results 📝" >> $GITHUB_STEP_SUMMARY
@@ -220,4 +288,10 @@ jobs:
           fi
           
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Your PR is ready to merge! 🚀" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ needs.validate-build.result }}" != "success" ] ||
+             [ "${{ needs.validate-content.result }}" != "success" ] ||
+             [ "${{ needs.validate-images.result }}" != "success" ]; then
+            echo "Full PR validation has not passed." >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          echo "All PR validation checks passed." >> $GITHUB_STEP_SUMMARY
